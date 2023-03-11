@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="2890,3204.0000000000005" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="2890,3434" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -39,7 +39,7 @@
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="51">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="102">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -90,9 +90,10 @@
       <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
       <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="2900,3139" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="2900,3369" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="logindeets" />
       <Variable x:TypeArguments="x:String" Name="username" />
@@ -113,7 +114,7 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:CustomInput Height="{x:Null}" Width="{x:Null}" DisplayName="Custom Input" sap:VirtualizedContainerService.HintSize="434,89" sap2010:WorkflowViewState.IdRef="CustomInput_1" Result="[logindeets]" URI="Login Form.html" />
+      <ui:CustomInput Height="{x:Null}" Width="{x:Null}" DisplayName="Custom Input" sap:VirtualizedContainerService.HintSize="434,89" sap2010:WorkflowViewState.IdRef="CustomInput_1" Result="[logindeets]" URI="HTML files/index.html" />
       <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_3">
         <Assign.To>
           <OutArgument x:TypeArguments="s:String[]">[loginarray]</OutArgument>
@@ -123,13 +124,13 @@
         </Assign.Value>
       </Assign>
     </Sequence>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: New tab" sap:VirtualizedContainerService.HintSize="2838,2539" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="c3abc306-b69a-4d5a-8fcb-e8ef7c5c9c16" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: New tab" sap:VirtualizedContainerService.HintSize="2838,2769" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="c3abc306-b69a-4d5a-8fcb-e8ef7c5c9c16" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="2804,2321" sap2010:WorkflowViewState.IdRef="Sequence_10">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="2804,2551" sap2010:WorkflowViewState.IdRef="Sequence_10">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="ifLoggedIn" />
               <Variable x:TypeArguments="x:Boolean" Name="LoggedIn" />
@@ -145,9 +146,9 @@
                 <uix:TargetAnchorable DesignTimeRectangle="197, 46, 1410, 26" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'editable text'" FullSelectorArgument="&lt;ctrl name='New tab - Microsoft Edge' role='pane' /&gt;&lt;ctrl name='App bar' role='tool bar' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='New tab - Microsoft Edge' role='pane' /&gt;&lt;ctrl name='App bar' role='tool bar' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' /&gt;" Guid="0b3b3e3f-33a0-4e97-9e42-389a7371cafc" ImageBase64="iVBORw0KGgoAAAANSUhEUgAABYYAAAAeCAYAAACYG8r9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASBSURBVHhe7d3RsZs4GAbQrce3CvdAEZRAA27ADRNACCQhgW9mk0nCeTiz1xKSfgmeviHsf19fXyMAAAAAAPchGAYAAAAAuBnBMAAAAADAzWzB8OPxOHQCAAAAAPBvSDNgbwwDAAAAANyMYBgAAAAA4GYEwwAAAAAANyMYBgAAAAC4GcEwAAAAAMDNCIYBAAAAAG7mIhh+jv3rPb7f0Wvsn7Xrfp1n/xrfQ1ft43O/+hwv53/24+s9jF2tDwAAAAD4rU6C4W4c3u9x6JK2Zz/26e/f4G8Lhv/UegXDAAAAAEDUDob/kCBPMPz/EAwDAAAAANH33hgudUPzMxNLULj1pfOEz1MM/RwUTn2vfnwm7duYtT0Gjt2w973657bO0fnnL8J8/XpN69MYxRxJ4HlWT9o22/cczrK8fp+vXc885+H67cwm8z1onWGl7uW/lf6j8hyLUDe798PYr/Pv4/M9h/sd5whzH5+B9jmFYDmZL55tqx0AAAAAaDr/xvAWulXe9FyCwaS9DCiHPbzMw8w1cEzDzbUtDQK7PvTHIHML/JZ1LwLdNKAs6gzztcbPylrC77j+VT1LfyUg3QPL+Xdx/Vk95bnO+yvGh1o/q7vsT888M937oXVtcabbc7Ltu9xzrDsPhvNn4Oyc8r3Mfd3yd6sdAAAAADhz8T+fWy1BYB64lm+yhpCuEXAuwWEeCu5h3iQLP3PHoLUyPsrWifLrj/MVanPM9a1jruo59Ff2Nl8Tz+6yniUgjfVMf09z9dPZh/WSM/923Wt/49xL6fjjvS/mr837E8/Afk7h+nLNdjsAAAAAcOazYHiRhnDh7yUsLmxh3xz0ZX3tUPAsHD32HcdvGkFnGmSerbU41L1a572qp+xfftfmW6+5rCedf6pt2cdc4zxmDlvjfr9d9yQdX1F+GiOMr59/On9zratnIF0rW3Mfk7edtQMAAAAALd8IhvPAbw4Nq+HsrAxof+Jt0egYMtaDyUW2zi6ttRpapi7C0qt6Dv0xxN2uz13WM4nXdEN8I3t9izid+9t1T07OvXwrOB1f9sW2bf7avHPb1TNQ1teQrfVBOwAAAACQawfDz/Qbs7MQ5m2BYBb05coQcvl9FgouQWceNmbfGM7CvpNgeO3Lri/qrAakmWKfhat6jv1hb/V6P6lnsoS+ryz4nUPiV3YOH9Sdfcv4rK7yjPNzDXMl934J5JNzX38fxn/wDNTrmfqSM9rPrNWejgUAAAAASidvDIegLv1n/WXoGALC5JotuMzHvobh/I3hypgshMzCvtb4KIaQURJgTj4LD497j+td17OP3dpicLrZA9rP6glrpOcfzj7f23XdfXY2rRB5sQTq8drXOAx5nWH9tX+67125j2zP0367+ffFM9A8p+Kebs9Zqx0AAAAAOPOtT0kAAAAAAPD3EwwDAAAAANyMYBgAAAAA4GYEwwAAAAAANyMYBgAAAAC4GcEwAAAAAMDNbMHw4/E4dAIAAAAA8G9IM2BvDAMAAAAA3IxgGAAAAADgZgTDAAAAAAC38jX+AOSOz8qb2+ULAAAAAElFTkSuQmCC" InformativeScreenshot="b0967955e3bc28268fdc65d440435ba3.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='New tab - Personal - Microsoft​ Edge' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive" />
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
-            <uix:NCheckState DisplayName="Check App State 'Don't have'" sap:VirtualizedContainerService.HintSize="2742,1793" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="c3abc306-b69a-4d5a-8fcb-e8ef7c5c9c16" Timeout="2" Version="V3">
+            <uix:NCheckState DisplayName="Check App State 'Don't have'" sap:VirtualizedContainerService.HintSize="2742,1833" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="c3abc306-b69a-4d5a-8fcb-e8ef7c5c9c16" Timeout="2" Version="V3">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="1344,1574" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="1344,1614" sap2010:WorkflowViewState.IdRef="Sequence_35">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -173,7 +174,7 @@
                       </uix:NTypeInto.Target>
                     </uix:NTypeInto>
                   </Sequence>
-                  <uix:NCheckState DisplayName="Check for 'Save your login information' Modal" sap:VirtualizedContainerService.HintSize="1282,826" sap2010:WorkflowViewState.IdRef="NCheckState_7" ScopeIdentifier="c3abc306-b69a-4d5a-8fcb-e8ef7c5c9c16" Timeout="2" Version="V3">
+                  <uix:NCheckState DisplayName="Check for 'Save your login information' Modal" sap:VirtualizedContainerService.HintSize="1282,866" sap2010:WorkflowViewState.IdRef="NCheckState_7" ScopeIdentifier="c3abc306-b69a-4d5a-8fcb-e8ef7c5c9c16" Timeout="2" Version="V3">
                     <uix:NCheckState.IfExists>
                       <Sequence DisplayName="'Save your login information' Modal exists" sap:VirtualizedContainerService.HintSize="462,586" sap2010:WorkflowViewState.IdRef="Sequence_43">
                         <sap:WorkflowViewStateService.ViewState>
@@ -306,11 +307,22 @@
                 <uix:TargetAnchorable BrowserURL="https://www.instagram.com/" DesignTimeRectangle="1067, 665, 197, 18" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Don't have'" FullSelectorArgument="&lt;webctrl tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='P' type='' class='_ab25' aaname='Don&amp;apos;t have an account? ' check:innerText='Don&amp;apos;t have an account? Sign up' /&gt;" Guid="fb19abeb-5217-4277-887f-efd180478160" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMkAAAAWCAYAAABqrrj/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVaSURBVHhe7ZrPSxxJFMf9Ezx6ncuAR4+5zjGXDDnONce5zRy9evSok0UMElGWhQiLMrizbFhcZPYQVoKyM0EmWRKEyRISl4W1u6d7fPvq13S96uofY9Qo1Acara7qqtev3rfqVesMOByOTJxIHI4cnEgcjhycSByOHJxIHI4cnEgcjhyoSPabUC6XjasKrVNZf00MVqtQXR3IUh4DaD0qQ3NfFh3fHiNOsubG+3sE9a0LKD29gJnVC5j9zoOlt6zmEo4OPVjYCqA75k3vLEmRPGphWGpIhxQP6nyoSDrQzBSiE8m3ptOg899Z1WKEx0cTZ9HClwAeozhm11EYr0awfTyClZ88WOyzyjG091A4az60Pd76zpIvEsZpC6ppjrgCTiT3C1MklIz5O/H57rH4XpbvKcVEkghUUY63XOokJoJyo8Odq9pYnczFp/WTOTabDNXWmBS526lLjWWbXHpP7zMrEJCUMQrZZ8D9o/VlLgC638gqbdgQP0ffg67sliAm85xlf/Y8M7itONdWBj6UUCTzuyMYWlKqnV2WgvmwI8vwGVOzTdx5ZFq22PWhgr9XDiJe3TvwsD3uSv0RPHkm0rfSJu5E//HqBIn+AfvHZ2bQHs7HQPT/awht3OF4SvjUg9pBCOeiBaegSIQzRGBIx+mO4ZMXT4wKgskk8vq0wLFMIkFNVNw/nxjNzk7DDCRZNt+H7IgiKGigpduROkYB+yjYvhHXcV+Rd6G+HWBqw0uGj9m7tLjt4j10gdM+Le9F/FLEv/YFxLQ1CaZUGHxzLDAx+J50QyIWEsTjEJprWF5DEfwZQe+vAOobrN4UyQXMPfdh+yyCbteDeSyX9kNeb1JUJCUUZO23EI7OQlh+Icasn8SGTi8Sa+olHK0CTu0kMbSeUkwk5NnM9E/vj/ZN7LK8K6u3BUMSvd9p7TPQ26Y+l+E/65yl+4BjEUmW/VaRZMQK5RKGHzDg1Q6xEa/8JIj7Pq+vvdZU9N6HBbxniqT55pKXASJYeo59bAbQk3d0CoukLcsMbwQ1vDe7F9+bPt1KaaM78tZFwstsNVQXFYawi/VD78fttSttZUwdo4B9JsyHpC/ZNtX/6T5K+pqh23SDIknzlRUUC6ZfPCjlyq8H8btDkUotf+RVApUOGelW3CaCZRTf14pE9S8w2iDFRKLfTwkA5kjl6FsVScIeoz9Wz2xXP+XtqSY5c4wpRWL6WG+b+lyG/6xzxtor+25IJFdCrvxbAbzDEgniY3HIr5+oXQJ5I840VxUJ/3qG7bfV17MxnmUsIln4RUvXvgTwEO/pKVyuSMSKqztZOJUEGHtOc+qtisS0mdti2luFZsNMpdi4aTYZZI6RH2Q6pm+Ef1XbpG/VmYS2Q3CMYmcS0WdcL9p/tUiMObfRwzPD43YA68fy8++ex1OqyqEIeiISluawgzOeSZZPIzg6DaC2LlK0q4pk+LtIzx5g6nT0KYQVed4wRTKL56X66wiGZyNY+oG1wXPRB9GEkRTJJAWQl3W1lZM5aUedNZ1IZHvWjyFQQd4kGrbgAdsUXSLAFLwf7dlUsWaNkWefiQxSeVWxL9rWGEvzycRP/NJtpX0m/EjeE8cioi9g/+R5bcwCIhniOePhMzxos8DEaw4FwA7v6suRmQ6d42G9pn212unLdEiKalqRwDhCYWgfDv4IrDtJ5ecAlr6XZyb2Va1PP8VRkTgcd4jzV2InqPM/Pt4A1jNJEicSxx0BV/0ffVjph9D7J4KXXR8esPRrw7+5f1txInHcLyLY3vVgXv6P1wz+rLwI4OW/2kH+unEicTiuBycShyMHJxKHIxOA/wHUqIVoybIKyAAAAABJRU5ErkJggg==" InformativeScreenshot="cc2a27af668adf3be716d2b39a2d2612.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Instagram' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
               </uix:NCheckState.Target>
             </uix:NCheckState>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Instat Data Collection.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="2742,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="Instagram_profile_loader.xaml">
-              <ui:InvokeWorkflowFile.Arguments>
-                <scg:Dictionary x:TypeArguments="x:String, Argument" />
-              </ui:InvokeWorkflowFile.Arguments>
-            </ui:InvokeWorkflowFile>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="2742,304" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,225" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Instat Data Collection.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="Instagram_profile_loader.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                    </ui:InvokeWorkflowFile.Arguments>
+                  </ui:InvokeWorkflowFile>
+                </Sequence>
+              </ui:CommentOut.Body>
+            </ui:CommentOut>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>

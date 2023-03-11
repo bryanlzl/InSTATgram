@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   </head>
 
   <div class="container">
@@ -18,6 +19,7 @@
               type="text"
               class="login__input"
               placeholder="Username / Email"
+              id="useremail"
             />
           </div>
           <div class="login__field">
@@ -26,9 +28,10 @@
               type="password"
               class="login__input"
               placeholder="Password"
+              id="password"
             />
           </div>
-          <button class="button login__submit">
+          <button class="button login__submit" id="SubmitButton">
             <span class="button__text">Log In Now</span>
             <i class="button__icon fas fa-chevron-right"></i>
           </button>
@@ -63,4 +66,14 @@
       </div>
     </div>
   </div>
+  <script type="text/javascript">
+    document.getElementById("SubmitButton").onclick = function () {
+      var useremail = document.getElementById("useremail").value;
+      var password = document.getElementById("password").value;
+
+      var outputstring = "" + useremail + "|" + "" + password + "";
+
+      window.external.setResult(outputstring);
+    };
+  </script>
 </html>
