@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="2890,3434" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="2890.0000000000005,2964" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -93,7 +93,7 @@
       <AssemblyReference>UiPath.Python</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="2900,3369" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="2900,2899" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="logindeets" />
       <Variable x:TypeArguments="x:String" Name="username" />
@@ -107,8 +107,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="2838,86" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Scrape Scrape Scrape instagoooo&quot;]" />
-    <Sequence sap:VirtualizedContainerService.HintSize="2838,323" sap2010:WorkflowViewState.IdRef="Sequence_6">
+    <Sequence DisplayName="Render login screen" sap:VirtualizedContainerService.HintSize="2838,323" sap2010:WorkflowViewState.IdRef="Sequence_6">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -124,13 +123,13 @@
         </Assign.Value>
       </Assign>
     </Sequence>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: New tab" sap:VirtualizedContainerService.HintSize="2838,2769" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="c3abc306-b69a-4d5a-8fcb-e8ef7c5c9c16" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: New tab" sap:VirtualizedContainerService.HintSize="2838,2425" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="c3abc306-b69a-4d5a-8fcb-e8ef7c5c9c16" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="2804,2551" sap2010:WorkflowViewState.IdRef="Sequence_10">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="2804,2207" sap2010:WorkflowViewState.IdRef="Sequence_10">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="ifLoggedIn" />
               <Variable x:TypeArguments="x:Boolean" Name="LoggedIn" />
@@ -202,13 +201,13 @@
                       </Sequence>
                     </uix:NCheckState.IfExists>
                     <uix:NCheckState.IfNotExists>
-                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="766,607" sap2010:WorkflowViewState.IdRef="Sequence_45">
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="766,647" sap2010:WorkflowViewState.IdRef="Sequence_45">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <uix:NCheckState DisplayName="Check for 'Turn on notifications' Modal" sap:VirtualizedContainerService.HintSize="704,492" sap2010:WorkflowViewState.IdRef="NCheckState_6" ScopeIdentifier="c3abc306-b69a-4d5a-8fcb-e8ef7c5c9c16" Timeout="2" Version="V3">
+                        <uix:NCheckState DisplayName="Check for 'Turn on notifications' Modal" sap:VirtualizedContainerService.HintSize="704,532" sap2010:WorkflowViewState.IdRef="NCheckState_6" ScopeIdentifier="c3abc306-b69a-4d5a-8fcb-e8ef7c5c9c16" Timeout="2" Version="V3">
                           <uix:NCheckState.IfExists>
                             <Sequence DisplayName="Click 'Not Now' x 1" sap:VirtualizedContainerService.HintSize="400,273" sap2010:WorkflowViewState.IdRef="Sequence_44">
                               <sap:WorkflowViewStateService.ViewState>
@@ -307,22 +306,6 @@
                 <uix:TargetAnchorable BrowserURL="https://www.instagram.com/" DesignTimeRectangle="1067, 665, 197, 18" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Don't have'" FullSelectorArgument="&lt;webctrl tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='P' type='' class='_ab25' aaname='Don&amp;apos;t have an account? ' check:innerText='Don&amp;apos;t have an account? Sign up' /&gt;" Guid="fb19abeb-5217-4277-887f-efd180478160" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMkAAAAWCAYAAABqrrj/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVaSURBVHhe7ZrPSxxJFMf9Ezx6ncuAR4+5zjGXDDnONce5zRy9evSok0UMElGWhQiLMrizbFhcZPYQVoKyM0EmWRKEyRISl4W1u6d7fPvq13S96uofY9Qo1Acara7qqtev3rfqVesMOByOTJxIHI4cnEgcjhycSByOHJxIHI4cnEgcjhyoSPabUC6XjasKrVNZf00MVqtQXR3IUh4DaD0qQ3NfFh3fHiNOsubG+3sE9a0LKD29gJnVC5j9zoOlt6zmEo4OPVjYCqA75k3vLEmRPGphWGpIhxQP6nyoSDrQzBSiE8m3ptOg899Z1WKEx0cTZ9HClwAeozhm11EYr0awfTyClZ88WOyzyjG091A4az60Pd76zpIvEsZpC6ppjrgCTiT3C1MklIz5O/H57rH4XpbvKcVEkghUUY63XOokJoJyo8Odq9pYnczFp/WTOTabDNXWmBS526lLjWWbXHpP7zMrEJCUMQrZZ8D9o/VlLgC638gqbdgQP0ffg67sliAm85xlf/Y8M7itONdWBj6UUCTzuyMYWlKqnV2WgvmwI8vwGVOzTdx5ZFq22PWhgr9XDiJe3TvwsD3uSv0RPHkm0rfSJu5E//HqBIn+AfvHZ2bQHs7HQPT/awht3OF4SvjUg9pBCOeiBaegSIQzRGBIx+mO4ZMXT4wKgskk8vq0wLFMIkFNVNw/nxjNzk7DDCRZNt+H7IgiKGigpduROkYB+yjYvhHXcV+Rd6G+HWBqw0uGj9m7tLjt4j10gdM+Le9F/FLEv/YFxLQ1CaZUGHxzLDAx+J50QyIWEsTjEJprWF5DEfwZQe+vAOobrN4UyQXMPfdh+yyCbteDeSyX9kNeb1JUJCUUZO23EI7OQlh+Icasn8SGTi8Sa+olHK0CTu0kMbSeUkwk5NnM9E/vj/ZN7LK8K6u3BUMSvd9p7TPQ26Y+l+E/65yl+4BjEUmW/VaRZMQK5RKGHzDg1Q6xEa/8JIj7Pq+vvdZU9N6HBbxniqT55pKXASJYeo59bAbQk3d0CoukLcsMbwQ1vDe7F9+bPt1KaaM78tZFwstsNVQXFYawi/VD78fttSttZUwdo4B9JsyHpC/ZNtX/6T5K+pqh23SDIknzlRUUC6ZfPCjlyq8H8btDkUotf+RVApUOGelW3CaCZRTf14pE9S8w2iDFRKLfTwkA5kjl6FsVScIeoz9Wz2xXP+XtqSY5c4wpRWL6WG+b+lyG/6xzxtor+25IJFdCrvxbAbzDEgniY3HIr5+oXQJ5I840VxUJ/3qG7bfV17MxnmUsIln4RUvXvgTwEO/pKVyuSMSKqztZOJUEGHtOc+qtisS0mdti2luFZsNMpdi4aTYZZI6RH2Q6pm+Ef1XbpG/VmYS2Q3CMYmcS0WdcL9p/tUiMObfRwzPD43YA68fy8++ex1OqyqEIeiISluawgzOeSZZPIzg6DaC2LlK0q4pk+LtIzx5g6nT0KYQVed4wRTKL56X66wiGZyNY+oG1wXPRB9GEkRTJJAWQl3W1lZM5aUedNZ1IZHvWjyFQQd4kGrbgAdsUXSLAFLwf7dlUsWaNkWefiQxSeVWxL9rWGEvzycRP/NJtpX0m/EjeE8cioi9g/+R5bcwCIhniOePhMzxos8DEaw4FwA7v6suRmQ6d42G9pn212unLdEiKalqRwDhCYWgfDv4IrDtJ5ecAlr6XZyb2Va1PP8VRkTgcd4jzV2InqPM/Pt4A1jNJEicSxx0BV/0ffVjph9D7J4KXXR8esPRrw7+5f1txInHcLyLY3vVgXv6P1wz+rLwI4OW/2kH+unEicTiuBycShyMHJxKHIxOA/wHUqIVoybIKyAAAAABJRU5ErkJggg==" InformativeScreenshot="cc2a27af668adf3be716d2b39a2d2612.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Instagram' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
               </uix:NCheckState.Target>
             </uix:NCheckState>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="2742,304" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-              <ui:CommentOut.Body>
-                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,225" sap2010:WorkflowViewState.IdRef="Sequence_46">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Instat Data Collection.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="Instagram_profile_loader.xaml">
-                    <ui:InvokeWorkflowFile.Arguments>
-                      <scg:Dictionary x:TypeArguments="x:String, Argument" />
-                    </ui:InvokeWorkflowFile.Arguments>
-                  </ui:InvokeWorkflowFile>
-                </Sequence>
-              </ui:CommentOut.Body>
-            </ui:CommentOut>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
