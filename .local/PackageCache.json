@@ -89,6 +89,18 @@
     },
     {
       "Package": {
+        "Id": "UiPath.Python.Activities",
+        "Version": "1.6.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\Admin\\.nuget\\packages\\uipath.python.activities\\1.6.0\\lib/net5.0-windows7.0/UiPath.Python.Activities.Design.dll",
+        "C:\\Users\\Admin\\.nuget\\packages\\uipath.python.activities\\1.6.0\\lib/net5.0-windows7.0/UiPath.Python.Activities.dll",
+        "C:\\Users\\Admin\\.nuget\\packages\\uipath.python.activities\\1.6.0\\lib/net5.0-windows7.0/UiPath.Python.dll"
+      ],
+      "Path": "C:\\Users\\Admin\\.nuget\\packages\\uipath.python.activities\\1.6.0"
+    },
+    {
+      "Package": {
         "Id": "UiPath.System.Activities",
         "Version": "22.10.4"
       },
@@ -227,18 +239,6 @@
         "C:\\Users\\Admin\\.nuget\\packages\\uipath.vision\\3.6.0\\lib/net6.0-windows7.0/UiPath.Vision.dll"
       ],
       "Path": "C:\\Users\\Admin\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.4"
-    },
-    {
-      "Package": {
-        "Id": "UiPath.Python.Activities",
-        "Version": "1.6.0"
-      },
-      "Assemblies": [
-        "C:\\Users\\Admin\\.nuget\\packages\\uipath.python.activities\\1.6.0\\lib/net5.0-windows7.0/UiPath.Python.Activities.Design.dll",
-        "C:\\Users\\Admin\\.nuget\\packages\\uipath.python.activities\\1.6.0\\lib/net5.0-windows7.0/UiPath.Python.Activities.dll",
-        "C:\\Users\\Admin\\.nuget\\packages\\uipath.python.activities\\1.6.0\\lib/net5.0-windows7.0/UiPath.Python.dll"
-      ],
-      "Path": "C:\\Users\\Admin\\.nuget\\packages\\uipath.python.activities\\1.6.0"
     }
   ],
   "Conflicts": [],
