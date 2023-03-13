@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1207,4279</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1000,4279</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Post_data_extraction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="86">
@@ -280,13 +280,13 @@
                         </Sequence>
                       </ui:CommentOut.Body>
                     </ui:CommentOut>
-                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Likes_string_cleaner - cleans raw like string" sap:VirtualizedContainerService.HintSize="436,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Likes_string_cleaner.xaml">
+                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Likes_string_cleaner.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="436,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Reusable_modules\String_cleaners\Likes_string_cleaner.xaml">
                       <ui:InvokeWorkflowFile.Arguments>
                         <InArgument x:TypeArguments="x:String" x:Key="Inputrawlikestring">[mainCommentslr]</InArgument>
                         <OutArgument x:TypeArguments="x:Int32" x:Key="Outputlikecount">[mainCommentsl]</OutArgument>
                       </ui:InvokeWorkflowFile.Arguments>
                     </ui:InvokeWorkflowFile>
-                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Subcommentcount_string_cleaner - cleans raw subcomment-count string" sap:VirtualizedContainerService.HintSize="436,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Subcommentcount_string_cleaner.xaml">
+                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Subcommentcount_string_cleaner.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="436,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Reusable_modules\String_cleaners\Subcommentcount_string_cleaner.xaml">
                       <ui:InvokeWorkflowFile.Arguments>
                         <InArgument x:TypeArguments="x:String" x:Key="Inputrawsubcommentcountstring">[mainCommentsscr]</InArgument>
                         <OutArgument x:TypeArguments="x:Int32" x:Key="Outputsubcommentcount">[mainCommentssc]</OutArgument>
