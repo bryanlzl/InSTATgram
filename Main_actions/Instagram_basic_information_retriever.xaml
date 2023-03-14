@@ -1,0 +1,206 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Instagram_basic_information_extraction" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1184,2309" sap2010:WorkflowViewState.IdRef="Instagram_basic_information_extraction_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="47">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Python.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Instagram_basic_information_extraction" sap:VirtualizedContainerService.HintSize="654,2244" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Instagram_basic_information_extraction" sap:VirtualizedContainerService.HintSize="592,2133" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="91cefbd8-d20a-4ee0-a220-cc3764d0e803" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Take username, follower count, following count, post count, reel count and account type" sap:VirtualizedContainerService.HintSize="558,1875" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="userName" />
+              <Variable x:TypeArguments="x:String" Name="followerCountstr" />
+              <Variable x:TypeArguments="x:Int32" Name="followerCount" />
+              <Variable x:TypeArguments="x:String" Name="followingCountstr" />
+              <Variable x:TypeArguments="x:Int32" Name="followingCount" />
+              <Variable x:TypeArguments="x:String" Name="postCountstr" />
+              <Variable x:TypeArguments="x:Int32" Name="postCount" />
+              <Variable x:TypeArguments="x:String" Name="reelCountstr" />
+              <Variable x:TypeArguments="x:Int32" Name="reelCount" />
+              <Variable x:TypeArguments="x:String" Name="accountType" />
+              <Variable x:TypeArguments="ui:UiElement" Name="followerCountuielement" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="Get profile username" sap:VirtualizedContainerService.HintSize="496,273" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NGetText ContinueOnError="True" DelayAfter="0" DelayBefore="0" DisplayName="Get username string" sap:VirtualizedContainerService.HintSize="338,158" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="91cefbd8-d20a-4ee0-a220-cc3764d0e803" TextString="[userName]" Timeout="1" Version="V3">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.instagram.com/theshaderoom/" DesignTimeRectangle="929, 261, 65, 27" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'136,135'" FullSelectorArgument="&lt;webctrl tag='H2' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;main&amp;gt;div&amp;gt;header&amp;gt;section&amp;gt;div&amp;gt;a&amp;gt;h2' /&gt;" Guid="9117192f-438a-45af-a207-9be492223bb9" ImageBase64="" InformativeScreenshot="5c21cffec84059ccb419bac30b72549c.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*• Instagram photos and videos' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                </uix:NGetText.Target>
+              </uix:NGetText>
+            </Sequence>
+            <Sequence DisplayName="Get follower count" sap:VirtualizedContainerService.HintSize="496,575" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:WaitUiElementAppear WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find follower count UI Element" FoundElement="[followerCountuielement]" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_1">
+                <ui:WaitUiElementAppear.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e94d7e0e-ec6b-4d01-8c2d-1d03fb0f6115" InformativeScreenshot="32a4d8a6983954a67f5d528ef249df00" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;main&amp;gt;div&amp;gt;header&amp;gt;section&amp;gt;ul&amp;gt;li&amp;gt;a&amp;gt;div&amp;gt;span' parentid='*' tag='SPAN' uipath-html-title='*' /&gt;" TimeoutMS="300" WaitForReady="COMPLETE" />
+                </ui:WaitUiElementAppear.Target>
+              </ui:WaitUiElementAppear>
+              <uix:NGetAttribute Attribute="uipath-html-title" DelayAfter="0" DelayBefore="0" DisplayName="Get follower count string (uipath-html-title)" sap:VirtualizedContainerService.HintSize="434,190" sap2010:WorkflowViewState.IdRef="NGetAttribute_1" InUiElement="[followerCountuielement]" Timeout="1" Version="V3">
+                <uix:NGetAttribute.Result>
+                  <OutArgument x:TypeArguments="x:String">[followerCountstr]</OutArgument>
+                </uix:NGetAttribute.Result>
+              </uix:NGetAttribute>
+              <Assign DisplayName="Convert raw follower count (String to Int32)" sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_2">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Int32">[followerCount]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Int32">[Convert.ToInt32(followerCountstr.replace(",",""))]</InArgument>
+                </Assign.Value>
+              </Assign>
+            </Sequence>
+            <Sequence DisplayName="Get following count" sap:VirtualizedContainerService.HintSize="496,396" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NGetText ContinueOnError="True" DelayAfter="0" DelayBefore="0" DisplayName="Get raw following count string" sap:VirtualizedContainerService.HintSize="434,158" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="91cefbd8-d20a-4ee0-a220-cc3764d0e803" TextString="[followingCountstr]" Timeout="1" Version="V3">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.instagram.com/theshaderoom/" DesignTimeRectangle="929, 261, 65, 27" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'136,135'" FullSelectorArgument="&lt;webctrl aaname=' following' tag='DIV' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;main&amp;gt;div&amp;gt;header&amp;gt;section&amp;gt;ul&amp;gt;li&amp;gt;a&amp;gt;div' innertext='*following*' /&gt;" Guid="9117192f-438a-45af-a207-9be492223bb9" ImageBase64="" InformativeScreenshot="5c21cffec84059ccb419bac30b72549c.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*• Instagram photos and videos' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <Assign DisplayName="Convert raw following count (String to Int32)" sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_3">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Int32">[followingCount]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Int32">[Convert.ToInt32(followerCountstr.replace(",","").replace(" ","").replace("following",""))]</InArgument>
+                </Assign.Value>
+              </Assign>
+            </Sequence>
+            <Sequence DisplayName="Get post count" sap:VirtualizedContainerService.HintSize="496,396" sap2010:WorkflowViewState.IdRef="Sequence_7">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NGetText ContinueOnError="True" DelayAfter="0" DelayBefore="0" DisplayName="Get raw post count string" sap:VirtualizedContainerService.HintSize="434,158" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="91cefbd8-d20a-4ee0-a220-cc3764d0e803" TextString="[postCountstr]" Timeout="1" Version="V3">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.instagram.com/theshaderoom/" DesignTimeRectangle="929, 261, 65, 27" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'136,135'" FullSelectorArgument="&lt;webctrl aaname='*post*' tag='DIV' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;main&amp;gt;div&amp;gt;header&amp;gt;section&amp;gt;ul&amp;gt;li&amp;gt;div' visibleinnertext='*post*' /&gt;" Guid="9117192f-438a-45af-a207-9be492223bb9" ImageBase64="" InformativeScreenshot="5c21cffec84059ccb419bac30b72549c.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*• Instagram photos and videos' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <Assign DisplayName="Convert raw post count (String to Int32)" sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_4">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Int32">[postCount]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Int32">[Convert.ToInt32(postCountstr.replace(" ","").replace("post","").replace("s","").replace(",",""))]</InArgument>
+                </Assign.Value>
+              </Assign>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAABWuSURBVGhDvVoHXFRX3r10sYAI0kVQ7MbElpiYGF03arKJ0SSauLFFjcZOE7tiibj2FQt2ESsW7BobUbF3xYagIL3XgWFm3j3feTOD2U0232Y3u3t/OT9m3nvcd86/X4z4PaufgNVwh5J6I23zm4+yz/1ijF3O4vF2mT8E2KQlhVinlk6xTpEzrVLkfKvnJYssnyeusHhxPNLyxcIokdI3WjxvdlSkOsVwD/N2/7s1VLyoMdqhotPoOqXTxtQqPja2Zn7WOPtcw0S7TATbpmGyTSpmWL/AXOtkhFslY6lVElZZJmE9sdUiCTstkg37LZLTj4jkw6dE8uQ4kdwhQSTYmrf/764A56oW4+pWRo111KSPq1Oim1irAIH2uQixz8IUuzTMsEnBHJvnCLdOwhKrRKy0eopIy6fYQmy3eIoYi0QcJI4Rp0UizonEqniR+PKKeLLxjnjUxPya/+wKE7AMdYHnRGdlxgQnXfHEuhUIdChFcJ0ihNbKwzSSn1kjHXNtUxBuk4wl1irxJyT+GJstH5H4IxJ/ROKPcUw8JvEniCMuEiSOG7xG8rgvHhY8Fg9CEsR1dwhYmF//+5ZKPtgVPYNd5OkgZ70uxEmL0LrlmOJQjOm18zG7Vjbm2adjoV0KltomY6UNLW79CJutErDd8gGJ3yfx+zhOnBYP8KNIQDxxVTzETeIucZ/fH/LeE3EfieJeVbK4czxN3Oj6u0WMFLAJra+Mm1JfyZ7sopdT6lVhmpMGMx1LEeZQiPl1crCwZgaW2qdipV0SIm2fYIvNQ2y3vo+9lndxyPIOTljcxhnigrhNa9+lte/itriHe0QC8Zh4ymvPiOfiDl6IW3gpbipp4lpmhrg8PE7EWZvp/GsrxC271jQ3Zep0V6V8hqsBM12qEOZcgblOpfjesRCLHHKxvHYmImqmYn2NJGyxe4wdNg+wz/oODlvdxEnLG4izuIZ44hpxS1wn6Ru09E1a+hYtfQvJhEo41UQatDoy+FymuIIscQm5Ir4kV8RNTBMx9mZav22plp/jpp8a5mYomuOqx9z6VZjvUoEF9UqxqG4hljnmIqJOJtbVTsXmmknYUeMJ9trdx2Gb2/jB+jrirK4g3vISrlvE4w7xQMTT0pdJ+jJJX0GKuErC15BOZBCZRBavZfNerok48sR55Is4FIqzuUXi5ESImN9WbtWYX+ihTAz3UMoXuOkR7lqFhfU1WOxcimX1irDSKRdrHTOw2fElYhq+wOn3U3ClXwpuD36BhOHJSByVhOTRz5A6OhHp3z1F5neJyBmViDwif0QiCoYkovCrpyj85BEKO95DvtM15FtcQgFJF4iLJHyeMBJHkTiFYnECJeJoSZE4MOyf5oRKPsIDPZd7KNnLPPRY5qbFclcNVriWIsK5EGudcxHdNAtxw/ORca4C+nIF0iDx7y71d2WpAbpjBdD0e4hSl4ske4Y4RZxEqThGHCZiUSb2ppeJHV3+XxFR3vDa5Kk/u95DJyM9tFjrVo5I1xKsq1+ITfVzcbx3AYlXwqD9JWkpSaYayj8Gb/6Eny2pMcBwOBeVb1+BxuIYNCSuIXGN2EfsQbnYoWjEtqMQ21zNdH+59nrqZ+/y0um2e1Qi2qMc29xLsM21ANGuOTjdJx8lSXrz6/hCWq/8fjlyN2Uic9YzZAUkIGf0XeSPvInCETdQMuw6ygZdg2bQdVR8cxNaouqbW9B9eweGcfdhmPoIyvoUyPulQLUXVW0JpdC9fR5VJK4lca3YhUoRjQqxhdhYVSEig8x0/36dc69qddK7quSYpwaHPMtwwKMI+93zsc8tG0dbZSInrtL0Dr6s9HoZEvo8xHWn87hT+xQe1TyKZ/YHkFojBpm2O5Fjux2FNttRYrUd5VY7UGG5E1qL3dCRkF7sJfbBYMR+KDaxUD65BNwsNAlR/zuUDr3zPj4fTWyhmE0Usp5C1hArcyvFYj8zbdN64Ysa1zzLt8d7leG8ZzHOehbglEcuTrpn4oT7S9wbnwfFHDal10pxt/Mt3HCKwz3HE3hc5yCSa8fgZa0dyLKPQp79ZhTZbUKp7UZU2GyE1mozdJZbYbCIgkJCitgOKXZAWu6CbHAIssVxSNvdkG2PU0S+8R0o10P57BwFbqTYdcRaioggVlDIEmJhZIII+2l2euZV0inBqyjjrlcBbnrl4apnFuI903DB4wUueD1DUbzGuK9q/Sef3cUtl9O4X+8InjjtQ7LjTqQ5bEV27Q3IrxWJ4pqrUW6/CpV2q6CzXQ2DzRpIq0hiPUlvJPlNxBbIDkeB2wVASjkw7x6kTRTQ5wyg5or6rkMML4s1FBxBISsoYim9sYgiFlDA/BSdCHvDSF7tdC+9cmcke+fonnpl4qFXGu55sSyS+E3Px7jdmrFaoRg31dwrxj2PE0ioH4unzrvwvF4UXjqtR3bd1ch3+CtK6ixDeW1ayGEZ9O4RUHxI3HsdpDN/UpC0Wk0RFCT4PSLBuKdxvWAe+NMjduuBp8WmawVayDp8nsQVEjeIcIqYTxFzKGKWVitmBkH0sxKlXunOOZ4vT2Z4pyDVOxnJ3ol46v0Ij7zY6r1uIql3gqmCcOVvSMIjtz1IdI3C8/rrkeayClnOy5Bf7y8odloAjetCVPXYBsP3FyBjn0BefAl5gdjLz7MuQXYmyRorKeKvkEEXgCqDcV9cyQTcNpDsX4GtD03X9CzRrVVvLSDmU8RciphNATMoYCoxORYirK7I90hsUeT1JCePpLO97yOtwR2kNLhOIeycDeKQ8e1d04ZcuXNuIMlzA17QumnuS5DlFo5817korj8b5Q3nQb/0R8hMWpMv/8VSr70shZx9EdJhOaRLBOSEM5CLrpMoQ8piMUBLIyze9LxaartF89ocCphNzKCAafTCFIoIpYCQlBIR6C/KGtz4qtz7pqG4wVXkN4hHjs+PyPA5jZc+x5DiE4u84Ovm/STyJp9BivcipHnNR5bnbOR5TEOReyjK/GdAH33tVfwayeZRyPM8gomZxzivFqVadiVJOyyiJ74nMRNgxDwg+LSJPCE/ZbKTuBTTiSn0wmQKmEQEU0CQXisCewmt99mVFQ3OoMznJIobHkFBw1jk+u5Glm800n03onAGXc2lhlF+wH5kNJyGLJ9JyPMJRKH3eJQ2mghdxCmWQDPB3BIS/IEvZ5i8Tuu1mQfZW43584xrUzEwiph1FtKe9y1V66qYZcI4Jre50cmvGHIkbcIkCgimF4IoIJBeCJBVIiBM6BvEnK9quAcVvjtQ5rcVxX4bUNBoNXIbL0d244UomU9y6mYUUDQxCtmNxiKv0SgU+I1Aie8wVPRfCJldZHwGecWQQxnjvqMh3b+DdB3DUBkHWW8iv4dCfrMNKDSLSC2CfJuJbT2VIgjGNWhljIl9JQCDVAHBZgRRQBAFBFBAAD0wkZhwUEjfyJd6v9XQNloBTePFKPVfgOImYShoMh15TRke4YeMe0lFQUngWl4bhIKmX6OkyQCUNf8zrb/fZH29AXLVQUj/oazvg1l9voH0HEHiIymEglzG8nsQ5Jo40/M6Pj/zGL0wiSJI0NJEFN/G/OSBwTt5LdCMAAowQRVBDxBBD4T0m19paBwGXZMZqGw6GeXNglHafAKKW4xGYYsR0CzabdqMAkoDlqCwVV8Ut+yDspafouLNATCcumy8j3xa9M8zIRv3g2z0Fb3wNaTPIAqhIM/hFPIthYyC7L+SocSc4JK7b/BaCMvnBPYBwpIYseunXBq8nV6h94wIMIsINIdRMAUE5wnpH6QoTSdA32wMqlqORGWrYdC0HoTS1wagpE0/VCzdYtxLFVAexIrzeg+Uvv4Bytt8AG3X/lBuPTDeR0oG5B9o9eafQjb9jJ6gkMZfUsifzUKGUAjvd57OamTquPLsI8iGFFCTHqpB2DDkRpL0KwFqFaKoVwLUMAom1EQOJaZqhGz+jSJbDoKh9QDoSVj7el9UvNEbmnYfoqx9D2iXRxr3UgVoQqej9M13Ud7xXVQSVT16Q7lzz3gfqRTQcyCT9kOWxY8hW/ammL6QTb6gmP6QfgMohF7pEgqksTpxyXPsMf4k58BQq00P2RPfMU9eCeBnMd4sgOEnKJYJrbCcKqxOiphdLmSrzytlm0+hvPExDO16QdeBlu3YDRVvdYGmU2dUrYww7qUKqJweCk3n9qggtJ07QtfjD1Dizhnvo6CQ1qOVOnSHbNeDFYhCXqOQVhTSgkKamoUMCWcilxl/Re5jc/NjjtRjmDnSO7UZamO2/jRODNlGwqoANQdU8lMItayGEfOJ8FyBtr1eynZ/5Iu7QSFp/dudoXunE7TvdkBFl3bQrV5q2owCtHNDUNGtNSq7tkZVtzbQd28PGcX2b2BHJeS2aMj3KaBTN8iO3JMelG0ppA2FtKaQNyhgK8tkdRKHs8p402uuhDPDrC6FjGfIVifxUFWAGkJqgqullDnGjkzixBJiBZO443s/yrfeYUl7CwpJG7q0ha5rG1T9oTW03VtAt3aBaTMKqAoPQGUvf1T1agp9z2Yw9GwJJXgwEzjH+AwK6YXpfNEfKaBzF+7Jn2+pxulJUcyNSX8BSkzWR3oOewWf9WGueDHp3ZkrLhQSwqGuWsA3NIgVrW/BEmy0vEqeZVuwkwt1Too8KJROHVbKzm0Zm22g0LKG7s2h79EUul6NUfWhH/RrZpo2kwp0y1h7e/tA17sh9L0bcY7359jbGjKGeaJ6QV2FBawufHEQXf8VLd6fsT+BpXLnAaCY3VldasldQeu2+pyJzvDyZXh5M+E9KGIq4/5VGd3KCkXrW00jWXWkUMmvINYSmyVEFE/BXVp/Kbs1N8juTaD0aAzDh74wfOxDgl7Q9fWAPiLAuJm6qX5dCPT93QkPKP28CR8oX/hBDnoD8pRa/swiVDFFPKBkpBMZ/MxGVy1QDbUd++mdPgyrPzE/GFpNKMKPInzoibk7TAII+RXH75q0vh07tJU61KmWV8lzdhK79BAxvQR6+DZXevhmKx82gPKxFwx93GH4rD4M/Vyg/7IelGUDTS/mUnbOhGGwE5TBzoQrLeQBOdAL8uuGkMPoidhVTOYskvzp6PlqqddysiA3cOrszrx4k6GlJnubj1ixPmGSU0QjemwFG6O6VAG9GSaO7NK1aH27xaZx3GKzSp44kAJxyF+gr5ez/Nj9pPJpfSifk1j/ulAGOMIwsDbJ1oIyvyuZm+YceYYHjJG1WW0cCCfCGfJbChnhSQHe/NwEch4tuZ+WusqT1iMObQ+Jiycgozk2BLDS9GJudHsX8r336QUmfAeKeIMi1CRvzt+N5cykLjXMunDgc+Yg58iBrxZDx47ieUQleeIYx+m4ugJdhbXyudN0Q786OmUACQ+0hzLUDnK4LQlaM6ncOLdXzy+3IQNrQU6sQag/KWQ8hYxzgRzrBjma3hjlQ/jzO8Nq3Nssi52ZjJ2YC+0g+xAfd6SIt5jovP4+RXSmiLeY5O1Yqdr3Z0Pk2UBdxRrIZox9Nw56zhTiSOvXYk7Y7qWIo1pFnOKBBpbGUxm+tO+kfG2boQwh4eGWJG7BFwsmHxHI78/MtZ4xLjfQYlP43GQbwp6gkEmOFEpvBNWnlRlWE+iNMQyrUY3oHXplaDOGWkvG9GuQn7/O6sPy+xFF9KCIbhTxrlp66YUQ9ojqHnCax0w/Jr83w8dtKUXwZOfI83RNzlu2Jxk+p0xHSnVhqKiBYWKbHEnC1cSDiEnEFGLfILrU9FcJpF7mQEYicygszIqgp2bX5GBWB3JGXchpFDKZ3gihkMAG9BCFjKYQNbyGNme+tIL8kiI+ozc+oYieFNGd5XbEWB4nk0zv0PA4OZ7h0oQJ7MvS6c2QdOPprN4edm32kZpn10DctDHTNy2MEi3lOFEsA83EpxIzCRYquYxhlPwDd6Z11EqTcY2lk4m4hF74C4UspEfCGVbf0xtzGVZhDKtZDKtpblBCmR9GIb4cExhaw+mNIfTGgDaQX1DEZ8yHORylExNNuaZWoDiG6nu0fksK8Od5wpdnCy9WHtd99MSJXNSN8zXT/vuFQDFLThY6OcNMfD4RTixmSO15nzX+iUmEuiSF5N2HfMBSd4kd8hwbzmnO/ic5Nh8ljvDzIXbRAxwv9nGO2cN6vpsVZRdL4m4m5QEm9Y8HORc9f1UkjOSf8ww9nGHTnueJNhTQgiODP88YDRn/XrFa1P9hgpnuLxdChSetflrOE9JEnFhOrCTW0NKHuvCFxxlOFaYX/t3iy831m237V2C+/4+WliF69Qo9xe78Poe+Thy929ELr9EDzSnAP0qRDfcdgduBX//TIsKEpX6e6CEXiWy5jKQjVOLEOmIjsYXYw0S9wIaToQphZ1U98e8uNRwreNC/fR5y6XQogziGf8Se0J37v8fJtBO91pYCWjOEmkelw2/Xe//0L9SqCGW5GCtXiXIj8U3EVmI7sZPYTewhYhhWBxnrZzpAxrOjXuEocI0D2TUOZFdY7y8T8ZwuL5BIHK15hrO+Gl5H+HMvv0fxuWUcx0OYyCM4ygxkqe3XlRWK1agXG1q3YaxODMs3GU5tV5QYWm0c8pv/yQkjhY0SKSbT4gUymmR3qYSJ/USsGQeJQ2aon1Wo1w8QewlV6E6K3MYE38S+so49JsIBylJ293A2vzD2jKlM7MCmUEa/BmVYByhfv8fEZk/4hJ7oyQNQV85T78zIVdovGg8RZqr5v3VhnaipbBehJF5mJK4SPEwcJY4TJ34G9ZoK9b76nPq8+nuqp3ZQRBRFbGC5Xc0qtZylNpylNozjy5TG7B0toHxHLwxl4xvQnQMiu/KfmAcffFeCrqHj0DWshpnWv7YowkY5wHA6zJw4zsQ+SUKniDNmnP0Z1GuniR8IVZQqplrIbvaMaIrYxFK7lo1vOcvsQg6FYQ2hTGaPmMjeMqojlCFsbF9+pMi+/dPRa9hQ9Ov3+/4lX80JHBMfkPgpktTJOJL5kTj/K1DvnSNUMapYVcgRASWWnoihJ7abRazhzLWM89f3DKWZHM1D6IWxbaEMf6dKDvzjUXzxKRNW/L5/Zq1ePJhaaE4JT+WcmCYviCIZT1KXfgXqvQuEKkYVqwpRPXeMOMhSHGMDJZojyIY6zIl6kIvcoczhWD61KfOhTZ4y6s0gDOju9h8j//OFy6K5ckVskVdFGqGT10isGleJK8RlQhVzkVA9ooaXGlaqiFiK2G0LZWtNKJEcPZa7VMlwr1Rlpt86bWBjf/Nr/rsLz4Qdbog3letiqrwpjhAZhEHeIMHrRLWYvxWhhpUq4ghDaZ+1Qe6okSY31jmorHSahHCP9ghr+b/5nz3+diFGWNEj9SimGe6KvrgtwuVtcYxCnlBIIb1hoAgDw6qAIfWY4XREOS6+x37RW7vbrinWODqpe5i3+zeWEP8HdH4Pw+DjwfgAAAAASUVORK5CYII=" InformativeScreenshot="d2d12293eb337e4d4f1a4d2abd15ad0a.jpg" Selector="&lt;html app='msedge.exe' title='*• Instagram photos and videos' /&gt;" Url="https://www.instagram.com/*" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
