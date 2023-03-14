@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1207,1316</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>822.4,1321.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Likes_string_cleaner_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -37,6 +37,7 @@
       <x:String>System.Reflection</x:String>
       <x:String>System.Runtime.Serialization</x:String>
       <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Xml.Serialization</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -82,9 +83,12 @@
       <AssemblyReference>System.Linq</AssemblyReference>
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Private.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Likes_string_cleaner" sap:VirtualizedContainerService.HintSize="734,1251" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Likes_string_cleaner" sap:VirtualizedContainerService.HintSize="733.6,1256.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="mainCommentslr" />
     </Sequence.Variables>
@@ -93,7 +97,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign DisplayName="Assign input from Post_data_extraction workflow" sap:VirtualizedContainerService.HintSize="672,81" sap2010:WorkflowViewState.IdRef="Assign_6">
+    <Assign DisplayName="Assign input from Post_data_extraction workflow" sap:VirtualizedContainerService.HintSize="671.2,80.8" sap2010:WorkflowViewState.IdRef="Assign_6">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[mainCommentslr]</OutArgument>
       </Assign.To>
@@ -101,13 +105,13 @@
         <InArgument x:TypeArguments="x:String">[Inputrawlikestring.Replace(" ","").Replace(",","")]</InArgument>
       </Assign.Value>
     </Assign>
-    <If Condition="[mainCommentslr.Contains(&quot;like&quot;)]" DisplayName="Comment string cleaning (number of likes) (mainCommentslr)" sap:VirtualizedContainerService.HintSize="672,1019" sap2010:WorkflowViewState.IdRef="If_1">
+    <If Condition="[mainCommentslr.Contains(&quot;like&quot;)]" DisplayName="Comment string cleaning (number of likes) (mainCommentslr)" sap:VirtualizedContainerService.HintSize="671.2,1024" sap2010:WorkflowViewState.IdRef="If_1">
       <If.Then>
-        <Sequence DisplayName="If comments has likes" sap:VirtualizedContainerService.HintSize="594,650" sap2010:WorkflowViewState.IdRef="Sequence_3">
+        <Sequence DisplayName="If comments has likes" sap:VirtualizedContainerService.HintSize="593.6,652" sap2010:WorkflowViewState.IdRef="Sequence_3">
           <Sequence.Variables>
             <Variable x:TypeArguments="s:String[]" Name="subStringremoval">
               <Variable.Default>
-                <VisualBasicValue x:TypeArguments="s:String[]" ExpressionText="{}{&quot;SeeOriginal&quot;, &quot;Seetranslation&quot;,&quot;likesReply&quot;,&quot;likeReply&quot;, &quot;SeeTranslation&quot;}" />
+                <VisualBasicValue x:TypeArguments="s:String[]" ExpressionText="{}{&quot;SeeOriginal&quot;, &quot;Seetranslation&quot;,&quot;likesReply&quot;,&quot;likeReply&quot;, &quot;SeeTranslation&quot;, &quot;Commentoptions&quot;}" />
               </Variable.Default>
             </Variable>
             <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="mainCommentslrawnumerable" />
@@ -117,19 +121,19 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="Raw likes string cleaning" sap:VirtualizedContainerService.HintSize="532,317" sap2010:WorkflowViewState.IdRef="ForEach`1_1" MaxIterations="{x:Null}" Values="[subStringremoval]">
+          <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="Raw likes string cleaning" sap:VirtualizedContainerService.HintSize="531.2,318.4" sap2010:WorkflowViewState.IdRef="ForEach`1_1" MaxIterations="{x:Null}" Values="[subStringremoval]">
             <ui:ForEach.Body>
               <ActivityAction x:TypeArguments="x:String">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:String" Name="subString" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,193.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Assign DisplayName="Removing substring from raw likes data" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+                  <Assign DisplayName="Removing substring from raw likes data" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_1">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[mainCommentslr]</OutArgument>
                     </Assign.To>
@@ -141,8 +145,8 @@
               </ActivityAction>
             </ui:ForEach.Body>
           </ui:ForEach>
-          <ui:Matches BuilderPattern="\d+|\D+" DisplayName="Remove alphabet between two numbers (i.e. 25w923 = 923)" sap:VirtualizedContainerService.HintSize="532,60" sap2010:WorkflowViewState.IdRef="Matches_1" Input="[mainCommentslr]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;\\d+|\\D+&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="\d+|\D+" RegexOption="IgnoreCase, Compiled" Result="[mainCommentslrawnumerable]" />
-          <Assign DisplayName="Assign &amp; Convert numerical string to int" sap:VirtualizedContainerService.HintSize="532,82" sap2010:WorkflowViewState.IdRef="Assign_4">
+          <ui:Matches BuilderPattern="\d+|\D+" DisplayName="Remove alphabet between two numbers (i.e. 25w923 = 923)" sap:VirtualizedContainerService.HintSize="531.2,60" sap2010:WorkflowViewState.IdRef="Matches_1" Input="[mainCommentslr]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;\\d+|\\D+&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="\d+|\D+" RegexOption="IgnoreCase, Compiled" Result="[mainCommentslrawnumerable]" />
+          <Assign DisplayName="Assign &amp; Convert numerical string to int" sap:VirtualizedContainerService.HintSize="531.2,81.6" sap2010:WorkflowViewState.IdRef="Assign_4">
             <Assign.To>
               <OutArgument x:TypeArguments="x:Int32">[Outputlikecount]</OutArgument>
             </Assign.To>
@@ -153,13 +157,13 @@
         </Sequence>
       </If.Then>
       <If.Else>
-        <Sequence DisplayName="If comments has no likes" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_4">
+        <Sequence DisplayName="If comments has no likes" sap:VirtualizedContainerService.HintSize="496,193.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Assign DisplayName="Assign mainCommentsl to 0" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_5">
+          <Assign DisplayName="Assign mainCommentsl to 0" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_5">
             <Assign.To>
               <OutArgument x:TypeArguments="x:Int32">[Outputlikecount]</OutArgument>
             </Assign.To>

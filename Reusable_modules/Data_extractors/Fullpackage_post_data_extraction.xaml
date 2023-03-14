@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Fullpackage_Post_Data_Extraction" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1000,2261" sap2010:WorkflowViewState.IdRef="Fullpackage_Post_Data_Extraction_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Fullpackage_Post_Data_Extraction" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="728.8,2269.6" sap2010:WorkflowViewState.IdRef="Fullpackage_Post_Data_Extraction_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="35">
       <x:String>System.Activities</x:String>
@@ -94,19 +94,19 @@
       <AssemblyReference>System.Collections</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Fullpackage_Post_Data_Extraction" sap:VirtualizedContainerService.HintSize="739,2196" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Fullpackage_Post_Data_Extraction" sap:VirtualizedContainerService.HintSize="739.2,2204.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Extracts everything (comments &amp; likes) from a post" sap:VirtualizedContainerService.HintSize="677,2085" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="91cefbd8-d20a-4ee0-a220-cc3764d0e803" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Extracts everything (comments &amp; likes) from a post" sap:VirtualizedContainerService.HintSize="676.8,2092.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="91cefbd8-d20a-4ee0-a220-cc3764d0e803" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="643,1868" sap2010:WorkflowViewState.IdRef="Sequence_11">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="643.2,1876" sap2010:WorkflowViewState.IdRef="Sequence_11">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Int32" Name="postCountint" />
               <Variable x:TypeArguments="x:String" Name="postUrl" />
@@ -116,13 +116,13 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NGetText DelayAfter="0.01" DelayBefore="0.01" DisplayName="Get Text 'https://www.instagram.c…'" sap:VirtualizedContainerService.HintSize="581,157" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="91cefbd8-d20a-4ee0-a220-cc3764d0e803" TextString="[postUrl]" Timeout="1" Version="V3">
+            <uix:NGetText DelayAfter="0.01" DelayBefore="0.01" DisplayName="Get Text 'https://www.instagram.c…'" sap:VirtualizedContainerService.HintSize="580.8,157.6" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="91cefbd8-d20a-4ee0-a220-cc3764d0e803" TextString="[postUrl]" Timeout="1" Version="V3">
               <uix:NGetText.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="300, 56, 1238, 33" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'https://www.instagram.c…'" FullSelectorArgument="&lt;ctrl name='*• Instagram photos and videos*' role='pane' /&gt;&lt;ctrl name='App bar' role='tool bar' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" Guid="b3d71fdf-684d-4971-86a2-3acabb0e8336" ImageBase64="" InformativeScreenshot="7856199db4f2b77198b592f58fa23ad3.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='* • Instagram photos and videos' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete" />
               </uix:NGetText.Target>
             </uix:NGetText>
-            <ui:LogMessage DisplayName="Console log current URL" sap:VirtualizedContainerService.HintSize="581,92" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;Data is currently being extracted from: &quot; + Environment.newline + postUrl]" />
-            <Sequence DisplayName="Load &amp; Extract all comments data from post" sap:VirtualizedContainerService.HintSize="581,1271" sap2010:WorkflowViewState.IdRef="Sequence_21">
+            <ui:LogMessage DisplayName="Console log current URL" sap:VirtualizedContainerService.HintSize="580.8,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;Data is currently being extracted from: &quot; + Environment.newline + postUrl]" />
+            <Sequence DisplayName="Load &amp; Extract all comments data from post" sap:VirtualizedContainerService.HintSize="580.8,1277.6" sap2010:WorkflowViewState.IdRef="Sequence_21">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="anyCommentsstr" />
               </Sequence.Variables>
@@ -131,35 +131,35 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NGetText ContinueOnError="True" DelayAfter="0" DelayBefore="0" DisplayName="Get Text 'No comments yet.' (if any)" sap:VirtualizedContainerService.HintSize="519,157" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="91cefbd8-d20a-4ee0-a220-cc3764d0e803" TextString="[anyCommentsstr]" Timeout="0.5" Version="V3">
+              <uix:NGetText ContinueOnError="True" DelayAfter="0" DelayBefore="0" DisplayName="Get Text 'No comments yet.' (if any)" sap:VirtualizedContainerService.HintSize="518.4,157.6" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="91cefbd8-d20a-4ee0-a220-cc3764d0e803" TextString="[anyCommentsstr]" Timeout="0.5" Version="V3">
                 <uix:NGetText.Target>
                   <uix:TargetAnchorable BrowserURL="https://www.instagram.com/p/BGl37W2JSeJS0QNR3arbq1pk4KedVuly0Z-oHY0/" DesignTimeRectangle="1232, 463, 257, 26" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'No comments yet.'" FullSelectorArgument="&lt;webctrl aaname='No comments yet.' tag='SPAN' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;article&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='x1lliihq x1plvlek xryxfnj x1n2onr6 x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x133cpev x1xlr1w8 x5n08af x2b8uid x4zkp8e x41vudc x10wh9bi x1wdrske x8viiok x18hxmgj' /&gt;" Guid="1dd9410f-5d9d-432f-8c05-28ca5cd1bbd5" ImageBase64="" InformativeScreenshot="11561eee4cbd68a66883b8980e5a8511.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='* • Instagram photos and videos' /&gt;" SearchSteps="Selector" Version="V1" WaitForReadyArgument="Complete" />
                 </uix:NGetText.Target>
               </uix:NGetText>
-              <If Condition="[anyCommentsstr.IsNullorEmpty]" sap:VirtualizedContainerService.HintSize="519,959" sap2010:WorkflowViewState.IdRef="If_1">
+              <If Condition="[anyCommentsstr.IsNullorEmpty]" sap:VirtualizedContainerService.HintSize="518.4,964.8" sap2010:WorkflowViewState.IdRef="If_1">
                 <If.Then>
-                  <Sequence DisplayName="There are post captions or comments" sap:VirtualizedContainerService.HintSize="441,683" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                  <Sequence DisplayName="There are post captions or comments" sap:VirtualizedContainerService.HintSize="440.8,686.4" sap2010:WorkflowViewState.IdRef="Sequence_22">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Post_maincomment_loader.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="379,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_13" UnSafe="False" WorkflowFileName="Reusable_modules\Item_loaders\Post_maincomment_loader.xaml">
+                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Post_maincomment_loader.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="378.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_13" UnSafe="False" WorkflowFileName="Reusable_modules\Item_loaders\Post_maincomment_loader.xaml">
                       <ui:InvokeWorkflowFile.Arguments>
                         <scg:Dictionary x:TypeArguments="x:String, Argument" />
                       </ui:InvokeWorkflowFile.Arguments>
                     </ui:InvokeWorkflowFile>
-                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Post_subcomment_loader.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="379,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_14" UnSafe="False" WorkflowFileName="Reusable_modules\Item_loaders\Post_subcomment_loader.xaml">
+                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Maincomment_data_extraction.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="378.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_15" UnSafe="False" WorkflowFileName="Reusable_modules\Data_extractors\Maincomment_data_extraction.xaml">
                       <ui:InvokeWorkflowFile.Arguments>
                         <scg:Dictionary x:TypeArguments="x:String, Argument" />
                       </ui:InvokeWorkflowFile.Arguments>
                     </ui:InvokeWorkflowFile>
-                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Maincomment_data_extraction.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="379,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_15" UnSafe="False" WorkflowFileName="Reusable_modules\Data_extractors\Maincomment_data_extraction.xaml">
+                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Post_subcomment_loader.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="378.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_14" UnSafe="False" WorkflowFileName="Reusable_modules\Item_loaders\Post_subcomment_loader.xaml">
                       <ui:InvokeWorkflowFile.Arguments>
                         <scg:Dictionary x:TypeArguments="x:String, Argument" />
                       </ui:InvokeWorkflowFile.Arguments>
                     </ui:InvokeWorkflowFile>
-                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Subcomment_data_extraction.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="379,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_16" UnSafe="False" WorkflowFileName="Reusable_modules\Data_extractors\Subcomment_data_extraction.xaml">
+                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Subcomment_data_extraction.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="378.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_16" UnSafe="False" WorkflowFileName="Reusable_modules\Data_extractors\Subcomment_data_extraction.xaml">
                       <ui:InvokeWorkflowFile.Arguments>
                         <scg:Dictionary x:TypeArguments="x:String, Argument" />
                       </ui:InvokeWorkflowFile.Arguments>
