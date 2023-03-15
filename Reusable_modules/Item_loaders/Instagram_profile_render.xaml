@@ -155,7 +155,7 @@
                   </sap:WorkflowViewStateService.ViewState>
                   <uix:NCheckState DisplayName="Check App State 'SVG'" sap:VirtualizedContainerService.HintSize="1046,1799" sap2010:WorkflowViewState.IdRef="NCheckState_1" Mode="WaitDisappear" ScopeIdentifier="ea2a3574-36ac-489e-87e8-b602b181dd8d" Timeout="0.5" Version="V3">
                     <uix:NCheckState.IfExists>
-                      <Sequence DisplayName="Target disappears" sap:VirtualizedContainerService.HintSize="496,195" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                      <Sequence DisplayName="Target disappears" sap:VirtualizedContainerService.HintSize="496,197" sap2010:WorkflowViewState.IdRef="Sequence_13">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -255,7 +255,7 @@
                 </Sequence>
               </ui:InterruptibleDoWhile.Body>
             </ui:InterruptibleDoWhile>
-            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Up" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="1144,237" sap2010:WorkflowViewState.IdRef="NMouseScroll_13" InteractionMode="HardwareEvents" MovementUnits="10" Version="V3">
+            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Up" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="1144,237" sap2010:WorkflowViewState.IdRef="NMouseScroll_13" MovementUnits="10" Version="V3">
               <uix:NMouseScroll.SearchedElement>
                 <uix:SearchedElement>
                   <uix:SearchedElement.Target>
@@ -267,7 +267,7 @@
                 </uix:SearchedElement>
               </uix:NMouseScroll.SearchedElement>
             </uix:NMouseScroll>
-            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Up" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="1144,137" sap2010:WorkflowViewState.IdRef="NMouseScroll_14" InteractionMode="HardwareEvents" MovementUnits="5" Version="V3" />
+            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Up" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="1144,137" sap2010:WorkflowViewState.IdRef="NMouseScroll_14" MovementUnits="5" Version="V3" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
