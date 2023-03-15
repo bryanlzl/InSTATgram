@@ -1,6 +1,6 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Instagram_basic_information_extraction" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1184,2309" sap2010:WorkflowViewState.IdRef="Instagram_basic_information_extraction_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Instagram_basic_information_extraction" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="855,7274" sap2010:WorkflowViewState.IdRef="Instagram_basic_information_extraction_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
-    <sco:Collection x:TypeArguments="x:String">
+    <scg:List x:TypeArguments="x:String" Capacity="76">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
       <x:String>System.Activities.Expressions</x:String>
@@ -35,10 +35,16 @@
       <x:String>UiPath.Shared.Activities</x:String>
       <x:String>System.ComponentModel</x:String>
       <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
-    </sco:Collection>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+    </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="47">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="55">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>System.Private.CoreLib</AssemblyReference>
@@ -85,21 +91,29 @@
       <AssemblyReference>System.Security.Permissions</AssemblyReference>
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Instagram_basic_information_extraction" sap:VirtualizedContainerService.HintSize="654,2244" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Instagram_basic_information_extraction" sap:VirtualizedContainerService.HintSize="865,7209" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Instagram_basic_information_extraction" sap:VirtualizedContainerService.HintSize="592,2133" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="91cefbd8-d20a-4ee0-a220-cc3764d0e803" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Instagram_basic_information_extraction" sap:VirtualizedContainerService.HintSize="803,7098" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="91cefbd8-d20a-4ee0-a220-cc3764d0e803" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Take username, follower count, following count, post count, reel count and account type" sap:VirtualizedContainerService.HintSize="558,1875" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Take username, follower count, following count, post count, reel count and account type" sap:VirtualizedContainerService.HintSize="769,6881" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="userName" />
               <Variable x:TypeArguments="x:String" Name="followerCountstr" />
@@ -108,29 +122,36 @@
               <Variable x:TypeArguments="x:Int32" Name="followingCount" />
               <Variable x:TypeArguments="x:String" Name="postCountstr" />
               <Variable x:TypeArguments="x:Int32" Name="postCount" />
-              <Variable x:TypeArguments="x:String" Name="reelCountstr" />
-              <Variable x:TypeArguments="x:Int32" Name="reelCount" />
+              <Variable x:TypeArguments="x:Int32" Default="0" Name="reelCount" />
               <Variable x:TypeArguments="x:String" Name="accountType" />
               <Variable x:TypeArguments="ui:UiElement" Name="followerCountuielement" />
+              <Variable x:TypeArguments="x:String" Name="profileURL" />
+              <Variable x:TypeArguments="x:String" Name="accountTyperaw" />
+              <Variable x:TypeArguments="sd:DataTable" Name="basicInfotable" />
             </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Get profile username" sap:VirtualizedContainerService.HintSize="496,273" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <uix:NGetText DelayAfter="0.01" DelayBefore="0.01" DisplayName="Get profile URL" sap:VirtualizedContainerService.HintSize="707,157" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="91cefbd8-d20a-4ee0-a220-cc3764d0e803" TextString="[profileURL]" Timeout="1" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="300, 56, 1238, 33" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'https://www.instagram.c…'" FullSelectorArgument="&lt;ctrl name='*• Instagram photos and videos*' role='pane' /&gt;&lt;ctrl name='App bar' role='tool bar' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" Guid="b3d71fdf-684d-4971-86a2-3acabb0e8336" ImageBase64="" InformativeScreenshot="7856199db4f2b77198b592f58fa23ad3.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='* • Instagram photos and videos' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <Sequence DisplayName="Get profile username" sap:VirtualizedContainerService.HintSize="707,272" sap2010:WorkflowViewState.IdRef="Sequence_4">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NGetText ContinueOnError="True" DelayAfter="0" DelayBefore="0" DisplayName="Get username string" sap:VirtualizedContainerService.HintSize="338,158" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="91cefbd8-d20a-4ee0-a220-cc3764d0e803" TextString="[userName]" Timeout="1" Version="V3">
+              <uix:NGetText ContinueOnError="True" DelayAfter="0" DelayBefore="0" DisplayName="Get username string" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="91cefbd8-d20a-4ee0-a220-cc3764d0e803" TextString="[userName]" Timeout="1" Version="V3">
                 <uix:NGetText.Target>
-                  <uix:TargetAnchorable BrowserURL="https://www.instagram.com/theshaderoom/" DesignTimeRectangle="929, 261, 65, 27" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'136,135'" FullSelectorArgument="&lt;webctrl tag='H2' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;main&amp;gt;div&amp;gt;header&amp;gt;section&amp;gt;div&amp;gt;a&amp;gt;h2' /&gt;" Guid="9117192f-438a-45af-a207-9be492223bb9" ImageBase64="" InformativeScreenshot="5c21cffec84059ccb419bac30b72549c.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*• Instagram photos and videos' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                  <uix:TargetAnchorable BrowserURL="https://www.instagram.com/theshaderoom/" DesignTimeRectangle="929, 261, 65, 27" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'136,135'" FullSelectorArgument="&lt;webctrl tag='H2' /&gt;" Guid="9117192f-438a-45af-a207-9be492223bb9" ImageBase64="" InformativeScreenshot="5c21cffec84059ccb419bac30b72549c.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*• Instagram photos and videos' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete" />
                 </uix:NGetText.Target>
               </uix:NGetText>
             </Sequence>
-            <Sequence DisplayName="Get follower count" sap:VirtualizedContainerService.HintSize="496,575" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence DisplayName="Get follower count" sap:VirtualizedContainerService.HintSize="707,571" sap2010:WorkflowViewState.IdRef="Sequence_5">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -141,12 +162,12 @@
                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e94d7e0e-ec6b-4d01-8c2d-1d03fb0f6115" InformativeScreenshot="32a4d8a6983954a67f5d528ef249df00" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;main&amp;gt;div&amp;gt;header&amp;gt;section&amp;gt;ul&amp;gt;li&amp;gt;a&amp;gt;div&amp;gt;span' parentid='*' tag='SPAN' uipath-html-title='*' /&gt;" TimeoutMS="300" WaitForReady="COMPLETE" />
                 </ui:WaitUiElementAppear.Target>
               </ui:WaitUiElementAppear>
-              <uix:NGetAttribute Attribute="uipath-html-title" DelayAfter="0" DelayBefore="0" DisplayName="Get follower count string (uipath-html-title)" sap:VirtualizedContainerService.HintSize="434,190" sap2010:WorkflowViewState.IdRef="NGetAttribute_1" InUiElement="[followerCountuielement]" Timeout="1" Version="V3">
+              <uix:NGetAttribute Attribute="uipath-html-title" DelayAfter="0" DelayBefore="0" DisplayName="Get follower count string (uipath-html-title)" sap:VirtualizedContainerService.HintSize="434,187" sap2010:WorkflowViewState.IdRef="NGetAttribute_1" InUiElement="[followerCountuielement]" Timeout="1" Version="V3">
                 <uix:NGetAttribute.Result>
                   <OutArgument x:TypeArguments="x:String">[followerCountstr]</OutArgument>
                 </uix:NGetAttribute.Result>
               </uix:NGetAttribute>
-              <Assign DisplayName="Convert raw follower count (String to Int32)" sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign DisplayName="Convert raw follower count (String to Int32)" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_2">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:Int32">[followerCount]</OutArgument>
                 </Assign.To>
@@ -155,38 +176,38 @@
                 </Assign.Value>
               </Assign>
             </Sequence>
-            <Sequence DisplayName="Get following count" sap:VirtualizedContainerService.HintSize="496,396" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <Sequence DisplayName="Get following count" sap:VirtualizedContainerService.HintSize="707,394" sap2010:WorkflowViewState.IdRef="Sequence_6">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NGetText ContinueOnError="True" DelayAfter="0" DelayBefore="0" DisplayName="Get raw following count string" sap:VirtualizedContainerService.HintSize="434,158" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="91cefbd8-d20a-4ee0-a220-cc3764d0e803" TextString="[followingCountstr]" Timeout="1" Version="V3">
+              <uix:NGetText ContinueOnError="True" DelayAfter="0" DelayBefore="0" DisplayName="Get raw following count string" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="91cefbd8-d20a-4ee0-a220-cc3764d0e803" TextString="[followingCountstr]" Timeout="1" Version="V3">
                 <uix:NGetText.Target>
-                  <uix:TargetAnchorable BrowserURL="https://www.instagram.com/theshaderoom/" DesignTimeRectangle="929, 261, 65, 27" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'136,135'" FullSelectorArgument="&lt;webctrl aaname=' following' tag='DIV' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;main&amp;gt;div&amp;gt;header&amp;gt;section&amp;gt;ul&amp;gt;li&amp;gt;a&amp;gt;div' innertext='*following*' /&gt;" Guid="9117192f-438a-45af-a207-9be492223bb9" ImageBase64="" InformativeScreenshot="5c21cffec84059ccb419bac30b72549c.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*• Instagram photos and videos' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                  <uix:TargetAnchorable BrowserURL="https://www.instagram.com/theshaderoom/" DesignTimeRectangle="929, 261, 65, 27" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'136,135'" FullSelectorArgument="&lt;webctrl aaname=' following' tag='DIV' /&gt;" Guid="9117192f-438a-45af-a207-9be492223bb9" ImageBase64="" InformativeScreenshot="5c21cffec84059ccb419bac30b72549c.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*• Instagram photos and videos' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete" />
                 </uix:NGetText.Target>
               </uix:NGetText>
-              <Assign DisplayName="Convert raw following count (String to Int32)" sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_3">
+              <Assign DisplayName="Convert raw following count (String to Int32)" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_3">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:Int32">[followingCount]</OutArgument>
                 </Assign.To>
                 <Assign.Value>
-                  <InArgument x:TypeArguments="x:Int32">[Convert.ToInt32(followerCountstr.replace(",","").replace(" ","").replace("following",""))]</InArgument>
+                  <InArgument x:TypeArguments="x:Int32">[Convert.ToInt32(followingCountstr.replace(",","").replace(" ","").replace("following",""))]</InArgument>
                 </Assign.Value>
               </Assign>
             </Sequence>
-            <Sequence DisplayName="Get post count" sap:VirtualizedContainerService.HintSize="496,396" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <Sequence DisplayName="Get post count" sap:VirtualizedContainerService.HintSize="707,394" sap2010:WorkflowViewState.IdRef="Sequence_7">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NGetText ContinueOnError="True" DelayAfter="0" DelayBefore="0" DisplayName="Get raw post count string" sap:VirtualizedContainerService.HintSize="434,158" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="91cefbd8-d20a-4ee0-a220-cc3764d0e803" TextString="[postCountstr]" Timeout="1" Version="V3">
+              <uix:NGetText ContinueOnError="True" DelayAfter="0" DelayBefore="0" DisplayName="Get raw post count string" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="91cefbd8-d20a-4ee0-a220-cc3764d0e803" TextString="[postCountstr]" Timeout="1" Version="V3">
                 <uix:NGetText.Target>
                   <uix:TargetAnchorable BrowserURL="https://www.instagram.com/theshaderoom/" DesignTimeRectangle="929, 261, 65, 27" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'136,135'" FullSelectorArgument="&lt;webctrl aaname='*post*' tag='DIV' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;main&amp;gt;div&amp;gt;header&amp;gt;section&amp;gt;ul&amp;gt;li&amp;gt;div' visibleinnertext='*post*' /&gt;" Guid="9117192f-438a-45af-a207-9be492223bb9" ImageBase64="" InformativeScreenshot="5c21cffec84059ccb419bac30b72549c.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*• Instagram photos and videos' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete" />
                 </uix:NGetText.Target>
               </uix:NGetText>
-              <Assign DisplayName="Convert raw post count (String to Int32)" sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_4">
+              <Assign DisplayName="Convert raw post count (String to Int32)" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_4">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:Int32">[postCount]</OutArgument>
                 </Assign.To>
@@ -195,6 +216,176 @@
                 </Assign.Value>
               </Assign>
             </Sequence>
+            <Sequence DisplayName="Get reel count" sap:VirtualizedContainerService.HintSize="707,2282" sap2010:WorkflowViewState.IdRef="Sequence_8">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="listOfsubtabs" />
+                <Variable x:TypeArguments="x:Int32" Default="-1" Name="indexOfsubtabs" />
+                <Variable x:TypeArguments="x:String" Name="subtabName" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:FindChildren Children="[listOfsubtabs]" DisplayName="Find list of subtabs" Filter="&lt;webctrl aaname='*' tag='SPAN' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;a&amp;gt;div&amp;gt;span' /&gt;" sap:VirtualizedContainerService.HintSize="645,107" sap2010:WorkflowViewState.IdRef="FindChildren_1" Scope="FIND_DESCENDANTS">
+                <ui:FindChildren.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4add2b36-ad39-49a0-9c03-1fe1f81151ba" InformativeScreenshot="249a64a4880b327aaa456e8eeeb28cdc" Selector="&lt;webctrl aria-role='tablist' tag='DIV' /&gt;" WaitForReady="COMPLETE">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                  </ui:Target>
+                </ui:FindChildren.Target>
+              </ui:FindChildren>
+              <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="645,2020" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Enumerable.Range(0, listOfsubtabs.Count)]">
+                <ui:ForEach.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="currentItem" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="609,1894" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign DisplayName="Indexing" sap:VirtualizedContainerService.HintSize="547,82" sap2010:WorkflowViewState.IdRef="Assign_5">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[indexOfsubtabs]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">[indexOfsubtabs + 1]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <uix:NGetAttribute Attribute="aaname" DisplayName="" sap:VirtualizedContainerService.HintSize="547,187" sap2010:WorkflowViewState.IdRef="NGetAttribute_2" InUiElement="[listOfsubtabs(indexOfsubtabs)]" Version="V3">
+                        <uix:NGetAttribute.Result>
+                          <OutArgument x:TypeArguments="x:String">[subtabName]</OutArgument>
+                        </uix:NGetAttribute.Result>
+                      </uix:NGetAttribute>
+                      <ui:IfElseIf DisplayName="Finding Post and Reel counts (if any) and outputs list of Post and Reels link (.csv)" sap:VirtualizedContainerService.HintSize="547,1430" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
+                        <ui:IfElseIf.ConditionBlocks>
+                          <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+                            <ui:IfElseIfBlock BlockType="If" Condition="[subtabName = &quot;Reels&quot;]">
+                              <ui:IfElseIfBlock.Then>
+                                <Sequence DisplayName="Find reels count and list of reels URL" sap:VirtualizedContainerService.HintSize="441,554" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NClick ClickType="Single" DelayAfter="0" DelayBefore="0" DisplayName="Click" sap:VirtualizedContainerService.HintSize="379,137" sap2010:WorkflowViewState.IdRef="NClick_2" InUiElement="[listOfsubtabs(indexOfsubtabs)]" KeyModifiers="None" MouseButton="Left" Timeout="1" Version="V3" />
+                                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Render all Reels in page" sap:VirtualizedContainerService.HintSize="379,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Reusable_modules\Item_loaders\Instagram_profile_render.xaml">
+                                    <ui:InvokeWorkflowFile.Arguments>
+                                      <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                                    </ui:InvokeWorkflowFile.Arguments>
+                                  </ui:InvokeWorkflowFile>
+                                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Reusable_modules\Data_extractors\Post_reels_counter_and_lister.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="379,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Reusable_modules\Data_extractors\Post_reels_counter_and_lister.xaml">
+                                    <ui:InvokeWorkflowFile.Arguments>
+                                      <InArgument x:TypeArguments="x:String" x:Key="inputMode">
+                                        <Literal x:TypeArguments="x:String">reel</Literal>
+                                      </InArgument>
+                                      <OutArgument x:TypeArguments="x:Int32" x:Key="outputCount">
+                                        <VisualBasicReference x:TypeArguments="x:Int32" ExpressionText="reelCount" />
+                                      </OutArgument>
+                                    </ui:InvokeWorkflowFile.Arguments>
+                                  </ui:InvokeWorkflowFile>
+                                </Sequence>
+                              </ui:IfElseIfBlock.Then>
+                            </ui:IfElseIfBlock>
+                            <ui:IfElseIfBlock BlockType="ElseIf" Condition="[subtabName = &quot;Posts&quot; and postCount &gt; 0]">
+                              <ui:IfElseIfBlock.Then>
+                                <Sequence DisplayName="Find post count and list of posts URL" sap:VirtualizedContainerService.HintSize="441,554" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NClick ClickType="Single" DelayAfter="0" DelayBefore="0" DisplayName="Click" sap:VirtualizedContainerService.HintSize="379,137" sap2010:WorkflowViewState.IdRef="NClick_3" InUiElement="[listOfsubtabs(indexOfsubtabs)]" KeyModifiers="None" MouseButton="Left" Timeout="1" Version="V3" />
+                                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Render all Posts in page" sap:VirtualizedContainerService.HintSize="379,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Reusable_modules\Item_loaders\Instagram_profile_render.xaml">
+                                    <ui:InvokeWorkflowFile.Arguments>
+                                      <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                                    </ui:InvokeWorkflowFile.Arguments>
+                                  </ui:InvokeWorkflowFile>
+                                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Reusable_modules\Data_extractors\Post_reels_counter_and_lister.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="379,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Reusable_modules\Data_extractors\Post_reels_counter_and_lister.xaml">
+                                    <ui:InvokeWorkflowFile.Arguments>
+                                      <InArgument x:TypeArguments="x:String" x:Key="inputMode">
+                                        <Literal x:TypeArguments="x:String">post</Literal>
+                                      </InArgument>
+                                      <OutArgument x:TypeArguments="x:Int32" x:Key="outputCount">
+                                        <VisualBasicReference x:TypeArguments="x:Int32" ExpressionText="postCount" />
+                                      </OutArgument>
+                                    </ui:InvokeWorkflowFile.Arguments>
+                                  </ui:InvokeWorkflowFile>
+                                </Sequence>
+                              </ui:IfElseIfBlock.Then>
+                            </ui:IfElseIfBlock>
+                          </sc:BindingList>
+                        </ui:IfElseIf.ConditionBlocks>
+                      </ui:IfElseIf>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEach.Body>
+              </ui:ForEach>
+            </Sequence>
+            <Sequence DisplayName="Get account type (could be wrong if category present but not displayed)" sap:VirtualizedContainerService.HintSize="707,885" sap2010:WorkflowViewState.IdRef="Sequence_14">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ClickType="Single" ContinueOnError="True" DelayAfter="0" DelayBefore="0" DisplayName="Clicking on 'Posts' tab" sap:VirtualizedContainerService.HintSize="512,157" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="91cefbd8-d20a-4ee0-a220-cc3764d0e803" Timeout="1.5" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.instagram.com/bryanlzl/" DesignTimeRectangle="941, 617, 51, 23" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Posts'" FullSelectorArgument="&lt;webctrl aaname='Posts' tag='SPAN' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;a&amp;gt;div&amp;gt;span' /&gt;" Guid="f5e864b5-bb0a-4748-9bf6-fdb626b3750f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADcAAAAbCAYAAADYtRcLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJ2SURBVFhH3Zahb9tAFMbzXwT0D2jYIo1EKoo0sKok0sAsDVTBQ4bRwBQVRFZBZBVFYx5LUAIqufACInnMYS6oZBBgEHCgIOTbs31Onpura9OL9APvu+cv9+7dnd2iHwxGK5qCVjQFrWgKWtEUtKIpaEVT0IqmoBVNgQWTAIfDgSGRbOcYfWnzBxQdWFMf0U4e8+Uugj+10DnLJS4tuE8REnnyl7slbDVuLeKjriOY1PdisEAVFz26cKcuPDKQ6cNSYHTB8lo9OBtV1D5CsBYQ6wDRXv3RxkGP+7YG8J7zsWS7hEfes4WPMBYYq5zu7Tj7z4zHqDSPFPumvheDBao4vkqDv/mKBpNT97qUlxadFtHnRV/0VdGS8rsn/fsccZr/ZKNdaFVo5nGkmRcLdKa3SySkxQtLaddq5UK4n1lewdUMEeUfti66hVZM6N/bjr5DneLqebFAY9q+V9p90bkxAopLky9hYR7T+N5nZ4Bt453A7Ge/etWrimvmxYI3pp0bByIhk1KXnLw42pKlZxnOJn0mgMN12rKjlTrDhKSLyr5i45zK4oj6XixQpmUSiN899oAq7qPO0e011Iy3Pw3hrpPc++yiUnxUnKKGFwuU6fGWurNxfcnGM2qeOeps1dbr/clvxNN2Z9QsrqDCiwU1TXsPYZZXdVuKX7p344niLIcP7FYtaFhchRcLapuyQ50U77kQsXqpxothuWs/PEQvIcTKy3aEtwqRvKru685K1TyaebGg0YqlXygC8V4VSchdiOXd4Hw7fh1DvCSQ2SSIV/ryefbhfHunu1XzaOZ1JpiEVjQFrWgKWtEUtKIpaEVT0IoG0MJ/noggwg2ZnTEAAAAASUVORK5CYII=" InformativeScreenshot="abc3494d80be774afc034eed80fa0875.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*• Instagram photos and videos' /&gt;" SearchSteps="Selector, Image" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NGetText ContinueOnError="True" DelayAfter="0" DelayBefore="0" DisplayName="Get Text" sap:VirtualizedContainerService.HintSize="512,157" sap2010:WorkflowViewState.IdRef="NGetText_7" TextString="[accountTyperaw]" Timeout="1" Version="V3">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;webctrl parentclass='_ab8w  _ab94 _ab99 _ab9f _ab9m _ab9p _abcm' /&gt;" Guid="62b32bde-ef09-403f-b008-0c7723995c22" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*• Instagram photos and videos' /&gt;" SearchSteps="Selector" WaitForReadyArgument="Complete" />
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <If Condition="[accountTyperaw.IsNullOrEmpty = False]" sap:VirtualizedContainerService.HintSize="512,376" sap2010:WorkflowViewState.IdRef="If_6">
+                <If.Then>
+                  <Assign DisplayName="Account is Business/Creator type" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_8">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[accountType]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">Business or Creator</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </If.Then>
+                <If.Else>
+                  <Assign DisplayName="Account is Personal type" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_9">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[accountType]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">Personal</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </If.Else>
+              </If>
+            </Sequence>
+            <If Condition="[postCount = 0]" DisplayName="Message log when profile has 0 posts" sap:VirtualizedContainerService.HintSize="707,376" sap2010:WorkflowViewState.IdRef="If_3">
+              <If.Then>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,92" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;There are 0 post/s in &quot; + userName + &quot;'s profile.&quot;]" />
+              </If.Then>
+            </If>
+            <If Condition="[reelCount = 0]" DisplayName="Message log when profile has 0 reels" sap:VirtualizedContainerService.HintSize="707,376" sap2010:WorkflowViewState.IdRef="If_4">
+              <If.Then>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,92" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[&quot;There are 0 reel/s in &quot; + userName + &quot;'s profile.&quot;]" />
+              </If.Then>
+            </If>
+            <Sequence DisplayName="Generate basic profile info .csv file" sap:VirtualizedContainerService.HintSize="707,574" sap2010:WorkflowViewState.IdRef="Sequence_15">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:BuildDataTable DataTable="[basicInfotable]" DisplayName="Build Basic info Data Table" sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Profile_x0020_URL&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Username&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Follower_x0020_count&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Following_x0020_count&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Post_x0020_count&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Reel_x0020_count&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Account_x0020_type&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+              <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[New Object(){profileURL, userName, followerCount, followingCount, postCount, reelCount, accountType}]" DataTable="[basicInfotable]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="434,186" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
+              <ui:AppendCsvFile DataTable="[basicInfotable]" Delimitator="Comma" DisplayName="Append to CSV" Encoding="utf-8" FilePath="[&quot;C:\Users\Admin\Downloads\&quot; + userName + &quot;_basic_profile_information.csv&quot;]" sap:VirtualizedContainerService.HintSize="434,133" sap2010:WorkflowViewState.IdRef="AppendCsvFile_2" />
+            </Sequence>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="707,85" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Profile URL: &quot; + profileURL + Environment.Newline + &quot;Username: &quot; + userName + Environment.NewLine + &quot;Follower count: &quot; + followerCount.ToString + Environment.NewLine + &quot;Following count: &quot; + FollowingCount.ToString + Environment.Newline + &quot;Post count: &quot; + postCount.ToString + Environment.Newline + &quot;Reel count: &quot; + reelCount.ToString + Environment.NewLine + &quot;Account type: &quot; + accountType]" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
