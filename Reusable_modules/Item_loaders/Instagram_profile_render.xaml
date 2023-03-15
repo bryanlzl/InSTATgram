@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Instat_Data_Collection" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1292,3376" sap2010:WorkflowViewState.IdRef="Instat_Data_Collection_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Instat_Data_Collection" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1292,3315" sap2010:WorkflowViewState.IdRef="Instat_Data_Collection_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="76">
       <x:String>System.Activities</x:String>
@@ -110,19 +110,19 @@
       <AssemblyReference>UiPath.Python</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Instat_Data_Collection" sap:VirtualizedContainerService.HintSize="1302,3311" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Instat_Data_Collection" sap:VirtualizedContainerService.HintSize="1302,3250" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Instagram_profile_loader" sap:VirtualizedContainerService.HintSize="1240,3200" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="ea2a3574-36ac-489e-87e8-b602b181dd8d" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Instagram_profile_loader" sap:VirtualizedContainerService.HintSize="1240,3139" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="ea2a3574-36ac-489e-87e8-b602b181dd8d" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1206,2982" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1206,2922" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <Sequence.Variables>
               <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="rawpostscrape" />
               <Variable x:TypeArguments="ui:UiElement" Name="stringer" />
@@ -133,7 +133,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="1144,239" sap2010:WorkflowViewState.IdRef="NMouseScroll_3" InteractionMode="HardwareEvents" MovementUnits="10" Version="V3">
+            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="1144,237" sap2010:WorkflowViewState.IdRef="NMouseScroll_3" InteractionMode="HardwareEvents" MovementUnits="10" Version="V3">
               <uix:NMouseScroll.SearchedElement>
                 <uix:SearchedElement>
                   <uix:SearchedElement.Target>
@@ -145,23 +145,23 @@
                 </uix:SearchedElement>
               </uix:NMouseScroll.SearchedElement>
             </uix:NMouseScroll>
-            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[endofpage = False]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="1144,2131" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_2">
+            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[endofpage = False]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="1144,2076" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_2">
               <ui:InterruptibleDoWhile.Body>
-                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1108,1963" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1108,1910" sap2010:WorkflowViewState.IdRef="Sequence_15">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NCheckState DisplayName="Check App State 'SVG'" sap:VirtualizedContainerService.HintSize="1046,1852" sap2010:WorkflowViewState.IdRef="NCheckState_1" Mode="WaitDisappear" ScopeIdentifier="ea2a3574-36ac-489e-87e8-b602b181dd8d" Timeout="0.5" Version="V3">
+                  <uix:NCheckState DisplayName="Check App State 'SVG'" sap:VirtualizedContainerService.HintSize="1046,1799" sap2010:WorkflowViewState.IdRef="NCheckState_1" Mode="WaitDisappear" ScopeIdentifier="ea2a3574-36ac-489e-87e8-b602b181dd8d" Timeout="0.5" Version="V3">
                     <uix:NCheckState.IfExists>
-                      <Sequence DisplayName="Target disappears" sap:VirtualizedContainerService.HintSize="496,198" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                      <Sequence DisplayName="Target disappears" sap:VirtualizedContainerService.HintSize="496,195" sap2010:WorkflowViewState.IdRef="Sequence_13">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_2">
+                        <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_2">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:Boolean">[endofpage]</OutArgument>
                           </Assign.To>
@@ -172,13 +172,13 @@
                       </Sequence>
                     </uix:NCheckState.IfExists>
                     <uix:NCheckState.IfNotExists>
-                      <Sequence DisplayName="Target does not disappear" sap:VirtualizedContainerService.HintSize="496,1593" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                      <Sequence DisplayName="Target does not disappear" sap:VirtualizedContainerService.HintSize="496,1582" sap2010:WorkflowViewState.IdRef="Sequence_14">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_3">
+                        <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_3">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:Boolean">[endofpage]</OutArgument>
                           </Assign.To>
@@ -186,7 +186,7 @@
                             <InArgument x:TypeArguments="x:Boolean">False</InArgument>
                           </Assign.Value>
                         </Assign>
-                        <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="434,239" sap2010:WorkflowViewState.IdRef="NMouseScroll_4" InteractionMode="HardwareEvents" MovementUnits="10" Version="V3">
+                        <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="434,237" sap2010:WorkflowViewState.IdRef="NMouseScroll_4" InteractionMode="HardwareEvents" MovementUnits="10" Version="V3">
                           <uix:NMouseScroll.SearchedElement>
                             <uix:SearchedElement>
                               <uix:SearchedElement.Target>
@@ -198,7 +198,7 @@
                             </uix:SearchedElement>
                           </uix:NMouseScroll.SearchedElement>
                         </uix:NMouseScroll>
-                        <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Up" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="434,239" sap2010:WorkflowViewState.IdRef="NMouseScroll_10" InteractionMode="HardwareEvents" MovementUnits="10" Version="V3">
+                        <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Up" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="434,237" sap2010:WorkflowViewState.IdRef="NMouseScroll_10" InteractionMode="HardwareEvents" MovementUnits="10" Version="V3">
                           <uix:NMouseScroll.SearchedElement>
                             <uix:SearchedElement>
                               <uix:SearchedElement.Target>
@@ -210,7 +210,7 @@
                             </uix:SearchedElement>
                           </uix:NMouseScroll.SearchedElement>
                         </uix:NMouseScroll>
-                        <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="434,239" sap2010:WorkflowViewState.IdRef="NMouseScroll_15" InteractionMode="HardwareEvents" MovementUnits="10" Version="V3">
+                        <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="434,237" sap2010:WorkflowViewState.IdRef="NMouseScroll_15" InteractionMode="HardwareEvents" MovementUnits="10" Version="V3">
                           <uix:NMouseScroll.SearchedElement>
                             <uix:SearchedElement>
                               <uix:SearchedElement.Target>
@@ -222,7 +222,7 @@
                             </uix:SearchedElement>
                           </uix:NMouseScroll.SearchedElement>
                         </uix:NMouseScroll>
-                        <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Up" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="434,239" sap2010:WorkflowViewState.IdRef="NMouseScroll_16" InteractionMode="HardwareEvents" MovementUnits="10" Version="V3">
+                        <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Up" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="434,237" sap2010:WorkflowViewState.IdRef="NMouseScroll_16" InteractionMode="HardwareEvents" MovementUnits="10" Version="V3">
                           <uix:NMouseScroll.SearchedElement>
                             <uix:SearchedElement>
                               <uix:SearchedElement.Target>
@@ -234,7 +234,7 @@
                             </uix:SearchedElement>
                           </uix:NMouseScroll.SearchedElement>
                         </uix:NMouseScroll>
-                        <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="434,239" sap2010:WorkflowViewState.IdRef="NMouseScroll_17" InteractionMode="HardwareEvents" MovementUnits="10" Version="V3">
+                        <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="434,237" sap2010:WorkflowViewState.IdRef="NMouseScroll_17" InteractionMode="HardwareEvents" MovementUnits="10" Version="V3">
                           <uix:NMouseScroll.SearchedElement>
                             <uix:SearchedElement>
                               <uix:SearchedElement.Target>
@@ -249,13 +249,13 @@
                       </Sequence>
                     </uix:NCheckState.IfNotExists>
                     <uix:NCheckState.Target>
-                      <uix:TargetAnchorable BrowserURL="https://www.instagram.com/bryanlzl/" DesignTimeRectangle="1004, 644, 14, 14" DesignTimeScaleFactor="0.3100000023841858" ElementType="Icon" FriendlyName="'SVG'" FullSelectorArgument="&lt;webctrl aria-label='Loading...' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Loading...' tag='svg' type='' class=' _abdx' aaname='' /&gt;" Guid="9bd43533-2ab6-41b8-8268-11f5aad0e57c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEASURBVDhPrZLpCoMwEITrfV8oeP3w/Z9ym1maYJK10FDhI2bMzh7xpR76E6IYgiiGIIohiKIhiiJG+uYgihTHMaVpSlmWUVEUvCZJ8s3UF2GS5zlTVRXVdU1N01BZlmwoxShsARmRGQEIhEHbtjQMA69d1z2Z2QKM0BKqwQoNK6qapon6vucq3TiFLeiK3HngfVkWGseRjdD+PU5hbTgAh9yDGPg8z2yEdu9JPlgbA+aAzDo7DLZt4/ZgKsR4AoOs13XRcRx0nift+84VYdh6dg6ewING5nVdDZgPjFCN0BbwBPMfoSq0hCpw9Q8taUSR0YPHDUrfHUQxBFH8kRe9AdljTFB+kOLIAAAAAElFTkSuQmCC" InformativeScreenshot="dfd7c06cafba2acb9c763846f3ca121b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Bryan (@bryanlzl) • Instagram photos and videos' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
+                      <uix:TargetAnchorable BrowserURL="https://www.instagram.com/bryanlzl/" DesignTimeRectangle="1004, 644, 14, 14" DesignTimeScaleFactor="0.3100000023841858" ElementType="Icon" FriendlyName="'SVG'" FullSelectorArgument="&lt;webctrl aria-label='Loading...' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Loading...' tag='svg' type='' class=' _abdx' aaname='' /&gt;" Guid="9bd43533-2ab6-41b8-8268-11f5aad0e57c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEASURBVDhPrZLpCoMwEITrfV8oeP3w/Z9ym1maYJK10FDhI2bMzh7xpR76E6IYgiiGIIohiKIhiiJG+uYgihTHMaVpSlmWUVEUvCZJ8s3UF2GS5zlTVRXVdU1N01BZlmwoxShsARmRGQEIhEHbtjQMA69d1z2Z2QKM0BKqwQoNK6qapon6vucq3TiFLeiK3HngfVkWGseRjdD+PU5hbTgAh9yDGPg8z2yEdu9JPlgbA+aAzDo7DLZt4/ZgKsR4AoOs13XRcRx0nift+84VYdh6dg6ewING5nVdDZgPjFCN0BbwBPMfoSq0hCpw9Q8taUSR0YPHDUrfHUQxBFH8kRe9AdljTFB+kOLIAAAAAElFTkSuQmCC" InformativeScreenshot="dfd7c06cafba2acb9c763846f3ca121b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='* • Instagram photos and videos' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
                     </uix:NCheckState.Target>
                   </uix:NCheckState>
                 </Sequence>
               </ui:InterruptibleDoWhile.Body>
             </ui:InterruptibleDoWhile>
-            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Up" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="1144,239" sap2010:WorkflowViewState.IdRef="NMouseScroll_13" InteractionMode="HardwareEvents" MovementUnits="10" Version="V3">
+            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Up" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="1144,237" sap2010:WorkflowViewState.IdRef="NMouseScroll_13" InteractionMode="HardwareEvents" MovementUnits="10" Version="V3">
               <uix:NMouseScroll.SearchedElement>
                 <uix:SearchedElement>
                   <uix:SearchedElement.Target>
@@ -267,7 +267,7 @@
                 </uix:SearchedElement>
               </uix:NMouseScroll.SearchedElement>
             </uix:NMouseScroll>
-            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Up" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="1144,138" sap2010:WorkflowViewState.IdRef="NMouseScroll_14" InteractionMode="HardwareEvents" MovementUnits="5" Version="V3" />
+            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Up" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="1144,137" sap2010:WorkflowViewState.IdRef="NMouseScroll_14" InteractionMode="HardwareEvents" MovementUnits="5" Version="V3" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
