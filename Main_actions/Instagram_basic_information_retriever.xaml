@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Instagram_basic_information_extraction" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="855,7274" sap2010:WorkflowViewState.IdRef="Instagram_basic_information_extraction_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Instagram_basic_information_extraction" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1075,7274" sap2010:WorkflowViewState.IdRef="Instagram_basic_information_extraction_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="76">
       <x:String>System.Activities</x:String>
@@ -227,7 +227,7 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:FindChildren Children="[listOfsubtabs]" DisplayName="Find list of subtabs" Filter="&lt;webctrl aaname='*' tag='SPAN' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;a&amp;gt;div&amp;gt;span' /&gt;" sap:VirtualizedContainerService.HintSize="645,107" sap2010:WorkflowViewState.IdRef="FindChildren_1" Scope="FIND_DESCENDANTS">
+              <ui:FindChildren Children="[listOfsubtabs]" DisplayName="Find list of subtabs" Filter="&lt;webctrl aaname='*' tag='SPAN' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;a&amp;gt;div&amp;gt;span' /&gt;" sap:VirtualizedContainerService.HintSize="590,107" sap2010:WorkflowViewState.IdRef="FindChildren_1" Scope="FIND_DESCENDANTS">
                 <ui:FindChildren.Target>
                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4add2b36-ad39-49a0-9c03-1fe1f81151ba" InformativeScreenshot="249a64a4880b327aaa456e8eeeb28cdc" Selector="&lt;webctrl aria-role='tablist' tag='DIV' /&gt;" WaitForReady="COMPLETE">
                     <ui:Target.TimeoutMS>
@@ -236,19 +236,22 @@
                   </ui:Target>
                 </ui:FindChildren.Target>
               </ui:FindChildren>
-              <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="645,2020" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Enumerable.Range(0, listOfsubtabs.Count)]">
+              <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="590,2020" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Enumerable.Range(0, listOfsubtabs.Count)]">
                 <ui:ForEach.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="currentItem" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="609,1894" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="554,1894" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:String" Default="Basic" Name="Extractionmode" />
+                      </Sequence.Variables>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Assign DisplayName="Indexing" sap:VirtualizedContainerService.HintSize="547,82" sap2010:WorkflowViewState.IdRef="Assign_5">
+                      <Assign DisplayName="Indexing" sap:VirtualizedContainerService.HintSize="492,82" sap2010:WorkflowViewState.IdRef="Assign_5">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:Int32">[indexOfsubtabs]</OutArgument>
                         </Assign.To>
@@ -256,12 +259,12 @@
                           <InArgument x:TypeArguments="x:Int32">[indexOfsubtabs + 1]</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <uix:NGetAttribute Attribute="aaname" DisplayName="" sap:VirtualizedContainerService.HintSize="547,187" sap2010:WorkflowViewState.IdRef="NGetAttribute_2" InUiElement="[listOfsubtabs(indexOfsubtabs)]" Version="V3">
+                      <uix:NGetAttribute Attribute="aaname" DisplayName="Get subtab name (string format)" sap:VirtualizedContainerService.HintSize="492,187" sap2010:WorkflowViewState.IdRef="NGetAttribute_2" InUiElement="[listOfsubtabs(indexOfsubtabs)]" Version="V3">
                         <uix:NGetAttribute.Result>
                           <OutArgument x:TypeArguments="x:String">[subtabName]</OutArgument>
                         </uix:NGetAttribute.Result>
                       </uix:NGetAttribute>
-                      <ui:IfElseIf DisplayName="Finding Post and Reel counts (if any) and outputs list of Post and Reels link (.csv)" sap:VirtualizedContainerService.HintSize="547,1430" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
+                      <ui:IfElseIf DisplayName="Finding Post and Reel counts (if any) and outputs list of Post and Reels link (.csv)" sap:VirtualizedContainerService.HintSize="492,1430" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
                         <ui:IfElseIf.ConditionBlocks>
                           <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                             <ui:IfElseIfBlock BlockType="If" Condition="[subtabName = &quot;Reels&quot;]">
@@ -280,12 +283,10 @@
                                   </ui:InvokeWorkflowFile>
                                   <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Reusable_modules\Data_extractors\Post_reels_counter_and_lister.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="379,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Reusable_modules\Data_extractors\Post_reels_counter_and_lister.xaml">
                                     <ui:InvokeWorkflowFile.Arguments>
-                                      <InArgument x:TypeArguments="x:String" x:Key="inputMode">
-                                        <Literal x:TypeArguments="x:String">reel</Literal>
-                                      </InArgument>
-                                      <OutArgument x:TypeArguments="x:Int32" x:Key="outputCount">
-                                        <VisualBasicReference x:TypeArguments="x:Int32" ExpressionText="reelCount" />
-                                      </OutArgument>
+                                      <InArgument x:TypeArguments="x:String" x:Key="inputMode">reel</InArgument>
+                                      <OutArgument x:TypeArguments="x:Int32" x:Key="outputCount">[reelCount]</OutArgument>
+                                      <InArgument x:TypeArguments="x:String" x:Key="inputExtractionmode">Basic</InArgument>
+                                      <OutArgument x:TypeArguments="sd:DataTable" x:Key="outputTablewithviews" />
                                     </ui:InvokeWorkflowFile.Arguments>
                                   </ui:InvokeWorkflowFile>
                                 </Sequence>
@@ -307,12 +308,9 @@
                                   </ui:InvokeWorkflowFile>
                                   <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Reusable_modules\Data_extractors\Post_reels_counter_and_lister.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="379,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Reusable_modules\Data_extractors\Post_reels_counter_and_lister.xaml">
                                     <ui:InvokeWorkflowFile.Arguments>
-                                      <InArgument x:TypeArguments="x:String" x:Key="inputMode">
-                                        <Literal x:TypeArguments="x:String">post</Literal>
-                                      </InArgument>
-                                      <OutArgument x:TypeArguments="x:Int32" x:Key="outputCount">
-                                        <VisualBasicReference x:TypeArguments="x:Int32" ExpressionText="postCount" />
-                                      </OutArgument>
+                                      <InArgument x:TypeArguments="x:String" x:Key="inputMode">post</InArgument>
+                                      <OutArgument x:TypeArguments="x:Int32" x:Key="outputCount">[postCount]</OutArgument>
+                                      <InArgument x:TypeArguments="x:String" x:Key="inputExtractionmode">Basic</InArgument>
                                     </ui:InvokeWorkflowFile.Arguments>
                                   </ui:InvokeWorkflowFile>
                                 </Sequence>
