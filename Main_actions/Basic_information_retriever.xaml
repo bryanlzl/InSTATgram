@@ -1,4 +1,13 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Instagram_basic_information_extraction" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1075,7274" sap2010:WorkflowViewState.IdRef="Instagram_basic_information_extraction_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Instagram_basic_information_extraction" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="inputDestinationfolder" Type="InArgument(x:String)" />
+    <x:Property Name="inputValidationprofile" Type="InArgument(s:Object[])" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1094,7413</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Instagram_basic_information_extraction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="76">
       <x:String>System.Activities</x:String>
@@ -101,19 +110,19 @@
       <AssemblyReference>System.Data.SqlClient</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Instagram_basic_information_extraction" sap:VirtualizedContainerService.HintSize="865,7209" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Instagram_basic_information_extraction" sap:VirtualizedContainerService.HintSize="810,7348" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Instagram_basic_information_extraction" sap:VirtualizedContainerService.HintSize="803,7098" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="91cefbd8-d20a-4ee0-a220-cc3764d0e803" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Instagram_basic_information_extraction" sap:VirtualizedContainerService.HintSize="748,7237" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="91cefbd8-d20a-4ee0-a220-cc3764d0e803" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Take username, follower count, following count, post count, reel count and account type" sap:VirtualizedContainerService.HintSize="769,6881" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Take username, follower count, following count, post count, reel count and account type" sap:VirtualizedContainerService.HintSize="714,7020" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="userName" />
               <Variable x:TypeArguments="x:String" Name="followerCountstr" />
@@ -134,12 +143,12 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NGetText DelayAfter="0.01" DelayBefore="0.01" DisplayName="Get profile URL" sap:VirtualizedContainerService.HintSize="707,157" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="91cefbd8-d20a-4ee0-a220-cc3764d0e803" TextString="[profileURL]" Timeout="1" Version="V3">
+            <uix:NGetText DelayAfter="0.01" DelayBefore="0.01" DisplayName="Get profile URL" sap:VirtualizedContainerService.HintSize="652,157" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="91cefbd8-d20a-4ee0-a220-cc3764d0e803" TextString="[profileURL]" Timeout="1" Version="V3">
               <uix:NGetText.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="300, 56, 1238, 33" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'https://www.instagram.c…'" FullSelectorArgument="&lt;ctrl name='*• Instagram photos and videos*' role='pane' /&gt;&lt;ctrl name='App bar' role='tool bar' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" Guid="b3d71fdf-684d-4971-86a2-3acabb0e8336" ImageBase64="" InformativeScreenshot="7856199db4f2b77198b592f58fa23ad3.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='* • Instagram photos and videos' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete" />
               </uix:NGetText.Target>
             </uix:NGetText>
-            <Sequence DisplayName="Get profile username" sap:VirtualizedContainerService.HintSize="707,272" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence DisplayName="Get profile username" sap:VirtualizedContainerService.HintSize="652,272" sap2010:WorkflowViewState.IdRef="Sequence_4">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -151,7 +160,7 @@
                 </uix:NGetText.Target>
               </uix:NGetText>
             </Sequence>
-            <Sequence DisplayName="Get follower count" sap:VirtualizedContainerService.HintSize="707,571" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence DisplayName="Get follower count" sap:VirtualizedContainerService.HintSize="652,571" sap2010:WorkflowViewState.IdRef="Sequence_5">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -176,7 +185,7 @@
                 </Assign.Value>
               </Assign>
             </Sequence>
-            <Sequence DisplayName="Get following count" sap:VirtualizedContainerService.HintSize="707,394" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <Sequence DisplayName="Get following count" sap:VirtualizedContainerService.HintSize="652,394" sap2010:WorkflowViewState.IdRef="Sequence_6">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -196,7 +205,7 @@
                 </Assign.Value>
               </Assign>
             </Sequence>
-            <Sequence DisplayName="Get post count" sap:VirtualizedContainerService.HintSize="707,394" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <Sequence DisplayName="Get post count" sap:VirtualizedContainerService.HintSize="652,394" sap2010:WorkflowViewState.IdRef="Sequence_7">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -216,7 +225,7 @@
                 </Assign.Value>
               </Assign>
             </Sequence>
-            <Sequence DisplayName="Get reel count" sap:VirtualizedContainerService.HintSize="707,2282" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <Sequence DisplayName="Get reel count" sap:VirtualizedContainerService.HintSize="652,2282" sap2010:WorkflowViewState.IdRef="Sequence_8">
               <Sequence.Variables>
                 <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="listOfsubtabs" />
                 <Variable x:TypeArguments="x:Int32" Default="-1" Name="indexOfsubtabs" />
@@ -283,9 +292,15 @@
                                   </ui:InvokeWorkflowFile>
                                   <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Reusable_modules\Data_extractors\Post_reels_counter_and_lister.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="379,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Reusable_modules\Data_extractors\Post_reels_counter_and_lister.xaml">
                                     <ui:InvokeWorkflowFile.Arguments>
-                                      <InArgument x:TypeArguments="x:String" x:Key="inputMode">reel</InArgument>
-                                      <OutArgument x:TypeArguments="x:Int32" x:Key="outputCount">[reelCount]</OutArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="inputExtractionmode">Basic</InArgument>
+                                      <InArgument x:TypeArguments="x:String" x:Key="inputMode">
+                                        <Literal x:TypeArguments="x:String">reel</Literal>
+                                      </InArgument>
+                                      <OutArgument x:TypeArguments="x:Int32" x:Key="outputCount">
+                                        <VisualBasicReference x:TypeArguments="x:Int32" ExpressionText="reelCount" />
+                                      </OutArgument>
+                                      <InArgument x:TypeArguments="x:String" x:Key="inputExtractionmode">
+                                        <Literal x:TypeArguments="x:String">Basic</Literal>
+                                      </InArgument>
                                       <OutArgument x:TypeArguments="sd:DataTable" x:Key="outputTablewithviews" />
                                     </ui:InvokeWorkflowFile.Arguments>
                                   </ui:InvokeWorkflowFile>
@@ -308,9 +323,16 @@
                                   </ui:InvokeWorkflowFile>
                                   <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Reusable_modules\Data_extractors\Post_reels_counter_and_lister.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="379,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Reusable_modules\Data_extractors\Post_reels_counter_and_lister.xaml">
                                     <ui:InvokeWorkflowFile.Arguments>
-                                      <InArgument x:TypeArguments="x:String" x:Key="inputMode">post</InArgument>
-                                      <OutArgument x:TypeArguments="x:Int32" x:Key="outputCount">[postCount]</OutArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="inputExtractionmode">Basic</InArgument>
+                                      <InArgument x:TypeArguments="x:String" x:Key="inputMode">
+                                        <Literal x:TypeArguments="x:String">post</Literal>
+                                      </InArgument>
+                                      <OutArgument x:TypeArguments="x:Int32" x:Key="outputCount">
+                                        <VisualBasicReference x:TypeArguments="x:Int32" ExpressionText="postCount" />
+                                      </OutArgument>
+                                      <InArgument x:TypeArguments="x:String" x:Key="inputExtractionmode">
+                                        <Literal x:TypeArguments="x:String">Basic</Literal>
+                                      </InArgument>
+                                      <OutArgument x:TypeArguments="sd:DataTable" x:Key="outputTablewithviews" />
                                     </ui:InvokeWorkflowFile.Arguments>
                                   </ui:InvokeWorkflowFile>
                                 </Sequence>
@@ -324,7 +346,7 @@
                 </ui:ForEach.Body>
               </ui:ForEach>
             </Sequence>
-            <Sequence DisplayName="Get account type (could be wrong if category present but not displayed)" sap:VirtualizedContainerService.HintSize="707,885" sap2010:WorkflowViewState.IdRef="Sequence_14">
+            <Sequence DisplayName="Get account type (could be wrong if category present but not displayed)" sap:VirtualizedContainerService.HintSize="652,885" sap2010:WorkflowViewState.IdRef="Sequence_14">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -363,17 +385,17 @@
                 </If.Else>
               </If>
             </Sequence>
-            <If Condition="[postCount = 0]" DisplayName="Message log when profile has 0 posts" sap:VirtualizedContainerService.HintSize="707,376" sap2010:WorkflowViewState.IdRef="If_3">
+            <If Condition="[postCount = 0]" DisplayName="Message log when profile has 0 posts" sap:VirtualizedContainerService.HintSize="652,376" sap2010:WorkflowViewState.IdRef="If_3">
               <If.Then>
                 <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,92" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;There are 0 post/s in &quot; + userName + &quot;'s profile.&quot;]" />
               </If.Then>
             </If>
-            <If Condition="[reelCount = 0]" DisplayName="Message log when profile has 0 reels" sap:VirtualizedContainerService.HintSize="707,376" sap2010:WorkflowViewState.IdRef="If_4">
+            <If Condition="[reelCount = 0]" DisplayName="Message log when profile has 0 reels" sap:VirtualizedContainerService.HintSize="652,376" sap2010:WorkflowViewState.IdRef="If_4">
               <If.Then>
                 <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,92" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[&quot;There are 0 reel/s in &quot; + userName + &quot;'s profile.&quot;]" />
               </If.Then>
             </If>
-            <Sequence DisplayName="Generate basic profile info .csv file" sap:VirtualizedContainerService.HintSize="707,574" sap2010:WorkflowViewState.IdRef="Sequence_15">
+            <Sequence DisplayName="Generate basic profile info .csv file" sap:VirtualizedContainerService.HintSize="652,706" sap2010:WorkflowViewState.IdRef="Sequence_15">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -381,9 +403,10 @@
               </sap:WorkflowViewStateService.ViewState>
               <ui:BuildDataTable DataTable="[basicInfotable]" DisplayName="Build Basic info Data Table" sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Profile_x0020_URL&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Username&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Follower_x0020_count&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Following_x0020_count&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Post_x0020_count&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Reel_x0020_count&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Account_x0020_type&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
               <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[New Object(){profileURL, userName, followerCount, followingCount, postCount, reelCount, accountType}]" DataTable="[basicInfotable]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="434,186" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
-              <ui:AppendCsvFile DataTable="[basicInfotable]" Delimitator="Comma" DisplayName="Append to CSV" Encoding="utf-8" FilePath="[&quot;C:\Users\Admin\Downloads\&quot; + userName + &quot;_basic_profile_information.csv&quot;]" sap:VirtualizedContainerService.HintSize="434,133" sap2010:WorkflowViewState.IdRef="AppendCsvFile_2" />
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[inputDestinationfolder]" />
+              <ui:AppendCsvFile DataTable="[basicInfotable]" Delimitator="Comma" DisplayName="Append to CSV" Encoding="utf-8" FilePath="[inputDestinationfolder + userName + &quot;_basic_profile_information.csv&quot;]" sap:VirtualizedContainerService.HintSize="434,133" sap2010:WorkflowViewState.IdRef="AppendCsvFile_2" />
             </Sequence>
-            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="707,85" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Profile URL: &quot; + profileURL + Environment.Newline + &quot;Username: &quot; + userName + Environment.NewLine + &quot;Follower count: &quot; + followerCount.ToString + Environment.NewLine + &quot;Following count: &quot; + FollowingCount.ToString + Environment.Newline + &quot;Post count: &quot; + postCount.ToString + Environment.Newline + &quot;Reel count: &quot; + reelCount.ToString + Environment.NewLine + &quot;Account type: &quot; + accountType]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="652,92" sap2010:WorkflowViewState.IdRef="LogMessage_4" Message="[&quot;Profile URL: &quot; + profileURL + Environment.Newline + &quot;Username: &quot; + userName + Environment.NewLine + &quot;Follower count: &quot; + followerCount.ToString + Environment.NewLine + &quot;Following count: &quot; + FollowingCount.ToString + Environment.Newline + &quot;Post count: &quot; + postCount.ToString + Environment.Newline + &quot;Reel count: &quot; + reelCount.ToString + Environment.NewLine + &quot;Account type: &quot; + accountType]" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
