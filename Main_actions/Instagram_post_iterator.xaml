@@ -1,4 +1,12 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="InstapostIteration" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="646,3671" sap2010:WorkflowViewState.IdRef="InstapostIteration_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="InstapostIteration" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="inputDestinationfolder" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>646,3897</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>InstapostIteration_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="36">
       <x:String>System.Activities</x:String>
@@ -92,7 +100,7 @@
       <AssemblyReference>System.Private.Xml</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Instagram_post_iterator" sap:VirtualizedContainerService.HintSize="656,3606" sap2010:WorkflowViewState.IdRef="Sequence_6">
+  <Sequence DisplayName="Instagram_post_iterator" sap:VirtualizedContainerService.HintSize="656,3832" sap2010:WorkflowViewState.IdRef="Sequence_6">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="listOfsubtabs" />
       <Variable x:TypeArguments="x:Int32" Name="initialTabcount" />
@@ -102,13 +110,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Iterating every post in a profile page" sap:VirtualizedContainerService.HintSize="594,3495" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="91cefbd8-d20a-4ee0-a220-cc3764d0e803" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Iterating every post in a profile page" sap:VirtualizedContainerService.HintSize="594,3721" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="91cefbd8-d20a-4ee0-a220-cc3764d0e803" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="560,3278" sap2010:WorkflowViewState.IdRef="Sequence_26">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="560,3504" sap2010:WorkflowViewState.IdRef="Sequence_26">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Int32" Name="postCountint" />
             </Sequence.Variables>
@@ -214,7 +222,7 @@
                     </Sequence>
                     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Fullpackage_post_data_extraction.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="400,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" UnSafe="False" WorkflowFileName="Reusable_modules\Data_extractors\Fullpackage_post_data_extraction.xaml">
                       <ui:InvokeWorkflowFile.Arguments>
-                        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                        <InArgument x:TypeArguments="x:String" x:Key="inputDestinationfolder">[inputDestinationfolder]</InArgument>
                       </ui:InvokeWorkflowFile.Arguments>
                     </ui:InvokeWorkflowFile>
                     <Sequence DisplayName="Exit post" sap:VirtualizedContainerService.HintSize="400,294" sap2010:WorkflowViewState.IdRef="Sequence_24">
@@ -229,7 +237,7 @@
                 </ActivityAction>
               </ui:ForEach.Body>
             </ui:ForEach>
-            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Up" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="498,237" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" MovementUnits="10" Version="V3">
+            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Up" DisplayName="Scroll back to top of profile page" sap:VirtualizedContainerService.HintSize="498,237" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" MovementUnits="10" Version="V3">
               <uix:NMouseScroll.SearchedElement>
                 <uix:SearchedElement>
                   <uix:SearchedElement.Target>
@@ -241,7 +249,8 @@
                 </uix:SearchedElement>
               </uix:NMouseScroll.SearchedElement>
             </uix:NMouseScroll>
-            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="498,85" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;All post data extracted from this profile!&quot;]" />
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayAfter="0" DelayBefore="0" DelayBetweenKeys="0" DelayBetweenShortcuts="0" DisplayName="Refresh page to un-burden ram usage" sap:VirtualizedContainerService.HintSize="498,179" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_13" InteractionMode="SameAsCard" ScopeIdentifier="91cefbd8-d20a-4ee0-a220-cc3764d0e803" Shortcuts="[d(hk)][k(f5)][u(hk)]" Timeout="1" Version="V3" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="498,92" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;All post data extracted from this profile!&quot;]" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>

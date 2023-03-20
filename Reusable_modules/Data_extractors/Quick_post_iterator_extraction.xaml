@@ -2,11 +2,12 @@
   <x:Members>
     <x:Property Name="outputQuickposttable" Type="OutArgument(sd:DataTable)" />
     <x:Property Name="inputUsername" Type="InArgument(x:String)" />
+    <x:Property Name="inputDestinationfolder" Type="InArgument(x:String)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1254,5441</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1094,5448</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>InstapostIteration_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="39">
@@ -107,7 +108,7 @@
       <AssemblyReference>UiPath.Excel</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Instagram_post_iterator" sap:VirtualizedContainerService.HintSize="697,5376" sap2010:WorkflowViewState.IdRef="Sequence_6">
+  <Sequence DisplayName="Instagram_post_iterator" sap:VirtualizedContainerService.HintSize="697,5383" sap2010:WorkflowViewState.IdRef="Sequence_6">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="listOfsubtabs" />
       <Variable x:TypeArguments="x:Int32" Name="initialTabcount" />
@@ -120,13 +121,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Iterating every post in a profile page" sap:VirtualizedContainerService.HintSize="635,5265" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="91cefbd8-d20a-4ee0-a220-cc3764d0e803" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Iterating every post in a profile page" sap:VirtualizedContainerService.HintSize="635,5272" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="91cefbd8-d20a-4ee0-a220-cc3764d0e803" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="601,5048" sap2010:WorkflowViewState.IdRef="Sequence_26">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="601,5055" sap2010:WorkflowViewState.IdRef="Sequence_26">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Int32" Name="postCountint" />
               <Variable x:TypeArguments="sd:DataTable" Name="postDatasummarytable" />
@@ -260,7 +261,7 @@
                         <uix:TargetAnchorable DesignTimeRectangle="245, 56, 1248, 33" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'https://www.instagram.c…'" FullSelectorArgument="&lt;ctrl name='*• Instagram photos and videos*' role='pane' /&gt;&lt;ctrl name='App bar' role='tool bar' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" Guid="b3d71fdf-684d-4971-86a2-3acabb0e8336" ImageBase64="" InformativeScreenshot="24baa7b759a9690908570be231e3d7ff.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='*• Instagram photos and videos - Personal *' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
                       </uix:NGetText.Target>
                     </uix:NGetText>
-                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Likes_count_from_post_extraction.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="441,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" UnSafe="False" WorkflowFileName="Reusable_modules\Data_extractors\Likes_count_from_post_extraction.xaml">
+                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Like_count_from_post_extraction.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="441,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" UnSafe="False" WorkflowFileName="Reusable_modules\Data_extractors\Like_count_from_post_extraction.xaml">
                       <ui:InvokeWorkflowFile.Arguments>
                         <OutArgument x:TypeArguments="x:Int32" x:Key="outputLikecount">[likesCount]</OutArgument>
                         <InArgument x:TypeArguments="x:String" x:Key="inputPosttype">[postType]</InArgument>
@@ -289,7 +290,7 @@
                 <InArgument x:TypeArguments="sd:DataTable">[refDatatableforreel]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:AppendCsvFile DataTable="[postDatasummarytable]" Delimitator="Comma" DisplayName="Append to CSV" Encoding="utf-8" FilePath="[&quot;C:\Users\Admin\Downloads\&quot; + userName +&quot;_&quot; + &quot;post_quick_summary.csv&quot;]" sap:VirtualizedContainerService.HintSize="539,133" sap2010:WorkflowViewState.IdRef="AppendCsvFile_1" />
+            <ui:AppendCsvFile DataTable="[postDatasummarytable]" Delimitator="Comma" DisplayName="Append to CSV" Encoding="utf-8" FilePath="[inputDestinationfolder + userName +&quot;_&quot; + &quot;post_quick_summary.csv&quot;]" sap:VirtualizedContainerService.HintSize="539,133" sap2010:WorkflowViewState.IdRef="AppendCsvFile_1" />
             <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Up" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="539,237" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" MovementUnits="10" Version="V3">
               <uix:NMouseScroll.SearchedElement>
                 <uix:SearchedElement>
@@ -303,7 +304,7 @@
               </uix:NMouseScroll.SearchedElement>
             </uix:NMouseScroll>
             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="539,92" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[&quot;There are &quot; + postDatasummarytable.Rows.Count.ToString + &quot; post/s in &quot; + userName + &quot;'s profile.&quot;]" />
-            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="539,85" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;All post data extracted (quick) from this profile!&quot;]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="539,92" sap2010:WorkflowViewState.IdRef="LogMessage_4" Message="[&quot;All post data extracted (quick) from this profile!&quot;]" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>

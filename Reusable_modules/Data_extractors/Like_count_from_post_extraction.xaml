@@ -7,7 +7,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1206,2843</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1079,2883</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Likes_count_extractor_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -107,7 +107,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Likes_count_extractor" sap:VirtualizedContainerService.HintSize="845,2778" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Likes_count_extractor" sap:VirtualizedContainerService.HintSize="845,2818" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="rawLikestext" />
       <Variable x:TypeArguments="x:Int32" Name="postLikescount" />
@@ -118,7 +118,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Instagram_likes_count_extraction" sap:VirtualizedContainerService.HintSize="783,2667" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="91cefbd8-d20a-4ee0-a220-cc3764d0e803" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Instagram_likes_count_extraction" sap:VirtualizedContainerService.HintSize="783,2707" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="91cefbd8-d20a-4ee0-a220-cc3764d0e803" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -259,7 +259,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="687,92" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;There are &quot; + outputLikecount.ToString + &quot; like/s. &quot; + &quot;(&quot; + inputIshidden + &quot;)&quot;]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="687,92" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;There are &quot; + outputLikecount.ToString + &quot; like/s. &quot; + &quot;(&quot; + inputIshidden + &quot;)&quot;]" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>

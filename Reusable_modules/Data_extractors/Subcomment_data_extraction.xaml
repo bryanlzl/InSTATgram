@@ -2,11 +2,12 @@
   <x:Members>
     <x:Property Name="inputProfileusername" Type="InArgument(x:String)" />
     <x:Property Name="inputPosttype" Type="InArgument(x:String)" />
+    <x:Property Name="inputDestinationfolder" Type="InArgument(x:String)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>744,3741</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1079,3781</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>sublol_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="74">
@@ -115,7 +116,7 @@
       <AssemblyReference>System.Collections</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Subcomment_data_extraction (For Post)" sap:VirtualizedContainerService.HintSize="754,3676" sap2010:WorkflowViewState.IdRef="Sequence_7">
+  <Sequence DisplayName="Subcomment_data_extraction (For Post)" sap:VirtualizedContainerService.HintSize="754,3716" sap2010:WorkflowViewState.IdRef="Sequence_7">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="subCommenturl" />
       <Variable x:TypeArguments="x:Int32" Name="subCommentsl" />
@@ -125,7 +126,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="692,3565" sap2010:WorkflowViewState.IdRef="Sequence_10">
+    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="692,3605" sap2010:WorkflowViewState.IdRef="Sequence_10">
       <Sequence.Variables>
         <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="subCommentscomments" />
         <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="subCommentsusername" />
@@ -139,7 +140,7 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" ContinueOnError="True" DisplayName="Get post URL" sap:VirtualizedContainerService.HintSize="630,3454" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="6c14f27f-404e-4654-bb52-e0e17d446662" Timeout="1.5" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" ContinueOnError="True" DisplayName="Get post URL" sap:VirtualizedContainerService.HintSize="630,3494" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="6c14f27f-404e-4654-bb52-e0e17d446662" Timeout="1.5" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
@@ -262,8 +263,8 @@
                   </ActivityAction>
                 </ui:ForEach.Body>
               </ui:ForEach>
-              <ui:AppendCsvFile DataTable="[subCommenttable]" Delimitator="Comma" DisplayName="Append to CSV" Encoding="utf-8" FilePath="[&quot;C:\Users\Admin\Downloads\&quot; + inputProfileusername +&quot;_&quot; + inputPosttype + &quot;_post_comment_stats.csv&quot;]" sap:VirtualizedContainerService.HintSize="534,133" sap2010:WorkflowViewState.IdRef="AppendCsvFile_1" />
-              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="534,92" sap2010:WorkflowViewState.IdRef="LogMessage_7" Message="[&quot;There are &quot; + subCommenttable.Rows.Count.ToString + &quot; sub-comments&quot;]" />
+              <ui:AppendCsvFile DataTable="[subCommenttable]" Delimitator="Comma" DisplayName="Append to CSV" Encoding="utf-8" FilePath="[inputDestinationfolder + inputProfileusername +&quot;_&quot; + inputPosttype + &quot;_post_comment_stats.csv&quot;]" sap:VirtualizedContainerService.HintSize="534,133" sap2010:WorkflowViewState.IdRef="AppendCsvFile_1" />
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="534,92" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;There are &quot; + subCommenttable.Rows.Count.ToString + &quot; sub-comments&quot;]" />
             </Sequence>
           </ActivityAction>
         </uix:NApplicationCard.Body>

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "jO/IRDJO7mrx6ei8hTbJpGfmW122fJET02leCBln4PcP/kQiIDc+tjRuPlWgKQGYuWjDggCjEgHBnlLs4w4w+A==",
+  "dgSpecHash": "Yinwg7wsnqeBek1q7wIAywg6Kq27WlQcvf7BBM4vnyOsZCbDYjFIxPAynDBRfb2wy12yaQWf6Y8dtxqwwJwEYQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Admin\\Desktop\\Wededucks RPA Hackathon\\InSTATgram project\\.local\\",
   "expectedPackageFiles": [
@@ -16,6 +16,9 @@
     "C:\\Users\\Admin\\.nuget\\packages\\google.apis.core\\1.55.0\\google.apis.core.1.55.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\google.apis.gmail.v1\\1.55.0.2510\\google.apis.gmail.v1.1.55.0.2510.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\google.apis.peopleservice.v1\\1.55.0.2567\\google.apis.peopleservice.v1.1.55.0.2567.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\h.formatters\\2.0.35\\h.formatters.2.0.35.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\h.formatters.binaryformatter\\2.0.35\\h.formatters.binaryformatter.2.0.35.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\h.pipes\\2.0.35\\h.pipes.2.0.35.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\htmlagilitypack\\1.11.38\\htmlagilitypack.1.11.38.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\mailkit\\3.1.1\\mailkit.3.1.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\markdig.signed\\0.21.1\\markdig.signed.0.21.1.nupkg.sha512",
@@ -34,6 +37,8 @@
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.0.0\\microsoft.codeanalysis.analyzers.3.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.codeanalysis.common\\3.8.0\\microsoft.codeanalysis.common.3.8.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.codeanalysis.csharp\\3.8.0\\microsoft.codeanalysis.csharp.3.8.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.codeanalysis.csharp.scripting\\3.8.0\\microsoft.codeanalysis.csharp.scripting.3.8.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.codeanalysis.scripting.common\\3.8.0\\microsoft.codeanalysis.scripting.common.3.8.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.codeanalysis.visualbasic\\3.8.0\\microsoft.codeanalysis.visualbasic.3.8.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.6\\microsoft.extensions.configuration.3.1.6.nupkg.sha512",
@@ -74,6 +79,7 @@
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.rest.clientruntime.azure\\3.3.18\\microsoft.rest.clientruntime.azure.3.3.18.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.visualbasic\\10.3.0\\microsoft.visualbasic.10.3.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.visualstudio.ole.interop\\16.7.30328.74\\microsoft.visualstudio.ole.interop.16.7.30328.74.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.web.webview2\\1.0.1264.42\\microsoft.web.webview2.1.0.1264.42.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.win32.registry.accesscontrol\\5.0.0\\microsoft.win32.registry.accesscontrol.5.0.0.nupkg.sha512",
@@ -99,6 +105,7 @@
     "C:\\Users\\Admin\\.nuget\\packages\\npoi\\2.5.5\\npoi.2.5.5.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\polly\\7.1.0\\polly.7.1.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\portable.bouncycastle\\1.9.0\\portable.bouncycastle.1.9.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\reflectionmagic\\4.1.0\\reflectionmagic.4.1.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\runtime.any.system.collections\\4.3.0\\runtime.any.system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\runtime.any.system.diagnostics.tools\\4.3.0\\runtime.any.system.diagnostics.tools.4.3.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\runtime.any.system.diagnostics.tracing\\4.3.0\\runtime.any.system.diagnostics.tracing.4.3.0.nupkg.sha512",
@@ -217,6 +224,7 @@
     "C:\\Users\\Admin\\.nuget\\packages\\system.reflection.metadata\\5.0.0\\system.reflection.metadata.5.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.reflection.primitives\\4.3.0\\system.reflection.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.reflection.typeextensions\\4.3.0\\system.reflection.typeextensions.4.3.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.resources.extensions\\5.0.0\\system.resources.extensions.5.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.resources.resourcemanager\\4.3.0\\system.resources.resourcemanager.4.3.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.runtime.caching\\5.0.0\\system.runtime.caching.5.0.0.nupkg.sha512",
@@ -270,6 +278,9 @@
     "C:\\Users\\Admin\\.nuget\\packages\\uipath.activities.runtimegovernance\\1.1.6\\uipath.activities.runtimegovernance.1.1.6.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\uipath.connectionclient\\1.4.1\\uipath.connectionclient.1.4.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\uipath.excel.activities\\2.17.0-preview\\uipath.excel.activities.2.17.0-preview.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\uipath.form.activities\\2.0.3\\uipath.form.activities.2.0.3.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\uipath.formactivitylibrary\\2.0.3\\uipath.formactivitylibrary.2.0.3.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\uipath.formactivitylibrary.contracts\\2.0.3\\uipath.formactivitylibrary.contracts.2.0.3.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\uipath.imageprocessing\\22.4.1\\uipath.imageprocessing.22.4.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\uipath.mail.activities\\1.18.2\\uipath.mail.activities.1.18.2.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\uipath.ocr.activities\\3.11.0\\uipath.ocr.activities.3.11.0.nupkg.sha512",
@@ -280,7 +291,8 @@
     "C:\\Users\\Admin\\.nuget\\packages\\uipath.telemetry.client\\1.5.3\\uipath.telemetry.client.1.5.3.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\uipath.testing.activities\\22.12.0-preview\\uipath.testing.activities.22.12.0-preview.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.4\\uipath.uiautomation.activities.22.10.4.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\uipath.vision\\3.6.0\\uipath.vision.3.6.0.nupkg.sha512"
+    "C:\\Users\\Admin\\.nuget\\packages\\uipath.vision\\3.6.0\\uipath.vision.3.6.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\uipath.webview2.runtime.x64\\0.1.0\\uipath.webview2.runtime.x64.0.1.0.nupkg.sha512"
   ],
   "logs": []
 }

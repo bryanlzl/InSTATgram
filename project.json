@@ -1,9 +1,10 @@
 {
   "name": "Instatgram",
   "description": "Blank Process",
-  "main": "Main.xaml",
+  "main": "Menu\\Login_prompt.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.17.0-preview]",
+    "UiPath.Form.Activities": "[2.0.3]",
     "UiPath.Mail.Activities": "[1.18.2]",
     "UiPath.Python.Activities": "[1.6.0]",
     "UiPath.System.Activities": "[22.10.4]",
@@ -48,8 +49,8 @@
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "Main.xaml",
-      "uniqueId": "f595f091-55af-4100-aacd-95aa7c207466",
+      "filePath": "Menu\\Login_prompt.xaml",
+      "uniqueId": "0d43eb5f-8721-49e3-a188-f1735832a972",
       "input": [],
       "output": []
     }

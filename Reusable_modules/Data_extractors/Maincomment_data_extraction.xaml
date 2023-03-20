@@ -2,11 +2,12 @@
   <x:Members>
     <x:Property Name="inputProfileusername" Type="InArgument(x:String)" />
     <x:Property Name="inputPosttype" Type="InArgument(x:String)" />
+    <x:Property Name="inputDestinationfolder" Type="InArgument(x:String)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1181,4279</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>682,4279</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Post_data_extraction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="86">
@@ -298,8 +299,8 @@
                 </ActivityAction>
               </ui:ForEach.Body>
             </ui:ForEach>
-            <ui:AppendCsvFile DataTable="[mainCommenttable]" Delimitator="Comma" DisplayName="Append to CSV" Encoding="utf-8" FilePath="[&quot;C:\Users\Admin\Downloads\&quot; + inputProfileusername +&quot;_&quot; + inputPosttype + &quot;_post_comment_stats.csv&quot;]" sap:VirtualizedContainerService.HintSize="534,133" sap2010:WorkflowViewState.IdRef="AppendCsvFile_1" />
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="534,92" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[&quot;There are &quot; + mainCommenttable.Rows.Count.ToString + &quot; main comments&quot;]" />
+            <ui:AppendCsvFile DataTable="[mainCommenttable]" Delimitator="Comma" DisplayName="Append to CSV" Encoding="utf-8" FilePath="[inputDestinationfolder + inputProfileusername +&quot;_&quot; + inputPosttype + &quot;_post_comment_stats.csv&quot;]" sap:VirtualizedContainerService.HintSize="534,133" sap2010:WorkflowViewState.IdRef="AppendCsvFile_1" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="534,92" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;There are &quot; + mainCommenttable.Rows.Count.ToString + &quot; main comments&quot;]" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>

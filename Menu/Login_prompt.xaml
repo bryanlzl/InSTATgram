@@ -1,0 +1,233 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1105,2595" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="102">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1115,2530" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="loginDeets" />
+      <Variable x:TypeArguments="x:String" Name="userName" />
+      <Variable x:TypeArguments="x:String" Name="passWord" />
+      <Variable x:TypeArguments="s:String[]" Name="loginArray" />
+      <Variable x:TypeArguments="x:String" Name="ifTurnOnNotif" />
+      <Variable x:TypeArguments="x:String" Name="ifSaveLoginInfo" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Render login screen" sap:VirtualizedContainerService.HintSize="1053,320" sap2010:WorkflowViewState.IdRef="Sequence_6">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:CustomInput DisplayName="Login screen" Height="700" sap:VirtualizedContainerService.HintSize="434,87" sap2010:WorkflowViewState.IdRef="CustomInput_1" Result="[logindeets]" URI="HTML_components/Login_screen.html" Width="550" />
+      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_3">
+        <Assign.To>
+          <OutArgument x:TypeArguments="s:String[]">[loginarray]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="s:String[]">[logindeets.split("|"c)]</InArgument>
+        </Assign.Value>
+      </Assign>
+    </Sequence>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: New tab" sap:VirtualizedContainerService.HintSize="1053,2059" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="c3abc306-b69a-4d5a-8fcb-e8ef7c5c9c16" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1019,1842" sap2010:WorkflowViewState.IdRef="Sequence_10">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="ifLoggedIn" />
+              <Variable x:TypeArguments="x:Boolean" Name="LoggedIn" />
+              <Variable x:TypeArguments="x:String" Name="variable2" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGoToUrl DelayAfter="0" DelayBefore="0" DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="957,82" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Timeout="1" Url="https://www.instagram.com/" Version="V3" />
+            <uix:NCheckState DisplayName="When Instagram remembers you have accounts" sap:VirtualizedContainerService.HintSize="957,489" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="c3abc306-b69a-4d5a-8fcb-e8ef7c5c9c16" Timeout="1.5" Version="V3">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,272" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ClickType="Single" DisplayName="Click &quot;switch accounts&quot;" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;webctrl aaname='Switch accounts' tag='BUTTON' /&gt;" Guid="1c2bb960-bd68-4991-a6f7-2c26a4f42de8" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Instagram' /&gt;" SearchSteps="Selector" WaitForReadyArgument="Complete" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,105" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.instagram.com/" DesignTimeRectangle="1110, 745, 127, 23" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Switch accounts'" FullSelectorArgument="&lt;webctrl aaname='Switch accounts' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Switch accounts' tag='BUTTON' type='button' class='_acan _acao _acas _aj1-' check:innerText='Switch accounts' /&gt;" Guid="f7362d33-347f-40c5-a64a-5d2a3fcdbc75" ImageBase64="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" InformativeScreenshot="45d68f82aa892de5049fdac2382a6d6e.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Instagram' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete" />
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
+            <uix:NCheckState DisplayName="Check App State 'Don't have'" sap:VirtualizedContainerService.HintSize="957,1076" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="c3abc306-b69a-4d5a-8fcb-e8ef7c5c9c16" Timeout="2" Version="V3">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="462,859" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Sequence DisplayName="Login Sequence" sap:VirtualizedContainerService.HintSize="400,591" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="savelogin" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Key instagram username" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,218" sap2010:WorkflowViewState.IdRef="NTypeInto_10" ScopeIdentifier="c3abc306-b69a-4d5a-8fcb-e8ef7c5c9c16" Text="[loginarray(0)]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.instagram.com/" DesignTimeRectangle="1033, 348, 258, 36" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='_aa4b _add6 _ac4d' aaname='' /&gt;" Guid="a4484124-bfb0-4b0f-b44d-578929d4124a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQYAAAAoCAYAAAAc5FTOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARbSURBVHhe7ZjJbSNBDEUn/4MSsCMQHIEVQ0dg6KKjQvClp1lLF4sstpaxDGj0GniAamNx01fbf2YeHh4e86zCcD6f5+PxOH99fQHAi5OEQUTh+/sbACCRhEHeFEaLAPCaJGGQV4fRIgC8JggDADgQBgBwIAwA4EAYAMCBMACAA2EAAAfCAAAOhAEAHAgDADgQBgBwIAwA4LhBGKZ5v9vNu5X9PJW10+f7/P55Mvufn/81rldl+tiVekovt/69i2k/7z6m29eehBuFQSVTgn87zKflM8IAzwXCcIn7hUGNEQZ4LhCGS/ygMEzz4a38mVHeJPK+U5sXVMLk1W4/iR2/9n06zO91PihifK/c+T4fTnVvP7b37qdsK9/V9jn7xg+xk+frK+oyL34vfhzS2kbz2ebpxionyp+0p86vseY6HJL/eW+c16gW2ca02he/1d6unkHclq5+Ocd5zftrz27ldap1Sj7dEmPNi3wu8ZZ5TesDQe/Rdhe/P3W94rXcQ4fsZ90/rGPvd/ZzNPc73C0MKYEq+FbkHIwOTDePFKeOcwNUm2K/2ChNsDaj/RIVtu+t837c3VsauPoUx9WvtSYz9ou9i0W0Mamx3OO+cGZ/25O/HDbHw7yW9YzOSbYxjlvndSPu1e5CyoGe1z54fzWX8lrP3R6jti37Wy9H6Dqk+9b855zU8dZazqW6K6rjqMdHc7/E/f98VF9cncB+vJzRX3BBfen7JlBjSYi+y9xXie+1DRs1iGCaRBXD2m97S/GNj8mmiq+dG2CLrsclfp0b8cXel/f7Jg/zKmOT2zwf56A/vxF3PVvO93kzPWH8bVyf1742pt7DGHUcWz7Imro/5UHsm/1rjrbWfA+FdTTClxjN/RL/8KdEYxR8Hi9n7hUG1ZgR8b2mUcy4v9fEtVHUttfaV/yEMBTEz/rL7X2p+Lps5lX51vbFOej3bcStWc5bX7ueCPpo0/61whDGuBHvisyr+9c8DPZftebrFtexrYtYVJ+juUfzYGGQgvnX3DrWRevGSSkvN2B8b3+Ptdffa+IyRbVvRnVNbNTPHdcKQ/Kp3RvZW2MSv4b593Xp42tj7X8+V/fFOdDn6+dh3BpXP7Ffx95fTWjf5FXXWgtDHKOOI/Bhoybyub/vurXez4WwjgqT/3DugTxYGGSci9O9NpV9rVCDcUpgO9clt7B5bypyOb+86u3VL1F/r4lLFSDZ+1h+/VY7+gtfGqCuVRumgdM4KKj4Uc/vl3v0vatdK0x1Xs4ETR7nVddiyUk3P86BtxfEbTH1a+e9vz3X5bWvvZzRwtPOthhtHsY+RDXp7S53df98jNd6PzPDOnb5Kr6N5n6JG4QB7mIpbvtSADwHCMODmT7amwrAs4AwAIADYQAAB8IAAA6EAQAcCAMAOBAGAHAgDADgQBgAwIEwAIAjCcPxeBwuAsBrkoThfD4PFwHgNUnCII+Ig7w5yJ8VAPDarMLAw8PDk595/gtxm2fSUWMC8wAAAABJRU5ErkJggg==" InformativeScreenshot="83745c4b64843682324807d6263b8e02.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Instagram' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Key instagram password" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,218" sap2010:WorkflowViewState.IdRef="NTypeInto_11" ScopeIdentifier="c3abc306-b69a-4d5a-8fcb-e8ef7c5c9c16" Text="[loginarray(1)+&quot;[k(enter)]&quot;]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.instagram.com/" DesignTimeRectangle="1033, 392, 258, 36" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='password' class='_aa4b _add6 _ac4d' aaname='' /&gt;" Guid="fc006aad-4162-4d30-bc15-36d9ea801bf4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQYAAAAoCAYAAAAc5FTOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJLSURBVHhe7ditDuJAFIbhvX+BwEACBoPBoDA4LoAbIHUocEhMN+9sTjPpaVgKhqTvJE/K/HSoOR9T/rQ2m83Wa10w3G63tmma9nK5SJq4EgyEwvP5lKSiBAMnhaFJSdNUgoGjw9CkpGkyGCQlBoOkxGCQlBgMkhKDQVJiMEhKDAZJicEgKTEYJCUGg6TEYJCUvB0M9/u9XS6X7Ww2K/jM2NDaX3M8HouhOUnZqGDYbDZdGJzP59J/PB5p7a8xGKRxPg6Gfv+XGQzSOF8Hw/V6Ldd4xdjtdmWek0Q9zgmDcQq0Xst4/55Yy3Pt9/vu83w+T/vFc7COedYxFq89XJkzGKT3fRwMFFoUdKCwt9tt2a8u+NDfA6zlHu7l82q16sIgfukZXywW3XNy/3q9Ln0+U/xR+BEu0e/PS/q/j/98pPgoQuYIgRgHffbkF7wuyCja+l6uESasPZ1OJVAYJyAYZ79+YdMHz1WHDde4v782+pJe+/jEECjautApSsZinoKMsIixCI04UUThHg6Hsj+BwPoo8DHBwN5xAumvjb6k174OBgouCpw5ThV1CCCKvB6r94tiJhhiPa8UUczMv3qVqJ+LQKAfz8C4rxLSOF8HQxQepwKuUZSIVwvGWVevrU8RQ8UchR/fU+9X38va/nNxX/xRyff556M0ztvBIGk6DAZJicEgKTEYJCUGg6TEYJCUGAySEoNBUmIwSEoMBkmJwSApKcHQNM3gpKRpKsFwu90GJyVNUwkGGuHAyYHXCknT1gWDzWaz/Wtt+xeo5mzxw8KcsAAAAABJRU5ErkJggg==" InformativeScreenshot="63b2c3691bfc386acc0d10ebdfdd22ca.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Instagram' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                  </Sequence>
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Bypass &quot;Save Information&quot; &amp; &quot;Turn on notifications&quot; modals" sap:VirtualizedContainerService.HintSize="400,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Reusable_modules\Modal_bypassers\Notnow_modal_bypasser.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                    </ui:InvokeWorkflowFile.Arguments>
+                  </ui:InvokeWorkflowFile>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Already Logged in " sap:VirtualizedContainerService.HintSize="441,228" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Bypass &quot;Save Information&quot; &amp; &quot;Turn on notifications&quot; modals" sap:VirtualizedContainerService.HintSize="379,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Reusable_modules\Modal_bypassers\Notnow_modal_bypasser.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                    </ui:InvokeWorkflowFile.Arguments>
+                  </ui:InvokeWorkflowFile>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.instagram.com/" DesignTimeRectangle="1067, 665, 197, 18" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Don't have'" FullSelectorArgument="&lt;webctrl tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='P' type='' class='_ab25' aaname='Don&amp;apos;t have an account? ' check:innerText='Don&amp;apos;t have an account? Sign up' /&gt;" Guid="fb19abeb-5217-4277-887f-efd180478160" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMkAAAAWCAYAAABqrrj/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVaSURBVHhe7ZrPSxxJFMf9Ezx6ncuAR4+5zjGXDDnONce5zRy9evSok0UMElGWhQiLMrizbFhcZPYQVoKyM0EmWRKEyRISl4W1u6d7fPvq13S96uofY9Qo1Acara7qqtev3rfqVesMOByOTJxIHI4cnEgcjhycSByOHJxIHI4cnEgcjhyoSPabUC6XjasKrVNZf00MVqtQXR3IUh4DaD0qQ3NfFh3fHiNOsubG+3sE9a0LKD29gJnVC5j9zoOlt6zmEo4OPVjYCqA75k3vLEmRPGphWGpIhxQP6nyoSDrQzBSiE8m3ptOg899Z1WKEx0cTZ9HClwAeozhm11EYr0awfTyClZ88WOyzyjG091A4az60Pd76zpIvEsZpC6ppjrgCTiT3C1MklIz5O/H57rH4XpbvKcVEkghUUY63XOokJoJyo8Odq9pYnczFp/WTOTabDNXWmBS526lLjWWbXHpP7zMrEJCUMQrZZ8D9o/VlLgC638gqbdgQP0ffg67sliAm85xlf/Y8M7itONdWBj6UUCTzuyMYWlKqnV2WgvmwI8vwGVOzTdx5ZFq22PWhgr9XDiJe3TvwsD3uSv0RPHkm0rfSJu5E//HqBIn+AfvHZ2bQHs7HQPT/awht3OF4SvjUg9pBCOeiBaegSIQzRGBIx+mO4ZMXT4wKgskk8vq0wLFMIkFNVNw/nxjNzk7DDCRZNt+H7IgiKGigpduROkYB+yjYvhHXcV+Rd6G+HWBqw0uGj9m7tLjt4j10gdM+Le9F/FLEv/YFxLQ1CaZUGHxzLDAx+J50QyIWEsTjEJprWF5DEfwZQe+vAOobrN4UyQXMPfdh+yyCbteDeSyX9kNeb1JUJCUUZO23EI7OQlh+Icasn8SGTi8Sa+olHK0CTu0kMbSeUkwk5NnM9E/vj/ZN7LK8K6u3BUMSvd9p7TPQ26Y+l+E/65yl+4BjEUmW/VaRZMQK5RKGHzDg1Q6xEa/8JIj7Pq+vvdZU9N6HBbxniqT55pKXASJYeo59bAbQk3d0CoukLcsMbwQ1vDe7F9+bPt1KaaM78tZFwstsNVQXFYawi/VD78fttSttZUwdo4B9JsyHpC/ZNtX/6T5K+pqh23SDIknzlRUUC6ZfPCjlyq8H8btDkUotf+RVApUOGelW3CaCZRTf14pE9S8w2iDFRKLfTwkA5kjl6FsVScIeoz9Wz2xXP+XtqSY5c4wpRWL6WG+b+lyG/6xzxtor+25IJFdCrvxbAbzDEgniY3HIr5+oXQJ5I840VxUJ/3qG7bfV17MxnmUsIln4RUvXvgTwEO/pKVyuSMSKqztZOJUEGHtOc+qtisS0mdti2luFZsNMpdi4aTYZZI6RH2Q6pm+Ef1XbpG/VmYS2Q3CMYmcS0WdcL9p/tUiMObfRwzPD43YA68fy8++ex1OqyqEIeiISluawgzOeSZZPIzg6DaC2LlK0q4pk+LtIzx5g6nT0KYQVed4wRTKL56X66wiGZyNY+oG1wXPRB9GEkRTJJAWQl3W1lZM5aUedNZ1IZHvWjyFQQd4kGrbgAdsUXSLAFLwf7dlUsWaNkWefiQxSeVWxL9rWGEvzycRP/NJtpX0m/EjeE8cioi9g/+R5bcwCIhniOePhMzxos8DEaw4FwA7v6suRmQ6d42G9pn212unLdEiKalqRwDhCYWgfDv4IrDtJ5ecAlr6XZyb2Va1PP8VRkTgcd4jzV2InqPM/Pt4A1jNJEicSxx0BV/0ffVjph9D7J4KXXR8esPRrw7+5f1txInHcLyLY3vVgXv6P1wz+rLwI4OW/2kH+unEicTiuBycShyMHJxKHIxOA/wHUqIVoybIKyAAAAABJRU5ErkJggg==" InformativeScreenshot="cc2a27af668adf3be716d2b39a2d2612.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Instagram*' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAWJQAAFiUBSVIk8AAAAQhJREFUWEftl9ENwjAMRDsCIzAKm8AGsAGMwEaMwgiMQP0qTkKy09YkfCDypJNKnFzckLTu0AnYmW6mh+nZUHjuTbOcTdHglmKOkINJnS6mjSlCfTLgdTJpLKvsYIkI0nGOTxIQ3Bhjmcsh49Kdi5oE8GYs+8ux1libczv9ylOcZ20CWsZaOYqBgKup9pg6ioHG9AR6Ar+XAG8wjtz9dS2y7SKdAEaKYSyy7UIxRymAiWKYi2y7UMxRCvCaxghjrkW2XaQTaE1PoCdQnEfHZ6kkq0ElWZiAilIqnm9xNDFHWJRSKis7KuOWK4HX+zdH9IieaFXvzWlxhXl66e9oJfYXnuEHyT8zDCPMjw3PbnWtNQAAAABJRU5ErkJggg==" InformativeScreenshot="f3bd6743f3635b3102f1ee51da45809a.png" Selector="&lt;html app='msedge.exe' title='New tab' /&gt;" Url="edge://newtab/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

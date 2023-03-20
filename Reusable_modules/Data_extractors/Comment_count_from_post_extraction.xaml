@@ -7,7 +7,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1069,4102</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>913,3939</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Likes_count_extractor_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="38">
@@ -112,7 +112,7 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Comment_count_extractor" sap:VirtualizedContainerService.HintSize="923,4037" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Comment_count_extractor" sap:VirtualizedContainerService.HintSize="923,3874" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="rawCommentcounttext" />
       <Variable x:TypeArguments="x:Int32" Name="postCommentcount" />
@@ -123,13 +123,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Instagram_Comment_count_extraction" sap:VirtualizedContainerService.HintSize="861,3926" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="91cefbd8-d20a-4ee0-a220-cc3764d0e803" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Instagram_Comment_count_extraction" sap:VirtualizedContainerService.HintSize="861,3763" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="91cefbd8-d20a-4ee0-a220-cc3764d0e803" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Comment count extraction from post" sap:VirtualizedContainerService.HintSize="827,3502" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <Sequence DisplayName="Comment count extraction from post" sap:VirtualizedContainerService.HintSize="827,3506" sap2010:WorkflowViewState.IdRef="Sequence_8">
             <Sequence.Variables>
               <Variable x:TypeArguments="s:String[]" Name="postCommentarray" />
               <Variable x:TypeArguments="x:Double" Name="postCommentcountdouble" />
@@ -343,7 +343,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="765,92" sap2010:WorkflowViewState.IdRef="LogMessage_7" Message="[&quot;There are &quot; + outputCommentcount.ToString + &quot; comment/s. &quot; + &quot;(&quot; + outputIshidden + &quot;)&quot;]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="765,92" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;There are &quot; + outputCommentcount.ToString + &quot; comment/s. &quot; + &quot;(&quot; + outputIshidden + &quot;)&quot;]" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>

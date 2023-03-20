@@ -1,4 +1,12 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="InstapostIteration" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="996,4256" sap2010:WorkflowViewState.IdRef="InstapostIteration_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="InstapostIteration" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="inputDestinationfolder" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1079,4482</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>InstapostIteration_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="38">
       <x:String>System.Activities</x:String>
@@ -101,7 +109,7 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Instagram_post_iterator" sap:VirtualizedContainerService.HintSize="830,4191" sap2010:WorkflowViewState.IdRef="Sequence_6">
+  <Sequence DisplayName="Instagram_post_iterator" sap:VirtualizedContainerService.HintSize="830,4417" sap2010:WorkflowViewState.IdRef="Sequence_6">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="listOfsubtabs" />
       <Variable x:TypeArguments="x:Int32" Name="initialTabcount" />
@@ -111,13 +119,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Iterating every post in a profile page" sap:VirtualizedContainerService.HintSize="768,4080" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="91cefbd8-d20a-4ee0-a220-cc3764d0e803" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Iterating every post in a profile page" sap:VirtualizedContainerService.HintSize="768,4306" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="91cefbd8-d20a-4ee0-a220-cc3764d0e803" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="734,3863" sap2010:WorkflowViewState.IdRef="Sequence_26">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="734,4089" sap2010:WorkflowViewState.IdRef="Sequence_26">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Int32" Name="postCountint" />
               <Variable x:TypeArguments="x:Boolean" Default="True" Name="stillOninstagram" />
@@ -246,7 +254,7 @@
                   </Sequence>
                   <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Fullpackage_post_data_extraction.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="574,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_13" UnSafe="False" WorkflowFileName="Reusable_modules\Data_extractors\Fullpackage_post_data_extraction.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
-                      <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                      <InArgument x:TypeArguments="x:String" x:Key="inputDestinationfolder">[inputDestinationfolder]</InArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
                   <Sequence DisplayName="Exit post" sap:VirtualizedContainerService.HintSize="574,290" sap2010:WorkflowViewState.IdRef="Sequence_33">
@@ -265,7 +273,7 @@
                 <uix:TargetAnchorable DesignTimeRectangle="361, 9, 310, 42" DesignTimeScaleFactor="1.25" ElementType="TabPage" FriendlyName="'page tab'" FullSelectorArgument="&lt;ctrl name='Bryan (@bryanlzl) • Instagram photos and videos - Microsoft Edge' role='pane' /&gt;&lt;ctrl idx='2' name='Tab bar' role='page tab list' /&gt;&lt;ctrl name='Keanu Reeves, scientists name deadly substances for fungi after *' role='page tab' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Tab bar' role='page tab list' idx='*' /&gt;&#xA;&lt;ctrl name='Meta | Social Metaverse Company' role='page tab' /&gt;&#xA;&lt;ctrl name='Close tab' role='push button' /&gt;" Guid="3fb341f9-2276-4d59-9997-c593352a4179" ImageBase64="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" InformativeScreenshot="c5e576defbd02cc4fa3e19f6072df796.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Bryan (@bryanlzl) • Instagram photos and videos and 1 more page *' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Up" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="672,237" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" MovementUnits="10" Version="V3">
+            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Up" DisplayName="Scroll back to top of profile page" sap:VirtualizedContainerService.HintSize="672,237" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" MovementUnits="10" Version="V3">
               <uix:NMouseScroll.SearchedElement>
                 <uix:SearchedElement>
                   <uix:SearchedElement.Target>
@@ -277,7 +285,8 @@
                 </uix:SearchedElement>
               </uix:NMouseScroll.SearchedElement>
             </uix:NMouseScroll>
-            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="672,85" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;All reels data extracted from this profile!&quot;]" />
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayAfter="0" DelayBefore="0" DelayBetweenKeys="0" DelayBetweenShortcuts="0" DisplayName="Refresh page to un-burden ram usage" sap:VirtualizedContainerService.HintSize="672,179" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_17" InteractionMode="SameAsCard" ScopeIdentifier="91cefbd8-d20a-4ee0-a220-cc3764d0e803" Shortcuts="[d(hk)][k(f5)][u(hk)]" Timeout="1" Version="V3" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="672,92" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;All reels data extracted from this profile!&quot;]" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>

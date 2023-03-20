@@ -208,6 +208,51 @@
           }
         }
       },
+      "H.Formatters/2.0.35": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/H.Formatters.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "H.Formatters.BinaryFormatter/2.0.35": {
+        "type": "package",
+        "dependencies": {
+          "H.Formatters": "2.0.35"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/H.Formatters.BinaryFormatter.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "H.Pipes/2.0.35": {
+        "type": "package",
+        "dependencies": {
+          "H.Formatters.BinaryFormatter": "2.0.35"
+        },
+        "compile": {
+          "lib/net6.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/H.Pipes.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "HtmlAgilityPack/1.11.38": {
         "type": "package",
         "compile": {
@@ -569,6 +614,123 @@
             "locale": "zh-Hans"
           },
           "lib/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "Microsoft.CodeAnalysis.CSharp.Scripting/3.8.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.3.0",
+          "Microsoft.CodeAnalysis.CSharp": "[3.8.0]",
+          "Microsoft.CodeAnalysis.Common": "[3.8.0]",
+          "Microsoft.CodeAnalysis.Scripting.Common": "[3.8.0]"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/_._": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.Scripting.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "resource": {
+          "lib/netcoreapp3.1/cs/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netcoreapp3.1/de/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netcoreapp3.1/es/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netcoreapp3.1/fr/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netcoreapp3.1/it/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netcoreapp3.1/ja/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netcoreapp3.1/ko/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netcoreapp3.1/pl/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netcoreapp3.1/ru/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netcoreapp3.1/tr/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "Microsoft.CodeAnalysis.Scripting.Common/3.8.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.Common": "[3.8.0]"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/_._": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.CodeAnalysis.Scripting.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "resource": {
+          "lib/netcoreapp3.1/cs/Microsoft.CodeAnalysis.Scripting.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netcoreapp3.1/de/Microsoft.CodeAnalysis.Scripting.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netcoreapp3.1/es/Microsoft.CodeAnalysis.Scripting.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netcoreapp3.1/fr/Microsoft.CodeAnalysis.Scripting.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netcoreapp3.1/it/Microsoft.CodeAnalysis.Scripting.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netcoreapp3.1/ja/Microsoft.CodeAnalysis.Scripting.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netcoreapp3.1/ko/Microsoft.CodeAnalysis.Scripting.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netcoreapp3.1/pl/Microsoft.CodeAnalysis.Scripting.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.Scripting.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netcoreapp3.1/ru/Microsoft.CodeAnalysis.Scripting.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netcoreapp3.1/tr/Microsoft.CodeAnalysis.Scripting.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.Scripting.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.Scripting.resources.dll": {
             "locale": "zh-Hant"
           }
         }
@@ -1311,6 +1473,34 @@
           }
         }
       },
+      "Microsoft.Web.WebView2/1.0.1264.42": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Microsoft.Web.WebView2.Core.dll": {
+            "related": ".xml"
+          },
+          "lib/netcoreapp3.0/Microsoft.Web.WebView2.WinForms.dll": {
+            "related": ".xml"
+          },
+          "lib/netcoreapp3.0/Microsoft.Web.WebView2.Wpf.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win-x64/native/_._": {
+            "assetType": "native",
+            "rid": "win-x64"
+          }
+        }
+      },
       "Microsoft.Win32.Primitives/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1781,6 +1971,22 @@
         },
         "runtime": {
           "lib/netstandard2.0/BouncyCastle.Crypto.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "ReflectionMagic/4.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.4.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/ReflectionMagic.dll": {
             "related": ".xml"
           }
         }
@@ -3212,6 +3418,19 @@
           "lib/netstandard1.5/System.Reflection.TypeExtensions.dll": {}
         }
       },
+      "System.Resources.Extensions/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Resources.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Resources.ResourceManager/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -4289,6 +4508,185 @@
           }
         }
       },
+      "UiPath.Form.Activities/2.0.3": {
+        "type": "package",
+        "dependencies": {
+          "H.Pipes": "2.0.35",
+          "Microsoft.CodeAnalysis.CSharp.Scripting": "3.8.0",
+          "Microsoft.Web.WebView2": "1.0.1264.42",
+          "ReflectionMagic": "4.1.0",
+          "System.ComponentModel.Composition": "4.7.0",
+          "System.IO.Abstractions": "3.0.10",
+          "System.Resources.Extensions": "5.0.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.7.1",
+          "System.Threading.Tasks.Extensions": "4.5.4",
+          "UiPath.FormActivityLibrary": "2.0.3",
+          "UiPath.Telemetry.Client": "1.3.18"
+        },
+        "compile": {
+          "lib/net5.0-windows7.0/_._": {}
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/UiPath.Form.Activities.Design.dll": {},
+          "lib/net5.0-windows7.0/UiPath.Form.Activities.dll": {}
+        },
+        "resource": {
+          "lib/net5.0-windows7.0/de/UiPath.Form.Activities.Design.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net5.0-windows7.0/de/UiPath.Form.Activities.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net5.0-windows7.0/es-MX/UiPath.Form.Activities.Design.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net5.0-windows7.0/es-MX/UiPath.Form.Activities.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net5.0-windows7.0/es/UiPath.Form.Activities.Design.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net5.0-windows7.0/es/UiPath.Form.Activities.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net5.0-windows7.0/fr/UiPath.Form.Activities.Design.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net5.0-windows7.0/fr/UiPath.Form.Activities.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net5.0-windows7.0/ja/UiPath.Form.Activities.Design.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net5.0-windows7.0/ja/UiPath.Form.Activities.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net5.0-windows7.0/ko/UiPath.Form.Activities.Design.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net5.0-windows7.0/ko/UiPath.Form.Activities.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net5.0-windows7.0/pt-BR/UiPath.Form.Activities.Design.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net5.0-windows7.0/pt-BR/UiPath.Form.Activities.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net5.0-windows7.0/pt/UiPath.Form.Activities.Design.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net5.0-windows7.0/pt/UiPath.Form.Activities.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net5.0-windows7.0/ru/UiPath.Form.Activities.Design.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net5.0-windows7.0/ru/UiPath.Form.Activities.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net5.0-windows7.0/tr/UiPath.Form.Activities.Design.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net5.0-windows7.0/tr/UiPath.Form.Activities.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net5.0-windows7.0/zh-CN/UiPath.Form.Activities.Design.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net5.0-windows7.0/zh-CN/UiPath.Form.Activities.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net5.0-windows7.0/zh-TW/UiPath.Form.Activities.Design.resources.dll": {
+            "locale": "zh-TW"
+          },
+          "lib/net5.0-windows7.0/zh-TW/UiPath.Form.Activities.resources.dll": {
+            "locale": "zh-TW"
+          }
+        }
+      },
+      "UiPath.FormActivityLibrary/2.0.3": {
+        "type": "package",
+        "dependencies": {
+          "H.Pipes": "2.0.35",
+          "Microsoft.Web.WebView2": "1.0.1264.42",
+          "Newtonsoft.Json": "11.0.2",
+          "System.Drawing.Common": "5.0.2",
+          "System.Runtime.CompilerServices.Unsafe": "4.7.1",
+          "System.ValueTuple": "4.3.0",
+          "UiPath.FormActivityLibrary.Contracts": "2.0.3",
+          "UiPath.WebView2.Runtime.x64": "0.1.0"
+        },
+        "compile": {
+          "lib/net5.0-windows7.0/_._": {
+            "related": ".Contracts.deps.json;.deps.json;.dll.config;.Packaging.deps.json"
+          }
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/UiPath.Form.ActivityLibrary.dll": {
+            "related": ".Contracts.deps.json;.deps.json;.dll.config;.Packaging.deps.json"
+          },
+          "lib/net5.0-windows7.0/UiPath.Form.Host.Local.dll": {
+            "related": ".dll.config"
+          },
+          "lib/net5.0-windows7.0/UiPath.Form.dll": {
+            "related": ".Activities.deps.json;.Activities.Design.deps.json;.Activities.Design.dll.config;.Activities.dll.config;.Activities.Packaging.deps.json;.ActivityLibrary.Contracts.deps.json;.ActivityLibrary.deps.json;.ActivityLibrary.dll.config;.ActivityLibrary.Packaging.deps.json;.deps.json;.Host.Local.dll.config"
+          },
+          "lib/net5.0-windows7.0/UiPath.OutOfProcessUi.Common.dll": {
+            "related": ".deps.json"
+          }
+        },
+        "resource": {
+          "lib/net5.0-windows7.0/de/UiPath.Form.Host.Local.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net5.0-windows7.0/es-MX/UiPath.Form.Host.Local.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net5.0-windows7.0/es/UiPath.Form.Host.Local.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net5.0-windows7.0/fr/UiPath.Form.Host.Local.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net5.0-windows7.0/ja/UiPath.Form.Host.Local.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net5.0-windows7.0/ko/UiPath.Form.Host.Local.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net5.0-windows7.0/pt-BR/UiPath.Form.Host.Local.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net5.0-windows7.0/pt/UiPath.Form.Host.Local.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net5.0-windows7.0/ru/UiPath.Form.Host.Local.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net5.0-windows7.0/tr/UiPath.Form.Host.Local.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net5.0-windows7.0/zh-CN/UiPath.Form.Host.Local.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net5.0-windows7.0/zh-TW/UiPath.Form.Host.Local.resources.dll": {
+            "locale": "zh-TW"
+          }
+        }
+      },
+      "UiPath.FormActivityLibrary.Contracts/2.0.3": {
+        "type": "package",
+        "dependencies": {
+          "System.Resources.Extensions": "5.0.0"
+        },
+        "compile": {
+          "lib/net5.0-windows7.0/_._": {}
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/UiPath.Form.ActivityLibrary.Contracts.dll": {}
+        }
+      },
       "UiPath.ImageProcessing/22.4.1": {
         "type": "package",
         "compile": {
@@ -5363,6 +5761,9 @@
           "lib/net6.0-windows7.0/UiPath.Vision.Tesseract.dll": {},
           "lib/net6.0-windows7.0/UiPath.Vision.dll": {}
         }
+      },
+      "UiPath.WebView2.Runtime.x64/0.1.0": {
+        "type": "package"
       }
     },
     "net6.0-windows7.0/win10-x64": {
@@ -5569,6 +5970,51 @@
         "runtime": {
           "lib/netstandard2.0/Google.Apis.PeopleService.v1.dll": {
             "related": ".pdb;.xml"
+          }
+        }
+      },
+      "H.Formatters/2.0.35": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/H.Formatters.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "H.Formatters.BinaryFormatter/2.0.35": {
+        "type": "package",
+        "dependencies": {
+          "H.Formatters": "2.0.35"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/H.Formatters.BinaryFormatter.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "H.Pipes/2.0.35": {
+        "type": "package",
+        "dependencies": {
+          "H.Formatters.BinaryFormatter": "2.0.35"
+        },
+        "compile": {
+          "lib/net6.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/H.Pipes.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -5933,6 +6379,123 @@
             "locale": "zh-Hans"
           },
           "lib/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "Microsoft.CodeAnalysis.CSharp.Scripting/3.8.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.3.0",
+          "Microsoft.CodeAnalysis.CSharp": "[3.8.0]",
+          "Microsoft.CodeAnalysis.Common": "[3.8.0]",
+          "Microsoft.CodeAnalysis.Scripting.Common": "[3.8.0]"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/_._": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.Scripting.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "resource": {
+          "lib/netcoreapp3.1/cs/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netcoreapp3.1/de/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netcoreapp3.1/es/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netcoreapp3.1/fr/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netcoreapp3.1/it/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netcoreapp3.1/ja/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netcoreapp3.1/ko/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netcoreapp3.1/pl/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netcoreapp3.1/ru/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netcoreapp3.1/tr/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "Microsoft.CodeAnalysis.Scripting.Common/3.8.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.Common": "[3.8.0]"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/_._": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.CodeAnalysis.Scripting.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "resource": {
+          "lib/netcoreapp3.1/cs/Microsoft.CodeAnalysis.Scripting.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netcoreapp3.1/de/Microsoft.CodeAnalysis.Scripting.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netcoreapp3.1/es/Microsoft.CodeAnalysis.Scripting.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netcoreapp3.1/fr/Microsoft.CodeAnalysis.Scripting.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netcoreapp3.1/it/Microsoft.CodeAnalysis.Scripting.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netcoreapp3.1/ja/Microsoft.CodeAnalysis.Scripting.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netcoreapp3.1/ko/Microsoft.CodeAnalysis.Scripting.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netcoreapp3.1/pl/Microsoft.CodeAnalysis.Scripting.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.Scripting.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netcoreapp3.1/ru/Microsoft.CodeAnalysis.Scripting.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netcoreapp3.1/tr/Microsoft.CodeAnalysis.Scripting.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.Scripting.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.Scripting.resources.dll": {
             "locale": "zh-Hant"
           }
         }
@@ -6536,6 +7099,31 @@
           }
         }
       },
+      "Microsoft.Web.WebView2/1.0.1264.42": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Microsoft.Web.WebView2.Core.dll": {
+            "related": ".xml"
+          },
+          "lib/netcoreapp3.0/Microsoft.Web.WebView2.WinForms.dll": {
+            "related": ".xml"
+          },
+          "lib/netcoreapp3.0/Microsoft.Web.WebView2.Wpf.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/win-x64/native/_._": {}
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
       "Microsoft.Win32.Primitives/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -6983,6 +7571,22 @@
         },
         "runtime": {
           "lib/netstandard2.0/BouncyCastle.Crypto.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "ReflectionMagic/4.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.4.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/ReflectionMagic.dll": {
             "related": ".xml"
           }
         }
@@ -8518,6 +9122,19 @@
           "lib/netstandard1.5/System.Reflection.TypeExtensions.dll": {}
         }
       },
+      "System.Resources.Extensions/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Resources.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Resources.ResourceManager/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -9507,6 +10124,185 @@
           "lib/net5.0-windows7.0/zh-TW/UiPath.Excel.resources.dll": {
             "locale": "zh-TW"
           }
+        }
+      },
+      "UiPath.Form.Activities/2.0.3": {
+        "type": "package",
+        "dependencies": {
+          "H.Pipes": "2.0.35",
+          "Microsoft.CodeAnalysis.CSharp.Scripting": "3.8.0",
+          "Microsoft.Web.WebView2": "1.0.1264.42",
+          "ReflectionMagic": "4.1.0",
+          "System.ComponentModel.Composition": "4.7.0",
+          "System.IO.Abstractions": "3.0.10",
+          "System.Resources.Extensions": "5.0.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.7.1",
+          "System.Threading.Tasks.Extensions": "4.5.4",
+          "UiPath.FormActivityLibrary": "2.0.3",
+          "UiPath.Telemetry.Client": "1.3.18"
+        },
+        "compile": {
+          "lib/net5.0-windows7.0/_._": {}
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/UiPath.Form.Activities.Design.dll": {},
+          "lib/net5.0-windows7.0/UiPath.Form.Activities.dll": {}
+        },
+        "resource": {
+          "lib/net5.0-windows7.0/de/UiPath.Form.Activities.Design.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net5.0-windows7.0/de/UiPath.Form.Activities.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net5.0-windows7.0/es-MX/UiPath.Form.Activities.Design.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net5.0-windows7.0/es-MX/UiPath.Form.Activities.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net5.0-windows7.0/es/UiPath.Form.Activities.Design.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net5.0-windows7.0/es/UiPath.Form.Activities.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net5.0-windows7.0/fr/UiPath.Form.Activities.Design.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net5.0-windows7.0/fr/UiPath.Form.Activities.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net5.0-windows7.0/ja/UiPath.Form.Activities.Design.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net5.0-windows7.0/ja/UiPath.Form.Activities.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net5.0-windows7.0/ko/UiPath.Form.Activities.Design.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net5.0-windows7.0/ko/UiPath.Form.Activities.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net5.0-windows7.0/pt-BR/UiPath.Form.Activities.Design.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net5.0-windows7.0/pt-BR/UiPath.Form.Activities.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net5.0-windows7.0/pt/UiPath.Form.Activities.Design.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net5.0-windows7.0/pt/UiPath.Form.Activities.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net5.0-windows7.0/ru/UiPath.Form.Activities.Design.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net5.0-windows7.0/ru/UiPath.Form.Activities.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net5.0-windows7.0/tr/UiPath.Form.Activities.Design.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net5.0-windows7.0/tr/UiPath.Form.Activities.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net5.0-windows7.0/zh-CN/UiPath.Form.Activities.Design.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net5.0-windows7.0/zh-CN/UiPath.Form.Activities.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net5.0-windows7.0/zh-TW/UiPath.Form.Activities.Design.resources.dll": {
+            "locale": "zh-TW"
+          },
+          "lib/net5.0-windows7.0/zh-TW/UiPath.Form.Activities.resources.dll": {
+            "locale": "zh-TW"
+          }
+        }
+      },
+      "UiPath.FormActivityLibrary/2.0.3": {
+        "type": "package",
+        "dependencies": {
+          "H.Pipes": "2.0.35",
+          "Microsoft.Web.WebView2": "1.0.1264.42",
+          "Newtonsoft.Json": "11.0.2",
+          "System.Drawing.Common": "5.0.2",
+          "System.Runtime.CompilerServices.Unsafe": "4.7.1",
+          "System.ValueTuple": "4.3.0",
+          "UiPath.FormActivityLibrary.Contracts": "2.0.3",
+          "UiPath.WebView2.Runtime.x64": "0.1.0"
+        },
+        "compile": {
+          "lib/net5.0-windows7.0/_._": {
+            "related": ".Contracts.deps.json;.deps.json;.dll.config;.Packaging.deps.json"
+          }
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/UiPath.Form.ActivityLibrary.dll": {
+            "related": ".Contracts.deps.json;.deps.json;.dll.config;.Packaging.deps.json"
+          },
+          "lib/net5.0-windows7.0/UiPath.Form.Host.Local.dll": {
+            "related": ".dll.config"
+          },
+          "lib/net5.0-windows7.0/UiPath.Form.dll": {
+            "related": ".Activities.deps.json;.Activities.Design.deps.json;.Activities.Design.dll.config;.Activities.dll.config;.Activities.Packaging.deps.json;.ActivityLibrary.Contracts.deps.json;.ActivityLibrary.deps.json;.ActivityLibrary.dll.config;.ActivityLibrary.Packaging.deps.json;.deps.json;.Host.Local.dll.config"
+          },
+          "lib/net5.0-windows7.0/UiPath.OutOfProcessUi.Common.dll": {
+            "related": ".deps.json"
+          }
+        },
+        "resource": {
+          "lib/net5.0-windows7.0/de/UiPath.Form.Host.Local.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net5.0-windows7.0/es-MX/UiPath.Form.Host.Local.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net5.0-windows7.0/es/UiPath.Form.Host.Local.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net5.0-windows7.0/fr/UiPath.Form.Host.Local.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net5.0-windows7.0/ja/UiPath.Form.Host.Local.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net5.0-windows7.0/ko/UiPath.Form.Host.Local.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net5.0-windows7.0/pt-BR/UiPath.Form.Host.Local.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net5.0-windows7.0/pt/UiPath.Form.Host.Local.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net5.0-windows7.0/ru/UiPath.Form.Host.Local.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net5.0-windows7.0/tr/UiPath.Form.Host.Local.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net5.0-windows7.0/zh-CN/UiPath.Form.Host.Local.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net5.0-windows7.0/zh-TW/UiPath.Form.Host.Local.resources.dll": {
+            "locale": "zh-TW"
+          }
+        }
+      },
+      "UiPath.FormActivityLibrary.Contracts/2.0.3": {
+        "type": "package",
+        "dependencies": {
+          "System.Resources.Extensions": "5.0.0"
+        },
+        "compile": {
+          "lib/net5.0-windows7.0/_._": {}
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/UiPath.Form.ActivityLibrary.Contracts.dll": {}
         }
       },
       "UiPath.ImageProcessing/22.4.1": {
@@ -10583,6 +11379,9 @@
           "lib/net6.0-windows7.0/UiPath.Vision.Tesseract.dll": {},
           "lib/net6.0-windows7.0/UiPath.Vision.dll": {}
         }
+      },
+      "UiPath.WebView2.Runtime.x64/0.1.0": {
+        "type": "package"
       }
     }
   },
@@ -10862,6 +11661,63 @@
         "lib/netstandard2.0/Google.Apis.PeopleService.v1.dll",
         "lib/netstandard2.0/Google.Apis.PeopleService.v1.pdb",
         "lib/netstandard2.0/Google.Apis.PeopleService.v1.xml"
+      ]
+    },
+    "H.Formatters/2.0.35": {
+      "sha512": "nIBYn1Gny/Sj1fjCpWIa2giDCInwWtjUDcTBqbl+thPYXhDI4Oj2231J9elLaN5QC/iItOIAtYnF5Fk34DNXMQ==",
+      "type": "package",
+      "path": "h.formatters/2.0.35",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "h.formatters.2.0.35.nupkg.sha512",
+        "h.formatters.nuspec",
+        "lib/net451/H.Formatters.dll",
+        "lib/net451/H.Formatters.xml",
+        "lib/netstandard2.0/H.Formatters.dll",
+        "lib/netstandard2.0/H.Formatters.xml",
+        "nuget_icon.png"
+      ]
+    },
+    "H.Formatters.BinaryFormatter/2.0.35": {
+      "sha512": "V6RIcOrK07x2fLtnjL7tyhJGDsYIn7xdMyUzZcKkRMlgw28PWHfxsQaRf2qK+FsVwcHp76k1AsG0x8gSVB77XQ==",
+      "type": "package",
+      "path": "h.formatters.binaryformatter/2.0.35",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "h.formatters.binaryformatter.2.0.35.nupkg.sha512",
+        "h.formatters.binaryformatter.nuspec",
+        "lib/net451/H.Formatters.BinaryFormatter.dll",
+        "lib/net451/H.Formatters.BinaryFormatter.xml",
+        "lib/netstandard2.0/H.Formatters.BinaryFormatter.dll",
+        "lib/netstandard2.0/H.Formatters.BinaryFormatter.xml",
+        "nuget_icon.png"
+      ]
+    },
+    "H.Pipes/2.0.35": {
+      "sha512": "oGMIW6GQyHMpv8/yyGW9/gjhMQ9Zfkspef21xGzC+IUrxJRErDR+1804ndDtxEf6GPV56yEsY757ub18fPAptQ==",
+      "type": "package",
+      "path": "h.pipes/2.0.35",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "h.pipes.2.0.35.nupkg.sha512",
+        "h.pipes.nuspec",
+        "lib/net461/H.Pipes.dll",
+        "lib/net461/H.Pipes.xml",
+        "lib/net5.0/H.Pipes.dll",
+        "lib/net5.0/H.Pipes.xml",
+        "lib/net6.0/H.Pipes.dll",
+        "lib/net6.0/H.Pipes.xml",
+        "lib/netstandard2.0/H.Pipes.dll",
+        "lib/netstandard2.0/H.Pipes.xml",
+        "lib/netstandard2.1/H.Pipes.dll",
+        "lib/netstandard2.1/H.Pipes.xml",
+        "nuget_icon.png"
       ]
     },
     "HtmlAgilityPack/1.11.38": {
@@ -11379,6 +12235,96 @@
         "lib/netstandard2.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll",
         "microsoft.codeanalysis.csharp.3.8.0.nupkg.sha512",
         "microsoft.codeanalysis.csharp.nuspec"
+      ]
+    },
+    "Microsoft.CodeAnalysis.CSharp.Scripting/3.8.0": {
+      "sha512": "+XVKzByNigzzvl7rGwpzFrkUbbekNUwdMW3EghcxmNRZd9aamNXxes3I/U0tYx1LTeHEQ5y/nzb7SiEmXBmzEA==",
+      "type": "package",
+      "path": "microsoft.codeanalysis.csharp.scripting/3.8.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "ThirdPartyNotices.rtf",
+        "lib/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.Scripting.dll",
+        "lib/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.Scripting.pdb",
+        "lib/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.Scripting.xml",
+        "lib/netcoreapp3.1/cs/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
+        "lib/netcoreapp3.1/de/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
+        "lib/netcoreapp3.1/es/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
+        "lib/netcoreapp3.1/fr/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
+        "lib/netcoreapp3.1/it/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
+        "lib/netcoreapp3.1/ja/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
+        "lib/netcoreapp3.1/ko/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
+        "lib/netcoreapp3.1/pl/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
+        "lib/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
+        "lib/netcoreapp3.1/ru/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
+        "lib/netcoreapp3.1/tr/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
+        "lib/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
+        "lib/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
+        "lib/netstandard2.0/Microsoft.CodeAnalysis.CSharp.Scripting.dll",
+        "lib/netstandard2.0/Microsoft.CodeAnalysis.CSharp.Scripting.pdb",
+        "lib/netstandard2.0/Microsoft.CodeAnalysis.CSharp.Scripting.xml",
+        "lib/netstandard2.0/cs/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
+        "lib/netstandard2.0/de/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
+        "lib/netstandard2.0/es/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
+        "lib/netstandard2.0/fr/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
+        "lib/netstandard2.0/it/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
+        "lib/netstandard2.0/ja/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
+        "lib/netstandard2.0/ko/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
+        "lib/netstandard2.0/pl/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
+        "lib/netstandard2.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
+        "lib/netstandard2.0/ru/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
+        "lib/netstandard2.0/tr/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
+        "lib/netstandard2.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
+        "lib/netstandard2.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
+        "microsoft.codeanalysis.csharp.scripting.3.8.0.nupkg.sha512",
+        "microsoft.codeanalysis.csharp.scripting.nuspec"
+      ]
+    },
+    "Microsoft.CodeAnalysis.Scripting.Common/3.8.0": {
+      "sha512": "lR8Mxg/4tnwzFyqJOD7wBoXbyDKEaMxRc0E9UWtHNGBiL1qBdYyVhXPmiOPUL44tUJeQwCOHAr554jRHGBQIcw==",
+      "type": "package",
+      "path": "microsoft.codeanalysis.scripting.common/3.8.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "ThirdPartyNotices.rtf",
+        "lib/netcoreapp3.1/Microsoft.CodeAnalysis.Scripting.dll",
+        "lib/netcoreapp3.1/Microsoft.CodeAnalysis.Scripting.pdb",
+        "lib/netcoreapp3.1/Microsoft.CodeAnalysis.Scripting.xml",
+        "lib/netcoreapp3.1/cs/Microsoft.CodeAnalysis.Scripting.resources.dll",
+        "lib/netcoreapp3.1/de/Microsoft.CodeAnalysis.Scripting.resources.dll",
+        "lib/netcoreapp3.1/es/Microsoft.CodeAnalysis.Scripting.resources.dll",
+        "lib/netcoreapp3.1/fr/Microsoft.CodeAnalysis.Scripting.resources.dll",
+        "lib/netcoreapp3.1/it/Microsoft.CodeAnalysis.Scripting.resources.dll",
+        "lib/netcoreapp3.1/ja/Microsoft.CodeAnalysis.Scripting.resources.dll",
+        "lib/netcoreapp3.1/ko/Microsoft.CodeAnalysis.Scripting.resources.dll",
+        "lib/netcoreapp3.1/pl/Microsoft.CodeAnalysis.Scripting.resources.dll",
+        "lib/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.Scripting.resources.dll",
+        "lib/netcoreapp3.1/ru/Microsoft.CodeAnalysis.Scripting.resources.dll",
+        "lib/netcoreapp3.1/tr/Microsoft.CodeAnalysis.Scripting.resources.dll",
+        "lib/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.Scripting.resources.dll",
+        "lib/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.Scripting.resources.dll",
+        "lib/netstandard2.0/Microsoft.CodeAnalysis.Scripting.dll",
+        "lib/netstandard2.0/Microsoft.CodeAnalysis.Scripting.pdb",
+        "lib/netstandard2.0/Microsoft.CodeAnalysis.Scripting.xml",
+        "lib/netstandard2.0/cs/Microsoft.CodeAnalysis.Scripting.resources.dll",
+        "lib/netstandard2.0/de/Microsoft.CodeAnalysis.Scripting.resources.dll",
+        "lib/netstandard2.0/es/Microsoft.CodeAnalysis.Scripting.resources.dll",
+        "lib/netstandard2.0/fr/Microsoft.CodeAnalysis.Scripting.resources.dll",
+        "lib/netstandard2.0/it/Microsoft.CodeAnalysis.Scripting.resources.dll",
+        "lib/netstandard2.0/ja/Microsoft.CodeAnalysis.Scripting.resources.dll",
+        "lib/netstandard2.0/ko/Microsoft.CodeAnalysis.Scripting.resources.dll",
+        "lib/netstandard2.0/pl/Microsoft.CodeAnalysis.Scripting.resources.dll",
+        "lib/netstandard2.0/pt-BR/Microsoft.CodeAnalysis.Scripting.resources.dll",
+        "lib/netstandard2.0/ru/Microsoft.CodeAnalysis.Scripting.resources.dll",
+        "lib/netstandard2.0/tr/Microsoft.CodeAnalysis.Scripting.resources.dll",
+        "lib/netstandard2.0/zh-Hans/Microsoft.CodeAnalysis.Scripting.resources.dll",
+        "lib/netstandard2.0/zh-Hant/Microsoft.CodeAnalysis.Scripting.resources.dll",
+        "microsoft.codeanalysis.scripting.common.3.8.0.nupkg.sha512",
+        "microsoft.codeanalysis.scripting.common.nuspec"
       ]
     },
     "Microsoft.CodeAnalysis.VisualBasic/3.8.0": {
@@ -12418,6 +13364,96 @@
         "microsoft.visualstudio.ole.interop.nuspec"
       ]
     },
+    "Microsoft.Web.WebView2/1.0.1264.42": {
+      "sha512": "7OBUTkzQ5VI/3gb0ufi5U4zjuCowAJwQg2li0zXXzqkM+S1kmOlivTy1R4jAW+gY5Vyg510M+qMAESCQUjrfgA==",
+      "type": "package",
+      "path": "microsoft.web.webview2/1.0.1264.42",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "NOTICE.txt",
+        "WebView2.idl",
+        "WebView2.tlb",
+        "build/Common.targets",
+        "build/Microsoft.Web.WebView2.targets",
+        "build/WebView2Rules.Project.xml",
+        "build/native/Microsoft.Web.WebView2.targets",
+        "build/native/arm64/WebView2Loader.dll",
+        "build/native/arm64/WebView2Loader.dll.lib",
+        "build/native/arm64/WebView2LoaderStatic.lib",
+        "build/native/include-winrt/WebView2Interop.h",
+        "build/native/include-winrt/WebView2Interop.idl",
+        "build/native/include-winrt/WebView2Interop.tlb",
+        "build/native/include/WebView2.h",
+        "build/native/include/WebView2EnvironmentOptions.h",
+        "build/native/x64/WebView2Loader.dll",
+        "build/native/x64/WebView2Loader.dll.lib",
+        "build/native/x64/WebView2LoaderStatic.lib",
+        "build/native/x86/WebView2Loader.dll",
+        "build/native/x86/WebView2Loader.dll.lib",
+        "build/native/x86/WebView2LoaderStatic.lib",
+        "build/wv2winrt.targets",
+        "lib/Microsoft.Web.WebView2.Core.winmd",
+        "lib/net45/Microsoft.Web.WebView2.Core.dll",
+        "lib/net45/Microsoft.Web.WebView2.Core.xml",
+        "lib/net45/Microsoft.Web.WebView2.WinForms.dll",
+        "lib/net45/Microsoft.Web.WebView2.WinForms.xml",
+        "lib/net45/Microsoft.Web.WebView2.Wpf.dll",
+        "lib/net45/Microsoft.Web.WebView2.Wpf.xml",
+        "lib/netcoreapp3.0/Microsoft.Web.WebView2.Core.dll",
+        "lib/netcoreapp3.0/Microsoft.Web.WebView2.Core.xml",
+        "lib/netcoreapp3.0/Microsoft.Web.WebView2.WinForms.dll",
+        "lib/netcoreapp3.0/Microsoft.Web.WebView2.WinForms.xml",
+        "lib/netcoreapp3.0/Microsoft.Web.WebView2.Wpf.dll",
+        "lib/netcoreapp3.0/Microsoft.Web.WebView2.Wpf.xml",
+        "microsoft.web.webview2.1.0.1264.42.nupkg.sha512",
+        "microsoft.web.webview2.nuspec",
+        "runtimes/win-arm64/native/WebView2Loader.dll",
+        "runtimes/win-arm64/native_uap/Microsoft.Web.WebView2.Core.dll",
+        "runtimes/win-x64/native/WebView2Loader.dll",
+        "runtimes/win-x64/native_uap/Microsoft.Web.WebView2.Core.dll",
+        "runtimes/win-x86/native/WebView2Loader.dll",
+        "runtimes/win-x86/native_uap/Microsoft.Web.WebView2.Core.dll",
+        "tools/VisualStudioToolsManifest.xml",
+        "tools/wv2winrt/Antlr3.Runtime.dll",
+        "tools/wv2winrt/Antlr4.StringTemplate.dll",
+        "tools/wv2winrt/System.Buffers.dll",
+        "tools/wv2winrt/System.CommandLine.DragonFruit.dll",
+        "tools/wv2winrt/System.CommandLine.Rendering.dll",
+        "tools/wv2winrt/System.CommandLine.dll",
+        "tools/wv2winrt/System.Memory.dll",
+        "tools/wv2winrt/System.Numerics.Vectors.dll",
+        "tools/wv2winrt/System.Runtime.CompilerServices.Unsafe.dll",
+        "tools/wv2winrt/concrt140_app.dll",
+        "tools/wv2winrt/cs/System.CommandLine.resources.dll",
+        "tools/wv2winrt/de/System.CommandLine.resources.dll",
+        "tools/wv2winrt/es/System.CommandLine.resources.dll",
+        "tools/wv2winrt/fr/System.CommandLine.resources.dll",
+        "tools/wv2winrt/it/System.CommandLine.resources.dll",
+        "tools/wv2winrt/ja/System.CommandLine.resources.dll",
+        "tools/wv2winrt/ko/System.CommandLine.resources.dll",
+        "tools/wv2winrt/msvcp140_1_app.dll",
+        "tools/wv2winrt/msvcp140_2_app.dll",
+        "tools/wv2winrt/msvcp140_app.dll",
+        "tools/wv2winrt/pl/System.CommandLine.resources.dll",
+        "tools/wv2winrt/pt-BR/System.CommandLine.resources.dll",
+        "tools/wv2winrt/ru/System.CommandLine.resources.dll",
+        "tools/wv2winrt/tr/System.CommandLine.resources.dll",
+        "tools/wv2winrt/vcamp140_app.dll",
+        "tools/wv2winrt/vccorlib140_app.dll",
+        "tools/wv2winrt/vcomp140_app.dll",
+        "tools/wv2winrt/vcruntime140_app.dll",
+        "tools/wv2winrt/winrt_winmd.dll",
+        "tools/wv2winrt/winrt_winmd.winmd",
+        "tools/wv2winrt/wv2winrt.exe",
+        "tools/wv2winrt/wv2winrt.exe.config",
+        "tools/wv2winrt/wv2winrt.xml",
+        "tools/wv2winrt/zh-Hans/System.CommandLine.resources.dll",
+        "tools/wv2winrt/zh-Hant/System.CommandLine.resources.dll"
+      ]
+    },
     "Microsoft.Win32.Primitives/4.3.0": {
       "sha512": "9ZQKCWxH7Ijp9BfahvL2Zyf1cJIk8XYLF6Yjzr2yi0b2cOut/HQ31qf1ThHAgCc3WiZMdnWcfJCgN82/0UunxA==",
       "type": "package",
@@ -12973,6 +14009,23 @@
         "lib/netstandard2.0/BouncyCastle.Crypto.xml",
         "portable.bouncycastle.1.9.0.nupkg.sha512",
         "portable.bouncycastle.nuspec"
+      ]
+    },
+    "ReflectionMagic/4.1.0": {
+      "sha512": "5gsbb2VLQVS//2DjyOWztkd1JaT5B4M3qFXs1n40I8E7SEVSP19CEGLT8Gf++d2YB4UkZf4gE+FZ8QWBbG3Dng==",
+      "type": "package",
+      "path": "reflectionmagic/4.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/ReflectionMagic.dll",
+        "lib/net45/ReflectionMagic.xml",
+        "lib/netstandard1.5/ReflectionMagic.dll",
+        "lib/netstandard1.5/ReflectionMagic.xml",
+        "lib/netstandard2.0/ReflectionMagic.dll",
+        "lib/netstandard2.0/ReflectionMagic.xml",
+        "reflectionmagic.4.1.0.nupkg.sha512",
+        "reflectionmagic.nuspec"
       ]
     },
     "runtime.any.System.Collections/4.3.0": {
@@ -16741,6 +17794,27 @@
         "system.reflection.typeextensions.nuspec"
       ]
     },
+    "System.Resources.Extensions/5.0.0": {
+      "sha512": "KBiqY/+W6hWVwucHBHO76JkgBGyawlxCcP946MhK8dNjalaBgZkyHaux8ko58PENTqQHHjoDa7cfIkAchfJPPA==",
+      "type": "package",
+      "path": "system.resources.extensions/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "build/net461/System.Resources.Extensions.targets",
+        "lib/net461/System.Resources.Extensions.dll",
+        "lib/net461/System.Resources.Extensions.xml",
+        "lib/netstandard2.0/System.Resources.Extensions.dll",
+        "lib/netstandard2.0/System.Resources.Extensions.xml",
+        "system.resources.extensions.5.0.0.nupkg.sha512",
+        "system.resources.extensions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Resources.ResourceManager/4.3.0": {
       "sha512": "/zrcPkkWdZmI4F92gL/TPumP98AVDu/Wxr3CSJGQQ+XN6wbRZcyfSKVoPo17ilb3iOr0cCRqJInGwNMolqhS8A==",
       "type": "package",
@@ -19291,6 +20365,414 @@
         "uipath.excel.activities.nuspec"
       ]
     },
+    "UiPath.Form.Activities/2.0.3": {
+      "sha512": "DLFa6k2j5RjOQtkh9LBRrAscH4l0TGRQa3lNTmeXEmgsxhuzm65rCxJ4vmj4m14Vr86JreczOJhxJYOnd6N3Jw==",
+      "type": "package",
+      "path": "uipath.form.activities/2.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/System.Resources.Extensions.dll",
+        "lib/net461/UiPath.Form.Activities.Design.dll",
+        "lib/net461/UiPath.Form.Activities.dll",
+        "lib/net461/de/UiPath.Form.Activities.Design.resources.dll",
+        "lib/net461/de/UiPath.Form.Activities.resources.dll",
+        "lib/net461/es-MX/UiPath.Form.Activities.Design.resources.dll",
+        "lib/net461/es-MX/UiPath.Form.Activities.resources.dll",
+        "lib/net461/es/UiPath.Form.Activities.Design.resources.dll",
+        "lib/net461/es/UiPath.Form.Activities.resources.dll",
+        "lib/net461/fr/UiPath.Form.Activities.Design.resources.dll",
+        "lib/net461/fr/UiPath.Form.Activities.resources.dll",
+        "lib/net461/ja/UiPath.Form.Activities.Design.resources.dll",
+        "lib/net461/ja/UiPath.Form.Activities.resources.dll",
+        "lib/net461/ko/UiPath.Form.Activities.Design.resources.dll",
+        "lib/net461/ko/UiPath.Form.Activities.resources.dll",
+        "lib/net461/pt-BR/UiPath.Form.Activities.Design.resources.dll",
+        "lib/net461/pt-BR/UiPath.Form.Activities.resources.dll",
+        "lib/net461/pt/UiPath.Form.Activities.Design.resources.dll",
+        "lib/net461/pt/UiPath.Form.Activities.resources.dll",
+        "lib/net461/ru/UiPath.Form.Activities.Design.resources.dll",
+        "lib/net461/ru/UiPath.Form.Activities.resources.dll",
+        "lib/net461/tr/UiPath.Form.Activities.Design.resources.dll",
+        "lib/net461/tr/UiPath.Form.Activities.resources.dll",
+        "lib/net461/zh-CN/UiPath.Form.Activities.Design.resources.dll",
+        "lib/net461/zh-CN/UiPath.Form.Activities.resources.dll",
+        "lib/net461/zh-TW/UiPath.Form.Activities.Design.resources.dll",
+        "lib/net461/zh-TW/UiPath.Form.Activities.resources.dll",
+        "lib/net5.0-windows7.0/UiPath.Form.Activities.Design.dll",
+        "lib/net5.0-windows7.0/UiPath.Form.Activities.dll",
+        "lib/net5.0-windows7.0/de/UiPath.Form.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/de/UiPath.Form.Activities.resources.dll",
+        "lib/net5.0-windows7.0/es-MX/UiPath.Form.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/es-MX/UiPath.Form.Activities.resources.dll",
+        "lib/net5.0-windows7.0/es/UiPath.Form.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/es/UiPath.Form.Activities.resources.dll",
+        "lib/net5.0-windows7.0/fr/UiPath.Form.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/fr/UiPath.Form.Activities.resources.dll",
+        "lib/net5.0-windows7.0/ja/UiPath.Form.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/ja/UiPath.Form.Activities.resources.dll",
+        "lib/net5.0-windows7.0/ko/UiPath.Form.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/ko/UiPath.Form.Activities.resources.dll",
+        "lib/net5.0-windows7.0/pt-BR/UiPath.Form.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/pt-BR/UiPath.Form.Activities.resources.dll",
+        "lib/net5.0-windows7.0/pt/UiPath.Form.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/pt/UiPath.Form.Activities.resources.dll",
+        "lib/net5.0-windows7.0/ru/UiPath.Form.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/ru/UiPath.Form.Activities.resources.dll",
+        "lib/net5.0-windows7.0/tr/UiPath.Form.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/tr/UiPath.Form.Activities.resources.dll",
+        "lib/net5.0-windows7.0/zh-CN/UiPath.Form.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/zh-CN/UiPath.Form.Activities.resources.dll",
+        "lib/net5.0-windows7.0/zh-TW/UiPath.Form.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/zh-TW/UiPath.Form.Activities.resources.dll",
+        "uipath.form.activities.2.0.3.nupkg.sha512",
+        "uipath.form.activities.nuspec"
+      ]
+    },
+    "UiPath.FormActivityLibrary/2.0.3": {
+      "sha512": "dLw4tHVaCV+g6IJQSlk0UriANCPfaXdGUUd1WVb54n9+ntJdrL9OIQLA3nypbtcnSqnFvXtY7dicscWZQtGRiA==",
+      "type": "package",
+      "path": "uipath.formactivitylibrary/2.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bin/net461/Microsoft.Web.WebView2.Core.dll",
+        "bin/net461/Microsoft.Web.WebView2.Wpf.dll",
+        "bin/net461/System.Resources.Extensions.dll",
+        "bin/net461/UiPath.Form.ActivityLibrary.Contracts.dll",
+        "bin/net461/UiPath.Form.ActivityLibrary.dll",
+        "bin/net461/UiPath.Form.Host.Local.dll",
+        "bin/net461/UiPath.Form.dll",
+        "bin/net461/UiPath.OutOfProcessUi.Common.dll",
+        "bin/net461/UiPath.OutOfProcessUi.ServerHost.exe",
+        "bin/net461/UiPath.OutOfProcessUi.ServerHost.exe.config",
+        "bin/net461/WebView2Loader.dll",
+        "bin/net5.0-windows7.0/Microsoft.Web.WebView2.Core.dll",
+        "bin/net5.0-windows7.0/Microsoft.Web.WebView2.Wpf.dll",
+        "bin/net5.0-windows7.0/UiPath.Form.ActivityLibrary.Contracts.dll",
+        "bin/net5.0-windows7.0/UiPath.Form.ActivityLibrary.dll",
+        "bin/net5.0-windows7.0/UiPath.Form.Host.Local.dll",
+        "bin/net5.0-windows7.0/UiPath.Form.dll",
+        "bin/net5.0-windows7.0/UiPath.OutOfProcessUi.Common.dll",
+        "bin/net5.0-windows7.0/UiPath.OutOfProcessUi.ServerHost.deps.json",
+        "bin/net5.0-windows7.0/UiPath.OutOfProcessUi.ServerHost.dll",
+        "bin/net5.0-windows7.0/UiPath.OutOfProcessUi.ServerHost.exe",
+        "bin/net5.0-windows7.0/UiPath.OutOfProcessUi.ServerHost.runtimeconfig.dev.json",
+        "bin/net5.0-windows7.0/UiPath.OutOfProcessUi.ServerHost.runtimeconfig.json",
+        "bin/net5.0-windows7.0/WebView2Loader.dll",
+        "bin/net5.0/Microsoft.Web.WebView2.Core.dll",
+        "bin/net5.0/Microsoft.Web.WebView2.Wpf.dll",
+        "bin/net5.0/WebView2Loader.dll",
+        "content/Resources/UIPATH_Logo.png",
+        "content/UI/Designer/assets/css/fonts/FontAwesome.otf",
+        "content/UI/Designer/assets/css/fonts/KFOmCnqEu92Fr1Mu4WxKOzY.woff2",
+        "content/UI/Designer/assets/css/fonts/KFOmCnqEu92Fr1Mu4mxK.woff2",
+        "content/UI/Designer/assets/css/fonts/KFOmCnqEu92Fr1Mu5mxKOzY.woff2",
+        "content/UI/Designer/assets/css/fonts/KFOmCnqEu92Fr1Mu72xKOzY.woff2",
+        "content/UI/Designer/assets/css/fonts/KFOmCnqEu92Fr1Mu7GxKOzY.woff2",
+        "content/UI/Designer/assets/css/fonts/KFOmCnqEu92Fr1Mu7WxKOzY.woff2",
+        "content/UI/Designer/assets/css/fonts/KFOmCnqEu92Fr1Mu7mxKOzY.woff2",
+        "content/UI/Designer/assets/css/fonts/fontawesome-webfont.eot",
+        "content/UI/Designer/assets/css/fonts/fontawesome-webfont.svg",
+        "content/UI/Designer/assets/css/fonts/fontawesome-webfont.ttf",
+        "content/UI/Designer/assets/css/fonts/fontawesome-webfont.woff",
+        "content/UI/Designer/assets/css/fonts/fontawesome-webfont.woff2",
+        "content/UI/Designer/assets/css/fonts/glyphicons-halflings-regular.eot",
+        "content/UI/Designer/assets/css/fonts/glyphicons-halflings-regular.svg",
+        "content/UI/Designer/assets/css/fonts/glyphicons-halflings-regular.ttf",
+        "content/UI/Designer/assets/css/fonts/glyphicons-halflings-regular.woff",
+        "content/UI/Designer/assets/css/fonts/glyphicons-halflings-regular.woff2",
+        "content/UI/Designer/assets/css/themes/callout-cerulean-blue.css",
+        "content/UI/Designer/assets/css/themes/callout-cerulean-white.css",
+        "content/UI/Designer/assets/css/themes/cerulean.bootstrap.min.css",
+        "content/UI/Designer/assets/css/themes/cosmo.bootstrap.min.css",
+        "content/UI/Designer/assets/css/themes/cyborg.bootstrap.min.css",
+        "content/UI/Designer/assets/css/themes/darkly.bootstrap.min.css",
+        "content/UI/Designer/assets/css/themes/flatly.bootstrap.min.css",
+        "content/UI/Designer/assets/css/themes/journal.bootstrap.min.css",
+        "content/UI/Designer/assets/css/themes/lumen.bootstrap.min.css",
+        "content/UI/Designer/assets/css/themes/paper.bootstrap.min.css",
+        "content/UI/Designer/assets/css/themes/readable.bootstrap.min.css",
+        "content/UI/Designer/assets/css/themes/sandstone.bootstrap.min.css",
+        "content/UI/Designer/assets/css/themes/simplex.bootstrap.min.css",
+        "content/UI/Designer/assets/css/themes/slate.bootstrap.min.css",
+        "content/UI/Designer/assets/css/themes/spacelab.bootstrap.min.css",
+        "content/UI/Designer/assets/css/themes/superhero.bootstrap.min.css",
+        "content/UI/Designer/assets/css/themes/uipath.bootstrap.min.css",
+        "content/UI/Designer/assets/css/themes/uipath.custom.css",
+        "content/UI/Designer/assets/css/themes/uipath.dark.custom.css",
+        "content/UI/Designer/assets/css/themes/united.bootstrap.min.css",
+        "content/UI/Designer/assets/css/themes/yeti.bootstrap.min.css",
+        "content/UI/Designer/assets/icons/dark/AddTemplate.png",
+        "content/UI/Designer/assets/icons/dark/ExitPreview.png",
+        "content/UI/Designer/assets/icons/dark/Preview.png",
+        "content/UI/Designer/assets/icons/dark/Remove.png",
+        "content/UI/Designer/assets/icons/dark/Save.png",
+        "content/UI/Designer/assets/icons/dark/SaveAs.png",
+        "content/UI/Designer/assets/icons/dark/Theme.png",
+        "content/UI/Designer/assets/icons/dark/UiPath_Icon.png",
+        "content/UI/Designer/assets/icons/default/AddTemplate.png",
+        "content/UI/Designer/assets/icons/default/ExitPreview.png",
+        "content/UI/Designer/assets/icons/default/Preview.png",
+        "content/UI/Designer/assets/icons/default/Remove.png",
+        "content/UI/Designer/assets/icons/default/Reset.png",
+        "content/UI/Designer/assets/icons/default/Save.png",
+        "content/UI/Designer/assets/icons/default/SaveAs.png",
+        "content/UI/Designer/assets/icons/default/Theme.png",
+        "content/UI/Designer/assets/icons/selected/AddTemplate.png",
+        "content/UI/Designer/assets/icons/selected/ExitPreview.png",
+        "content/UI/Designer/assets/icons/selected/Preview.png",
+        "content/UI/Designer/assets/icons/selected/Remove.png",
+        "content/UI/Designer/assets/icons/selected/Save.png",
+        "content/UI/Designer/assets/icons/selected/SaveAs.png",
+        "content/UI/Designer/assets/icons/selected/Theme.png",
+        "content/UI/Designer/assets/themeicons/addtheme.png",
+        "content/UI/Designer/assets/themeicons/cerulean.png",
+        "content/UI/Designer/assets/themeicons/cosmo.png",
+        "content/UI/Designer/assets/themeicons/cyborg.png",
+        "content/UI/Designer/assets/themeicons/darkly.png",
+        "content/UI/Designer/assets/themeicons/flatly.png",
+        "content/UI/Designer/assets/themeicons/journal.png",
+        "content/UI/Designer/assets/themeicons/lumen.png",
+        "content/UI/Designer/assets/themeicons/paper.png",
+        "content/UI/Designer/assets/themeicons/readable.png",
+        "content/UI/Designer/assets/themeicons/sandstone.png",
+        "content/UI/Designer/assets/themeicons/simplex.png",
+        "content/UI/Designer/assets/themeicons/slate.png",
+        "content/UI/Designer/assets/themeicons/spacelab.png",
+        "content/UI/Designer/assets/themeicons/superhero.png",
+        "content/UI/Designer/assets/themeicons/uipath.png",
+        "content/UI/Designer/assets/themeicons/united.png",
+        "content/UI/Designer/assets/themeicons/yeti.png",
+        "content/UI/Designer/css/ag-grid.css",
+        "content/UI/Designer/css/ag-theme-alpine.css",
+        "content/UI/Designer/css/bootstrap.min.css",
+        "content/UI/Designer/css/callout_styles.css",
+        "content/UI/Designer/css/custom.css",
+        "content/UI/Designer/css/customformstyle.css",
+        "content/UI/Designer/css/flatpickr.css",
+        "content/UI/Designer/css/font-awesome.min.css",
+        "content/UI/Designer/css/formio.full.min.css",
+        "content/UI/Designer/css/progressbar.css",
+        "content/UI/Designer/css/roboto.css",
+        "content/UI/Designer/css/styles.css",
+        "content/UI/Designer/css/uswds.min.css",
+        "content/UI/Designer/css/uswds2.min.css",
+        "content/UI/Designer/fonts/FontAwesome.otf",
+        "content/UI/Designer/fonts/KFOmCnqEu92Fr1Mu4WxKOzY.woff2",
+        "content/UI/Designer/fonts/KFOmCnqEu92Fr1Mu4mxK.woff2",
+        "content/UI/Designer/fonts/KFOmCnqEu92Fr1Mu5mxKOzY.woff2",
+        "content/UI/Designer/fonts/KFOmCnqEu92Fr1Mu72xKOzY.woff2",
+        "content/UI/Designer/fonts/KFOmCnqEu92Fr1Mu7GxKOzY.woff2",
+        "content/UI/Designer/fonts/KFOmCnqEu92Fr1Mu7WxKOzY.woff2",
+        "content/UI/Designer/fonts/KFOmCnqEu92Fr1Mu7mxKOzY.woff2",
+        "content/UI/Designer/fonts/fontawesome-webfont.eot",
+        "content/UI/Designer/fonts/fontawesome-webfont.svg",
+        "content/UI/Designer/fonts/fontawesome-webfont.ttf",
+        "content/UI/Designer/fonts/fontawesome-webfont.woff",
+        "content/UI/Designer/fonts/fontawesome-webfont.woff2",
+        "content/UI/Designer/fonts/glyphicons-halflings-regular.eot",
+        "content/UI/Designer/fonts/glyphicons-halflings-regular.svg",
+        "content/UI/Designer/fonts/glyphicons-halflings-regular.ttf",
+        "content/UI/Designer/fonts/glyphicons-halflings-regular.woff",
+        "content/UI/Designer/fonts/glyphicons-halflings-regular.woff2",
+        "content/UI/Designer/index.html",
+        "content/UI/Designer/js/FilePath.js",
+        "content/UI/Designer/js/Grid.js",
+        "content/UI/Designer/js/Label.js",
+        "content/UI/Designer/js/ag-grid-community.min.js",
+        "content/UI/Designer/js/bootstrap.min.js",
+        "content/UI/Designer/js/es2015-polyfills.js",
+        "content/UI/Designer/js/flatpickr.js",
+        "content/UI/Designer/js/formio.full.min.js",
+        "content/UI/Designer/js/jquery-3.4.0.min.js",
+        "content/UI/Designer/js/main.js",
+        "content/UI/Designer/js/moment.min.js",
+        "content/UI/Designer/js/polyfills.js",
+        "content/UI/Designer/js/render.applytheme.js",
+        "content/UI/Designer/js/runtime.js",
+        "content/UI/Designer/js/uipath_apply_theme.js",
+        "content/UI/Designer/js/uswds.min.js",
+        "content/UI/Designer/js/uswds2.min.js",
+        "content/UI/Designer/render.html",
+        "content/UI/Formio/FormDisplay.html",
+        "content/UI/Formio/assets/css/themes/callout-cerulean-blue.css",
+        "content/UI/Formio/assets/css/themes/callout-cerulean-white.css",
+        "content/UI/Formio/assets/css/themes/cerulean.bootstrap.min.css",
+        "content/UI/Formio/assets/css/themes/cosmo.bootstrap.min.css",
+        "content/UI/Formio/assets/css/themes/cyborg.bootstrap.min.css",
+        "content/UI/Formio/assets/css/themes/darkly.bootstrap.min.css",
+        "content/UI/Formio/assets/css/themes/flatly.bootstrap.min.css",
+        "content/UI/Formio/assets/css/themes/journal.bootstrap.min.css",
+        "content/UI/Formio/assets/css/themes/lumen.bootstrap.min.css",
+        "content/UI/Formio/assets/css/themes/paper.bootstrap.min.css",
+        "content/UI/Formio/assets/css/themes/readable.bootstrap.min.css",
+        "content/UI/Formio/assets/css/themes/sandstone.bootstrap.min.css",
+        "content/UI/Formio/assets/css/themes/simplex.bootstrap.min.css",
+        "content/UI/Formio/assets/css/themes/slate.bootstrap.min.css",
+        "content/UI/Formio/assets/css/themes/spacelab.bootstrap.min.css",
+        "content/UI/Formio/assets/css/themes/superhero.bootstrap.min.css",
+        "content/UI/Formio/assets/css/themes/uipath.bootstrap.min.css",
+        "content/UI/Formio/assets/css/themes/uipath.custom.css",
+        "content/UI/Formio/assets/css/themes/uipath.dark.custom.css",
+        "content/UI/Formio/assets/css/themes/united.bootstrap.min.css",
+        "content/UI/Formio/assets/css/themes/yeti.bootstrap.min.css",
+        "content/UI/Formio/css/ag-grid.css",
+        "content/UI/Formio/css/ag-theme-alpine.css",
+        "content/UI/Formio/css/bootstrap.min.css",
+        "content/UI/Formio/css/callout_styles.css",
+        "content/UI/Formio/css/custom.css",
+        "content/UI/Formio/css/customformstyle.css",
+        "content/UI/Formio/css/flatpickr.css",
+        "content/UI/Formio/css/font-awesome.min.css",
+        "content/UI/Formio/css/fonts/FontAwesome.otf",
+        "content/UI/Formio/css/fonts/KFOmCnqEu92Fr1Mu4WxKOzY.woff2",
+        "content/UI/Formio/css/fonts/KFOmCnqEu92Fr1Mu4mxK.woff2",
+        "content/UI/Formio/css/fonts/KFOmCnqEu92Fr1Mu5mxKOzY.woff2",
+        "content/UI/Formio/css/fonts/KFOmCnqEu92Fr1Mu72xKOzY.woff2",
+        "content/UI/Formio/css/fonts/KFOmCnqEu92Fr1Mu7GxKOzY.woff2",
+        "content/UI/Formio/css/fonts/KFOmCnqEu92Fr1Mu7WxKOzY.woff2",
+        "content/UI/Formio/css/fonts/KFOmCnqEu92Fr1Mu7mxKOzY.woff2",
+        "content/UI/Formio/css/fonts/fontawesome-webfont.eot",
+        "content/UI/Formio/css/fonts/fontawesome-webfont.svg",
+        "content/UI/Formio/css/fonts/fontawesome-webfont.ttf",
+        "content/UI/Formio/css/fonts/fontawesome-webfont.woff",
+        "content/UI/Formio/css/fonts/fontawesome-webfont.woff2",
+        "content/UI/Formio/css/fonts/glyphicons-halflings-regular.eot",
+        "content/UI/Formio/css/fonts/glyphicons-halflings-regular.svg",
+        "content/UI/Formio/css/fonts/glyphicons-halflings-regular.ttf",
+        "content/UI/Formio/css/fonts/glyphicons-halflings-regular.woff",
+        "content/UI/Formio/css/fonts/glyphicons-halflings-regular.woff2",
+        "content/UI/Formio/css/formio.full.min.css",
+        "content/UI/Formio/css/progressbar.css",
+        "content/UI/Formio/css/roboto.css",
+        "content/UI/Formio/css/styles.css",
+        "content/UI/Formio/css/uswds.min.css",
+        "content/UI/Formio/css/uswds2.min.css",
+        "content/UI/Formio/fonts/source-sans-pro/sourcesanspro-bold-webfont.ttf",
+        "content/UI/Formio/fonts/source-sans-pro/sourcesanspro-bold-webfont.woff",
+        "content/UI/Formio/fonts/source-sans-pro/sourcesanspro-bold-webfont.woff2",
+        "content/UI/Formio/jquery/jquery-1.7.1.min.js",
+        "content/UI/Formio/js/FilePath.js",
+        "content/UI/Formio/js/Grid.js",
+        "content/UI/Formio/js/Label.js",
+        "content/UI/Formio/js/ag-grid-community.min.js",
+        "content/UI/Formio/js/bootstrap.min.js",
+        "content/UI/Formio/js/es2015-polyfills.js",
+        "content/UI/Formio/js/flatpickr.js",
+        "content/UI/Formio/js/formio.full.min.js",
+        "content/UI/Formio/js/jquery-3.4.0.min.js",
+        "content/UI/Formio/js/moment.min.js",
+        "content/UI/Formio/js/uipath-formio-ext.js",
+        "content/UI/Formio/js/uipath_apply_theme.js",
+        "content/UI/Formio/js/uipath_formio_filepath_for_render.js",
+        "content/UI/Formio/js/uipath_render.js",
+        "content/UI/Formio/js/uswds.min.js",
+        "content/UI/Formio/js/uswds2.min.js",
+        "content/UI/Templates/CALLOUT/Callout_Buttons.json",
+        "content/UI/Templates/CALLOUT/Callout_InfoBubble.json",
+        "content/UI/Templates/CALLOUT/Callout_Textbox.json",
+        "content/UI/Templates/CALLOUT/version.txt",
+        "content/UI/Templates/FORMS/CRM Support Ticket Form.json",
+        "content/UI/Templates/FORMS/Contact Information.json",
+        "content/UI/Templates/FORMS/Credit Card Order Form.json",
+        "content/UI/Templates/FORMS/Feedback Form.json",
+        "content/UI/Templates/FORMS/IT Service Ticket.json",
+        "content/UI/Templates/FORMS/Supplier Invoice Submission Form.json",
+        "content/UI/Templates/FORMS/version.txt",
+        "lib/net461/UiPath.Form.ActivityLibrary.dll",
+        "lib/net461/UiPath.Form.Host.Local.dll",
+        "lib/net461/UiPath.Form.dll",
+        "lib/net461/UiPath.OutOfProcessUi.Common.dll",
+        "lib/net461/de/UiPath.Form.Host.Local.resources.dll",
+        "lib/net461/es-MX/UiPath.Form.Host.Local.resources.dll",
+        "lib/net461/es/UiPath.Form.Host.Local.resources.dll",
+        "lib/net461/fr/UiPath.Form.Host.Local.resources.dll",
+        "lib/net461/ja/UiPath.Form.Host.Local.resources.dll",
+        "lib/net461/ko/UiPath.Form.Host.Local.resources.dll",
+        "lib/net461/pt-BR/UiPath.Form.Host.Local.resources.dll",
+        "lib/net461/pt/UiPath.Form.Host.Local.resources.dll",
+        "lib/net461/ru/UiPath.Form.Host.Local.resources.dll",
+        "lib/net461/tr/UiPath.Form.Host.Local.resources.dll",
+        "lib/net461/zh-CN/UiPath.Form.Host.Local.resources.dll",
+        "lib/net461/zh-TW/UiPath.Form.Host.Local.resources.dll",
+        "lib/net5.0-windows7.0/UiPath.Callout.Activities.Packaging.deps.json",
+        "lib/net5.0-windows7.0/UiPath.Callout.Activity.Design.dll.config",
+        "lib/net5.0-windows7.0/UiPath.Callout.Activity.dll.config",
+        "lib/net5.0-windows7.0/UiPath.Callout.dll.config",
+        "lib/net5.0-windows7.0/UiPath.Form.Activities.Design.deps.json",
+        "lib/net5.0-windows7.0/UiPath.Form.Activities.Design.dll.config",
+        "lib/net5.0-windows7.0/UiPath.Form.Activities.Packaging.deps.json",
+        "lib/net5.0-windows7.0/UiPath.Form.Activities.deps.json",
+        "lib/net5.0-windows7.0/UiPath.Form.Activities.dll.config",
+        "lib/net5.0-windows7.0/UiPath.Form.ActivityLibrary.Contracts.deps.json",
+        "lib/net5.0-windows7.0/UiPath.Form.ActivityLibrary.Packaging.deps.json",
+        "lib/net5.0-windows7.0/UiPath.Form.ActivityLibrary.deps.json",
+        "lib/net5.0-windows7.0/UiPath.Form.ActivityLibrary.dll",
+        "lib/net5.0-windows7.0/UiPath.Form.ActivityLibrary.dll.config",
+        "lib/net5.0-windows7.0/UiPath.Form.Host.Local.dll",
+        "lib/net5.0-windows7.0/UiPath.Form.Host.Local.dll.config",
+        "lib/net5.0-windows7.0/UiPath.Form.deps.json",
+        "lib/net5.0-windows7.0/UiPath.Form.dll",
+        "lib/net5.0-windows7.0/UiPath.FormActivityLibrary.Contracts.Packaging.deps.json",
+        "lib/net5.0-windows7.0/UiPath.OutOfProcessUi.Common.deps.json",
+        "lib/net5.0-windows7.0/UiPath.OutOfProcessUi.Common.dll",
+        "lib/net5.0-windows7.0/UiPath.OutOfProcessUi.ServerHost.deps.json",
+        "lib/net5.0-windows7.0/UiPath.OutOfProcessUi.ServerHost.dll.config",
+        "lib/net5.0-windows7.0/de/UiPath.Form.Host.Local.resources.dll",
+        "lib/net5.0-windows7.0/es-MX/UiPath.Form.Host.Local.resources.dll",
+        "lib/net5.0-windows7.0/es/UiPath.Form.Host.Local.resources.dll",
+        "lib/net5.0-windows7.0/fr/UiPath.Form.Host.Local.resources.dll",
+        "lib/net5.0-windows7.0/ja/UiPath.Form.Host.Local.resources.dll",
+        "lib/net5.0-windows7.0/ko/UiPath.Form.Host.Local.resources.dll",
+        "lib/net5.0-windows7.0/pt-BR/UiPath.Form.Host.Local.resources.dll",
+        "lib/net5.0-windows7.0/pt/UiPath.Form.Host.Local.resources.dll",
+        "lib/net5.0-windows7.0/ru/UiPath.Form.Host.Local.resources.dll",
+        "lib/net5.0-windows7.0/tr/UiPath.Form.Host.Local.resources.dll",
+        "lib/net5.0-windows7.0/zh-CN/UiPath.Form.Host.Local.resources.dll",
+        "lib/net5.0-windows7.0/zh-TW/UiPath.Form.Host.Local.resources.dll",
+        "lib/net5.0/UiPath.Form.ActivityLibrary.Contracts.deps.json",
+        "lib/net5.0/UiPath.Form.ActivityLibrary.Packaging.deps.json",
+        "lib/net5.0/UiPath.Form.ActivityLibrary.deps.json",
+        "lib/net5.0/UiPath.Form.ActivityLibrary.dll",
+        "lib/net5.0/UiPath.Form.ActivityLibrary.dll.config",
+        "lib/net5.0/UiPath.Form.Host.Local.dll",
+        "lib/net5.0/UiPath.Form.Host.Local.dll.config",
+        "lib/net5.0/UiPath.Form.deps.json",
+        "lib/net5.0/UiPath.Form.dll",
+        "lib/net5.0/UiPath.FormActivityLibrary.Contracts.Packaging.deps.json",
+        "lib/net5.0/UiPath.OutOfProcessUi.Common.deps.json",
+        "lib/net5.0/UiPath.OutOfProcessUi.Common.dll",
+        "lib/net5.0/de/UiPath.Form.Host.Local.resources.dll",
+        "lib/net5.0/es-MX/UiPath.Form.Host.Local.resources.dll",
+        "lib/net5.0/es/UiPath.Form.Host.Local.resources.dll",
+        "lib/net5.0/fr/UiPath.Form.Host.Local.resources.dll",
+        "lib/net5.0/ja/UiPath.Form.Host.Local.resources.dll",
+        "lib/net5.0/ko/UiPath.Form.Host.Local.resources.dll",
+        "lib/net5.0/pt-BR/UiPath.Form.Host.Local.resources.dll",
+        "lib/net5.0/pt/UiPath.Form.Host.Local.resources.dll",
+        "lib/net5.0/ru/UiPath.Form.Host.Local.resources.dll",
+        "lib/net5.0/tr/UiPath.Form.Host.Local.resources.dll",
+        "lib/net5.0/zh-CN/UiPath.Form.Host.Local.resources.dll",
+        "lib/net5.0/zh-TW/UiPath.Form.Host.Local.resources.dll",
+        "uipath.formactivitylibrary.2.0.3.nupkg.sha512",
+        "uipath.formactivitylibrary.nuspec"
+      ]
+    },
+    "UiPath.FormActivityLibrary.Contracts/2.0.3": {
+      "sha512": "2jRv58pw6gIBYqMe3XHHh+BhtnMr3Cz2CyDapJGNY72tpgPn2ndff8t0HTkQw6+/SnyewwDRU39677ywAO1a0A==",
+      "type": "package",
+      "path": "uipath.formactivitylibrary.contracts/2.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/UiPath.Form.ActivityLibrary.Contracts.dll",
+        "lib/net5.0-windows7.0/UiPath.Form.ActivityLibrary.Contracts.dll",
+        "lib/net5.0/UiPath.Form.ActivityLibrary.Contracts.dll",
+        "uipath.formactivitylibrary.contracts.2.0.3.nupkg.sha512",
+        "uipath.formactivitylibrary.contracts.nuspec"
+      ]
+    },
     "UiPath.ImageProcessing/22.4.1": {
       "sha512": "/1ocq1FZfmFV/iTtViG/xYmWtbZLSRAwFVsHaOyk2XBOV1xZCB6FNKhggUULqS8QpIwtS5Kab+Yq6WJBmt8PFw==",
       "type": "package",
@@ -21172,12 +22654,195 @@
         "uipath.vision.3.6.0.nupkg.sha512",
         "uipath.vision.nuspec"
       ]
+    },
+    "UiPath.WebView2.Runtime.x64/0.1.0": {
+      "sha512": "2hdkgAtc8vATUrqdiDGm4niBbnXkqV5f6PCw+JHxoMrY3zwWZqAxIgIFPgQqYVeqGOAdNugbbDlClBtuieXSBg==",
+      "type": "package",
+      "path": "uipath.webview2.runtime.x64/0.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "102.0.1245.33.manifest",
+        "EBWebView/x64/EmbeddedBrowserWebView.dll",
+        "EBWebView/x86/EmbeddedBrowserWebView.dll",
+        "Edge.dat",
+        "EdgeWebView.dat",
+        "Extensions/external_extensions.json",
+        "Locales/af.pak",
+        "Locales/am.pak",
+        "Locales/ar.pak",
+        "Locales/as.pak",
+        "Locales/az.pak",
+        "Locales/bg.pak",
+        "Locales/bn-IN.pak",
+        "Locales/bs.pak",
+        "Locales/ca-Es-VALENCIA.pak",
+        "Locales/ca.pak",
+        "Locales/cs.pak",
+        "Locales/cy.pak",
+        "Locales/da.pak",
+        "Locales/de.pak",
+        "Locales/el.pak",
+        "Locales/en-GB.pak",
+        "Locales/en-US.pak",
+        "Locales/es-419.pak",
+        "Locales/es.pak",
+        "Locales/et.pak",
+        "Locales/eu.pak",
+        "Locales/fa.pak",
+        "Locales/fi.pak",
+        "Locales/fil.pak",
+        "Locales/fr-CA.pak",
+        "Locales/fr.pak",
+        "Locales/ga.pak",
+        "Locales/gd.pak",
+        "Locales/gl.pak",
+        "Locales/gu.pak",
+        "Locales/he.pak",
+        "Locales/hi.pak",
+        "Locales/hr.pak",
+        "Locales/hu.pak",
+        "Locales/id.pak",
+        "Locales/is.pak",
+        "Locales/it.pak",
+        "Locales/ja.pak",
+        "Locales/ka.pak",
+        "Locales/kk.pak",
+        "Locales/km.pak",
+        "Locales/kn.pak",
+        "Locales/ko.pak",
+        "Locales/kok.pak",
+        "Locales/lb.pak",
+        "Locales/lo.pak",
+        "Locales/lt.pak",
+        "Locales/lv.pak",
+        "Locales/mi.pak",
+        "Locales/mk.pak",
+        "Locales/ml.pak",
+        "Locales/mr.pak",
+        "Locales/ms.pak",
+        "Locales/mt.pak",
+        "Locales/nb.pak",
+        "Locales/ne.pak",
+        "Locales/nl.pak",
+        "Locales/nn.pak",
+        "Locales/or.pak",
+        "Locales/pa.pak",
+        "Locales/pl.pak",
+        "Locales/pt-BR.pak",
+        "Locales/pt-PT.pak",
+        "Locales/qu.pak",
+        "Locales/ro.pak",
+        "Locales/ru.pak",
+        "Locales/sk.pak",
+        "Locales/sl.pak",
+        "Locales/sq.pak",
+        "Locales/sr-Cyrl-BA.pak",
+        "Locales/sr-Latn-RS.pak",
+        "Locales/sr.pak",
+        "Locales/sv.pak",
+        "Locales/ta.pak",
+        "Locales/te.pak",
+        "Locales/th.pak",
+        "Locales/tr.pak",
+        "Locales/tt.pak",
+        "Locales/ug.pak",
+        "Locales/uk.pak",
+        "Locales/ur.pak",
+        "Locales/vi.pak",
+        "Locales/zh-CN.pak",
+        "Locales/zh-TW.pak",
+        "MEIPreload/manifest.json",
+        "MEIPreload/preloaded_data.pb",
+        "MLModels/autofill_labeling.ort",
+        "MLModels/autofill_labeling_email.ort",
+        "MLModels/autofill_labeling_features.txt",
+        "MLModels/autofill_labeling_features_email.txt",
+        "MLModels/nexturl.ort",
+        "Notifications/SoftLandingAssetDark.gif",
+        "Notifications/SoftLandingAssetLight.gif",
+        "PdfPreview/PdfPreviewHandler.dll",
+        "Trust Protection Lists/Mu/Advertising",
+        "Trust Protection Lists/Mu/Analytics",
+        "Trust Protection Lists/Mu/CompatExceptions",
+        "Trust Protection Lists/Mu/Content",
+        "Trust Protection Lists/Mu/Cryptomining",
+        "Trust Protection Lists/Mu/Entities",
+        "Trust Protection Lists/Mu/Fingerprinting",
+        "Trust Protection Lists/Mu/LICENSE",
+        "Trust Protection Lists/Mu/Other",
+        "Trust Protection Lists/Mu/Social",
+        "Trust Protection Lists/Mu/TransparentAdvertisers",
+        "Trust Protection Lists/Sigma/Advertising",
+        "Trust Protection Lists/Sigma/Analytics",
+        "Trust Protection Lists/Sigma/Content",
+        "Trust Protection Lists/Sigma/Cryptomining",
+        "Trust Protection Lists/Sigma/Entities",
+        "Trust Protection Lists/Sigma/Fingerprinting",
+        "Trust Protection Lists/Sigma/LICENSE",
+        "Trust Protection Lists/Sigma/Other",
+        "Trust Protection Lists/Sigma/Social",
+        "Trust Protection Lists/Sigma/Staging",
+        "Trust Protection Lists/manifest.json",
+        "WidevineCdm/_platform_specific/win_x64/widevinecdm.dll",
+        "WidevineCdm/_platform_specific/win_x64/widevinecdm.dll.sig",
+        "WidevineCdm/manifest.json",
+        "augloop_client.dll",
+        "concrt140.dll",
+        "d3dcompiler_47.dll",
+        "delegatedWebFeatures.sccd",
+        "dual_engine_adapter_x64.dll",
+        "edge_feedback/mf_trace.wprp",
+        "eventlog_provider.dll",
+        "ffmpeg.dll",
+        "icudtl.dat",
+        "learning_tools.dll",
+        "libEGL.dll",
+        "libGLESv2.dll",
+        "libsmartscreen.dll",
+        "libsmartscreenn.dll",
+        "microsoft_apis.dll",
+        "microsoft_shell_integration.dll",
+        "mip_core.dll",
+        "mip_protection_sdk.dll",
+        "mojo_core.dll",
+        "msedge.dll",
+        "msedge.dll.sig",
+        "msedge_100_percent.pak",
+        "msedge_200_percent.pak",
+        "msedge_elf.dll",
+        "msedgewebview2.exe",
+        "msedgewebview2.exe.sig",
+        "mspdf.dll",
+        "msvcp140.dll",
+        "nacl_irt_x86_64.nexe",
+        "notification_helper.exe",
+        "oneauth.dll",
+        "oneds.dll",
+        "onnxruntime.dll",
+        "onramp.dll",
+        "resources.pak",
+        "show_third_party_software_licenses.bat",
+        "telclient.dll",
+        "uipath.webview2.runtime.x64.0.1.0.nupkg.sha512",
+        "uipath.webview2.runtime.x64.nuspec",
+        "v8_context_snapshot.bin",
+        "vccorlib140.dll",
+        "vcruntime140.dll",
+        "vcruntime140_1.dll",
+        "vk_swiftshader.dll",
+        "vk_swiftshader_icd.json",
+        "vulkan-1.dll",
+        "wdag.dll",
+        "wns_push_client.dll"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "": [],
     "net6.0-windows7.0": [
       "UiPath.Excel.Activities >= 2.17.0-preview <= 2.17.0-preview",
+      "UiPath.Form.Activities >= 2.0.3 <= 2.0.3",
       "UiPath.Mail.Activities >= 1.18.2 <= 1.18.2",
       "UiPath.Python.Activities >= 1.6.0 <= 1.6.0",
       "UiPath.System.Activities >= 22.10.4 <= 22.10.4",
@@ -21192,9 +22857,9 @@
     "restore": {
       "projectUniqueName": "Instatgram",
       "projectName": "Instatgram",
-      "projectPath": "C:\\Users\\Admin\\Desktop\\Wededucks RPA Hackathon\\Instatgram Project\\.local",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\Wededucks RPA Hackathon\\InSTATgram project\\.local",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Desktop\\Wededucks RPA Hackathon\\Instatgram Project\\.local"
+      "outputPath": "C:\\Users\\Admin\\Desktop\\Wededucks RPA Hackathon\\InSTATgram project\\.local"
     },
     "frameworks": {
       "net6.0-windows7.0": {
@@ -21203,6 +22868,11 @@
             "include": "Runtime",
             "target": "Package",
             "version": "[2.17.0-preview, 2.17.0-preview]"
+          },
+          "UiPath.Form.Activities": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[2.0.3, 2.0.3]"
           },
           "UiPath.Mail.Activities": {
             "include": "Runtime",

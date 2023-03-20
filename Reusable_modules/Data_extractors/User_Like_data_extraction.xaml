@@ -2,11 +2,12 @@
   <x:Members>
     <x:Property Name="inputProfileusername" Type="InArgument(x:String)" />
     <x:Property Name="inputPosttype" Type="InArgument(x:String)" />
+    <x:Property Name="inputDestinationfolder" Type="InArgument(x:String)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1184,7665</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1184,7771</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Likes_data_extraction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="45">
@@ -129,7 +130,7 @@
       <AssemblyReference>System.Private.Xml.Linq</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Likes_data_extraction" sap:VirtualizedContainerService.HintSize="1194,7600" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Likes_data_extraction" sap:VirtualizedContainerService.HintSize="1194,7706" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="listOfuserlikes" />
       <Variable x:TypeArguments="x:String" Name="username" />
@@ -144,13 +145,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Likes_data_extraction" sap:VirtualizedContainerService.HintSize="1132,7489" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="9f8c47a8-99d8-4765-b6f2-5f9eb2dab190" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Likes_data_extraction" sap:VirtualizedContainerService.HintSize="1132,7595" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="9f8c47a8-99d8-4765-b6f2-5f9eb2dab190" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1098,7272" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1098,7378" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Int32" Default="0" Name="uniqueUsernamecount" />
               <Variable x:TypeArguments="x:Int32" Default="-1" Name="countIndex" />
@@ -161,7 +162,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Load &amp; Extract all likes data from post" sap:VirtualizedContainerService.HintSize="1036,7157" sap2010:WorkflowViewState.IdRef="Sequence_16">
+            <Sequence DisplayName="Load &amp; Extract all likes data from post" sap:VirtualizedContainerService.HintSize="1036,7263" sap2010:WorkflowViewState.IdRef="Sequence_16">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="ifNolikesstr" />
                 <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="listOflikemodalbutton" />
@@ -239,9 +240,9 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:BuildDataTable>
-              <If Condition="[ifNolikesstr.Replace(&quot; &quot;,&quot;&quot;) &lt;&gt; &quot;Bethefirsttolikethis&quot;]" DisplayName="Decide on what to do if there are likes" sap:VirtualizedContainerService.HintSize="974,5341" sap2010:WorkflowViewState.IdRef="If_1">
+              <If Condition="[ifNolikesstr.Replace(&quot; &quot;,&quot;&quot;) &lt;&gt; &quot;Bethefirsttolikethis&quot;]" DisplayName="Decide on what to do if there are likes" sap:VirtualizedContainerService.HintSize="974,5447" sap2010:WorkflowViewState.IdRef="If_1">
                 <If.Then>
-                  <Sequence sap:VirtualizedContainerService.HintSize="896,5065" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                  <Sequence sap:VirtualizedContainerService.HintSize="896,5171" sap2010:WorkflowViewState.IdRef="Sequence_15">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:Boolean" Name="retryModalrender" />
                     </Sequence.Variables>
@@ -285,7 +286,7 @@
                         <OutArgument x:TypeArguments="x:String">[aanameOfmodalbutton]</OutArgument>
                       </uix:NGetAttribute.Result>
                     </uix:NGetAttribute>
-                    <If Condition="[aanameOfmodalbutton.Replace(&quot; &quot;,&quot;&quot;) = &quot;others&quot; OR aanameOfmodalbutton.Replace(&quot; &quot;,&quot;&quot;) = &quot;other&quot; OR aanameOfmodalbutton.Replace(&quot; &quot;,&quot;&quot;) = &quot;like&quot; OR aanameOfmodalbutton.Replace(&quot; &quot;,&quot;&quot;) = &quot;likes&quot; OR aanameOfmodalbutton.Replace(&quot; &quot;,&quot;&quot;) = &quot;1other&quot; OR aanameOfmodalbutton.Replace(&quot; &quot;,&quot;&quot;) = &quot;1like&quot;]" DisplayName="Check if modal button links to modal (instead of username button)" sap:VirtualizedContainerService.HintSize="834,4095" sap2010:WorkflowViewState.IdRef="If_2">
+                    <If Condition="[aanameOfmodalbutton.Replace(&quot; &quot;,&quot;&quot;) = &quot;others&quot; OR aanameOfmodalbutton.Replace(&quot; &quot;,&quot;&quot;) = &quot;other&quot; OR aanameOfmodalbutton.Replace(&quot; &quot;,&quot;&quot;) = &quot;like&quot; OR aanameOfmodalbutton.Replace(&quot; &quot;,&quot;&quot;) = &quot;likes&quot; OR aanameOfmodalbutton.Replace(&quot; &quot;,&quot;&quot;) = &quot;1other&quot; OR aanameOfmodalbutton.Replace(&quot; &quot;,&quot;&quot;) = &quot;1like&quot;]" DisplayName="Check if modal button links to modal (instead of username button)" sap:VirtualizedContainerService.HintSize="834,4201" sap2010:WorkflowViewState.IdRef="If_2">
                       <If.Then>
                         <Sequence DisplayName="Enter like modal and extract users who liked post" sap:VirtualizedContainerService.HintSize="756,3301" sap2010:WorkflowViewState.IdRef="Sequence_14">
                           <sap:WorkflowViewStateService.ViewState>
@@ -391,7 +392,7 @@
                                 </Sequence>
                               </ui:InterruptibleWhile.Body>
                             </ui:InterruptibleWhile>
-                            <ui:AppendCsvFile DataTable="[listOfuserlikes]" Delimitator="Comma" DisplayName="Append to CSV" FilePath="[&quot;C:\Users\Admin\Downloads\&quot; + inputProfileusername +&quot;_&quot; + inputPosttype +&quot;_list_of_user_likes.csv&quot;]" sap:VirtualizedContainerService.HintSize="632,133" sap2010:WorkflowViewState.IdRef="AppendCsvFile_7" />
+                            <ui:AppendCsvFile DataTable="[listOfuserlikes]" Delimitator="Comma" DisplayName="Append to CSV" FilePath="[inputDestinationfolder + inputProfileusername +&quot;_&quot; + inputPosttype +&quot;_list_of_user_likes.csv&quot;]" sap:VirtualizedContainerService.HintSize="632,133" sap2010:WorkflowViewState.IdRef="AppendCsvFile_7" />
                             <Assign DisplayName="Find current count of username in datatable" sap:VirtualizedContainerService.HintSize="632,82" sap2010:WorkflowViewState.IdRef="Assign_29">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:Int32">[uniqueUsernamecount]</OutArgument>
@@ -410,13 +411,13 @@
                         </Sequence>
                       </If.Then>
                       <If.Else>
-                        <Sequence sap:VirtualizedContainerService.HintSize="496,618" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                        <Sequence sap:VirtualizedContainerService.HintSize="496,724" sap2010:WorkflowViewState.IdRef="Sequence_17">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{aanameOfmodalbutton, likesUrl}]" DataTable="[listOfuserlikes]" DisplayName="Add username to table" sap:VirtualizedContainerService.HintSize="434,80" sap2010:WorkflowViewState.IdRef="AddDataRow_5" />
+                          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{aanameOfmodalbutton, likesUrl}]" DataTable="[listOfuserlikes]" DisplayName="Add username to table" sap:VirtualizedContainerService.HintSize="434,186" sap2010:WorkflowViewState.IdRef="AddDataRow_5" />
                           <Assign DisplayName="Find current count of username in datatable" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_18">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:Int32">[uniqueUsernamecount]</OutArgument>
@@ -426,14 +427,14 @@
                             </Assign.Value>
                           </Assign>
                           <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="LogMessage_13" Message="[&quot;There are &quot; + uniqueUsernamecount.ToString + &quot; likes&quot;]" />
-                          <ui:AppendCsvFile DataTable="[listOfuserlikes]" Delimitator="Comma" DisplayName="Append to CSV" FilePath="[&quot;C:\Users\Admin\Downloads\&quot; + inputProfileusername +&quot;_&quot; + inputPosttype +&quot;_list_of_user_likes.csv&quot;]" sap:VirtualizedContainerService.HintSize="434,133" sap2010:WorkflowViewState.IdRef="AppendCsvFile_4" />
+                          <ui:AppendCsvFile DataTable="[listOfuserlikes]" Delimitator="Comma" DisplayName="Append to CSV" FilePath="[inputDestinationfolder + inputProfileusername +&quot;_&quot; + inputPosttype +&quot;_list_of_user_likes.csv&quot;]" sap:VirtualizedContainerService.HintSize="434,133" sap2010:WorkflowViewState.IdRef="AppendCsvFile_4" />
                         </Sequence>
                       </If.Else>
                     </If>
                   </Sequence>
                 </If.Then>
                 <If.Else>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,92" sap2010:WorkflowViewState.IdRef="LogMessage_18" Message="[&quot;There are 0 likes&quot;]" />
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,92" sap2010:WorkflowViewState.IdRef="LogMessage_18" Level="Info" Message="[&quot;There are 0 likes&quot;]" />
                 </If.Else>
               </If>
             </Sequence>

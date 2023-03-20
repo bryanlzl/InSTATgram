@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- saved from url=(0016)http://localhost -->
+  </head>
+
+  <div class="container">
+    <div class="screen">
+      <div class="screen__content">
+        <h1 class="title">In<span class="stat-title">STAT</span>gram</h1>
+        <body>
+          <br /><br />
+
+          <form action="/action_page.php" class="login__input">
+            <p>Successful extraction of profile data!</p>
+            <br />
+            <br />
+            <input type="radio" id="extract" name="Input" value="extract" />  
+            <label for="extract">Extract another profile</label><br />
+            <br />
+            <input type="radio" id="cd" name="Input" value="cd" />  
+            <label for="cd">Change directory</label><br />
+            <br />
+            <input type="radio" id="exit" name="Input" value="exit" />  
+            <label for="exit">Exit</label><br />
+            <button
+              class="button login__submit"
+              id="SubmitButton"
+              type="submit"
+              onclick="OutputRadioValue()"
+            >
+              Next
+            </button>
+          </form>
+        </body>
+      </div>
+
+      <div class="screen__background">
+        <span
+          class="screen__background__shape screen__background__shape4"
+        ></span>
+        <span
+          class="screen__background__shape screen__background__shape3"
+        ></span>
+        <span
+          class="screen__background__shape screen__background__shape2"
+        ></span>
+        <span
+          class="screen__background__shape screen__background__shape1"
+        ></span>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    function OutputRadioValue() {
+      var ele = document.getElementsByName("Input");
+      for (i = 0; i < ele.length; i++) {
+        if (ele[i].checked) window.external.setResult(ele[i].value);
+      }
+    }
+  </script>
+</html>

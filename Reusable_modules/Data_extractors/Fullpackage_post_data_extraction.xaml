@@ -1,5 +1,12 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Activity mc:Ignorable="sap sap2010" x:Class="Fullpackage_Post_Data_Extraction" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="729,3225" sap2010:WorkflowViewState.IdRef="Fullpackage_Post_Data_Extraction_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Fullpackage_Post_Data_Extraction" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="inputDestinationfolder" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>729,3233</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Fullpackage_Post_Data_Extraction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="35">
       <x:String>System.Activities</x:String>
@@ -95,7 +102,7 @@
       <AssemblyReference>System.Collections</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Fullpackage_Post_Data_Extraction" sap:VirtualizedContainerService.HintSize="739,3160" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Fullpackage_Post_Data_Extraction" sap:VirtualizedContainerService.HintSize="739,3168" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="postType" />
       <Variable x:TypeArguments="s:String[]" Name="postTypearrayraw" />
@@ -105,13 +112,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Extracts everything (comments &amp; likes) from a post" sap:VirtualizedContainerService.HintSize="677,3049" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="91cefbd8-d20a-4ee0-a220-cc3764d0e803" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Extracts everything (comments &amp; likes) from a post" sap:VirtualizedContainerService.HintSize="677,3057" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="91cefbd8-d20a-4ee0-a220-cc3764d0e803" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="643,2832" sap2010:WorkflowViewState.IdRef="Sequence_11">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="643,2840" sap2010:WorkflowViewState.IdRef="Sequence_11">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Int32" Name="postCountint" />
               <Variable x:TypeArguments="x:String" Name="postUrl" />
@@ -177,8 +184,8 @@
                 </If.Else>
               </If>
             </Sequence>
-            <ui:LogMessage DisplayName="Console log current URL" sap:VirtualizedContainerService.HintSize="581,92" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;Data is currently being extracted from: &quot; + Environment.newline + postUrl]" />
-            <Sequence DisplayName="Load &amp; Extract all comments data from post" sap:VirtualizedContainerService.HintSize="581,1267" sap2010:WorkflowViewState.IdRef="Sequence_21">
+            <ui:LogMessage DisplayName="Console log current URL" sap:VirtualizedContainerService.HintSize="581,92" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Data is currently being extracted from: &quot; + Environment.newline + postUrl]" />
+            <Sequence DisplayName="Load &amp; Extract all comments data from post" sap:VirtualizedContainerService.HintSize="581,1271" sap2010:WorkflowViewState.IdRef="Sequence_21">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="anyCommentsstr" />
               </Sequence.Variables>
@@ -207,12 +214,9 @@
                     </ui:InvokeWorkflowFile>
                     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Maincomment_data_extraction.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="379,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_15" UnSafe="False" WorkflowFileName="Reusable_modules\Data_extractors\Maincomment_data_extraction.xaml">
                       <ui:InvokeWorkflowFile.Arguments>
-                        <InArgument x:TypeArguments="x:String" x:Key="inputProfileusername">
-                          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="userName" />
-                        </InArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="inputPosttype">
-                          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="postType" />
-                        </InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="inputProfileusername">[userName]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="inputPosttype">[postType]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="inputDestinationfolder">[inputDestinationfolder]</InArgument>
                       </ui:InvokeWorkflowFile.Arguments>
                     </ui:InvokeWorkflowFile>
                     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Post_subcomment_loader.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="379,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_14" UnSafe="False" WorkflowFileName="Reusable_modules\Item_loaders\Post_subcomment_loader.xaml">
@@ -222,12 +226,9 @@
                     </ui:InvokeWorkflowFile>
                     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Subcomment_data_extraction.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="379,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_16" UnSafe="False" WorkflowFileName="Reusable_modules\Data_extractors\Subcomment_data_extraction.xaml">
                       <ui:InvokeWorkflowFile.Arguments>
-                        <InArgument x:TypeArguments="x:String" x:Key="inputProfileusername">
-                          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="userName" />
-                        </InArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="inputPosttype">
-                          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="postType" />
-                        </InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="inputProfileusername">[userName]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="inputPosttype">[postType]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="inputDestinationfolder">[inputDestinationfolder]</InArgument>
                       </ui:InvokeWorkflowFile.Arguments>
                     </ui:InvokeWorkflowFile>
                   </Sequence>
@@ -236,12 +237,9 @@
             </Sequence>
             <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Likes_data_extraction.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="581,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" UnSafe="False" WorkflowFileName="Reusable_modules\Data_extractors\User_Like_data_extraction.xaml">
               <ui:InvokeWorkflowFile.Arguments>
-                <InArgument x:TypeArguments="x:String" x:Key="inputProfileusername">
-                  <VisualBasicValue x:TypeArguments="x:String" ExpressionText="userName" />
-                </InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="inputPosttype">
-                  <VisualBasicValue x:TypeArguments="x:String" ExpressionText="postType" />
-                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="inputProfileusername">[userName]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="inputPosttype">[postType]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="inputDestinationfolder">[inputDestinationfolder]</InArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
           </Sequence>
