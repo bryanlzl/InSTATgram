@@ -9,7 +9,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1139,956</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>931,976</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Menu_UI_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -89,7 +89,7 @@
       <AssemblyReference>System.Private.Xml</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart sap:VirtualizedContainerService.HintSize="941,891" sap2010:WorkflowViewState.IdRef="Flowchart_2">
+  <Flowchart sap:VirtualizedContainerService.HintSize="941,942.9999999999999" sap2010:WorkflowViewState.IdRef="Flowchart_2">
     <Flowchart.Variables>
       <Variable x:TypeArguments="x:String" Name="destinationFolder" />
       <Variable x:TypeArguments="s:Object[]" Name="validationProfile" />
@@ -104,7 +104,7 @@
         <av:Size x:Key="ShapeSize">60,75</av:Size>
         <x:Double x:Key="Width">907.2219002294679</x:Double>
         <av:PointCollection x:Key="ConnectorLocation">300,60 340,60</av:PointCollection>
-        <x:Double x:Key="Height">853.9513053495518</x:Double>
+        <x:Double x:Key="Height">906.5</x:Double>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <Flowchart.StartNode>
@@ -114,11 +114,11 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">340,34</av:Point>
-          <av:Size x:Key="ShapeSize">200,52</av:Size>
+          <av:Size x:Key="ShapeSize">200,53</av:Size>
           <av:PointCollection x:Key="ConnectorLocation">440,86 440,104</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Login page" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Menu\Login_prompt.xaml">
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Login page" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Menu\Login_prompt.xaml">
         <ui:InvokeWorkflowFile.Arguments>
           <scg:Dictionary x:TypeArguments="x:String, Argument" />
         </ui:InvokeWorkflowFile.Arguments>
@@ -133,11 +133,11 @@
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <av:Point x:Key="ShapeLocation">340,104</av:Point>
-              <av:Size x:Key="ShapeSize">200,52</av:Size>
+              <av:Size x:Key="ShapeSize">200,53</av:Size>
               <av:PointCollection x:Key="ConnectorLocation">440,157 440,184</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Destination file prompt" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Menu\Destination_file_location_prompt.xaml">
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Destination file prompt" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Menu\Destination_file_location_prompt.xaml">
             <ui:InvokeWorkflowFile.Arguments>
               <OutArgument x:TypeArguments="x:String" x:Key="outputDestinationfolder">[destinationFolder]</OutArgument>
             </ui:InvokeWorkflowFile.Arguments>
@@ -152,11 +152,11 @@
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <av:Point x:Key="ShapeLocation">340,184</av:Point>
-                  <av:Size x:Key="ShapeSize">200,52</av:Size>
+                  <av:Size x:Key="ShapeSize">200,53</av:Size>
                   <av:PointCollection x:Key="ConnectorLocation">440,236 440,247 513.5,247 513.5,278.25 427,278.25</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Landing page" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Menu\Landing_menu.xaml">
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Landing page" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Menu\Landing_menu.xaml">
                 <ui:InvokeWorkflowFile.Arguments>
                   <InArgument x:TypeArguments="x:String" x:Key="inputDestinationfolder">[destinationFolder]</InArgument>
                   <OutArgument x:TypeArguments="x:String" x:Key="outputProfiletype">[profileType]</OutArgument>
@@ -174,11 +174,11 @@
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <av:Point x:Key="ShapeLocation">340,364</av:Point>
-                          <av:Size x:Key="ShapeSize">200,52</av:Size>
+                          <av:Size x:Key="ShapeSize">200,53</av:Size>
                           <av:PointCollection x:Key="ConnectorLocation">440,417 440,434</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Parsing main menu inputs" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Menu\Parsing_main_menu_inputs.xaml">
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Parsing main menu inputs" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Menu\Parsing_main_menu_inputs.xaml">
                         <ui:InvokeWorkflowFile.Arguments>
                           <InArgument x:TypeArguments="x:String" x:Key="inputProfiletype">[profileType]</InArgument>
                           <InArgument x:TypeArguments="x:String" x:Key="inputDestinationfolder">[destinationFolder]</InArgument>
@@ -194,11 +194,11 @@
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <av:Point x:Key="ShapeLocation">340,434</av:Point>
-                              <av:Size x:Key="ShapeSize">200,52</av:Size>
+                              <av:Size x:Key="ShapeSize">200,53</av:Size>
                               <av:PointCollection x:Key="ConnectorLocation">340,460.5 310,460.5 310,380 280,380</av:PointCollection>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Validate profile" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Validators\Extraction_validator.xaml">
+                          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Validate profile" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Validators\Extraction_validator.xaml">
                             <ui:InvokeWorkflowFile.Arguments>
                               <OutArgument x:TypeArguments="sd:DataTable" x:Key="outputValidationtable" />
                               <OutArgument x:TypeArguments="s:Object[]" x:Key="outputValidationarray">[validationProfile]</OutArgument>
@@ -211,11 +211,11 @@
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:InvokeWorkflowFile>
                           <FlowStep.Next>
-                            <FlowSwitch x:TypeArguments="x:String" Default="{x:Reference __ReferenceID1}" x:Name="__ReferenceID5" DisplayName="Profile status?" Expression="[validationProfile(6).ToString]" sap:VirtualizedContainerService.HintSize="79,87" sap2010:WorkflowViewState.IdRef="FlowSwitch`1_2">
+                            <FlowSwitch x:TypeArguments="x:String" Default="{x:Reference __ReferenceID1}" x:Name="__ReferenceID5" DisplayName="Profile status?" Expression="[validationProfile(6).ToString]" sap:VirtualizedContainerService.HintSize="80,87" sap2010:WorkflowViewState.IdRef="FlowSwitch`1_2">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <av:Point x:Key="ShapeLocation">200,336.5</av:Point>
-                                  <av:Size x:Key="ShapeSize">79,87</av:Size>
+                                  <av:Size x:Key="ShapeSize">80,87</av:Size>
                                   <av:PointCollection x:Key="profiledoesnotexistConnector">240,336.5 240,210.5 340,210.5</av:PointCollection>
                                   <av:PointCollection x:Key="Default">200,380 179.08994353244657,380 179.08994353244657,210.5 340,210.5</av:PointCollection>
                                   <x:String x:Key="DefaultCaseDisplayName">private</x:String>
@@ -227,11 +227,11 @@
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <av:Point x:Key="ShapeLocation">340,504</av:Point>
-                                    <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                    <av:Size x:Key="ShapeSize">200,53</av:Size>
                                     <av:PointCollection x:Key="ConnectorLocation">540,530.5 570,530.5 570,530 580,530</av:PointCollection>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Extraction main menu" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="Menu\Extraction_menu.xaml">
+                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Extraction main menu" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="Menu\Extraction_menu.xaml">
                                   <ui:InvokeWorkflowFile.Arguments>
                                     <OutArgument x:TypeArguments="x:String" x:Key="outputExtractionselection">[extractionSelection]</OutArgument>
                                     <InArgument x:TypeArguments="x:String" x:Key="inputDestinationfolder">[destinationFolder]</InArgument>
@@ -262,11 +262,11 @@
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <av:Point x:Key="ShapeLocation">560,753.5</av:Point>
-                                          <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                          <av:Size x:Key="ShapeSize">200,53</av:Size>
                                           <av:PointCollection x:Key="ConnectorLocation">560,780 530,780 530,740 470,740</av:PointCollection>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Full profile extraction" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" UnSafe="False" WorkflowFileName="Main_actions\Full_profile_extraction.xaml">
+                                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Full profile extraction" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" UnSafe="False" WorkflowFileName="Main_actions\Full_profile_extraction.xaml">
                                         <ui:InvokeWorkflowFile.Arguments>
                                           <InArgument x:TypeArguments="x:String" x:Key="inputDestinationfolder">[destinationFolder]</InArgument>
                                           <InArgument x:TypeArguments="s:Object[]" x:Key="inputValidationprofile">[validationProfile]</InArgument>
@@ -282,16 +282,14 @@
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <av:Point x:Key="ShapeLocation">270,713.5</av:Point>
-                                              <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                              <av:Size x:Key="ShapeSize">200,53</av:Size>
                                               <av:PointCollection x:Key="ConnectorLocation">370,713.5 370,683.5000000000001</av:PointCollection>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Post extraction menu" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_21" UnSafe="False" WorkflowFileName="Menu\Post_extraction_menu.xaml">
+                                          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Post extraction menu" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_21" UnSafe="False" WorkflowFileName="Menu\Post_extraction_menu.xaml">
                                             <ui:InvokeWorkflowFile.Arguments>
                                               <InArgument x:TypeArguments="x:String" x:Key="inputDestinationfolder" />
-                                              <OutArgument x:TypeArguments="x:String" x:Key="outputPostexselect">
-                                                <VisualBasicReference x:TypeArguments="x:String" ExpressionText="postExtractionselection" />
-                                              </OutArgument>
+                                              <OutArgument x:TypeArguments="x:String" x:Key="outputPostexselect">[postExtractionselection]</OutArgument>
                                             </ui:InvokeWorkflowFile.Arguments>
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -300,10 +298,7 @@
                                             </sap:WorkflowViewStateService.ViewState>
                                           </ui:InvokeWorkflowFile>
                                           <FlowStep.Next>
-                                            <FlowSwitch x:TypeArguments="x:String" x:Name="__ReferenceID12" DisplayName="Repeat?" sap:VirtualizedContainerService.HintSize="70,87" sap2010:WorkflowViewState.IdRef="FlowSwitch`1_10">
-                                              <FlowSwitch.Expression>
-                                                <VisualBasicValue x:TypeArguments="x:String" ExpressionText="postExtractionselection" />
-                                              </FlowSwitch.Expression>
+                                            <FlowSwitch x:TypeArguments="x:String" x:Name="__ReferenceID12" DisplayName="Repeat?" Expression="[postExtractionselection]" sap:VirtualizedContainerService.HintSize="70,87" sap2010:WorkflowViewState.IdRef="FlowSwitch`1_10">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <av:Point x:Key="ShapeLocation">335,596.5</av:Point>
@@ -323,11 +318,11 @@
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <av:Point x:Key="ShapeLocation">560,683.5</av:Point>
-                                          <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                          <av:Size x:Key="ShapeSize">200,53</av:Size>
                                           <av:PointCollection x:Key="ConnectorLocation">560,710 530,710 530,740 470,740</av:PointCollection>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Quick profile extraction" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="Main_actions\Quick_profile_extraction.xaml">
+                                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Quick profile extraction" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="Main_actions\Quick_profile_extraction.xaml">
                                         <ui:InvokeWorkflowFile.Arguments>
                                           <InArgument x:TypeArguments="x:String" x:Key="inputDestinationfolder">[destinationFolder]</InArgument>
                                           <InArgument x:TypeArguments="s:Object[]" x:Key="inputValidationprofile">[validationProfile]</InArgument>
@@ -346,11 +341,11 @@
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <av:Point x:Key="ShapeLocation">560,613.5</av:Point>
-                                          <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                          <av:Size x:Key="ShapeSize">200,53</av:Size>
                                           <av:PointCollection x:Key="ConnectorLocation">560,640 530,640 530,740 470,740</av:PointCollection>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Basic information retriever.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="Main_actions\Basic_information_retriever.xaml">
+                                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Basic information retriever.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="Main_actions\Basic_information_retriever.xaml">
                                         <ui:InvokeWorkflowFile.Arguments>
                                           <InArgument x:TypeArguments="x:String" x:Key="inputDestinationfolder">[destinationFolder]</InArgument>
                                           <InArgument x:TypeArguments="s:Object[]" x:Key="inputValidationprofile">[validationProfile]</InArgument>

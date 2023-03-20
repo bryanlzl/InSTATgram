@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1094,1309</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>947.2,1318.4</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Parsing_main_menu_inputs_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -102,9 +102,11 @@
       <AssemblyReference>System.Private.Uri</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Parsing_main_menu_inputs" sap:VirtualizedContainerService.HintSize="574,1244" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Parsing_main_menu_inputs" sap:VirtualizedContainerService.HintSize="573.6,1253.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="userName" />
     </Sequence.Variables>
@@ -113,21 +115,21 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Instagram_basic_information_extraction" sap:VirtualizedContainerService.HintSize="512,1133" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="91cefbd8-d20a-4ee0-a220-cc3764d0e803" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Instagram_basic_information_extraction" sap:VirtualizedContainerService.HintSize="511.2,1141.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="91cefbd8-d20a-4ee0-a220-cc3764d0e803" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <If Condition="[inputProfiletype = &quot;Own&quot;]" DisplayName="Decide action based on 'own' or 'other' profile" sap:VirtualizedContainerService.HintSize="478,916" sap2010:WorkflowViewState.IdRef="If_4">
+          <If Condition="[inputProfiletype = &quot;Personal&quot;]" DisplayName="Decide action based on 'own' or 'other' profile" sap:VirtualizedContainerService.HintSize="477.6,924.8" sap2010:WorkflowViewState.IdRef="If_4">
             <If.Then>
-              <Sequence DisplayName="Own profile" sap:VirtualizedContainerService.HintSize="400,268" sap2010:WorkflowViewState.IdRef="Sequence_13">
+              <Sequence DisplayName="Own profile" sap:VirtualizedContainerService.HintSize="400,269.6" sap2010:WorkflowViewState.IdRef="Sequence_13">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NClick ClickType="Single" CursorMotionType="Instant" DelayAfter="0" DelayBefore="0" DisplayName="Click &quot;Profile&quot; to enter own profile page" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" Timeout="1" Version="V3">
+                <uix:NClick ClickType="Single" CursorMotionType="Instant" DelayAfter="0" DelayBefore="0" DisplayName="Click &quot;Profile&quot; to enter own profile page" sap:VirtualizedContainerService.HintSize="337.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" Timeout="1" Version="V3">
                   <uix:NClick.Target>
                     <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;a&amp;gt;div' tag='DIV' innertext='Profile' /&gt;" Guid="1c0d13c9-d679-4551-8db8-395382c72030" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Instagram' /&gt;" SearchSteps="Selector" WaitForReadyArgument="Complete" />
                   </uix:NClick.Target>
@@ -135,18 +137,18 @@
               </Sequence>
             </If.Then>
             <If.Else>
-              <Sequence sap:VirtualizedContainerService.HintSize="400,472" sap2010:WorkflowViewState.IdRef="Sequence_14">
+              <Sequence sap:VirtualizedContainerService.HintSize="400,477" sap2010:WorkflowViewState.IdRef="Sequence_14">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="338,239" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Key in username for extraction" Title="Username Input">
+                <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="338,243" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Key in username for extraction" Title="Username Input">
                   <ui:InputDialog.Result>
                     <OutArgument x:TypeArguments="x:String">[userName]</OutArgument>
                   </ui:InputDialog.Result>
                 </ui:InputDialog>
-                <uix:NGoToUrl DelayAfter="0" DelayBefore="0" DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="338,82" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Timeout="1" Url="[&quot;https://www.instagram.com/&quot; + userName + &quot;/&quot;]" Version="V3" />
+                <uix:NGoToUrl DelayAfter="0" DelayBefore="0" DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="338,83" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Timeout="1" Url="[&quot;https://www.instagram.com/&quot; + userName + &quot;/&quot;]" Version="V3" />
               </Sequence>
             </If.Else>
           </If>
