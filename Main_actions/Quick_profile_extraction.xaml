@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1139,2026</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1139,2039</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Quick_profile_extraction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -98,44 +98,44 @@
       <AssemblyReference>UiPath.Form.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Quick_profile_extraction" sap:VirtualizedContainerService.HintSize="615,1961" sap2010:WorkflowViewState.IdRef="Sequence_13">
+  <Sequence DisplayName="Quick_profile_extraction" sap:VirtualizedContainerService.HintSize="615,1974" sap2010:WorkflowViewState.IdRef="Sequence_13">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Quick_profile_extraction" sap:VirtualizedContainerService.HintSize="553,1850" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="0ac92615-9327-452a-b447-226047e7d2f5" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Quick_profile_extraction" sap:VirtualizedContainerService.HintSize="553,1863" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="0ac92615-9327-452a-b447-226047e7d2f5" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Quick_profile_extraction" sap:VirtualizedContainerService.HintSize="519,1633" sap2010:WorkflowViewState.IdRef="Sequence_12">
+          <Sequence DisplayName="Quick_profile_extraction" sap:VirtualizedContainerService.HintSize="519,1645" sap2010:WorkflowViewState.IdRef="Sequence_12">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Basic information retrieval" sap:VirtualizedContainerService.HintSize="457,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_15" UnSafe="False" WorkflowFileName="Main_actions\Basic_information_retriever.xaml">
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Basic information retrieval" sap:VirtualizedContainerService.HintSize="457,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_15" UnSafe="False" WorkflowFileName="Main_actions\Basic_information_retriever.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <InArgument x:TypeArguments="x:String" x:Key="inputDestinationfolder">[inputDestinationfolder]</InArgument>
                 <InArgument x:TypeArguments="s:Object[]" x:Key="inputValidationprofile">[inputValidationprofile]</InArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Post &amp; Reels (likes &amp; comment count) extraction" sap:VirtualizedContainerService.HintSize="457,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_16" UnSafe="False" WorkflowFileName="Main_actions\Instagram_quick_post_reel_iterator.xaml">
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Post &amp; Reels (likes &amp; comment count) extraction" sap:VirtualizedContainerService.HintSize="457,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_16" UnSafe="False" WorkflowFileName="Main_actions\Instagram_quick_post_reel_iterator.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <InArgument x:TypeArguments="s:Object[]" x:Key="inputValidationprofile">[inputValidationprofile]</InArgument>
                 <InArgument x:TypeArguments="x:String" x:Key="inputDestinationfolder">[inputDestinationfolder]</InArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
-            <uix:NClick ClickType="Single" DelayAfter="2" DelayBefore="0" DisplayName="Refresh page to lighten ram burden" sap:VirtualizedContainerService.HintSize="457,157" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="WindowMessages" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0ac92615-9327-452a-b447-226047e7d2f5" Timeout="1" Version="V3">
+            <uix:NClick ClickType="Single" DelayAfter="4" DelayBefore="0" DisplayName="Refresh page to lighten ram burden" sap:VirtualizedContainerService.HintSize="457,158" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="WindowMessages" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0ac92615-9327-452a-b447-226047e7d2f5" Timeout="1" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="74, 54, 50, 38" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'push button Refresh'" FullSelectorArgument="&lt;ctrl name='*' role='pane' /&gt;&lt;ctrl name='App bar' role='tool bar' /&gt;&lt;ctrl name='Refresh' role='push button' /&gt;" Guid="44748e16-74b4-4d77-a11a-36f57eff3947" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADYAAAAqCAYAAAD4Uag9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG3SURBVGhD7ZfBjYMwEACvLwpIARSQAsI/FJACyD8UkAJCAfyhAPKHfyjAp7FkiaBNDsii4JNXGiliV8gT24v9E0WR+Y8EMd8IYr4RxHwjiPlGEPuE3W5nDoeDJY7jlzWvcktYTYxB3m4307atGQfPyA1F8jw3dV0/veMTVhG7Xq9W4H6/m9PpZPb7/VM+TVNTFIWtoZZnmxZjOVVVZYWSJBFrhiBMbdM0VnCzYmVZWhCU8hLUIkdsUoyl1HXdJClqXDOB4/G4TTEG+ng87N6R8mPO57MVGQezLdUvQUWMBsFsSblvoSLGP02Xk3LfQkWM2WLWpNwcWNJZlom5uaiIEVPa+1/wDkLKzUVNbGrjeAezTki5uaiI0aZp91JuDpofaRUxrQHxDnfE+hQVMY5GxPhMOAf3Do29CipiwL/NOVHKTYFjldYyBDUxriB935vL5SLm38H+JDZ7H3NdjbvW1DMje4rQ+A4OURUD2j4zx1WEA65UA+wlLpzUanwqxqiLATPhLpKEu28B+9AFNVNmdgmriDkYNEsMARoD8Jtnawk5VhX7JkHMN4KYbwQx3whivhHE/CIyv7DTrgqECwMFAAAAAElFTkSuQmCC" InformativeScreenshot="5972460f156556b3f07e2de45623d72d.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='**' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete" />
               </uix:NClick.Target>
             </uix:NClick>
-            <If Condition="[Convert.ToInt32(inputValidationprofile(2)) &gt; 0]" DisplayName="Find follower list if &gt; 0 followers" sap:VirtualizedContainerService.HintSize="457,389" sap2010:WorkflowViewState.IdRef="If_11">
+            <If Condition="[Convert.ToInt32(inputValidationprofile(2)) &gt; 0]" DisplayName="Find follower list if &gt; 0 followers" sap:VirtualizedContainerService.HintSize="457,393" sap2010:WorkflowViewState.IdRef="If_11">
               <If.Then>
-                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Followers username list extraction" sap:VirtualizedContainerService.HintSize="379,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_17" UnSafe="False" WorkflowFileName="Main_actions\Instagram_follower_following_list_iterator.xaml">
+                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Followers username list extraction" sap:VirtualizedContainerService.HintSize="379,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_17" UnSafe="False" WorkflowFileName="Main_actions\Instagram_follower_following_list_iterator.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
                     <InArgument x:TypeArguments="x:String" x:Key="inputModefrommenu">follower</InArgument>
                     <InArgument x:TypeArguments="x:String" x:Key="inputDestinationfolder">[inputDestinationfolder]</InArgument>
@@ -144,14 +144,14 @@
                 </ui:InvokeWorkflowFile>
               </If.Then>
             </If>
-            <uix:NClick ClickType="Single" DelayAfter="2" DelayBefore="0" DisplayName="Refresh page to lighten ram burden" sap:VirtualizedContainerService.HintSize="457,157" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="WindowMessages" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="430f3b4a-8b3f-4bf1-a770-0cd1ad044bed" Timeout="1" Version="V3">
+            <uix:NClick ClickType="Single" DelayAfter="4" DelayBefore="0" DisplayName="Refresh page to lighten ram burden" sap:VirtualizedContainerService.HintSize="457,158" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="WindowMessages" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0ac92615-9327-452a-b447-226047e7d2f5" Timeout="1" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="74, 54, 50, 38" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'push button Refresh'" FullSelectorArgument="&lt;ctrl name='*' role='pane' /&gt;&lt;ctrl name='App bar' role='tool bar' /&gt;&lt;ctrl name='Refresh' role='push button' /&gt;" Guid="44748e16-74b4-4d77-a11a-36f57eff3947" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADYAAAAqCAYAAAD4Uag9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG3SURBVGhD7ZfBjYMwEACvLwpIARSQAsI/FJACyD8UkAJCAfyhAPKHfyjAp7FkiaBNDsii4JNXGiliV8gT24v9E0WR+Y8EMd8IYr4RxHwjiPlGEPuE3W5nDoeDJY7jlzWvcktYTYxB3m4307atGQfPyA1F8jw3dV0/veMTVhG7Xq9W4H6/m9PpZPb7/VM+TVNTFIWtoZZnmxZjOVVVZYWSJBFrhiBMbdM0VnCzYmVZWhCU8hLUIkdsUoyl1HXdJClqXDOB4/G4TTEG+ng87N6R8mPO57MVGQezLdUvQUWMBsFsSblvoSLGP02Xk3LfQkWM2WLWpNwcWNJZlom5uaiIEVPa+1/wDkLKzUVNbGrjeAezTki5uaiI0aZp91JuDpofaRUxrQHxDnfE+hQVMY5GxPhMOAf3Do29CipiwL/NOVHKTYFjldYyBDUxriB935vL5SLm38H+JDZ7H3NdjbvW1DMje4rQ+A4OURUD2j4zx1WEA65UA+wlLpzUanwqxqiLATPhLpKEu28B+9AFNVNmdgmriDkYNEsMARoD8Jtnawk5VhX7JkHMN4KYbwQx3whivhHE/CIyv7DTrgqECwMFAAAAAElFTkSuQmCC" InformativeScreenshot="5972460f156556b3f07e2de45623d72d.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='**' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete" />
               </uix:NClick.Target>
             </uix:NClick>
-            <If Condition="[Convert.ToInt32(inputValidationprofile(3)) &gt; 0]" DisplayName="Find following list if &gt; 0 following" sap:VirtualizedContainerService.HintSize="457,389" sap2010:WorkflowViewState.IdRef="If_12">
+            <If Condition="[Convert.ToInt32(inputValidationprofile(3)) &gt; 0]" DisplayName="Find following list if &gt; 0 following" sap:VirtualizedContainerService.HintSize="457,393" sap2010:WorkflowViewState.IdRef="If_12">
               <If.Then>
-                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Following username list extraction" sap:VirtualizedContainerService.HintSize="379,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_18" UnSafe="False" WorkflowFileName="Main_actions\Instagram_follower_following_list_iterator.xaml">
+                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Following username list extraction" sap:VirtualizedContainerService.HintSize="379,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_18" UnSafe="False" WorkflowFileName="Main_actions\Instagram_follower_following_list_iterator.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
                     <InArgument x:TypeArguments="x:String" x:Key="inputModefrommenu">following</InArgument>
                     <InArgument x:TypeArguments="x:String" x:Key="inputDestinationfolder">[inputDestinationfolder]</InArgument>

@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1079,4482</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1139,4482</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>InstapostIteration_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="38">
@@ -254,7 +254,12 @@
                   </Sequence>
                   <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Fullpackage_post_data_extraction.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="574,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_13" UnSafe="False" WorkflowFileName="Reusable_modules\Data_extractors\Fullpackage_post_data_extraction.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
-                      <InArgument x:TypeArguments="x:String" x:Key="inputDestinationfolder">[inputDestinationfolder]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="inputDestinationfolder">
+                        <VisualBasicValue x:TypeArguments="x:String" ExpressionText="inputDestinationfolder" />
+                      </InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="inputModetype">
+                        <Literal x:TypeArguments="x:String">reel</Literal>
+                      </InArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
                   <Sequence DisplayName="Exit post" sap:VirtualizedContainerService.HintSize="574,290" sap2010:WorkflowViewState.IdRef="Sequence_33">

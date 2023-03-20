@@ -7,7 +7,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1079,2772</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1139,2793</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Follower_following_user_list_extraction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="80">
@@ -116,13 +116,13 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Follower_following_user_list_extraction" sap:VirtualizedContainerService.HintSize="645,2707" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Follower_following_user_list_extraction" sap:VirtualizedContainerService.HintSize="645,2728" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:IfElseIf DisplayName="No extraction needed if 0 followers / following" sap:VirtualizedContainerService.HintSize="583,2596" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
+    <ui:IfElseIf DisplayName="No extraction needed if 0 followers / following" sap:VirtualizedContainerService.HintSize="583,2617" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
       <ui:IfElseIf.ConditionBlocks>
         <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
           <ui:IfElseIfBlock BlockType="If" Condition="[Convert.ToInt32(inputValidationprofile(2)) = 0 and inputModefrommenu.ToString = &quot;follower&quot;]">
@@ -137,13 +137,13 @@
           </ui:IfElseIfBlock>
           <ui:IfElseIfBlock BlockType="Else">
             <ui:IfElseIfBlock.Then>
-              <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Instagram_Comment_count_extraction" sap:VirtualizedContainerService.HintSize="532,2062" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="91cefbd8-d20a-4ee0-a220-cc3764d0e803" Version="V2" WindowResize="Maximize">
+              <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Instagram_Comment_count_extraction" sap:VirtualizedContainerService.HintSize="532,2083" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="91cefbd8-d20a-4ee0-a220-cc3764d0e803" Version="V2" WindowResize="Maximize">
                 <uix:NApplicationCard.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Extract follower following user listing" sap:VirtualizedContainerService.HintSize="498,1845" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <Sequence DisplayName="Extract follower following user listing" sap:VirtualizedContainerService.HintSize="498,1866" sap2010:WorkflowViewState.IdRef="Sequence_2">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="allRendereddivslist" />
                         <Variable x:TypeArguments="x:String" Name="previousLastdiv" />
@@ -168,7 +168,7 @@
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NGetText>
                       <ui:LogMessage DisplayName="Loading message" sap:VirtualizedContainerService.HintSize="436,88" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Extracting &quot; + inputModefrommenu + &quot; list from &quot; + userName]" />
-                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Follower_following_username_loader.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="436,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Reusable_modules\Item_loaders\Follower_following_username_loader.xaml">
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Render (load) all followers / following user listing" sap:VirtualizedContainerService.HintSize="436,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Reusable_modules\Item_loaders\Follower_following_username_loader.xaml">
                         <ui:InvokeWorkflowFile.Arguments>
                           <OutArgument x:TypeArguments="scg:IEnumerable(ui:UiElement)" x:Key="outputFollowerlist">[allRendereddivslist]</OutArgument>
                           <InArgument x:TypeArguments="x:String" x:Key="inputExtractionmode">[inputModefrommenu]</InArgument>
@@ -205,7 +205,7 @@
                           <uix:TargetAnchorable BrowserURL="https://www.instagram.com/wedetestducks/followers/" DesignTimeRectangle="1169, 351, 16, 16" DesignTimeScaleFactor="1.25" FriendlyName="'POLYLINE'" FullSelectorArgument="&lt;webctrl tag='polyline' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;div&amp;gt;svg&amp;gt;polyline' /&gt;" Guid="5a835021-5fb6-4788-81e8-2007025bc37b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADRSURBVDhPrdTBDcMgEERRqqECF+AG3KAbgJLcARVwJhqktcKwyxIphx8JB56IiQgxxvbPOnieZ7uuS52wG9Yfx9ECPkoprdbaUkrqZC+sw3o4AbvDQPoVFUzqP/m+7+HhLsoYnPdQcs7Dlx7KGNbj+XDKu6iFoelv46ErDE0gslAPQyqIGH2eZxhrGDJBxKiHoSWIeGcYa/OkJcjvTOKD+s4EGeOdWqgKWqfJ71RDJ9DCJA8dQA+TVugL7mKShXaQbxsPkxjttw3fh7uYNKK1fQAg35E5QrK3WwAAAABJRU5ErkJggg==" InformativeScreenshot="08e63f7139c19ec8a7a31cd6435c6b03.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*• Instagram photos and videos' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete" />
                         </uix:NClick.Target>
                       </uix:NClick>
-                      <ui:AppendCsvFile DataTable="[followerDatatable]" Delimitator="Comma" DisplayName="Append to CSV" FilePath="[inputDestinationfolder + userName + &quot;_&quot; + inputModefrommenu +&quot;_list.csv&quot;]" sap:VirtualizedContainerService.HintSize="436,133" sap2010:WorkflowViewState.IdRef="AppendCsvFile_1" />
+                      <ui:WriteCsvFile AddHeaders="True" DataTable="[followerDatatable]" Delimitator="Comma" DisplayName="Write CSV" FilePath="[inputDestinationfolder + userName + &quot;_&quot; + inputModefrommenu +&quot;_list.csv&quot;]" sap:VirtualizedContainerService.HintSize="436,154" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" ShouldQuote="True" />
                       <ui:LogMessage DisplayName="Completed message" sap:VirtualizedContainerService.HintSize="436,88" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Extraction of &quot; + inputModefrommenu + &quot; list from &quot; + userName + &quot; completed&quot;]" />
                     </Sequence>
                   </ActivityAction>

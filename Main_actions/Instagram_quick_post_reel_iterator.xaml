@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>763,2857</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1142,2838</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>InstapostIteration_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="40">
@@ -116,7 +116,7 @@
       <AssemblyReference>System.Data.Common</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Instagram_post_iterator" sap:VirtualizedContainerService.HintSize="773,2792" sap2010:WorkflowViewState.IdRef="Sequence_6">
+  <Sequence DisplayName="Instagram_post_iterator" sap:VirtualizedContainerService.HintSize="773,2773" sap2010:WorkflowViewState.IdRef="Sequence_6">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="listOfsubtabs" />
       <Variable x:TypeArguments="x:Int32" Name="initialTabcount" />
@@ -127,13 +127,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Iterating every post in a profile page" sap:VirtualizedContainerService.HintSize="711,2681" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="91cefbd8-d20a-4ee0-a220-cc3764d0e803" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Iterating every post in a profile page" sap:VirtualizedContainerService.HintSize="711,2662" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="91cefbd8-d20a-4ee0-a220-cc3764d0e803" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="677,2424" sap2010:WorkflowViewState.IdRef="Sequence_41">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="677,2445" sap2010:WorkflowViewState.IdRef="Sequence_41">
             <Sequence.Variables>
               <Variable x:TypeArguments="sd:DataTable" Name="reelDatasummarytable" />
               <Variable x:TypeArguments="x:String" Name="userName" />
@@ -166,9 +166,9 @@
                 </ui:InvokeWorkflowFile.Arguments>
               </ui:InvokeWorkflowFile>
             </Sequence>
-            <If Condition="[inputValidationprofile(5).ToString = &quot;nonZero&quot;]" DisplayName="If profile has no reels" sap:VirtualizedContainerService.HintSize="615,1712" sap2010:WorkflowViewState.IdRef="If_1">
+            <If Condition="[inputValidationprofile(5).ToString = &quot;nonZero&quot;]" DisplayName="If profile has no reels" sap:VirtualizedContainerService.HintSize="615,1733" sap2010:WorkflowViewState.IdRef="If_1">
               <If.Then>
-                <Sequence DisplayName="When there are reels -&gt; Quick extract Reel data (requires postDatasummarytable) " sap:VirtualizedContainerService.HintSize="537,1436" sap2010:WorkflowViewState.IdRef="Sequence_55">
+                <Sequence DisplayName="When there are reels -&gt; Quick extract Reel data (requires postDatasummarytable) " sap:VirtualizedContainerService.HintSize="537,1457" sap2010:WorkflowViewState.IdRef="Sequence_55">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -210,10 +210,10 @@
                         <scg:List x:TypeArguments="ui:JoinOperationArgument" Capacity="4">
                           <ui:JoinOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="EQ">
                             <ui:JoinOperationArgument.Column1>
-                              <InArgument x:TypeArguments="x:String">["URL"]</InArgument>
+                              <InArgument x:TypeArguments="x:String">["Reel URL"]</InArgument>
                             </ui:JoinOperationArgument.Column1>
                             <ui:JoinOperationArgument.Column2>
-                              <InArgument x:TypeArguments="x:String">["URL"]</InArgument>
+                              <InArgument x:TypeArguments="x:String">["Reel URL"]</InArgument>
                             </ui:JoinOperationArgument.Column2>
                           </ui:JoinOperationArgument>
                         </scg:List>
@@ -228,11 +228,11 @@
                     </ui:FilterDataTable.Filters>
                     <ui:FilterDataTable.SelectColumns>
                       <scg:List x:TypeArguments="InArgument" Capacity="4">
-                        <InArgument x:TypeArguments="x:String">["URL_1"]</InArgument>
+                        <InArgument x:TypeArguments="x:String">["Reel URL_1"]</InArgument>
                       </scg:List>
                     </ui:FilterDataTable.SelectColumns>
                   </ui:FilterDataTable>
-                  <ui:AppendCsvFile DataTable="[reelDatasummarytable]" Delimitator="Comma" DisplayName="Output reelDatasummarytable" FilePath="[inputDestinationfolder + userName +&quot;_reel_quick_summary.csv&quot;]" sap:VirtualizedContainerService.HintSize="475,133" sap2010:WorkflowViewState.IdRef="AppendCsvFile_3" />
+                  <ui:WriteCsvFile AddHeaders="True" DataTable="[reelDatasummarytable]" Delimitator="Comma" DisplayName="Output reelDatasummarytable" FilePath="[inputDestinationfolder + userName +&quot;_reel_quick_summary.csv&quot;]" sap:VirtualizedContainerService.HintSize="475,154" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" ShouldQuote="True" />
                   <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Up" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="475,237" sap2010:WorkflowViewState.IdRef="NMouseScroll_2" MovementUnits="10" Version="V3">
                     <uix:NMouseScroll.SearchedElement>
                       <uix:SearchedElement>

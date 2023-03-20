@@ -44,6 +44,9 @@
       <x:String>UiPath.Platform.ObjectLibrary</x:String>
       <x:String>UiPath.Shared.Activities</x:String>
       <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -99,6 +102,8 @@
       <AssemblyReference>UiPath.Python.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Full_profile_extraction" sap:VirtualizedContainerService.HintSize="615,3213" sap2010:WorkflowViewState.IdRef="Sequence_3">
@@ -131,7 +136,7 @@
                 <InArgument x:TypeArguments="x:String" x:Key="inputDestinationfolder">[inputDestinationfolder]</InArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
-            <uix:NClick ClickType="Single" DelayAfter="2" DelayBefore="0" DisplayName="Refresh page to lighten ram burden" sap:VirtualizedContainerService.HintSize="457,157" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="WindowMessages" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="430f3b4a-8b3f-4bf1-a770-0cd1ad044bed" Timeout="1" Version="V3">
+            <uix:NClick ClickType="Single" DelayAfter="4" DelayBefore="0" DisplayName="Refresh page to lighten ram burden" sap:VirtualizedContainerService.HintSize="457,157" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="WindowMessages" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="430f3b4a-8b3f-4bf1-a770-0cd1ad044bed" Timeout="1" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="74, 54, 50, 38" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'push button Refresh'" FullSelectorArgument="&lt;ctrl name='*' role='pane' /&gt;&lt;ctrl name='App bar' role='tool bar' /&gt;&lt;ctrl name='Refresh' role='push button' /&gt;" Guid="44748e16-74b4-4d77-a11a-36f57eff3947" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADYAAAAqCAYAAAD4Uag9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG3SURBVGhD7ZfBjYMwEACvLwpIARSQAsI/FJACyD8UkAJCAfyhAPKHfyjAp7FkiaBNDsii4JNXGiliV8gT24v9E0WR+Y8EMd8IYr4RxHwjiPlGEPuE3W5nDoeDJY7jlzWvcktYTYxB3m4307atGQfPyA1F8jw3dV0/veMTVhG7Xq9W4H6/m9PpZPb7/VM+TVNTFIWtoZZnmxZjOVVVZYWSJBFrhiBMbdM0VnCzYmVZWhCU8hLUIkdsUoyl1HXdJClqXDOB4/G4TTEG+ng87N6R8mPO57MVGQezLdUvQUWMBsFsSblvoSLGP02Xk3LfQkWM2WLWpNwcWNJZlom5uaiIEVPa+1/wDkLKzUVNbGrjeAezTki5uaiI0aZp91JuDpofaRUxrQHxDnfE+hQVMY5GxPhMOAf3Do29CipiwL/NOVHKTYFjldYyBDUxriB935vL5SLm38H+JDZ7H3NdjbvW1DMje4rQ+A4OURUD2j4zx1WEA65UA+wlLpzUanwqxqiLATPhLpKEu28B+9AFNVNmdgmriDkYNEsMARoD8Jtnawk5VhX7JkHMN4KYbwQx3whivhHE/CIyv7DTrgqECwMFAAAAAElFTkSuQmCC" InformativeScreenshot="5972460f156556b3f07e2de45623d72d.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='**' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete" />
               </uix:NClick.Target>
@@ -147,7 +152,7 @@
                 </ui:InvokeWorkflowFile>
               </If.Then>
             </If>
-            <uix:NClick ClickType="Single" DelayAfter="2" DelayBefore="0" DisplayName="Refresh page to lighten ram burden" sap:VirtualizedContainerService.HintSize="457,157" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="WindowMessages" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="430f3b4a-8b3f-4bf1-a770-0cd1ad044bed" Timeout="1" Version="V3">
+            <uix:NClick ClickType="Single" DelayAfter="4" DelayBefore="0" DisplayName="Refresh page to lighten ram burden" sap:VirtualizedContainerService.HintSize="457,157" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="WindowMessages" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="430f3b4a-8b3f-4bf1-a770-0cd1ad044bed" Timeout="1" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="74, 54, 50, 38" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'push button Refresh'" FullSelectorArgument="&lt;ctrl name='*' role='pane' /&gt;&lt;ctrl name='App bar' role='tool bar' /&gt;&lt;ctrl name='Refresh' role='push button' /&gt;" Guid="44748e16-74b4-4d77-a11a-36f57eff3947" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADYAAAAqCAYAAAD4Uag9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG3SURBVGhD7ZfBjYMwEACvLwpIARSQAsI/FJACyD8UkAJCAfyhAPKHfyjAp7FkiaBNDsii4JNXGiliV8gT24v9E0WR+Y8EMd8IYr4RxHwjiPlGEPuE3W5nDoeDJY7jlzWvcktYTYxB3m4307atGQfPyA1F8jw3dV0/veMTVhG7Xq9W4H6/m9PpZPb7/VM+TVNTFIWtoZZnmxZjOVVVZYWSJBFrhiBMbdM0VnCzYmVZWhCU8hLUIkdsUoyl1HXdJClqXDOB4/G4TTEG+ng87N6R8mPO57MVGQezLdUvQUWMBsFsSblvoSLGP02Xk3LfQkWM2WLWpNwcWNJZlom5uaiIEVPa+1/wDkLKzUVNbGrjeAezTki5uaiI0aZp91JuDpofaRUxrQHxDnfE+hQVMY5GxPhMOAf3Do29CipiwL/NOVHKTYFjldYyBDUxriB935vL5SLm38H+JDZ7H3NdjbvW1DMje4rQ+A4OURUD2j4zx1WEA65UA+wlLpzUanwqxqiLATPhLpKEu28B+9AFNVNmdgmriDkYNEsMARoD8Jtnawk5VhX7JkHMN4KYbwQx3whivhHE/CIyv7DTrgqECwMFAAAAAElFTkSuQmCC" InformativeScreenshot="5972460f156556b3f07e2de45623d72d.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='**' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete" />
               </uix:NClick.Target>
@@ -163,7 +168,7 @@
                 </ui:InvokeWorkflowFile>
               </If.Then>
             </If>
-            <uix:NClick ClickType="Single" DelayAfter="2" DelayBefore="0" DisplayName="Refresh page to lighten ram burden" sap:VirtualizedContainerService.HintSize="457,157" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="WindowMessages" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="430f3b4a-8b3f-4bf1-a770-0cd1ad044bed" Timeout="1" Version="V3">
+            <uix:NClick ClickType="Single" DelayAfter="4" DelayBefore="0" DisplayName="Refresh page to lighten ram burden" sap:VirtualizedContainerService.HintSize="457,157" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="WindowMessages" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="430f3b4a-8b3f-4bf1-a770-0cd1ad044bed" Timeout="1" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="74, 54, 50, 38" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'push button Refresh'" FullSelectorArgument="&lt;ctrl name='*' role='pane' /&gt;&lt;ctrl name='App bar' role='tool bar' /&gt;&lt;ctrl name='Refresh' role='push button' /&gt;" Guid="44748e16-74b4-4d77-a11a-36f57eff3947" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADYAAAAqCAYAAAD4Uag9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG3SURBVGhD7ZfBjYMwEACvLwpIARSQAsI/FJACyD8UkAJCAfyhAPKHfyjAp7FkiaBNDsii4JNXGiliV8gT24v9E0WR+Y8EMd8IYr4RxHwjiPlGEPuE3W5nDoeDJY7jlzWvcktYTYxB3m4307atGQfPyA1F8jw3dV0/veMTVhG7Xq9W4H6/m9PpZPb7/VM+TVNTFIWtoZZnmxZjOVVVZYWSJBFrhiBMbdM0VnCzYmVZWhCU8hLUIkdsUoyl1HXdJClqXDOB4/G4TTEG+ng87N6R8mPO57MVGQezLdUvQUWMBsFsSblvoSLGP02Xk3LfQkWM2WLWpNwcWNJZlom5uaiIEVPa+1/wDkLKzUVNbGrjeAezTki5uaiI0aZp91JuDpofaRUxrQHxDnfE+hQVMY5GxPhMOAf3Do29CipiwL/NOVHKTYFjldYyBDUxriB935vL5SLm38H+JDZ7H3NdjbvW1DMje4rQ+A4OURUD2j4zx1WEA65UA+wlLpzUanwqxqiLATPhLpKEu28B+9AFNVNmdgmriDkYNEsMARoD8Jtnawk5VhX7JkHMN4KYbwQx3whivhHE/CIyv7DTrgqECwMFAAAAAElFTkSuQmCC" InformativeScreenshot="5972460f156556b3f07e2de45623d72d.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='**' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete" />
               </uix:NClick.Target>
@@ -177,7 +182,7 @@
                 </ui:InvokeWorkflowFile>
               </If.Then>
             </If>
-            <uix:NClick ClickType="Single" DelayAfter="2" DelayBefore="0" DisplayName="Refresh page to lighten ram burden" sap:VirtualizedContainerService.HintSize="457,157" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="WindowMessages" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="430f3b4a-8b3f-4bf1-a770-0cd1ad044bed" Timeout="1" Version="V3">
+            <uix:NClick ClickType="Single" DelayAfter="4" DelayBefore="0" DisplayName="Refresh page to lighten ram burden" sap:VirtualizedContainerService.HintSize="457,157" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="WindowMessages" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="430f3b4a-8b3f-4bf1-a770-0cd1ad044bed" Timeout="1" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="74, 54, 50, 38" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'push button Refresh'" FullSelectorArgument="&lt;ctrl name='*' role='pane' /&gt;&lt;ctrl name='App bar' role='tool bar' /&gt;&lt;ctrl name='Refresh' role='push button' /&gt;" Guid="44748e16-74b4-4d77-a11a-36f57eff3947" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADYAAAAqCAYAAAD4Uag9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG3SURBVGhD7ZfBjYMwEACvLwpIARSQAsI/FJACyD8UkAJCAfyhAPKHfyjAp7FkiaBNDsii4JNXGiliV8gT24v9E0WR+Y8EMd8IYr4RxHwjiPlGEPuE3W5nDoeDJY7jlzWvcktYTYxB3m4307atGQfPyA1F8jw3dV0/veMTVhG7Xq9W4H6/m9PpZPb7/VM+TVNTFIWtoZZnmxZjOVVVZYWSJBFrhiBMbdM0VnCzYmVZWhCU8hLUIkdsUoyl1HXdJClqXDOB4/G4TTEG+ng87N6R8mPO57MVGQezLdUvQUWMBsFsSblvoSLGP02Xk3LfQkWM2WLWpNwcWNJZlom5uaiIEVPa+1/wDkLKzUVNbGrjeAezTki5uaiI0aZp91JuDpofaRUxrQHxDnfE+hQVMY5GxPhMOAf3Do29CipiwL/NOVHKTYFjldYyBDUxriB935vL5SLm38H+JDZ7H3NdjbvW1DMje4rQ+A4OURUD2j4zx1WEA65UA+wlLpzUanwqxqiLATPhLpKEu28B+9AFNVNmdgmriDkYNEsMARoD8Jtnawk5VhX7JkHMN4KYbwQx3whivhHE/CIyv7DTrgqECwMFAAAAAElFTkSuQmCC" InformativeScreenshot="5972460f156556b3f07e2de45623d72d.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='**' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete" />
               </uix:NClick.Target>
