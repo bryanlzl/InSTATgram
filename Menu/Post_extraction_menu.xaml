@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1219.2,818.4</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1186,487</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Main_menu_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -99,7 +99,7 @@
       <AssemblyReference>System.Private.Xml</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Post_extraction_menu" sap:VirtualizedContainerService.HintSize="496,321.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Post_extraction_menu" sap:VirtualizedContainerService.HintSize="496,320" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="postExtractionselection" />
     </Sequence.Variables>
@@ -108,8 +108,8 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:CustomInput Height="{x:Null}" DisplayName="Main menu" sap:VirtualizedContainerService.HintSize="433.6,88" sap2010:WorkflowViewState.IdRef="CustomInput_2" Result="[postExtractionselection]" URI="HTML_components\Post_extraction_menu.html" Width="500" />
-    <Assign DisplayName="Output landing menu selection" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <ui:CustomInput Height="{x:Null}" DisplayName="Main menu" sap:VirtualizedContainerService.HintSize="434,87" sap2010:WorkflowViewState.IdRef="CustomInput_2" Result="[postExtractionselection]" URI="HTML_components\Post_extraction_menu.html" Width="400" />
+    <Assign DisplayName="Output landing menu selection" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[outputPostexselect]</OutArgument>
       </Assign.To>

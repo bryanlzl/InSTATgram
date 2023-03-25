@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Extraction_menu" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ufa="clr-namespace:UiPath.Form.Activities;assembly=UiPath.Form.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Extraction_menu" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="outputExtractionselection" Type="OutArgument(x:String)" />
     <x:Property Name="inputDestinationfolder" Type="InArgument(x:String)" />
@@ -7,7 +7,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>835.2,496.79999999999995</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1186,487</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Extraction_menu_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -100,7 +100,7 @@
       <AssemblyReference>System.Private.Uri</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Extraction_menu" sap:VirtualizedContainerService.HintSize="595.2,432" sap2010:WorkflowViewState.IdRef="Sequence_4">
+  <Sequence DisplayName="Extraction_menu" sap:VirtualizedContainerService.HintSize="400,198" sap2010:WorkflowViewState.IdRef="Sequence_4">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="selectModeofExtraction" />
     </Sequence.Variables>
@@ -109,34 +109,6 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ufa:FormActivity CreateFormActivityFileName="{x:Null}" CreateFormActivityFilePath="{x:Null}" Dismissed="{x:Null}" FormFieldsInputData="{x:Null}" FormFieldsOutputData="{x:Null}" IconPath="{x:Null}" SelectedButton="{x:Null}" TimeoutInSeconds="{x:Null}" WindowPositionLeft="{x:Null}" WindowPositionTop="{x:Null}" CreateFormId="069c437b-83af-40c8-a334-508e342598f3" DevTools="False" DisableMaximizeButton="True" DisableMinimizeButton="False" DisableSanitize="False" DisplayName="Extraction menu form" EnableAccessibility="False" FormHeight="600" FormSchema="%[{&quot;label&quot;:&quot;What type of data would you like to extract from this Instagram profile?&quot;,&quot;placeholder&quot;:&quot;The following are required for inSTATgram to run properly:&quot;,&quot;description&quot;:&quot;Enable view like count on Instagram app + Logged in to Instagram account + Run in 1920 x 1080p, Edge full screen + Only 1 Edge instance and 1 tab can be opened + Do not move mouse into Edge screen when bot is running&quot;,&quot;tableView&quot;:true,&quot;key&quot;:&quot;textArea&quot;,&quot;type&quot;:&quot;textarea&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;Select mode of extraction&quot;,&quot;optionsLabelPosition&quot;:&quot;right&quot;,&quot;tooltip&quot;:&quot;Basic information: profile URL, username, follower count, following count, post count, reel count, account type\n\nQuick: Basic information + list of post/reel likes and comments, like and comment count, post URL, post visibility + follower and following user lists\n\nFull: Quick + comprehensive data of comments + list of user likes in posts &amp; reels\n\nCustom: *WIP*&quot;,&quot;customClass&quot;:&quot;login__input&quot;,&quot;inline&quot;:false,&quot;tableView&quot;:false,&quot;values&quot;:[{&quot;label&quot;:&quot;Basic information&quot;,&quot;value&quot;:&quot;basic&quot;,&quot;shortcut&quot;:&quot;&quot;},{&quot;label&quot;:&quot;Quick&quot;,&quot;value&quot;:&quot;quick&quot;,&quot;shortcut&quot;:&quot;&quot;},{&quot;label&quot;:&quot;Full&quot;,&quot;value&quot;:&quot;full&quot;,&quot;shortcut&quot;:&quot;&quot;},{&quot;label&quot;:&quot;Custom&quot;,&quot;value&quot;:&quot;custom&quot;,&quot;shortcut&quot;:&quot;&quot;},{&quot;label&quot;:&quot;Change file directory&quot;,&quot;value&quot;:&quot;cd&quot;,&quot;shortcut&quot;:&quot;&quot;},{&quot;label&quot;:&quot;Back to landing page&quot;,&quot;value&quot;:&quot;backTolandingpage&quot;,&quot;shortcut&quot;:&quot;&quot;}],&quot;key&quot;:&quot;selectModeofextraction&quot;,&quot;type&quot;:&quot;radio&quot;,&quot;input&quot;:true},{&quot;type&quot;:&quot;button&quot;,&quot;label&quot;:&quot;Submit&quot;,&quot;key&quot;:&quot;submit&quot;,&quot;disableOnInvalid&quot;:true,&quot;input&quot;:true,&quot;tableView&quot;:false}]" FormTheme="{}{&quot;Activities&quot;:[&quot;FORMS&quot;],&quot;Id&quot;:&quot;100120&quot;,&quot;Name&quot;:&quot;Default&quot;,&quot;BaseCss&quot;:&quot;./assets/css/themes/uipath.bootstrap.min.css&quot;,&quot;ImageSrc&quot;:&quot;./assets/themeicons/uipath.png&quot;,&quot;OverrideCssUrl&quot;:&quot;./assets/css/themes/uipath.custom.css&quot;,&quot;UserStyleOverrides&quot;:&quot;&quot;,&quot;Properties&quot;:&quot;&quot;,&quot;IsCustomTheme&quot;:false,&quot;Version&quot;:1,&quot;ThemeVersion&quot;:1}" FormTitle="Extraction menu" FormWidth="800" GenerateInputFields="True" sap:VirtualizedContainerService.HintSize="532.8,320" sap2010:WorkflowViewState.IdRef="FormActivity_2" IsReadOnly="False" LocalCSSFilePath="InSTATgram project\HTML_components\style.css" MaxColumnsForSchemaGeneration="6" RunDoBlockFirst="False" RunInIsolatedMode="True" StartAsMinimized="False">
-      <ufa:FormActivity.Body>
-        <ActivityAction x:TypeArguments="scg:Dictionary(x:String, x:Object)">
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,193.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <Assign DisplayName="Output selection from this menu" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_1">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:String">[outputExtractionselection]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[selectModeofExtraction]</InArgument>
-              </Assign.Value>
-            </Assign>
-          </Sequence>
-        </ActivityAction>
-      </ufa:FormActivity.Body>
-      <ufa:FormActivity.DelayBody>
-        <ActivityAction x:TypeArguments="scg:Dictionary(x:String, x:Object)">
-          <Delay Duration="00:00:00.2500000" sap2010:WorkflowViewState.IdRef="Delay_2" />
-        </ActivityAction>
-      </ufa:FormActivity.DelayBody>
-      <ufa:FormActivity.FormFieldsCollection>
-        <OutArgument x:TypeArguments="x:String" x:Key="selectModeofextraction">[selectModeofextraction]</OutArgument>
-      </ufa:FormActivity.FormFieldsCollection>
-    </ufa:FormActivity>
+    <ui:CustomInput Height="{x:Null}" DisplayName="Extraction_menu.html" sap:VirtualizedContainerService.HintSize="338,87" sap2010:WorkflowViewState.IdRef="CustomInput_1" Result="[outputExtractionselection]" URI="HTML_components\Extraction_menu.html" Width="400" />
   </Sequence>
 </Activity>

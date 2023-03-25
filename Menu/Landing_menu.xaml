@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1079,633</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1186,487</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Main_menu_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -108,7 +108,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:CustomInput Height="{x:Null}" Width="{x:Null}" DisplayName="Main menu" sap:VirtualizedContainerService.HintSize="434,87" sap2010:WorkflowViewState.IdRef="CustomInput_2" Result="[whichProfileinput]" URI="HTML_components\Landing_menu.html" />
+    <ui:CustomInput Height="{x:Null}" DisplayName="Main menu" sap:VirtualizedContainerService.HintSize="434,87" sap2010:WorkflowViewState.IdRef="CustomInput_2" Result="[whichProfileinput]" URI="HTML_components\Landing_menu.html" Width="400" />
     <Assign DisplayName="Output landing menu selection" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[outputProfiletype]</OutArgument>
