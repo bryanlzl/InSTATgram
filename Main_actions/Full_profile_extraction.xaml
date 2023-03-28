@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Quick_profile_extraction" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Quick_profile_extraction" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="inputDestinationfolder" Type="InArgument(x:String)" />
     <x:Property Name="inputValidationprofile" Type="InArgument(s:Object[])" />
@@ -6,10 +6,10 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1139,3278</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>778.4,4611.2</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Quick_profile_extraction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
-    <sco:Collection x:TypeArguments="x:String">
+    <scg:List x:TypeArguments="x:String" Capacity="38">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
       <x:String>System.Activities.Expressions</x:String>
@@ -47,10 +47,11 @@
       <x:String>System.Xml.Serialization</x:String>
       <x:String>UiPath.CSV</x:String>
       <x:String>UiPath.CSV.Activities</x:String>
-    </sco:Collection>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+    </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="80">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="55">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>System.Private.CoreLib</AssemblyReference>
@@ -104,46 +105,64 @@
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
       <AssemblyReference>System.Private.Xml</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Full_profile_extraction" sap:VirtualizedContainerService.HintSize="615,3213" sap2010:WorkflowViewState.IdRef="Sequence_3">
+  <Sequence DisplayName="Full_profile_extraction" sap:VirtualizedContainerService.HintSize="732,4546.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="followingDatatable" />
+    </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Full_profile_extraction" sap:VirtualizedContainerService.HintSize="553,3102" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="430f3b4a-8b3f-4bf1-a770-0cd1ad044bed" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Full_profile_extraction" sap:VirtualizedContainerService.HintSize="669.6,4434.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="430f3b4a-8b3f-4bf1-a770-0cd1ad044bed" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Full_profile_extraction" sap:VirtualizedContainerService.HintSize="519,2885" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Full_profile_extraction" sap:VirtualizedContainerService.HintSize="636,4217.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="userName" />
+              <Variable x:TypeArguments="sd:DataTable" Name="followerDatatable" />
+              <Variable x:TypeArguments="sd:DataTable" Name="postCommenttable" />
+            </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Basic information retrieval" sap:VirtualizedContainerService.HintSize="457,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_16" UnSafe="False" WorkflowFileName="Main_actions\Basic_information_retriever.xaml">
+            <uix:NGetUrl CurrentUrl="[userName]" DisplayName="Get profile URL" sap:VirtualizedContainerService.HintSize="573.6,87.2" sap2010:WorkflowViewState.IdRef="NGetUrl_1" Version="V3" />
+            <Assign DisplayName="Get profile username" sap:VirtualizedContainerService.HintSize="573.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[userName]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[userName.replace("https://www.instagram.com/","").Replace("/","")]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Basic information retrieval" sap:VirtualizedContainerService.HintSize="573.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_16" UnSafe="False" WorkflowFileName="Main_actions\Basic_information_retriever.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <InArgument x:TypeArguments="x:String" x:Key="inputDestinationfolder">[inputDestinationfolder]</InArgument>
                 <InArgument x:TypeArguments="s:Object[]" x:Key="inputValidationprofile">[inputValidationprofile]</InArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Post &amp; Reels (likes &amp; comment count) extraction" sap:VirtualizedContainerService.HintSize="457,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_17" UnSafe="False" WorkflowFileName="Main_actions\Instagram_quick_post_reel_iterator.xaml">
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Post &amp; Reels (likes &amp; comment count) extraction" sap:VirtualizedContainerService.HintSize="573.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_17" UnSafe="False" WorkflowFileName="Main_actions\Instagram_quick_post_reel_iterator.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <InArgument x:TypeArguments="s:Object[]" x:Key="inputValidationprofile">[inputValidationprofile]</InArgument>
                 <InArgument x:TypeArguments="x:String" x:Key="inputDestinationfolder">[inputDestinationfolder]</InArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
-            <uix:NClick ClickType="Single" DelayAfter="4" DelayBefore="0" DisplayName="Refresh page to lighten ram burden" sap:VirtualizedContainerService.HintSize="457,157" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="WindowMessages" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="430f3b4a-8b3f-4bf1-a770-0cd1ad044bed" Timeout="1" Version="V3">
+            <uix:NClick ClickType="Single" DelayAfter="4" DelayBefore="0" DisplayName="Refresh page to lighten ram burden" sap:VirtualizedContainerService.HintSize="573.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="WindowMessages" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="430f3b4a-8b3f-4bf1-a770-0cd1ad044bed" Timeout="1" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="74, 54, 50, 38" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'push button Refresh'" FullSelectorArgument="&lt;ctrl name='*' role='pane' /&gt;&lt;ctrl name='App bar' role='tool bar' /&gt;&lt;ctrl name='Refresh' role='push button' /&gt;" Guid="44748e16-74b4-4d77-a11a-36f57eff3947" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADYAAAAqCAYAAAD4Uag9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG3SURBVGhD7ZfBjYMwEACvLwpIARSQAsI/FJACyD8UkAJCAfyhAPKHfyjAp7FkiaBNDsii4JNXGiliV8gT24v9E0WR+Y8EMd8IYr4RxHwjiPlGEPuE3W5nDoeDJY7jlzWvcktYTYxB3m4307atGQfPyA1F8jw3dV0/veMTVhG7Xq9W4H6/m9PpZPb7/VM+TVNTFIWtoZZnmxZjOVVVZYWSJBFrhiBMbdM0VnCzYmVZWhCU8hLUIkdsUoyl1HXdJClqXDOB4/G4TTEG+ng87N6R8mPO57MVGQezLdUvQUWMBsFsSblvoSLGP02Xk3LfQkWM2WLWpNwcWNJZlom5uaiIEVPa+1/wDkLKzUVNbGrjeAezTki5uaiI0aZp91JuDpofaRUxrQHxDnfE+hQVMY5GxPhMOAf3Do29CipiwL/NOVHKTYFjldYyBDUxriB935vL5SLm38H+JDZ7H3NdjbvW1DMje4rQ+A4OURUD2j4zx1WEA65UA+wlLpzUanwqxqiLATPhLpKEu28B+9AFNVNmdgmriDkYNEsMARoD8Jtnawk5VhX7JkHMN4KYbwQx3whivhHE/CIyv7DTrgqECwMFAAAAAElFTkSuQmCC" InformativeScreenshot="5972460f156556b3f07e2de45623d72d.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='**' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete" />
               </uix:NClick.Target>
             </uix:NClick>
-            <If Condition="[Convert.ToInt32(inputValidationprofile(2)) &gt; 0]" DisplayName="Find follower list if &gt; 0 followers" sap:VirtualizedContainerService.HintSize="457,389" sap2010:WorkflowViewState.IdRef="If_11">
+            <If Condition="[Convert.ToInt32(inputValidationprofile(2)) &gt; 0]" DisplayName="Find follower list if &gt; 0 followers" sap:VirtualizedContainerService.HintSize="573.6,659.2" sap2010:WorkflowViewState.IdRef="If_11">
               <If.Then>
-                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Followers username list extraction" sap:VirtualizedContainerService.HintSize="379,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_18" UnSafe="False" WorkflowFileName="Main_actions\Instagram_follower_following_list_iterator.xaml">
+                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Followers username list extraction" sap:VirtualizedContainerService.HintSize="378.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_18" UnSafe="False" WorkflowFileName="Main_actions\Instagram_follower_following_list_iterator.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
                     <InArgument x:TypeArguments="x:String" x:Key="inputModefrommenu">follower</InArgument>
                     <InArgument x:TypeArguments="x:String" x:Key="inputDestinationfolder">[inputDestinationfolder]</InArgument>
@@ -151,15 +170,26 @@
                   </ui:InvokeWorkflowFile.Arguments>
                 </ui:InvokeWorkflowFile>
               </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Creating empty csv file" sap:VirtualizedContainerService.HintSize="496,367.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:BuildDataTable DataTable="[followerDatatable]" DisplayName="Build Follower / Following list" sap:VirtualizedContainerService.HintSize="433.6,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Username&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+                  <ui:WriteCsvFile AddHeaders="True" DataTable="[followerDatatable]" Delimitator="Comma" DisplayName="Write CSV" FilePath="[inputDestinationfolder + userName + &quot;_&quot; + &quot;follower_list.csv&quot;]" sap:VirtualizedContainerService.HintSize="433.6,155.2" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" ShouldQuote="True" />
+                </Sequence>
+              </If.Else>
             </If>
-            <uix:NClick ClickType="Single" DelayAfter="4" DelayBefore="0" DisplayName="Refresh page to lighten ram burden" sap:VirtualizedContainerService.HintSize="457,157" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="WindowMessages" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="430f3b4a-8b3f-4bf1-a770-0cd1ad044bed" Timeout="1" Version="V3">
+            <uix:NClick ClickType="Single" DelayAfter="4" DelayBefore="0" DisplayName="Refresh page to lighten ram burden" sap:VirtualizedContainerService.HintSize="573.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="WindowMessages" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="430f3b4a-8b3f-4bf1-a770-0cd1ad044bed" Timeout="1" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="74, 54, 50, 38" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'push button Refresh'" FullSelectorArgument="&lt;ctrl name='*' role='pane' /&gt;&lt;ctrl name='App bar' role='tool bar' /&gt;&lt;ctrl name='Refresh' role='push button' /&gt;" Guid="44748e16-74b4-4d77-a11a-36f57eff3947" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADYAAAAqCAYAAAD4Uag9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG3SURBVGhD7ZfBjYMwEACvLwpIARSQAsI/FJACyD8UkAJCAfyhAPKHfyjAp7FkiaBNDsii4JNXGiliV8gT24v9E0WR+Y8EMd8IYr4RxHwjiPlGEPuE3W5nDoeDJY7jlzWvcktYTYxB3m4307atGQfPyA1F8jw3dV0/veMTVhG7Xq9W4H6/m9PpZPb7/VM+TVNTFIWtoZZnmxZjOVVVZYWSJBFrhiBMbdM0VnCzYmVZWhCU8hLUIkdsUoyl1HXdJClqXDOB4/G4TTEG+ng87N6R8mPO57MVGQezLdUvQUWMBsFsSblvoSLGP02Xk3LfQkWM2WLWpNwcWNJZlom5uaiIEVPa+1/wDkLKzUVNbGrjeAezTki5uaiI0aZp91JuDpofaRUxrQHxDnfE+hQVMY5GxPhMOAf3Do29CipiwL/NOVHKTYFjldYyBDUxriB935vL5SLm38H+JDZ7H3NdjbvW1DMje4rQ+A4OURUD2j4zx1WEA65UA+wlLpzUanwqxqiLATPhLpKEu28B+9AFNVNmdgmriDkYNEsMARoD8Jtnawk5VhX7JkHMN4KYbwQx3whivhHE/CIyv7DTrgqECwMFAAAAAElFTkSuQmCC" InformativeScreenshot="5972460f156556b3f07e2de45623d72d.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='**' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete" />
               </uix:NClick.Target>
             </uix:NClick>
-            <If Condition="[Convert.ToInt32(inputValidationprofile(3)) &gt; 0]" DisplayName="Find following list if &gt; 0 following" sap:VirtualizedContainerService.HintSize="457,389" sap2010:WorkflowViewState.IdRef="If_12">
+            <If Condition="[Convert.ToInt32(inputValidationprofile(3)) &gt; 0]" DisplayName="Find following list if &gt; 0 following" sap:VirtualizedContainerService.HintSize="573.6,659.2" sap2010:WorkflowViewState.IdRef="If_12">
               <If.Then>
-                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Following username list extraction" sap:VirtualizedContainerService.HintSize="379,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_19" UnSafe="False" WorkflowFileName="Main_actions\Instagram_follower_following_list_iterator.xaml">
+                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Following username list extraction" sap:VirtualizedContainerService.HintSize="378.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_19" UnSafe="False" WorkflowFileName="Main_actions\Instagram_follower_following_list_iterator.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
                     <InArgument x:TypeArguments="x:String" x:Key="inputModefrommenu">following</InArgument>
                     <InArgument x:TypeArguments="x:String" x:Key="inputDestinationfolder">[inputDestinationfolder]</InArgument>
@@ -167,34 +197,70 @@
                   </ui:InvokeWorkflowFile.Arguments>
                 </ui:InvokeWorkflowFile>
               </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Creating empty csv file" sap:VirtualizedContainerService.HintSize="496,367.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:BuildDataTable DataTable="[followingDatatable]" DisplayName="Build Follower / Following list" sap:VirtualizedContainerService.HintSize="433.6,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Username&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+                  <ui:WriteCsvFile AddHeaders="True" DataTable="[followingDatatable]" Delimitator="Comma" DisplayName="Write CSV" FilePath="[inputDestinationfolder + userName + &quot;_&quot; + &quot;following_list.csv&quot;]" sap:VirtualizedContainerService.HintSize="433.6,155.2" sap2010:WorkflowViewState.IdRef="WriteCsvFile_2" ShouldQuote="True" />
+                </Sequence>
+              </If.Else>
             </If>
-            <uix:NClick ClickType="Single" DelayAfter="4" DelayBefore="0" DisplayName="Refresh page to lighten ram burden" sap:VirtualizedContainerService.HintSize="457,157" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="WindowMessages" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="430f3b4a-8b3f-4bf1-a770-0cd1ad044bed" Timeout="1" Version="V3">
+            <uix:NClick ClickType="Single" DelayAfter="4" DelayBefore="0" DisplayName="Refresh page to lighten ram burden" sap:VirtualizedContainerService.HintSize="573.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="WindowMessages" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="430f3b4a-8b3f-4bf1-a770-0cd1ad044bed" Timeout="1" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="74, 54, 50, 38" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'push button Refresh'" FullSelectorArgument="&lt;ctrl name='*' role='pane' /&gt;&lt;ctrl name='App bar' role='tool bar' /&gt;&lt;ctrl name='Refresh' role='push button' /&gt;" Guid="44748e16-74b4-4d77-a11a-36f57eff3947" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADYAAAAqCAYAAAD4Uag9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG3SURBVGhD7ZfBjYMwEACvLwpIARSQAsI/FJACyD8UkAJCAfyhAPKHfyjAp7FkiaBNDsii4JNXGiliV8gT24v9E0WR+Y8EMd8IYr4RxHwjiPlGEPuE3W5nDoeDJY7jlzWvcktYTYxB3m4307atGQfPyA1F8jw3dV0/veMTVhG7Xq9W4H6/m9PpZPb7/VM+TVNTFIWtoZZnmxZjOVVVZYWSJBFrhiBMbdM0VnCzYmVZWhCU8hLUIkdsUoyl1HXdJClqXDOB4/G4TTEG+ng87N6R8mPO57MVGQezLdUvQUWMBsFsSblvoSLGP02Xk3LfQkWM2WLWpNwcWNJZlom5uaiIEVPa+1/wDkLKzUVNbGrjeAezTki5uaiI0aZp91JuDpofaRUxrQHxDnfE+hQVMY5GxPhMOAf3Do29CipiwL/NOVHKTYFjldYyBDUxriB935vL5SLm38H+JDZ7H3NdjbvW1DMje4rQ+A4OURUD2j4zx1WEA65UA+wlLpzUanwqxqiLATPhLpKEu28B+9AFNVNmdgmriDkYNEsMARoD8Jtnawk5VhX7JkHMN4KYbwQx3whivhHE/CIyv7DTrgqECwMFAAAAAElFTkSuQmCC" InformativeScreenshot="5972460f156556b3f07e2de45623d72d.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='**' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete" />
               </uix:NClick.Target>
             </uix:NClick>
-            <If Condition="[Convert.ToInt32(inputValidationprofile(4)) &gt; 0]" DisplayName="Find all post comments and likes full details if post count &gt; 0" sap:VirtualizedContainerService.HintSize="457,389" sap2010:WorkflowViewState.IdRef="If_13">
+            <If Condition="[Convert.ToInt32(inputValidationprofile(4)) &gt; 0]" DisplayName="Find all post comments and likes full details if post count &gt; 0" sap:VirtualizedContainerService.HintSize="573.6,659.2" sap2010:WorkflowViewState.IdRef="If_13">
               <If.Then>
-                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Main_actions\Instagram_post_iterator.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="379,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_20" UnSafe="False" WorkflowFileName="Main_actions\Instagram_post_iterator.xaml">
+                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Post comment stats extraction" sap:VirtualizedContainerService.HintSize="378.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_20" UnSafe="False" WorkflowFileName="Main_actions\Instagram_post_iterator.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
                     <InArgument x:TypeArguments="x:String" x:Key="inputDestinationfolder">[inputDestinationfolder]</InArgument>
                   </ui:InvokeWorkflowFile.Arguments>
                 </ui:InvokeWorkflowFile>
               </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Creating empty csv file" sap:VirtualizedContainerService.HintSize="496,367.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:BuildDataTable DataTable="[postCommenttable]" DisplayName="Build Comment Data Table (post URL)" sap:VirtualizedContainerService.HintSize="433.6,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_3" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Post_x0020_URL&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Username&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Comment&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Like_x0020_count&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Subcomment_x0020_count&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Date_x0020_posted&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Comment_x0020_Type&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+                  <ui:WriteCsvFile AddHeaders="True" DataTable="[postCommenttable]" Delimitator="Comma" DisplayName="Write CSV" FilePath="[inputDestinationfolder + userName + &quot;_&quot; + &quot;post_comment_stats.csv&quot;]" sap:VirtualizedContainerService.HintSize="433.6,155.2" sap2010:WorkflowViewState.IdRef="WriteCsvFile_3" ShouldQuote="True" />
+                </Sequence>
+              </If.Else>
             </If>
-            <uix:NClick ClickType="Single" DelayAfter="4" DelayBefore="0" DisplayName="Refresh page to lighten ram burden" sap:VirtualizedContainerService.HintSize="457,157" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="WindowMessages" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="430f3b4a-8b3f-4bf1-a770-0cd1ad044bed" Timeout="1" Version="V3">
+            <uix:NClick ClickType="Single" DelayAfter="4" DelayBefore="0" DisplayName="Refresh page to lighten ram burden" sap:VirtualizedContainerService.HintSize="573.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="WindowMessages" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="430f3b4a-8b3f-4bf1-a770-0cd1ad044bed" Timeout="1" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="74, 54, 50, 38" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'push button Refresh'" FullSelectorArgument="&lt;ctrl name='*' role='pane' /&gt;&lt;ctrl name='App bar' role='tool bar' /&gt;&lt;ctrl name='Refresh' role='push button' /&gt;" Guid="44748e16-74b4-4d77-a11a-36f57eff3947" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADYAAAAqCAYAAAD4Uag9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG3SURBVGhD7ZfBjYMwEACvLwpIARSQAsI/FJACyD8UkAJCAfyhAPKHfyjAp7FkiaBNDsii4JNXGiliV8gT24v9E0WR+Y8EMd8IYr4RxHwjiPlGEPuE3W5nDoeDJY7jlzWvcktYTYxB3m4307atGQfPyA1F8jw3dV0/veMTVhG7Xq9W4H6/m9PpZPb7/VM+TVNTFIWtoZZnmxZjOVVVZYWSJBFrhiBMbdM0VnCzYmVZWhCU8hLUIkdsUoyl1HXdJClqXDOB4/G4TTEG+ng87N6R8mPO57MVGQezLdUvQUWMBsFsSblvoSLGP02Xk3LfQkWM2WLWpNwcWNJZlom5uaiIEVPa+1/wDkLKzUVNbGrjeAezTki5uaiI0aZp91JuDpofaRUxrQHxDnfE+hQVMY5GxPhMOAf3Do29CipiwL/NOVHKTYFjldYyBDUxriB935vL5SLm38H+JDZ7H3NdjbvW1DMje4rQ+A4OURUD2j4zx1WEA65UA+wlLpzUanwqxqiLATPhLpKEu28B+9AFNVNmdgmriDkYNEsMARoD8Jtnawk5VhX7JkHMN4KYbwQx3whivhHE/CIyv7DTrgqECwMFAAAAAElFTkSuQmCC" InformativeScreenshot="5972460f156556b3f07e2de45623d72d.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='**' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete" />
               </uix:NClick.Target>
             </uix:NClick>
-            <If Condition="[inputValidationprofile(5).ToString = &quot;nonZero&quot;]" DisplayName="Find all reel comments and likes full details if reel count &gt; 0" sap:VirtualizedContainerService.HintSize="457,389" sap2010:WorkflowViewState.IdRef="If_14">
+            <If Condition="[inputValidationprofile(5).ToString = &quot;nonZero&quot;]" DisplayName="Find all reel comments and likes full details if reel count &gt; 0" sap:VirtualizedContainerService.HintSize="573.6,659.2" sap2010:WorkflowViewState.IdRef="If_14">
               <If.Then>
-                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Main_actions\Instagram_reel_iterator.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="379,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_21" UnSafe="False" WorkflowFileName="Main_actions\Instagram_reel_iterator.xaml">
+                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Main_actions\Instagram_reel_iterator.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="378.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_21" UnSafe="False" WorkflowFileName="Main_actions\Instagram_reel_iterator.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
                     <InArgument x:TypeArguments="x:String" x:Key="inputDestinationfolder">[inputDestinationfolder]</InArgument>
                   </ui:InvokeWorkflowFile.Arguments>
                 </ui:InvokeWorkflowFile>
               </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Creating empty csv file" sap:VirtualizedContainerService.HintSize="496,367.2" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="sd:DataTable" Name="reelCommenttable" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:BuildDataTable DataTable="[reelCommenttable]" DisplayName="Build Comment Data Table (reel URL)" sap:VirtualizedContainerService.HintSize="433.6,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_4" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Post_x0020_URL&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Username&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Comment&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Like_x0020_count&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Subcomment_x0020_count&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Date_x0020_posted&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Comment_x0020_Type&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+                  <ui:WriteCsvFile AddHeaders="True" DataTable="[reelCommenttable]" Delimitator="Comma" DisplayName="Write CSV" FilePath="[inputDestinationfolder + userName + &quot;_&quot; + &quot;reel_comment_stats.csv&quot;]" sap:VirtualizedContainerService.HintSize="433.6,155.2" sap2010:WorkflowViewState.IdRef="WriteCsvFile_4" ShouldQuote="True" />
+                </Sequence>
+              </If.Else>
             </If>
           </Sequence>
         </ActivityAction>
