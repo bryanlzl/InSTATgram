@@ -8,7 +8,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1142,4771</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>679.2,4753.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Post_data_extraction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="86">
@@ -128,7 +128,7 @@
       <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Comment_data_extraction (For Post)" sap:VirtualizedContainerService.HintSize="690,4706" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Comment_data_extraction (For Post)" sap:VirtualizedContainerService.HintSize="689.6,4688.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Default="-1" Name="mainCounter" />
       <Variable x:TypeArguments="x:Int32" Default="0" Name="mainTscounter" />
@@ -143,13 +143,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Working inside an instagram post modal" sap:VirtualizedContainerService.HintSize="628,4595" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="7fda27d9-8dd1-428f-84f3-f0cb28be957b" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Working inside an instagram post modal" sap:VirtualizedContainerService.HintSize="627.2,4576.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="7fda27d9-8dd1-428f-84f3-f0cb28be957b" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="594,4377" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="593.6,4360" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="mainCommenttableOutput" />
               <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="mainCommentscomments" />
@@ -163,12 +163,12 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NGetText ContinueOnError="True" DelayAfter="0.01" DelayBefore="0.01" DisplayName="Get Text 'https://www.instagram.c…'" sap:VirtualizedContainerService.HintSize="532,158" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="7fda27d9-8dd1-428f-84f3-f0cb28be957b" TextString="[mainCommentlink]" Timeout="1.5" Version="V3">
+            <uix:NGetText ContinueOnError="True" DelayAfter="0.01" DelayBefore="0.01" DisplayName="Get Text 'https://www.instagram.c…'" sap:VirtualizedContainerService.HintSize="531.2,157.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="7fda27d9-8dd1-428f-84f3-f0cb28be957b" TextString="[mainCommentlink]" Timeout="1.5" Version="V3">
               <uix:NGetText.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="245, 56, 1248, 33" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'https://www.instagram.c…'" FullSelectorArgument="&lt;ctrl name='*• Instagram photos and videos*' role='pane' /&gt;&lt;ctrl name='App bar' role='tool bar' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" Guid="b3d71fdf-684d-4971-86a2-3acabb0e8336" ImageBase64="" InformativeScreenshot="24baa7b759a9690908570be231e3d7ff.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='*• Instagram photos and videos - Personal *' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
               </uix:NGetText.Target>
             </uix:NGetText>
-            <ui:FindChildren Children="[mainCommentstimestamp]" DisplayName="Extract main comments (timestamp)" Filter="&lt;webctrl tag='TIME'/&gt;" sap:VirtualizedContainerService.HintSize="532,107" sap2010:WorkflowViewState.IdRef="FindChildren_4" Scope="FIND_DESCENDANTS">
+            <ui:FindChildren Children="[mainCommentstimestamp]" DisplayName="Extract main comments (timestamp)" Filter="&lt;webctrl tag='TIME'/&gt;" sap:VirtualizedContainerService.HintSize="531.2,107.2" sap2010:WorkflowViewState.IdRef="FindChildren_4" Scope="FIND_DESCENDANTS">
               <ui:FindChildren.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d6e2d4b8-9976-4309-b1c6-49c14c648676" InformativeScreenshot="815e4f8c5019d79ae62d801336301f4b" Selector="&lt;html app='msedge.exe' title='* • Instagram photos and videos' /&gt;" WaitForReady="COMPLETE">
                   <ui:Target.TimeoutMS>
@@ -177,7 +177,7 @@
                 </ui:Target>
               </ui:FindChildren.Target>
             </ui:FindChildren>
-            <ui:FindChildren Children="[mainCommentsusername]" DisplayName="Extract main comments (username)" Filter="&lt;webctrl aaname='*' aria-role='link' tag='A' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;article&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;ul&amp;gt;div&amp;gt;li&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;h3&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;a' /&gt;" sap:VirtualizedContainerService.HintSize="532,107" sap2010:WorkflowViewState.IdRef="FindChildren_2" Scope="FIND_DESCENDANTS">
+            <ui:FindChildren Children="[mainCommentsusername]" DisplayName="Extract main comments (username)" Filter="&lt;webctrl aaname='*' aria-role='link' tag='A' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;article&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;ul&amp;gt;div&amp;gt;li&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;h3&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;a' /&gt;" sap:VirtualizedContainerService.HintSize="531.2,107.2" sap2010:WorkflowViewState.IdRef="FindChildren_2" Scope="FIND_DESCENDANTS">
               <ui:FindChildren.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d6e2d4b8-9976-4309-b1c6-49c14c648676" InformativeScreenshot="0ed90a00ce434ef090a0665a1ce865d5" Selector="&lt;html app='msedge.exe' title='*• Instagram photos and videos' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;article&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul' tag='UL' /&gt;" WaitForReady="COMPLETE">
                   <ui:Target.TimeoutMS>
@@ -186,7 +186,7 @@
                 </ui:Target>
               </ui:FindChildren.Target>
             </ui:FindChildren>
-            <ui:FindChildren Children="[mainCommentscomments]" DisplayName="Extract main comments (comments)" Filter="&lt;webctrl aaname='*' tag='SPAN' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;article&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;ul&amp;gt;div&amp;gt;li&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' /&gt;" sap:VirtualizedContainerService.HintSize="532,107" sap2010:WorkflowViewState.IdRef="FindChildren_1" Scope="FIND_DESCENDANTS">
+            <ui:FindChildren Children="[mainCommentscomments]" DisplayName="Extract main comments (comments)" Filter="&lt;webctrl aaname='*' tag='SPAN' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;article&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;ul&amp;gt;div&amp;gt;li&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' /&gt;" sap:VirtualizedContainerService.HintSize="531.2,107.2" sap2010:WorkflowViewState.IdRef="FindChildren_1" Scope="FIND_DESCENDANTS">
               <ui:FindChildren.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d6e2d4b8-9976-4309-b1c6-49c14c648676" InformativeScreenshot="4a0b86b987865b95cc2afb7cbffd57c6" Selector="&lt;html app='msedge.exe' title='*• Instagram photos and videos' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;article&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul' tag='UL' /&gt;" WaitForReady="COMPLETE">
                   <ui:Target.TimeoutMS>
@@ -195,7 +195,7 @@
                 </ui:Target>
               </ui:FindChildren.Target>
             </ui:FindChildren>
-            <ui:FindChildren Children="[mainCommentslikes]" DisplayName="Extract main comments (no. of likes)" Filter="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;article&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;ul&amp;gt;div&amp;gt;li&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' tag='DIV' innertext='*Reply*'/&gt;" sap:VirtualizedContainerService.HintSize="532,107" sap2010:WorkflowViewState.IdRef="FindChildren_3" Scope="FIND_DESCENDANTS">
+            <ui:FindChildren Children="[mainCommentslikes]" DisplayName="Extract main comments (no. of likes)" Filter="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;article&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;ul&amp;gt;div&amp;gt;li&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' tag='DIV' innertext='*Reply*'/&gt;" sap:VirtualizedContainerService.HintSize="531.2,107.2" sap2010:WorkflowViewState.IdRef="FindChildren_3" Scope="FIND_DESCENDANTS">
               <ui:FindChildren.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d6e2d4b8-9976-4309-b1c6-49c14c648676" InformativeScreenshot="476caee33259df90341c126b94cbde6c" Selector="&lt;html app='msedge.exe' title='* • Instagram photos and videos' /&gt;" WaitForReady="COMPLETE">
                   <ui:Target.TimeoutMS>
@@ -204,7 +204,7 @@
                 </ui:Target>
               </ui:FindChildren.Target>
             </ui:FindChildren>
-            <ui:FindChildren Children="[mainCommentssubcomments]" DisplayName="Extract main comments (no. of sub-comments)" Filter="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;article&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;ul' tag='UL' /&gt;" sap:VirtualizedContainerService.HintSize="532,107" sap2010:WorkflowViewState.IdRef="FindChildren_5" Scope="FIND_DESCENDANTS">
+            <ui:FindChildren Children="[mainCommentssubcomments]" DisplayName="Extract main comments (no. of sub-comments)" Filter="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;article&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;ul' tag='UL' /&gt;" sap:VirtualizedContainerService.HintSize="531.2,107.2" sap2010:WorkflowViewState.IdRef="FindChildren_5" Scope="FIND_DESCENDANTS">
               <ui:FindChildren.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d6e2d4b8-9976-4309-b1c6-49c14c648676" InformativeScreenshot="476caee33259df90341c126b94cbde6c" Selector="&lt;html app='msedge.exe' title='* • Instagram photos and videos' /&gt;" WaitForReady="COMPLETE">
                   <ui:Target.TimeoutMS>
@@ -213,21 +213,21 @@
                 </ui:Target>
               </ui:FindChildren.Target>
             </ui:FindChildren>
-            <If Condition="[inputModetype.ToString = &quot;post&quot;]" DisplayName="Post URL / Reel URL column name (depending on modeType)" sap:VirtualizedContainerService.HintSize="532,379" sap2010:WorkflowViewState.IdRef="If_1">
+            <If Condition="[inputModetype.ToString = &quot;post&quot;]" DisplayName="Post URL / Reel URL column name (depending on modeType)" sap:VirtualizedContainerService.HintSize="531.2,378.4" sap2010:WorkflowViewState.IdRef="If_1">
               <If.Then>
-                <ui:BuildDataTable DataTable="[mainCommenttable]" DisplayName="Build Comment Data Table (post URL)" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Post_x0020_URL&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Username&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Comment&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Like_x0020_count&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Subcomment_x0020_count&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Date_x0020_posted&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Comment_x0020_Type&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+                <ui:BuildDataTable DataTable="[mainCommenttable]" DisplayName="Build Comment Data Table (post URL)" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Post_x0020_URL&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Username&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Comment&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Like_x0020_count&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Subcomment_x0020_count&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Date_x0020_posted&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Comment_x0020_type&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
               </If.Then>
               <If.Else>
-                <ui:BuildDataTable DataTable="[mainCommenttable]" DisplayName="Build Comment Data Table (reel URL)" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Reel_x0020_URL&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Username&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Comment&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Like_x0020_count&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Subcomment_x0020_count&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Date_x0020_posted&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Comment_x0020_Type&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+                <ui:BuildDataTable DataTable="[mainCommenttable]" DisplayName="Build Comment Data Table (reel URL)" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Reel_x0020_URL&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Username&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Comment&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Like_x0020_count&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Subcomment_x0020_count&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Date_x0020_posted&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Comment_x0020_type&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
               </If.Else>
             </If>
-            <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="532,2135" sap2010:WorkflowViewState.IdRef="ForEach`1_10" Values="[Enumerable.Range(0, mainCommentsusername.Count())]">
+            <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="531.2,2121.6" sap2010:WorkflowViewState.IdRef="ForEach`1_10" Values="[Enumerable.Range(0, mainCommentsusername.Count())]">
               <ui:ForEach.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="counter" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,2008" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,1995.2" sap2010:WorkflowViewState.IdRef="Sequence_7">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="mainCommentstsr" />
                       <Variable x:TypeArguments="x:String" Name="mainCommentsunr" />
@@ -241,7 +241,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Assign DisplayName="mainComment indexer (time stamp)" sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_9">
+                    <Assign DisplayName="mainComment indexer (time stamp)" sap:VirtualizedContainerService.HintSize="433.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_9">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:Int32">[mainTscounter]</OutArgument>
                       </Assign.To>
@@ -249,7 +249,7 @@
                         <InArgument x:TypeArguments="x:Int32">[mainTscounter + 1]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <Assign DisplayName="mainComment indexer (non time stamp)" sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_10">
+                    <Assign DisplayName="mainComment indexer (non time stamp)" sap:VirtualizedContainerService.HintSize="433.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_10">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:Int32">[maincounter]</OutArgument>
                       </Assign.To>
@@ -257,58 +257,58 @@
                         <InArgument x:TypeArguments="x:Int32">[maincounter + 1]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <uix:NGetAttribute Attribute="uipath-html-title" DelayAfter="0" DelayBefore="0" DisplayName="Get main comment (time stamp)" sap:VirtualizedContainerService.HintSize="434,190" sap2010:WorkflowViewState.IdRef="NGetAttribute_18" InUiElement="[mainCommentstimestamp(mainTscounter)]" Version="V3">
+                    <uix:NGetAttribute Attribute="uipath-html-title" DelayAfter="0" DelayBefore="0" DisplayName="Get main comment (time stamp)" sap:VirtualizedContainerService.HintSize="433.6,188" sap2010:WorkflowViewState.IdRef="NGetAttribute_18" InUiElement="[mainCommentstimestamp(mainTscounter)]" Version="V3">
                       <uix:NGetAttribute.Result>
                         <OutArgument x:TypeArguments="x:String">[mainCommentstsr]</OutArgument>
                       </uix:NGetAttribute.Result>
                     </uix:NGetAttribute>
-                    <uix:NGetAttribute Attribute="aaname" DelayAfter="0" DelayBefore="0" DisplayName="Get main comment (username)" sap:VirtualizedContainerService.HintSize="434,190" sap2010:WorkflowViewState.IdRef="NGetAttribute_19" InUiElement="[mainCommentsusername(maincounter)]" Version="V3">
+                    <uix:NGetAttribute Attribute="aaname" DelayAfter="0" DelayBefore="0" DisplayName="Get main comment (username)" sap:VirtualizedContainerService.HintSize="433.6,188" sap2010:WorkflowViewState.IdRef="NGetAttribute_19" InUiElement="[mainCommentsusername(maincounter)]" Version="V3">
                       <uix:NGetAttribute.Result>
                         <OutArgument x:TypeArguments="x:String">[mainCommentsunr]</OutArgument>
                       </uix:NGetAttribute.Result>
                     </uix:NGetAttribute>
-                    <uix:NGetAttribute Attribute="innertext" DelayAfter="0" DelayBefore="0" DisplayName="Get main comment (comments)" sap:VirtualizedContainerService.HintSize="434,190" sap2010:WorkflowViewState.IdRef="NGetAttribute_20" InUiElement="[mainCommentscomments(maincounter)]" Version="V3">
+                    <uix:NGetAttribute Attribute="innertext" DelayAfter="0" DelayBefore="0" DisplayName="Get main comment (comments)" sap:VirtualizedContainerService.HintSize="433.6,188" sap2010:WorkflowViewState.IdRef="NGetAttribute_20" InUiElement="[mainCommentscomments(maincounter)]" Version="V3">
                       <uix:NGetAttribute.Result>
                         <OutArgument x:TypeArguments="x:String">[mainCommentscr]</OutArgument>
                       </uix:NGetAttribute.Result>
                     </uix:NGetAttribute>
-                    <uix:NGetAttribute Attribute="innertext" DelayAfter="0" DelayBefore="0" DisplayName="Get main comment (no. of likes)" sap:VirtualizedContainerService.HintSize="434,190" sap2010:WorkflowViewState.IdRef="NGetAttribute_15" InUiElement="[mainCommentslikes(maincounter)]" Version="V3">
+                    <uix:NGetAttribute Attribute="innertext" DelayAfter="0" DelayBefore="0" DisplayName="Get main comment (no. of likes)" sap:VirtualizedContainerService.HintSize="433.6,188" sap2010:WorkflowViewState.IdRef="NGetAttribute_15" InUiElement="[mainCommentslikes(maincounter)]" Version="V3">
                       <uix:NGetAttribute.Result>
                         <OutArgument x:TypeArguments="x:String">[mainCommentslr]</OutArgument>
                       </uix:NGetAttribute.Result>
                     </uix:NGetAttribute>
-                    <uix:NGetAttribute Attribute="innertext" DelayAfter="0" DelayBefore="0" DisplayName="Get main comment (no. of sub-comments)" sap:VirtualizedContainerService.HintSize="434,190" sap2010:WorkflowViewState.IdRef="NGetAttribute_21" InUiElement="[mainCommentssubcomments(maincounter)]" Version="V3">
+                    <uix:NGetAttribute Attribute="innertext" DelayAfter="0" DelayBefore="0" DisplayName="Get main comment (no. of sub-comments)" sap:VirtualizedContainerService.HintSize="433.6,188" sap2010:WorkflowViewState.IdRef="NGetAttribute_21" InUiElement="[mainCommentssubcomments(maincounter)]" Version="V3">
                       <uix:NGetAttribute.Result>
                         <OutArgument x:TypeArguments="x:String">[mainCommentsscr]</OutArgument>
                       </uix:NGetAttribute.Result>
                     </uix:NGetAttribute>
-                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Likes_string_cleaner.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Reusable_modules\String_cleaners\Likes_string_cleaner.xaml">
+                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Likes_string_cleaner.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Reusable_modules\String_cleaners\Likes_string_cleaner.xaml">
                       <ui:InvokeWorkflowFile.Arguments>
                         <InArgument x:TypeArguments="x:String" x:Key="Inputrawlikestring">[mainCommentslr]</InArgument>
                         <OutArgument x:TypeArguments="x:Int32" x:Key="Outputlikecount">[mainCommentsl]</OutArgument>
                       </ui:InvokeWorkflowFile.Arguments>
                     </ui:InvokeWorkflowFile>
-                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Subcommentcount_string_cleaner.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Reusable_modules\String_cleaners\Subcommentcount_string_cleaner.xaml">
+                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Subcommentcount_string_cleaner.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Reusable_modules\String_cleaners\Subcommentcount_string_cleaner.xaml">
                       <ui:InvokeWorkflowFile.Arguments>
                         <InArgument x:TypeArguments="x:String" x:Key="Inputrawsubcommentcountstring">[mainCommentsscr]</InArgument>
                         <OutArgument x:TypeArguments="x:Int32" x:Key="Outputsubcommentcount">[mainCommentssc]</OutArgument>
                       </ui:InvokeWorkflowFile.Arguments>
                     </ui:InvokeWorkflowFile>
-                    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[New Object(){mainCommentlink, mainCommentsunr, mainCommentscr, mainCommentsl, mainCommentssc, mainCommentstsr, &quot;Main&quot;}]" DataTable="[mainCommenttable]" DisplayName="Add comment details to table" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="AddDataRow_3" />
+                    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[New Object(){mainCommentlink, mainCommentsunr, mainCommentscr, mainCommentsl, mainCommentssc, mainCommentstsr, &quot;Main&quot;}]" DataTable="[mainCommenttable]" DisplayName="Add comment details to table" sap:VirtualizedContainerService.HintSize="433.6,188" sap2010:WorkflowViewState.IdRef="AddDataRow_3" />
                   </Sequence>
                 </ActivityAction>
               </ui:ForEach.Body>
             </ui:ForEach>
-            <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists" Exists="[fileExist]" sap:VirtualizedContainerService.HintSize="532,91" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[inputDestinationfolder + inputProfileusername  + &quot;_&quot; + inputPosttype + &quot;_comment_stats.csv&quot;]" PathType="File" />
-            <If Condition="[fileExist]" DisplayName="If file exist, append to file - else create new csv file with header" sap:VirtualizedContainerService.HintSize="532,470" sap2010:WorkflowViewState.IdRef="If_2">
+            <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists" Exists="[fileExist]" sap:VirtualizedContainerService.HintSize="531.2,90.4" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[inputDestinationfolder + inputProfileusername  + &quot;_&quot; + inputPosttype + &quot;_comment_stats.csv&quot;]" PathType="File" />
+            <If Condition="[fileExist]" DisplayName="If file exist, append to file - else create new csv file with header" sap:VirtualizedContainerService.HintSize="531.2,468" sap2010:WorkflowViewState.IdRef="If_2">
               <If.Then>
-                <ui:AppendCsvFile DataTable="[mainCommenttable]" Delimitator="Comma" DisplayName="Append to CSV" Encoding="utf-8" FilePath="[inputDestinationfolder + inputProfileusername  + &quot;_&quot; + inputPosttype + &quot;_comment_stats.csv&quot;]" sap:VirtualizedContainerService.HintSize="434,135" sap2010:WorkflowViewState.IdRef="AppendCsvFile_1" />
+                <ui:AppendCsvFile DataTable="[mainCommenttable]" Delimitator="Comma" DisplayName="Append to CSV" Encoding="utf-8" FilePath="[inputDestinationfolder + inputProfileusername  + &quot;_&quot; + inputPosttype + &quot;_comment_stats.csv&quot;]" sap:VirtualizedContainerService.HintSize="433.6,134.4" sap2010:WorkflowViewState.IdRef="AppendCsvFile_1" />
               </If.Then>
               <If.Else>
-                <ui:WriteCsvFile AddHeaders="True" DataTable="[mainCommenttable]" Delimitator="Comma" DisplayName="Write CSV" FilePath="[inputDestinationfolder + inputProfileusername  + &quot;_&quot; + inputPosttype + &quot;_comment_stats.csv&quot;]" sap:VirtualizedContainerService.HintSize="434,156" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" ShouldQuote="True" />
+                <ui:WriteCsvFile AddHeaders="True" DataTable="[mainCommenttable]" Delimitator="Comma" DisplayName="Write CSV" FilePath="[inputDestinationfolder + inputProfileusername  + &quot;_&quot; + inputPosttype + &quot;_comment_stats.csv&quot;]" sap:VirtualizedContainerService.HintSize="433.6,155.2" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" ShouldQuote="True" />
               </If.Else>
             </If>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="532,94" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;There are &quot; + mainCommenttable.Rows.Count.ToString + &quot; main comments&quot;]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="531.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;There are &quot; + mainCommenttable.Rows.Count.ToString + &quot; main comments&quot;]" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>

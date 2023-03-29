@@ -8,7 +8,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1085.6,7462.4</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1085.6,8205.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Likes_data_extraction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="90">
@@ -132,7 +132,7 @@
       <AssemblyReference>System.Private.Xml.Linq</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Likes_data_extraction" sap:VirtualizedContainerService.HintSize="1096,7397.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Likes_data_extraction" sap:VirtualizedContainerService.HintSize="1096,8140.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="listOfuserlikes" />
       <Variable x:TypeArguments="x:String" Name="username" />
@@ -148,13 +148,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Likes_data_extraction" sap:VirtualizedContainerService.HintSize="1033.6,7285.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="{x:Null}" InteractionMode="DebuggerApi" IsIncognito="{x:Null}" OpenMode="{x:Null}" OutUiElement="{x:Null}" ScopeGuid="9f8c47a8-99d8-4765-b6f2-5f9eb2dab190" Timeout="{x:Null}" UserDataFolderMode="{x:Null}" UserDataFolderPath="{x:Null}" Version="V2" WebDriverMode="{x:Null}">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Likes_data_extraction" sap:VirtualizedContainerService.HintSize="1033.6,8028.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="{x:Null}" InteractionMode="DebuggerApi" IsIncognito="{x:Null}" OpenMode="{x:Null}" OutUiElement="{x:Null}" ScopeGuid="9f8c47a8-99d8-4765-b6f2-5f9eb2dab190" Timeout="{x:Null}" UserDataFolderMode="{x:Null}" UserDataFolderPath="{x:Null}" Version="V2" WebDriverMode="{x:Null}">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1000,7068.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1000,7812" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Int32" Default="0" Name="uniqueUsernamecount" />
               <Variable x:TypeArguments="x:Int32" Default="-1" Name="countIndex" />
@@ -165,7 +165,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Load &amp; Extract all likes data from post" sap:VirtualizedContainerService.HintSize="937.6,6953.6" sap2010:WorkflowViewState.IdRef="Sequence_16">
+            <Sequence DisplayName="Load &amp; Extract all likes data from post" sap:VirtualizedContainerService.HintSize="937.6,7696.8" sap2010:WorkflowViewState.IdRef="Sequence_16">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="ifNolikesstr" />
                 <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="listOflikemodalbutton" />
@@ -233,7 +233,7 @@
                   </ui:BuildDataTable>
                 </If.Else>
               </If>
-              <If Condition="[ifNolikesstr.Replace(&quot; &quot;,&quot;&quot;) &lt;&gt; &quot;Bethefirsttolikethis&quot;]" DisplayName="Decide on what to do if there are likes" sap:VirtualizedContainerService.HintSize="875.2,5512.8" sap2010:WorkflowViewState.IdRef="If_1">
+              <If Condition="[ifNolikesstr.Replace(&quot; &quot;,&quot;&quot;) &lt;&gt; &quot;Bethefirsttolikethis&quot;]" DisplayName="Decide on what to do if there are likes" sap:VirtualizedContainerService.HintSize="875.2,6256" sap2010:WorkflowViewState.IdRef="If_1">
                 <If.Then>
                   <Sequence sap:VirtualizedContainerService.HintSize="797.6,5234.4" sap2010:WorkflowViewState.IdRef="Sequence_40">
                     <Sequence.Variables>
@@ -257,7 +257,7 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uix:NClick AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="True" CursorMotionType="{x:Null}" DelayAfter="3" DelayBefore="0" DisplayName="Click on &quot;Like&quot; or &quot;Other&quot; button (triggers modal)" sap:VirtualizedContainerService.HintSize="595.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_5" InScope="{x:Null}" InUiElement="{x:Null}" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" Timeout="0.5" Version="V3">
+                          <uix:NClick AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="True" CursorMotionType="{x:Null}" DelayAfter="3.5" DelayBefore="0" DisplayName="Click on &quot;Like&quot; or &quot;Other&quot; button (triggers modal)" sap:VirtualizedContainerService.HintSize="595.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_5" InScope="{x:Null}" InUiElement="{x:Null}" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" Timeout="0.5" Version="V3">
                             <uix:NClick.Target>
                               <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;webctrl aaname='*' aria-role='link' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;article&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;a' href='*/liked_by/' /&gt;" Guid="5f5459c4-3e88-4a80-ada8-48a0b82f3975" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*• Instagram photos and videos' /&gt;" SearchSteps="Selector" WaitForReadyArgument="Complete" />
                             </uix:NClick.Target>
@@ -292,7 +292,7 @@
                                       <InArgument x:TypeArguments="x:String">[username]</InArgument>
                                     </Assign.Value>
                                   </Assign>
-                                  <ui:FindChildren Children="[currentLikeusers]" ContinueOnError="True" DisplayName="Find currently rendered usernames" Filter="&lt;webctrl aaname='*' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;a&amp;gt;span&amp;gt;div' tag='DIV' /&gt;" sap:VirtualizedContainerService.HintSize="435.2,107.2" sap2010:WorkflowViewState.IdRef="FindChildren_10" Scope="FIND_DESCENDANTS">
+                                  <ui:FindChildren Children="[currentLikeusers]" ContinueOnError="True" DisplayName="Find currently rendered usernames" Filter="&lt;webctrl aaname='*' aria-role='link' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;span&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;a' href='/*/' /&gt;" sap:VirtualizedContainerService.HintSize="435.2,107.2" sap2010:WorkflowViewState.IdRef="FindChildren_10" Scope="FIND_DESCENDANTS">
                                     <ui:FindChildren.Target>
                                       <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="786b2598-7bd3-4f06-aa78-347bb36c2744" InformativeScreenshot="a67c999d73987ed88deafc4b372f9ad6" Selector="&lt;webctrl aria-role='dialog' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' tag='DIV' /&gt;" TimeoutMS="300" WaitForReady="COMPLETE" />
                                     </ui:FindChildren.Target>
@@ -405,7 +405,23 @@
                   </Sequence>
                 </If.Then>
                 <If.Else>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_18" Level="Info" Message="[&quot;There are 0 likes&quot;]" />
+                  <Sequence DisplayName="No likes" sap:VirtualizedContainerService.HintSize="573.6,843.2" sap2010:WorkflowViewState.IdRef="Sequence_47">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:PathExists DisplayName="Path Exists" Exists="[fileExist]" sap:VirtualizedContainerService.HintSize="511.2,90.4" sap2010:WorkflowViewState.IdRef="PathExists_6" Path="[inputDestinationfolder + inputProfileusername +&quot;_&quot; + inputPosttype +&quot;_list_of_user_likes.csv&quot;]" PathType="File" Resource="{x:Null}" />
+                    <If Condition="[fileExist]" DisplayName="If file exist, append to file - else create new csv file with header" sap:VirtualizedContainerService.HintSize="511.2,468" sap2010:WorkflowViewState.IdRef="If_15">
+                      <If.Then>
+                        <ui:AppendCsvFile DataTable="[listOfuserlikes]" Delimitator="Comma" DisplayName="Append to CSV" Encoding="{x:Null}" FilePath="[inputDestinationfolder + inputProfileusername +&quot;_&quot; + inputPosttype +&quot;_list_of_user_likes.csv&quot;]" sap:VirtualizedContainerService.HintSize="433.6,134.4" sap2010:WorkflowViewState.IdRef="AppendCsvFile_12" />
+                      </If.Then>
+                      <If.Else>
+                        <ui:WriteCsvFile AddHeaders="True" DataTable="[listOfuserlikes]" Delimitator="Comma" DisplayName="Write CSV" Encoding="{x:Null}" FilePath="[inputDestinationfolder + inputProfileusername +&quot;_&quot; + inputPosttype +&quot;_list_of_user_likes.csv&quot;]" sap:VirtualizedContainerService.HintSize="433.6,155.2" sap2010:WorkflowViewState.IdRef="WriteCsvFile_6" ShouldQuote="True" />
+                      </If.Else>
+                    </If>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="511.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_22" Level="Info" Message="[&quot;There are 0 likes&quot;]" />
+                  </Sequence>
                 </If.Else>
               </If>
             </Sequence>
