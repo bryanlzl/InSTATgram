@@ -266,6 +266,27 @@
           }
         }
       },
+      "InternalLabs.PowerBI_Refresh.Activities/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "UiPath.System.Activities": "22.4.5",
+          "UiPath.UIAutomation.Activities": "22.4.7"
+        },
+        "compile": {
+          "lib/net5.0-windows7.0/_._": {}
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/InternalLabs.PowerBI_Refresh.Activities.dll": {},
+          "lib/net5.0-windows7.0/InternalLabs.PowerBI_Refresh.Activities_Expressions_50025604.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "MailKit/3.1.1": {
         "type": "package",
         "dependencies": {
@@ -481,10 +502,12 @@
           "lib/netstandard2.0/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.dll": {}
         }
       },
-      "Microsoft.Bcl.AsyncInterfaces/1.0.0": {
+      "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.1/_._": {}
+          "lib/netstandard2.1/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
           "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
@@ -3048,6 +3071,35 @@
           "lib/netstandard1.6/System.Linq.dll": {}
         }
       },
+      "System.Linq.Async/5.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp3.1/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/System.Linq.Async.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Linq.Async.Queryable/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Linq.Async": "5.0.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/System.Linq.Async.Queryable.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Linq.Expressions/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -4855,6 +4907,138 @@
           }
         }
       },
+      "UiPath.MicrosoftOffice365.Activities/1.11.1": {
+        "type": "package",
+        "dependencies": {
+          "ClosedXML": "0.95.4",
+          "Microsoft.Bcl.AsyncInterfaces": "5.0.0",
+          "Microsoft.Graph": "3.32.0",
+          "Microsoft.Identity.Client": "4.32.0",
+          "Newtonsoft.Json": "13.0.1",
+          "System.Linq.Async.Queryable": "5.0.0",
+          "UiPath.Activities.RuntimeGovernance": "1.1.3",
+          "UiPath.ConnectionClient": "1.0.0-20210921.1",
+          "UiPath.Platform": "21.10.0"
+        },
+        "compile": {
+          "lib/net5.0-windows7.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/UiPath.MicrosoftOffice365.Activities.Design.dll": {
+            "related": ".xml"
+          },
+          "lib/net5.0-windows7.0/UiPath.MicrosoftOffice365.Activities.Package.dll": {},
+          "lib/net5.0-windows7.0/UiPath.MicrosoftOffice365.Activities.dll": {
+            "related": ".Design.xml;.xml"
+          },
+          "lib/net5.0-windows7.0/UiPath.MicrosoftOffice365.dll": {
+            "related": ".Activities.Design.xml;.Activities.xml;.xml"
+          }
+        },
+        "resource": {
+          "lib/net5.0-windows7.0/de/UiPath.MicrosoftOffice365.Activities.Design.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net5.0-windows7.0/de/UiPath.MicrosoftOffice365.Activities.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net5.0-windows7.0/de/UiPath.MicrosoftOffice365.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net5.0-windows7.0/es-MX/UiPath.MicrosoftOffice365.Activities.Design.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net5.0-windows7.0/es-MX/UiPath.MicrosoftOffice365.Activities.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net5.0-windows7.0/es-MX/UiPath.MicrosoftOffice365.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net5.0-windows7.0/es/UiPath.MicrosoftOffice365.Activities.Design.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net5.0-windows7.0/es/UiPath.MicrosoftOffice365.Activities.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net5.0-windows7.0/es/UiPath.MicrosoftOffice365.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net5.0-windows7.0/fr/UiPath.MicrosoftOffice365.Activities.Design.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net5.0-windows7.0/fr/UiPath.MicrosoftOffice365.Activities.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net5.0-windows7.0/fr/UiPath.MicrosoftOffice365.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net5.0-windows7.0/ja/UiPath.MicrosoftOffice365.Activities.Design.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net5.0-windows7.0/ja/UiPath.MicrosoftOffice365.Activities.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net5.0-windows7.0/ja/UiPath.MicrosoftOffice365.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net5.0-windows7.0/ko/UiPath.MicrosoftOffice365.Activities.Design.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net5.0-windows7.0/ko/UiPath.MicrosoftOffice365.Activities.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net5.0-windows7.0/ko/UiPath.MicrosoftOffice365.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net5.0-windows7.0/pt-BR/UiPath.MicrosoftOffice365.Activities.Design.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net5.0-windows7.0/pt-BR/UiPath.MicrosoftOffice365.Activities.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net5.0-windows7.0/pt-BR/UiPath.MicrosoftOffice365.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net5.0-windows7.0/pt/UiPath.MicrosoftOffice365.Activities.Design.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net5.0-windows7.0/pt/UiPath.MicrosoftOffice365.Activities.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net5.0-windows7.0/pt/UiPath.MicrosoftOffice365.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net5.0-windows7.0/ru/UiPath.MicrosoftOffice365.Activities.Design.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net5.0-windows7.0/ru/UiPath.MicrosoftOffice365.Activities.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net5.0-windows7.0/ru/UiPath.MicrosoftOffice365.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net5.0-windows7.0/tr/UiPath.MicrosoftOffice365.Activities.Design.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net5.0-windows7.0/tr/UiPath.MicrosoftOffice365.Activities.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net5.0-windows7.0/tr/UiPath.MicrosoftOffice365.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net5.0-windows7.0/zh-CN/UiPath.MicrosoftOffice365.Activities.Design.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net5.0-windows7.0/zh-CN/UiPath.MicrosoftOffice365.Activities.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net5.0-windows7.0/zh-CN/UiPath.MicrosoftOffice365.resources.dll": {
+            "locale": "zh-CN"
+          }
+        }
+      },
       "UiPath.OCR.Activities/3.11.0": {
         "type": "package",
         "dependencies": {
@@ -6031,6 +6215,27 @@
           }
         }
       },
+      "InternalLabs.PowerBI_Refresh.Activities/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "UiPath.System.Activities": "22.4.5",
+          "UiPath.UIAutomation.Activities": "22.4.7"
+        },
+        "compile": {
+          "lib/net5.0-windows7.0/_._": {}
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/InternalLabs.PowerBI_Refresh.Activities.dll": {},
+          "lib/net5.0-windows7.0/InternalLabs.PowerBI_Refresh.Activities_Expressions_50025604.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "MailKit/3.1.1": {
         "type": "package",
         "dependencies": {
@@ -6246,10 +6451,12 @@
           "lib/netstandard2.0/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.dll": {}
         }
       },
-      "Microsoft.Bcl.AsyncInterfaces/1.0.0": {
+      "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.1/_._": {}
+          "lib/netstandard2.1/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
           "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
@@ -8735,6 +8942,35 @@
           "lib/netstandard1.6/System.Linq.dll": {}
         }
       },
+      "System.Linq.Async/5.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp3.1/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/System.Linq.Async.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Linq.Async.Queryable/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Linq.Async": "5.0.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/System.Linq.Async.Queryable.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Linq.Expressions/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -10473,6 +10709,138 @@
           }
         }
       },
+      "UiPath.MicrosoftOffice365.Activities/1.11.1": {
+        "type": "package",
+        "dependencies": {
+          "ClosedXML": "0.95.4",
+          "Microsoft.Bcl.AsyncInterfaces": "5.0.0",
+          "Microsoft.Graph": "3.32.0",
+          "Microsoft.Identity.Client": "4.32.0",
+          "Newtonsoft.Json": "13.0.1",
+          "System.Linq.Async.Queryable": "5.0.0",
+          "UiPath.Activities.RuntimeGovernance": "1.1.3",
+          "UiPath.ConnectionClient": "1.0.0-20210921.1",
+          "UiPath.Platform": "21.10.0"
+        },
+        "compile": {
+          "lib/net5.0-windows7.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/UiPath.MicrosoftOffice365.Activities.Design.dll": {
+            "related": ".xml"
+          },
+          "lib/net5.0-windows7.0/UiPath.MicrosoftOffice365.Activities.Package.dll": {},
+          "lib/net5.0-windows7.0/UiPath.MicrosoftOffice365.Activities.dll": {
+            "related": ".Design.xml;.xml"
+          },
+          "lib/net5.0-windows7.0/UiPath.MicrosoftOffice365.dll": {
+            "related": ".Activities.Design.xml;.Activities.xml;.xml"
+          }
+        },
+        "resource": {
+          "lib/net5.0-windows7.0/de/UiPath.MicrosoftOffice365.Activities.Design.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net5.0-windows7.0/de/UiPath.MicrosoftOffice365.Activities.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net5.0-windows7.0/de/UiPath.MicrosoftOffice365.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net5.0-windows7.0/es-MX/UiPath.MicrosoftOffice365.Activities.Design.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net5.0-windows7.0/es-MX/UiPath.MicrosoftOffice365.Activities.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net5.0-windows7.0/es-MX/UiPath.MicrosoftOffice365.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net5.0-windows7.0/es/UiPath.MicrosoftOffice365.Activities.Design.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net5.0-windows7.0/es/UiPath.MicrosoftOffice365.Activities.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net5.0-windows7.0/es/UiPath.MicrosoftOffice365.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net5.0-windows7.0/fr/UiPath.MicrosoftOffice365.Activities.Design.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net5.0-windows7.0/fr/UiPath.MicrosoftOffice365.Activities.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net5.0-windows7.0/fr/UiPath.MicrosoftOffice365.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net5.0-windows7.0/ja/UiPath.MicrosoftOffice365.Activities.Design.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net5.0-windows7.0/ja/UiPath.MicrosoftOffice365.Activities.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net5.0-windows7.0/ja/UiPath.MicrosoftOffice365.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net5.0-windows7.0/ko/UiPath.MicrosoftOffice365.Activities.Design.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net5.0-windows7.0/ko/UiPath.MicrosoftOffice365.Activities.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net5.0-windows7.0/ko/UiPath.MicrosoftOffice365.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net5.0-windows7.0/pt-BR/UiPath.MicrosoftOffice365.Activities.Design.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net5.0-windows7.0/pt-BR/UiPath.MicrosoftOffice365.Activities.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net5.0-windows7.0/pt-BR/UiPath.MicrosoftOffice365.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net5.0-windows7.0/pt/UiPath.MicrosoftOffice365.Activities.Design.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net5.0-windows7.0/pt/UiPath.MicrosoftOffice365.Activities.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net5.0-windows7.0/pt/UiPath.MicrosoftOffice365.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net5.0-windows7.0/ru/UiPath.MicrosoftOffice365.Activities.Design.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net5.0-windows7.0/ru/UiPath.MicrosoftOffice365.Activities.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net5.0-windows7.0/ru/UiPath.MicrosoftOffice365.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net5.0-windows7.0/tr/UiPath.MicrosoftOffice365.Activities.Design.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net5.0-windows7.0/tr/UiPath.MicrosoftOffice365.Activities.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net5.0-windows7.0/tr/UiPath.MicrosoftOffice365.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net5.0-windows7.0/zh-CN/UiPath.MicrosoftOffice365.Activities.Design.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net5.0-windows7.0/zh-CN/UiPath.MicrosoftOffice365.Activities.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net5.0-windows7.0/zh-CN/UiPath.MicrosoftOffice365.resources.dll": {
+            "locale": "zh-CN"
+          }
+        }
+      },
       "UiPath.OCR.Activities/3.11.0": {
         "type": "package",
         "dependencies": {
@@ -11768,6 +12136,34 @@
         "lib/uap10.0/HtmlAgilityPack.pri"
       ]
     },
+    "InternalLabs.PowerBI_Refresh.Activities/1.0.2": {
+      "sha512": "fmQ2bXz0VnqsP+d/N87HbHFfunT7mXvSZpC7rFhjrbMFSUYkq5J+xTmirT4TlM3K0YPGW+fWnFvQPInPM9fo0w==",
+      "type": "package",
+      "path": "internallabs.powerbi_refresh.activities/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        "content/.analysis/project_analysis_results.json",
+        "content/.project/design.json",
+        "content/.settings/Design/settings-5190454b.json",
+        "content/.settings/Design/settings-a1b2dac1.json",
+        "content/.settings/Design/settings-afad0842.json",
+        "content/.settings/Release/settings-1a5b880a.json",
+        "content/.settings/Release/settings-5190454b.json",
+        "content/.settings/Release/settings-590bb27b.json",
+        "content/.settings/Release/settings-9e9290da.json",
+        "content/.settings/Release/settings-a1b2dac1.json",
+        "content/.settings/Release/settings-afad0842.json",
+        "content/InternalLabs.PowerBI_Refresh.Activities.xaml",
+        "content/bindings.json",
+        "content/project.json",
+        "contentFiles/any/any/.objects/.metadata",
+        "contentFiles/any/any/.objects/.type",
+        "internallabs.powerbi_refresh.activities.1.0.2.nupkg.sha512",
+        "internallabs.powerbi_refresh.activities.nuspec",
+        "lib/net5.0-windows7.0/InternalLabs.PowerBI_Refresh.Activities.dll",
+        "lib/net5.0-windows7.0/InternalLabs.PowerBI_Refresh.Activities_Expressions_50025604.dll"
+      ]
+    },
     "MailKit/3.1.1": {
       "sha512": "NprdMF0ABNWOqQUuqz45X5YkJK6f3vtYwwvqR6nGVdmrZ7HkahNbSATpOZ5Rj3W1cgDGf/iD8vs/oCyZ4wUO7g==",
       "type": "package",
@@ -12022,13 +12418,14 @@
         "pkgicon.png"
       ]
     },
-    "Microsoft.Bcl.AsyncInterfaces/1.0.0": {
-      "sha512": "K63Y4hORbBcKLWH5wnKgzyn7TOfYzevIEwIedQHBIkmkEBA9SCqgvom+XTuE+fAFGvINGkhFItaZ2dvMGdT5iw==",
+    "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
+      "sha512": "W8DPQjkMScOMTtJbPwmPyj9c3zYSFGawDW3jwlBOOsnY+EzZFLgNQ/UMkK35JmkNOVPdCyPr2Tw7Vv9N+KA3ZQ==",
       "type": "package",
-      "path": "microsoft.bcl.asyncinterfaces/1.0.0",
+      "path": "microsoft.bcl.asyncinterfaces/5.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll",
@@ -12037,11 +12434,8 @@
         "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.xml",
         "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
         "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.xml",
-        "microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512",
+        "microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
         "microsoft.bcl.asyncinterfaces.nuspec",
-        "ref/net461/Microsoft.Bcl.AsyncInterfaces.dll",
-        "ref/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
-        "ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -16718,6 +17112,52 @@
         "system.linq.nuspec"
       ]
     },
+    "System.Linq.Async/5.0.0": {
+      "sha512": "cPtIuuH8TIjVHSi2ewwReWGW1PfChPE0LxPIDlfwVcLuTM9GANFTXiMB7k3aC4sk3f0cQU25LNKzx+jZMxijqw==",
+      "type": "package",
+      "path": "system.linq.async/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/System.Linq.Async.dll",
+        "lib/net461/System.Linq.Async.xml",
+        "lib/netcoreapp3.1/System.Linq.Async.dll",
+        "lib/netcoreapp3.1/System.Linq.Async.xml",
+        "lib/netstandard2.0/System.Linq.Async.dll",
+        "lib/netstandard2.0/System.Linq.Async.xml",
+        "lib/netstandard2.1/System.Linq.Async.dll",
+        "lib/netstandard2.1/System.Linq.Async.xml",
+        "ref/net461/System.Linq.Async.dll",
+        "ref/net461/System.Linq.Async.xml",
+        "ref/netcoreapp3.1/System.Linq.Async.dll",
+        "ref/netcoreapp3.1/System.Linq.Async.xml",
+        "ref/netstandard2.0/System.Linq.Async.dll",
+        "ref/netstandard2.0/System.Linq.Async.xml",
+        "ref/netstandard2.1/System.Linq.Async.dll",
+        "ref/netstandard2.1/System.Linq.Async.xml",
+        "system.linq.async.5.0.0.nupkg.sha512",
+        "system.linq.async.nuspec"
+      ]
+    },
+    "System.Linq.Async.Queryable/5.0.0": {
+      "sha512": "Yrh1M65oyimfRPHra+68psz2tYUN57LqhytxDjgUuX7o9iXqvbMfrC8yDr5QGP3CRuERxKeF8Qy8X/AUQgszuA==",
+      "type": "package",
+      "path": "system.linq.async.queryable/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/System.Linq.Async.Queryable.dll",
+        "lib/net461/System.Linq.Async.Queryable.xml",
+        "lib/netcoreapp3.1/System.Linq.Async.Queryable.dll",
+        "lib/netcoreapp3.1/System.Linq.Async.Queryable.xml",
+        "lib/netstandard2.0/System.Linq.Async.Queryable.dll",
+        "lib/netstandard2.0/System.Linq.Async.Queryable.xml",
+        "lib/netstandard2.1/System.Linq.Async.Queryable.dll",
+        "lib/netstandard2.1/System.Linq.Async.Queryable.xml",
+        "system.linq.async.queryable.5.0.0.nupkg.sha512",
+        "system.linq.async.queryable.nuspec"
+      ]
+    },
     "System.Linq.Expressions/4.3.0": {
       "sha512": "PGKkrd2khG4CnlyJwxwwaWWiSiWFNBGlgXvJpeO0xCXrZ89ODrQ6tjEWS/kOqZ8GwEOUATtKtzp1eRgmYNfclg==",
       "type": "package",
@@ -21055,6 +21495,97 @@
         "uipath.mail.activities.nuspec"
       ]
     },
+    "UiPath.MicrosoftOffice365.Activities/1.11.1": {
+      "sha512": "Z6LNBOQ/UBPDuxdRCVNWdNiQLQai2DuSiduR6FPwzVceXpRiVbO+xdU0pu0jr1u9vGvPYiB9vJ4DN54R0HhFjQ==",
+      "type": "package",
+      "path": "uipath.microsoftoffice365.activities/1.11.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/UiPath.MicrosoftOffice365.Activities.Design.dll",
+        "lib/net461/UiPath.MicrosoftOffice365.Activities.Design.xml",
+        "lib/net461/UiPath.MicrosoftOffice365.Activities.Package.dll",
+        "lib/net461/UiPath.MicrosoftOffice365.Activities.dll",
+        "lib/net461/UiPath.MicrosoftOffice365.Activities.xml",
+        "lib/net461/UiPath.MicrosoftOffice365.dll",
+        "lib/net461/UiPath.MicrosoftOffice365.xml",
+        "lib/net461/de/UiPath.MicrosoftOffice365.Activities.Design.resources.dll",
+        "lib/net461/de/UiPath.MicrosoftOffice365.Activities.resources.dll",
+        "lib/net461/de/UiPath.MicrosoftOffice365.resources.dll",
+        "lib/net461/es-MX/UiPath.MicrosoftOffice365.Activities.Design.resources.dll",
+        "lib/net461/es-MX/UiPath.MicrosoftOffice365.Activities.resources.dll",
+        "lib/net461/es-MX/UiPath.MicrosoftOffice365.resources.dll",
+        "lib/net461/es/UiPath.MicrosoftOffice365.Activities.Design.resources.dll",
+        "lib/net461/es/UiPath.MicrosoftOffice365.Activities.resources.dll",
+        "lib/net461/es/UiPath.MicrosoftOffice365.resources.dll",
+        "lib/net461/fr/UiPath.MicrosoftOffice365.Activities.Design.resources.dll",
+        "lib/net461/fr/UiPath.MicrosoftOffice365.Activities.resources.dll",
+        "lib/net461/fr/UiPath.MicrosoftOffice365.resources.dll",
+        "lib/net461/ja/UiPath.MicrosoftOffice365.Activities.Design.resources.dll",
+        "lib/net461/ja/UiPath.MicrosoftOffice365.Activities.resources.dll",
+        "lib/net461/ja/UiPath.MicrosoftOffice365.resources.dll",
+        "lib/net461/ko/UiPath.MicrosoftOffice365.Activities.Design.resources.dll",
+        "lib/net461/ko/UiPath.MicrosoftOffice365.Activities.resources.dll",
+        "lib/net461/ko/UiPath.MicrosoftOffice365.resources.dll",
+        "lib/net461/pt-BR/UiPath.MicrosoftOffice365.Activities.Design.resources.dll",
+        "lib/net461/pt-BR/UiPath.MicrosoftOffice365.Activities.resources.dll",
+        "lib/net461/pt-BR/UiPath.MicrosoftOffice365.resources.dll",
+        "lib/net461/pt/UiPath.MicrosoftOffice365.Activities.Design.resources.dll",
+        "lib/net461/pt/UiPath.MicrosoftOffice365.Activities.resources.dll",
+        "lib/net461/pt/UiPath.MicrosoftOffice365.resources.dll",
+        "lib/net461/ru/UiPath.MicrosoftOffice365.Activities.Design.resources.dll",
+        "lib/net461/ru/UiPath.MicrosoftOffice365.Activities.resources.dll",
+        "lib/net461/ru/UiPath.MicrosoftOffice365.resources.dll",
+        "lib/net461/tr/UiPath.MicrosoftOffice365.Activities.Design.resources.dll",
+        "lib/net461/tr/UiPath.MicrosoftOffice365.Activities.resources.dll",
+        "lib/net461/tr/UiPath.MicrosoftOffice365.resources.dll",
+        "lib/net461/zh-CN/UiPath.MicrosoftOffice365.Activities.Design.resources.dll",
+        "lib/net461/zh-CN/UiPath.MicrosoftOffice365.Activities.resources.dll",
+        "lib/net461/zh-CN/UiPath.MicrosoftOffice365.resources.dll",
+        "lib/net5.0-windows7.0/UiPath.MicrosoftOffice365.Activities.Design.dll",
+        "lib/net5.0-windows7.0/UiPath.MicrosoftOffice365.Activities.Design.xml",
+        "lib/net5.0-windows7.0/UiPath.MicrosoftOffice365.Activities.Package.dll",
+        "lib/net5.0-windows7.0/UiPath.MicrosoftOffice365.Activities.dll",
+        "lib/net5.0-windows7.0/UiPath.MicrosoftOffice365.Activities.xml",
+        "lib/net5.0-windows7.0/UiPath.MicrosoftOffice365.dll",
+        "lib/net5.0-windows7.0/UiPath.MicrosoftOffice365.xml",
+        "lib/net5.0-windows7.0/de/UiPath.MicrosoftOffice365.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/de/UiPath.MicrosoftOffice365.Activities.resources.dll",
+        "lib/net5.0-windows7.0/de/UiPath.MicrosoftOffice365.resources.dll",
+        "lib/net5.0-windows7.0/es-MX/UiPath.MicrosoftOffice365.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/es-MX/UiPath.MicrosoftOffice365.Activities.resources.dll",
+        "lib/net5.0-windows7.0/es-MX/UiPath.MicrosoftOffice365.resources.dll",
+        "lib/net5.0-windows7.0/es/UiPath.MicrosoftOffice365.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/es/UiPath.MicrosoftOffice365.Activities.resources.dll",
+        "lib/net5.0-windows7.0/es/UiPath.MicrosoftOffice365.resources.dll",
+        "lib/net5.0-windows7.0/fr/UiPath.MicrosoftOffice365.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/fr/UiPath.MicrosoftOffice365.Activities.resources.dll",
+        "lib/net5.0-windows7.0/fr/UiPath.MicrosoftOffice365.resources.dll",
+        "lib/net5.0-windows7.0/ja/UiPath.MicrosoftOffice365.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/ja/UiPath.MicrosoftOffice365.Activities.resources.dll",
+        "lib/net5.0-windows7.0/ja/UiPath.MicrosoftOffice365.resources.dll",
+        "lib/net5.0-windows7.0/ko/UiPath.MicrosoftOffice365.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/ko/UiPath.MicrosoftOffice365.Activities.resources.dll",
+        "lib/net5.0-windows7.0/ko/UiPath.MicrosoftOffice365.resources.dll",
+        "lib/net5.0-windows7.0/pt-BR/UiPath.MicrosoftOffice365.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/pt-BR/UiPath.MicrosoftOffice365.Activities.resources.dll",
+        "lib/net5.0-windows7.0/pt-BR/UiPath.MicrosoftOffice365.resources.dll",
+        "lib/net5.0-windows7.0/pt/UiPath.MicrosoftOffice365.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/pt/UiPath.MicrosoftOffice365.Activities.resources.dll",
+        "lib/net5.0-windows7.0/pt/UiPath.MicrosoftOffice365.resources.dll",
+        "lib/net5.0-windows7.0/ru/UiPath.MicrosoftOffice365.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/ru/UiPath.MicrosoftOffice365.Activities.resources.dll",
+        "lib/net5.0-windows7.0/ru/UiPath.MicrosoftOffice365.resources.dll",
+        "lib/net5.0-windows7.0/tr/UiPath.MicrosoftOffice365.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/tr/UiPath.MicrosoftOffice365.Activities.resources.dll",
+        "lib/net5.0-windows7.0/tr/UiPath.MicrosoftOffice365.resources.dll",
+        "lib/net5.0-windows7.0/zh-CN/UiPath.MicrosoftOffice365.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/zh-CN/UiPath.MicrosoftOffice365.Activities.resources.dll",
+        "lib/net5.0-windows7.0/zh-CN/UiPath.MicrosoftOffice365.resources.dll",
+        "uipath.microsoftoffice365.activities.1.11.1.nupkg.sha512",
+        "uipath.microsoftoffice365.activities.nuspec"
+      ]
+    },
     "UiPath.OCR.Activities/3.11.0": {
       "sha512": "mEiBfvKiRF71JlXPsixLkYjctWV/Y4R3XcygxIfgX+pdOZvqeIqFr5wyEpkL1chCmRUXpl360C5fX2D8+omipQ==",
       "type": "package",
@@ -22841,9 +23372,11 @@
   "projectFileDependencyGroups": {
     "": [],
     "net6.0-windows7.0": [
+      "InternalLabs.PowerBI_Refresh.Activities >= 1.0.2 <= 1.0.2",
       "UiPath.Excel.Activities >= 2.17.0-preview <= 2.17.0-preview",
       "UiPath.Form.Activities >= 2.0.3 <= 2.0.3",
       "UiPath.Mail.Activities >= 1.18.2 <= 1.18.2",
+      "UiPath.MicrosoftOffice365.Activities >= 1.11.1 <= 1.11.1",
       "UiPath.Python.Activities >= 1.6.0 <= 1.6.0",
       "UiPath.System.Activities >= 22.10.4 <= 22.10.4",
       "UiPath.Testing.Activities >= 22.12.0-preview <= 22.12.0-preview",
@@ -22864,6 +23397,11 @@
     "frameworks": {
       "net6.0-windows7.0": {
         "dependencies": {
+          "InternalLabs.PowerBI_Refresh.Activities": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[1.0.2, 1.0.2]"
+          },
           "UiPath.Excel.Activities": {
             "include": "Runtime",
             "target": "Package",
@@ -22878,6 +23416,11 @@
             "include": "Runtime",
             "target": "Package",
             "version": "[1.18.2, 1.18.2]"
+          },
+          "UiPath.MicrosoftOffice365.Activities": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[1.11.1, 1.11.1]"
           },
           "UiPath.Python.Activities": {
             "include": "Runtime",

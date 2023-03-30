@@ -3,9 +3,11 @@
   "description": "Blank Process",
   "main": "Menu\\Login_prompt.xaml",
   "dependencies": {
+    "InternalLabs.PowerBI_Refresh.Activities": "[1.0.2]",
     "UiPath.Excel.Activities": "[2.17.0-preview]",
     "UiPath.Form.Activities": "[2.0.3]",
     "UiPath.Mail.Activities": "[1.18.2]",
+    "UiPath.MicrosoftOffice365.Activities": "[1.11.1]",
     "UiPath.Python.Activities": "[1.6.0]",
     "UiPath.System.Activities": "[22.10.4]",
     "UiPath.Testing.Activities": "[22.12.0-preview]",

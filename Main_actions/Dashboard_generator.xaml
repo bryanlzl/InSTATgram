@@ -1,0 +1,195 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Dashboard_generator" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="inputValidationprofile" Type="InArgument(s:Object[])" />
+    <x:Property Name="inputDestinationfolder" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1132,1855</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Dashboard_generator_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="39">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>InternalLabs_PowerBI_Refresh_Activities</x:String>
+      <x:String>Microsoft.Win32</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="124">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Form.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Python.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>InternalLabs.PowerBI_Refresh.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.SystemEvents</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Registry.AccessControl</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Registry</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Dashboard_generator" sap:VirtualizedContainerService.HintSize="496,1790" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="s:String[]" Name="dataFiledictionary" />
+      <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="queryDict" />
+      <Variable x:TypeArguments="x:Int32" Default="-1" Name="indexCounter" />
+      <Variable x:TypeArguments="x:String" Name="currentQuery" />
+      <Variable x:TypeArguments="x:String" Name="currentQueryfiledir" />
+      <Variable x:TypeArguments="x:Int32" Default="-1" Name="indexCounterfile" />
+      <Variable x:TypeArguments="x:String" Name="fileName" />
+      <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="queryDictnext" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:CopyFile ContinueOnError="{x:Null}" Destination="[inputDestinationfolder.ToString + &quot;InSTATgramDashboard.pbix&quot;]" DisplayName="Clone dashboard template to destination folder" sap:VirtualizedContainerService.HintSize="434,154" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="True" Path="Dashboard_templates\InSTATgramDashboardTemplate.pbix" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: Desktop" sap:VirtualizedContainerService.HintSize="434,882" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" OpenMode="Always" ScopeGuid="ad93e858-81f8-489f-997e-1b5699054d51" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,591" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="338,60" sap2010:WorkflowViewState.IdRef="SetToClipboard_1" Text="[inputDestinationfolder.ToString + &quot;InSTATgramDashboard.pbix&quot;]" />
+            <uix:NClick ClickType="Single" DisplayName="Click file explorer URL bar" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;wnd cls='ToolbarWindow32' title='Address: Quick access' /&gt;" Guid="c105b291-a848-4626-8476-6b87582b6e16" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='File Explorer' /&gt;" SearchSteps="Selector" WaitForReadyArgument="Complete" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="338,179" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_5" Shortcuts="[d(hk)][d(ctrl)]v[u(ctrl)][u(hk)][d(hk)][k(enter)][u(hk)]" Version="V3" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" FilePath="C:\Windows\explorer.exe" IconBase64="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" InformativeScreenshot="5081c6c7d25d1f5b327a043f5fffeee1.png" Selector="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='Desktop' /&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: pbidesktop.exe" sap:VirtualizedContainerService.HintSize="434,563" sap2010:WorkflowViewState.IdRef="NApplicationCard_8" ScopeGuid="96574782-ffe3-4cef-8551-aabf0c764a95" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,272" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click &quot;Refresh&quot; data" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="96574782-ffe3-4cef-8551-aabf0c764a95" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="530, 81, 27, 23" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'PATH'" FullSelectorArgument="&lt;webctrl parentid='refreshQueries' tag='path' type='path' /&gt;" Guid="25387019-9c84-4757-83a6-d6aa8443f454" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB8AAAAbCAYAAACEP1QvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGWSURBVEhL5dZNSwJRFAbgfkmrMOhj5aJyUa3btXCV/YoCaVskkeYsiihqldGXK2mhEESZmEQKLQoCqaBNCwmsxkE3J94DM1zNdO54HYIWL8Kc433umRHv9Hx+lAnx+UYpl824Elgw/w7uZn7gtVqtZRaC802vi7HT8z9xwzAoEJhxF6/oOjtiXMEr+hcbm4lLGl7L0mA4Q/5wvPu4Cc/tnJJ3/ZaeSzondFbsLi7CveE8RdKvVg0bqMPxRVU5Pjqw4KndAmP+w0drA+mn9+5MLk4M2KyJG8B15XjjxI11bACPAHWl+G8Ti8F11NGnDJeFleFOYKRj3CmM1OFYXCbtflytYMTx5J1MbMYRrgJGpHFVMCKFa9EI92JhHBLNeuzCiBSeSiX5WPSspGlsI09D2g3/Y5l1GRixjVerVe4bX4zT7MkLLZ2X+HNy+47rsjBiGzffRDyrWQom3xhHBrQ8PwJZGKnDWyUW2+Nb7o1eM4oNTO8XrUNCXNRuLNxOJpYTNLJ1T/2RHPWFLvhV6Krw0LS3fcr0DXwVSI5+WmunAAAAAElFTkSuQmCC" InformativeScreenshot="3ee10bbd126eea446a64c28ac5ea31ae.png" ScopeSelectorArgument="&lt;html app='pbidesktop.exe' url='https://ms-pbi.pbi.microsoft.com/pbi/Web/Views/ReportView.htm' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 1920, 1032" IconBase64="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" InformativeScreenshot="df4689be3439947dc6f9684d0d866335.png" Selector="&lt;html app='pbidesktop.exe' url='https://ms-pbi.pbi.microsoft.com/pbi/Web/Views/ReportView.htm' /&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
