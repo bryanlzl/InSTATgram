@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1132,1855</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>748,1898.4</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Dashboard_generator_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="39">
@@ -123,7 +123,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Dashboard_generator" sap:VirtualizedContainerService.HintSize="496,1790" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Dashboard_generator" sap:VirtualizedContainerService.HintSize="496,1833.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:String[]" Name="dataFiledictionary" />
       <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="queryDict" />
@@ -140,26 +140,26 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:CopyFile ContinueOnError="{x:Null}" Destination="[inputDestinationfolder.ToString + &quot;InSTATgramDashboard.pbix&quot;]" DisplayName="Clone dashboard template to destination folder" sap:VirtualizedContainerService.HintSize="434,154" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="True" Path="Dashboard_templates\InSTATgramDashboardTemplate.pbix" />
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: Desktop" sap:VirtualizedContainerService.HintSize="434,882" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" OpenMode="Always" ScopeGuid="ad93e858-81f8-489f-997e-1b5699054d51" Version="V2">
+    <ui:CopyFile ContinueOnError="{x:Null}" Destination="[inputDestinationfolder.ToString + &quot;InSTATgramDashboard.pbix&quot;]" DisplayName="Clone dashboard template to destination folder" sap:VirtualizedContainerService.HintSize="433.6,155.2" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="True" Path="Dashboard_templates\InSTATgramDashboardTemplate.pbix" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: Desktop" sap:VirtualizedContainerService.HintSize="433.6,922.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" OpenMode="Always" ScopeGuid="ad93e858-81f8-489f-997e-1b5699054d51" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,591" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,591.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="338,60" sap2010:WorkflowViewState.IdRef="SetToClipboard_1" Text="[inputDestinationfolder.ToString + &quot;InSTATgramDashboard.pbix&quot;]" />
-            <uix:NClick ClickType="Single" DisplayName="Click file explorer URL bar" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" Version="V3">
+            <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="337.6,60" sap2010:WorkflowViewState.IdRef="SetToClipboard_1" Text="[inputDestinationfolder.ToString + &quot;InSTATgramDashboard.pbix&quot;]" />
+            <uix:NClick ClickType="Single" DisplayName="Click file explorer URL bar" sap:VirtualizedContainerService.HintSize="337.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;wnd cls='ToolbarWindow32' title='Address: Quick access' /&gt;" Guid="c105b291-a848-4626-8476-6b87582b6e16" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='File Explorer' /&gt;" SearchSteps="Selector" WaitForReadyArgument="Complete" />
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="338,179" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_5" Shortcuts="[d(hk)][d(ctrl)]v[u(ctrl)][u(hk)][d(hk)][k(enter)][u(hk)]" Version="V3" />
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="337.6,178.4" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_5" Shortcuts="[d(hk)][d(ctrl)]v[u(ctrl)][u(hk)][d(hk)][k(enter)][u(hk)]" Version="V3" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
@@ -167,19 +167,19 @@
         <uix:TargetApp Area="-8, -8, 1936, 1048" FilePath="C:\Windows\explorer.exe" IconBase64="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" InformativeScreenshot="5081c6c7d25d1f5b327a043f5fffeee1.png" Selector="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='Desktop' /&gt;" />
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: pbidesktop.exe" sap:VirtualizedContainerService.HintSize="434,563" sap2010:WorkflowViewState.IdRef="NApplicationCard_8" ScopeGuid="96574782-ffe3-4cef-8551-aabf0c764a95" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: pbidesktop.exe" sap:VirtualizedContainerService.HintSize="433.6,564" sap2010:WorkflowViewState.IdRef="NApplicationCard_8" ScopeGuid="96574782-ffe3-4cef-8551-aabf0c764a95" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,272" sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,272.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NClick ClickType="Single" DisplayName="Click &quot;Refresh&quot; data" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="96574782-ffe3-4cef-8551-aabf0c764a95" Version="V3">
+            <uix:NClick ClickType="Single" DisplayName="Click &quot;Refresh&quot; data" sap:VirtualizedContainerService.HintSize="337.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="96574782-ffe3-4cef-8551-aabf0c764a95" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="530, 81, 27, 23" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'PATH'" FullSelectorArgument="&lt;webctrl parentid='refreshQueries' tag='path' type='path' /&gt;" Guid="25387019-9c84-4757-83a6-d6aa8443f454" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB8AAAAbCAYAAACEP1QvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGWSURBVEhL5dZNSwJRFAbgfkmrMOhj5aJyUa3btXCV/YoCaVskkeYsiihqldGXK2mhEESZmEQKLQoCqaBNCwmsxkE3J94DM1zNdO54HYIWL8Kc433umRHv9Hx+lAnx+UYpl824Elgw/w7uZn7gtVqtZRaC802vi7HT8z9xwzAoEJhxF6/oOjtiXMEr+hcbm4lLGl7L0mA4Q/5wvPu4Cc/tnJJ3/ZaeSzondFbsLi7CveE8RdKvVg0bqMPxRVU5Pjqw4KndAmP+w0drA+mn9+5MLk4M2KyJG8B15XjjxI11bACPAHWl+G8Ti8F11NGnDJeFleFOYKRj3CmM1OFYXCbtflytYMTx5J1MbMYRrgJGpHFVMCKFa9EI92JhHBLNeuzCiBSeSiX5WPSspGlsI09D2g3/Y5l1GRixjVerVe4bX4zT7MkLLZ2X+HNy+47rsjBiGzffRDyrWQom3xhHBrQ8PwJZGKnDWyUW2+Nb7o1eM4oNTO8XrUNCXNRuLNxOJpYTNLJ1T/2RHPWFLvhV6Krw0LS3fcr0DXwVSI5+WmunAAAAAElFTkSuQmCC" InformativeScreenshot="3ee10bbd126eea446a64c28ac5ea31ae.png" ScopeSelectorArgument="&lt;html app='pbidesktop.exe' url='https://ms-pbi.pbi.microsoft.com/pbi/Web/Views/ReportView.htm' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
               </uix:NClick.Target>
