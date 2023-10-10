@@ -1,17 +1,21 @@
-# InSTATgram
-
-InSTATgram was developed with UIPath Studio and PowerBI as an social media scraping and analytics tool for Instagram Web.
+# InSTATgram &middot; ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)
+InSTATgram was developed with UIPath Studio and PowerBI as a social media analytics and scraping tool for Instagram Web.
 
 This winning project was ideated and developed for UIPath x SimplfyNext Hackathon 2023.
 
 <img src="https://github.com/bryanlzl/InSTATgram/assets/58539426/14207f2d-e83b-4a30-a067-14bf730185b7" alt="InSTATgram_dashboard" width="67%">
 
-## Installation:
+### FEATURES:
+- Automated extraction of Instagram post, reels, comments, likes (and more) from any accessible Instagram profile
+- Generates insights of Instagram users on-demand without manual gathering of data
+- Comprehensive analysis of publicly available information of Instagram profiles
+- User-friendly interface (cute ducks and appropriately themed!)
 
+## Installing / Getting started
 ### How to start:
 1) Open and run main.xaml on UIPath Studio
 
-### Requirements:
+### Prerequisites / Requirements:
 1) UIPath Studio and PowerBI installed
 2) Run in 1920 x 1080p resolution, Edge browser full screen
 3) Enable 'see/view like & comment' count for Instagram profile on the phone app first:
@@ -20,17 +24,10 @@ This winning project was ideated and developed for UIPath x SimplfyNext Hackatho
 5) Only 1 Edge instance and 1 tab should be opened (while bot is running)
 6) Try not to move mouse into browser screen when bot is running
 
-### FEATURES:
-- Automated extraction of Instagram post, reels, comments, likes (and more) from any accessible Instagram profile
-- Generates insights of Instagram users on-demand without manual gathering of data
-- Comprehensive analysis of publicly available information of Instagram profiles
-- User-friendly interface (cute ducks and appropriately themed!)
+## Process flowchart
+<img src="https://github.com/bryanlzl/InSTATgram/assets/58539426/a46270f0-a394-47fc-99e1-b51bc6c9b8a5" alt="InSTATgram_dashboard" width="55%">
 
-<img src="https://github.com/bryanlzl/InSTATgram/assets/58539426/4b0f8f17-7920-413a-9688-bed10ffcba8e" alt="login" width="25%"><img src="https://github.com/bryanlzl/InSTATgram/assets/58539426/f96fbe19-b8e2-4cf7-b2a0-db324ac95206" alt="options" width="35%">
-
-
-
-### Future Improvements:
+## Future Improvements:
 - Lazy loading of web assets
 - Parallel scaling for synchronous extraction of data
 - To work for stories and real-time scraping of InSTATgram live videos
