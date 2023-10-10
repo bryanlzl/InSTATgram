@@ -1,7 +1,7 @@
 # InSTATgram
 
 
- <img src="https://github.com/bryanlzl/InSTATgram/assets/58539426/14207f2d-e83b-4a30-a067-14bf730185b7" alt="InSTATgram_dashboard" width="50%">
+ <img src="https://github.com/bryanlzl/InSTATgram/assets/58539426/14207f2d-e83b-4a30-a067-14bf730185b7" alt="InSTATgram_dashboard" width="67%">
 
 
 
