@@ -1,9 +1,9 @@
 # InSTATgram
 
-![login](https://github.com/bryanlzl/InSTATgram/assets/58539426/4b0f8f17-7920-413a-9688-bed10ffcba8e)![options](https://github.com/bryanlzl/InSTATgram/assets/58539426/f96fbe19-b8e2-4cf7-b2a0-db324ac95206)
+<img src="https://github.com/bryanlzl/InSTATgram/assets/58539426/4b0f8f17-7920-413a-9688-bed10ffcba8e" alt="login" width="67%"> <img src="https://github.com/bryanlzl/InSTATgram/assets/58539426/f96fbe19-b8e2-4cf7-b2a0-db324ac95206" alt="options" width="40%">
 
 
- <img src="https://github.com/bryanlzl/InSTATgram/assets/58539426/14207f2d-e83b-4a30-a067-14bf730185b7" alt="InSTATgram_dashboard" width="67%">
+<img src="https://github.com/bryanlzl/InSTATgram/assets/58539426/14207f2d-e83b-4a30-a067-14bf730185b7" alt="InSTATgram_dashboard" width="67%">
 
 
 ### Requirements:
