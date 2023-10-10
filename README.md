@@ -3,7 +3,7 @@
 InSTATgram was developed with UIPath Studio and PowerBI as an social media scraping and analytics tool for Instagram Web.
 This winning project was ideated and developed for UIPath x SimplfyNext Hackathon 2023.
 
-<img src="https://github.com/bryanlzl/InSTATgram/assets/58539426/4b0f8f17-7920-413a-9688-bed10ffcba8e" alt="login" width="25%"><img src="https://github.com/bryanlzl/InSTATgram/assets/58539426/f96fbe19-b8e2-4cf7-b2a0-db324ac95206" alt="options" width="35%">
+<img src="https://github.com/bryanlzl/InSTATgram/assets/58539426/14207f2d-e83b-4a30-a067-14bf730185b7" alt="InSTATgram_dashboard" width="67%">
 
 ### FEATURES:
 - Automated extraction of Instagram post, reels, comments, likes (and more) from any non-private Instagram profile
@@ -11,7 +11,7 @@ This winning project was ideated and developed for UIPath x SimplfyNext Hackatho
 - Comprehensive analysis of publicly available information of Instagram profiles
 - User-friendly interface (cute ducks and appropriately themed!)
 
-<img src="https://github.com/bryanlzl/InSTATgram/assets/58539426/14207f2d-e83b-4a30-a067-14bf730185b7" alt="InSTATgram_dashboard" width="67%">
+<img src="https://github.com/bryanlzl/InSTATgram/assets/58539426/4b0f8f17-7920-413a-9688-bed10ffcba8e" alt="login" width="25%"><img src="https://github.com/bryanlzl/InSTATgram/assets/58539426/f96fbe19-b8e2-4cf7-b2a0-db324ac95206" alt="options" width="35%">
 
 ### Future Improvements:
 - Lazy loading of web assets
