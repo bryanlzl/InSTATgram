@@ -1,6 +1,6 @@
 # InSTATgram &middot; ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)
-InSTATgram was developed with UIPath and PowerBI as a social media analytics tool for Instagram Web.<br />
-Scrape data from virutally any Instagram profile (public/followed) and transform them into powerful insights!
+InSTATgram is social media analytics tool for Instagram Web, developed with UIPath and PowerBI.<br />
+Scrape data from virutally *any* Instagram profile (public/followed) and transform them into powerful insights!
 
 <img src="https://github.com/bryanlzl/InSTATgram/assets/58539426/5bd9e61b-d601-4aa1-9595-e7318272f6ec" alt="InSTATgram_dashboard" width="67%">
 
