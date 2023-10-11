@@ -30,3 +30,6 @@ Scrape data from virutally any Instagram profile (public/followed) and transform
 - Lazy loading of web assets
 - Parallel scaling for synchronous extraction of data
 - To work for stories and real-time scraping of InSTATgram live videos
+
+## Disclaimer:
+Regarding potential applications, I will not go into detail and leave it up to the user to make their own ethical judgments
