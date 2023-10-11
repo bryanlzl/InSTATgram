@@ -5,11 +5,11 @@ Scrape data from virutally *any* Instagram profile (public/followed) and transfo
 <img src="https://github.com/bryanlzl/InSTATgram/assets/58539426/5bd9e61b-d601-4aa1-9595-e7318272f6ec" alt="InSTATgram_dashboard" width="67%">
 
 ### FEATURES:
-
 - Automated extraction of Instagram post, reels, comments, likes (and more) from any accessible Instagram profile
 - Generates insights of Instagram users on-demand without manual gathering of data
 - Comprehensive analysis of publicly available information of Instagram profiles
 - User-friendly interface (cute ducks and appropriately themed!)
+- Extracted data will be stored in .csv format
 
 ## Installing / Getting started
 ### How to start:
@@ -33,4 +33,4 @@ Scrape data from virutally *any* Instagram profile (public/followed) and transfo
 - To work for stories and real-time scraping of InSTATgram live videos
 
 ## Disclaimer:
-Regarding potential applications, I will not go into detail and leave it up to the user to make their own ethical judgments
+Regarding InSTATgram's potential uses, I willleave it up to the user to make their own ethical judgments
