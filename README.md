@@ -2,9 +2,10 @@
 InSTATgram was developed with UIPath and PowerBI as a social media analytics tool for Instagram Web.<br />
 Scrape data from virutally any Instagram profile (public/followed) and transform them into powerful insights!
 
-<img src="https://github.com/bryanlzl/InSTATgram/assets/58539426/14207f2d-e83b-4a30-a067-14bf730185b7" alt="InSTATgram_dashboard" width="67%">
+<img src="https://github.com/bryanlzl/InSTATgram/assets/58539426/5bd9e61b-d601-4aa1-9595-e7318272f6ec" alt="InSTATgram_dashboard" width="67%">
 
 ### FEATURES:
+
 - Automated extraction of Instagram post, reels, comments, likes (and more) from any accessible Instagram profile
 - Generates insights of Instagram users on-demand without manual gathering of data
 - Comprehensive analysis of publicly available information of Instagram profiles
@@ -24,7 +25,7 @@ Scrape data from virutally any Instagram profile (public/followed) and transform
 6) Try not to move mouse into browser screen when bot is running
 
 ## Process flowchart
-<img src="https://github.com/bryanlzl/InSTATgram/assets/58539426/a46270f0-a394-47fc-99e1-b51bc6c9b8a5" alt="InSTATgram_dashboard" width="55%">
+<img src="https://github.com/bryanlzl/InSTATgram/assets/58539426/f93c1bb6-8885-4056-a89e-92f6387bdc75" alt="InSTATgram_dashboard" width="55%">
 
 ## Future Improvements:
 - Lazy loading of web assets
