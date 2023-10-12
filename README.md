@@ -33,4 +33,4 @@ Scrape data from virutally *any* Instagram profile (public/followed) and transfo
 - To work for stories and real-time scraping of InSTATgram live videos
 
 ## Disclaimer:
-Regarding InSTATgram's potential uses, I willleave it up to the user to make their own ethical judgments
+Regarding InSTATgram's potential uses, I'll leave it up to the user to make their own ethical judgments
