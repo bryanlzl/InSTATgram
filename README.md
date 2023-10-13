@@ -1,4 +1,4 @@
-# InSTATgram &middot; ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)
+# InSTATgram &middot; ![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 InSTATgram is social media analytics tool for Instagram Web, developed with UIPath and PowerBI.<br />
 Scrape data from virutally *any* Instagram profile (public/followed) and transform them into powerful insights!
 
